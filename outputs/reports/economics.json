@@ -1,0 +1,70 @@
+{
+  "coverage_model": {
+    "swath_m": 36.0,
+    "ground_speed_ms": 6.0,
+    "sidelap_frac": 0.3,
+    "operational_efficiency": 0.62,
+    "hours_per_field_day": 6.0,
+    "raw_ha_per_hr": 77.76,
+    "effective_ha_per_hr": 33.747840000000004,
+    "ha_per_field_day": 202.48704000000004,
+    "assumptions": [
+      "Swath is MODELLED from an assumed ~22 deg FOV at 90 m AGL and is marked [VERIFY] in the proposal. It scales the whole model linearly.",
+      "Ground speed is SNR-limited, not line-rate-limited, in VNIR at 8 cm GSD under subtropical canopy illumination.",
+      "Operational efficiency folds in turns, battery swaps, RTH and re-flights; it is the least defensible number here and should be replaced with measured Phase 0 sortie logs."
+    ]
+  },
+  "consistency_check": {
+    "computed": {
+      "raw_ha_per_hr": 77.76,
+      "effective_ha_per_hr": 33.747840000000004,
+      "ha_per_field_day": 202.48704000000004
+    },
+    "stated_in_proposal": {
+      "raw_ha_per_hr": 46.0,
+      "effective_ha_per_hr": [
+        25.0,
+        30.0
+      ],
+      "ha_per_field_day": [
+        80.0,
+        120.0
+      ]
+    },
+    "discrepancies": [
+      {
+        "item": "raw area rate",
+        "stated": 46.0,
+        "computed_from_stated_inputs": 77.76,
+        "detail": "36 m swath x 6 m/s = 77.8 ha/hr; the table says 46 ha/hr."
+      },
+      {
+        "item": "per field day vs effective rate",
+        "stated_effective_ha_per_hr": [
+          25.0,
+          30.0
+        ],
+        "implied_by_stated_field_day": [
+          13.333333333333334,
+          20.0
+        ],
+        "detail": "80-120 ha over 6 h implies 13-20 ha/hr, but the table separately states 25-30 ha/hr. The two rows disagree by roughly 2x."
+      }
+    ],
+    "implied_operational_efficiency_to_match_field_day": [
+      0.24495394865765238,
+      0.36743092298647856
+    ],
+    "recommendation": "Rebuild the \u00a75.3 table from the platform geometry rather than quoting it, and replace operational_efficiency with measured Phase 0 sortie logs. The strategic conclusion (three-tier funnel mandatory) holds under every reading, so correcting the arithmetic costs nothing and removes an easy line of attack."
+  },
+  "programme_3000ha": {
+    "area_ha": 3000.0,
+    "field_days": 14.815763023648326,
+    "field_days_with_weather_margin": 23.896391973626333,
+    "contract_value_hkd": [
+      1500000.0,
+      3600000.0
+    ],
+    "ha_per_field_day": 202.48704000000004
+  }
+}

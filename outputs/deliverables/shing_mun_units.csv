@@ -1,0 +1,11 @@
+rank,unit_id,site_name,area_ha,severity,band,action,mean_coverage_fraction,survey_cost_hkd
+1,shing_mun-907,Shing Mun Country Park,0.2742,0.6069,Priority,Clear this season,0.4019,"[137, 329]"
+2,shing_mun-001,Shing Mun Country Park,0.2079,0.7126,Priority,Clear this season,0.8401,"[104, 249]"
+3,shing_mun-006,Shing Mun Country Park,0.1318,0.6629,Priority,Clear this season,0.7728,"[66, 158]"
+4,shing_mun-1620,Shing Mun Country Park,0.1513,0.5571,Priority,Clear this season,0.5294,"[76, 182]"
+5,shing_mun-007,Shing Mun Country Park,0.0832,0.5799,Priority,Clear this season,0.5779,"[42, 100]"
+6,shing_mun-736,Shing Mun Country Park,0.0883,0.5244,Schedule,Add to annual clearance plan,0.5659,"[44, 106]"
+7,shing_mun-1037,Shing Mun Country Park,0.0266,0.5246,Schedule,Add to annual clearance plan,0.4827,"[13, 32]"
+8,shing_mun-1775,Shing Mun Country Park,0.02,0.5055,Schedule,Add to annual clearance plan,0.3359,"[10, 24]"
+9,shing_mun-537,Shing Mun Country Park,0.0151,0.5316,Schedule,Add to annual clearance plan,0.4861,"[8, 18]"
+10,shing_mun-1555,Shing Mun Country Park,0.0133,0.5168,Schedule,Add to annual clearance plan,0.4344,"[7, 16]"

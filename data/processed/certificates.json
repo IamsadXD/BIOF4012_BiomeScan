@@ -1,0 +1,1933 @@
+[
+ {
+  "voucher_id": "HK-WET-0001",
+  "status": "certified",
+  "certified_taxon": "Mikania micrantha",
+  "certified_class": "mikania",
+  "confidence": 1.0,
+  "loci_used": [
+   "matK",
+   "ITS2",
+   "trnH-psbA"
+  ],
+  "n_loci_agreeing": 3,
+  "locus_weights": {
+   "Mikania micrantha": 9.0
+  },
+  "reasons": [],
+  "per_locus": {
+   "rbcL": {
+    "status": "chimera_suspect",
+    "call": null,
+    "call_class": null,
+    "margin_pp": 0.0,
+    "n_refs_for_best": 8,
+    "reasons": [
+     "margin over Mikania cordata is 0.00 pp < 0.6 pp \u2014 locus cannot separate these taxa",
+     "possible chimera: halves disagree"
+    ],
+    "best_identity": 1.0,
+    "best_coverage": 1.0,
+    "best_accession": "MH049942.1",
+    "runner_up_taxon": "Mikania cordata",
+    "runner_up_identity": 1.0,
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 427,
+     "ambiguity_frac": 0.0,
+     "mean_phred": 33.09,
+     "longest_homopolymer": 5
+    },
+    "chimera": {
+     "suspect": true,
+     "half_a": {
+      "taxon": "Mikania micrantha",
+      "identity": 1.0
+     },
+     "half_b": {
+      "taxon": "Mikania cordata",
+      "identity": 1.0
+     },
+     "reason": "halves match different taxa at high identity \u2014 possible chimera"
+    }
+   },
+   "matK": {
+    "status": "confident",
+    "call": "Mikania micrantha",
+    "call_class": "mikania",
+    "margin_pp": 20.569,
+    "n_refs_for_best": 7,
+    "reasons": [],
+    "best_identity": 1.0,
+    "best_coverage": 1.0,
+    "best_accession": "MF770206.1",
+    "runner_up_taxon": "Phanera glauca",
+    "runner_up_identity": 0.79431,
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 451,
+     "ambiguity_frac": 0.0,
+     "mean_phred": 33.38,
+     "longest_homopolymer": 5
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Mikania micrantha",
+      "identity": 1.0
+     },
+     "half_b": {
+      "taxon": "Mikania micrantha",
+      "identity": 1.0
+     },
+     "reason": "halves agree"
+    }
+   },
+   "ITS2": {
+    "status": "confident",
+    "call": "Mikania micrantha",
+    "call_class": "mikania",
+    "margin_pp": 100.0,
+    "n_refs_for_best": 21,
+    "reasons": [],
+    "best_identity": 0.99199,
+    "best_coverage": 1.0,
+    "best_accession": "OQ984910.1",
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 624,
+     "ambiguity_frac": 0.0,
+     "mean_phred": 33.41,
+     "longest_homopolymer": 6
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Mikania micrantha",
+      "identity": 0.99359
+     },
+     "half_b": {
+      "taxon": "Mikania micrantha",
+      "identity": 0.99359
+     },
+     "reason": "halves agree"
+    }
+   },
+   "trnH-psbA": {
+    "status": "confident",
+    "call": "Mikania micrantha",
+    "call_class": "mikania",
+    "margin_pp": 98.876,
+    "n_refs_for_best": 3,
+    "reasons": [],
+    "best_identity": 0.98876,
+    "best_coverage": 1.0,
+    "best_accession": "MF143645.1",
+    "runner_up_taxon": "Paederia foetida",
+    "runner_up_identity": 0.0,
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 356,
+     "ambiguity_frac": 0.00281,
+     "mean_phred": 32.93,
+     "longest_homopolymer": 7
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Mikania micrantha",
+      "identity": 0.97753
+     },
+     "half_b": {
+      "taxon": "Mikania micrantha",
+      "identity": 1.0
+     },
+     "reason": "halves agree"
+    }
+   }
+  },
+  "true_taxon": "Mikania micrantha",
+  "true_class": "mikania",
+  "field_call": "bauhinia_glauca",
+  "sterile": true,
+  "site_key": "shing_mun",
+  "season": "wet_summer",
+  "lat": 22.379924641823546,
+  "lon": 114.1496618893854,
+  "n_loci_attempted": 4,
+  "correct": true
+ },
+ {
+  "voucher_id": "HK-AUT-0002",
+  "status": "certified",
+  "certified_taxon": "Mikania micrantha",
+  "certified_class": "mikania",
+  "confidence": 1.0,
+  "loci_used": [
+   "matK",
+   "ITS2"
+  ],
+  "n_loci_agreeing": 2,
+  "locus_weights": {
+   "Mikania micrantha": 7.0
+  },
+  "reasons": [],
+  "per_locus": {
+   "rbcL": {
+    "status": "chimera_suspect",
+    "call": null,
+    "call_class": null,
+    "margin_pp": 0.152,
+    "n_refs_for_best": 1,
+    "reasons": [
+     "coverage 77.371% < 80.0%",
+     "margin over Mikania micrantha is 0.15 pp < 0.6 pp \u2014 locus cannot separate these taxa",
+     "only 1 reference sequence(s) for Mikania cordata at this locus \u2014 intraspecific range is unestablished",
+     "possible chimera: halves disagree"
+    ],
+    "best_identity": 0.99721,
+    "best_coverage": 0.77371,
+    "best_accession": "KX527290.1",
+    "runner_up_taxon": "Mikania micrantha",
+    "runner_up_identity": 0.99569,
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 464,
+     "ambiguity_frac": 0.00216,
+     "mean_phred": 33.23,
+     "longest_homopolymer": 5
+    },
+    "chimera": {
+     "suspect": true,
+     "half_a": {
+      "taxon": "Mikania micrantha",
+      "identity": 0.99569
+     },
+     "half_b": {
+      "taxon": "Mikania cordata",
+      "identity": 0.99569
+     },
+     "reason": "halves match different taxa at high identity \u2014 possible chimera"
+    }
+   },
+   "matK": {
+    "status": "confident",
+    "call": "Mikania micrantha",
+    "call_class": "mikania",
+    "margin_pp": 21.92,
+    "n_refs_for_best": 7,
+    "reasons": [],
+    "best_identity": 0.99848,
+    "best_coverage": 1.0,
+    "best_accession": "OQ290086.1",
+    "runner_up_taxon": "Phanera glauca",
+    "runner_up_identity": 0.77928,
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 660,
+     "ambiguity_frac": 0.00152,
+     "mean_phred": 33.64,
+     "longest_homopolymer": 5
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Mikania micrantha",
+      "identity": 1.0
+     },
+     "half_b": {
+      "taxon": "Mikania micrantha",
+      "identity": 0.99697
+     },
+     "reason": "halves agree"
+    }
+   },
+   "ITS2": {
+    "status": "confident",
+    "call": "Mikania micrantha",
+    "call_class": "mikania",
+    "margin_pp": 100.0,
+    "n_refs_for_best": 21,
+    "reasons": [],
+    "best_identity": 1.0,
+    "best_coverage": 1.0,
+    "best_accession": "OQ984920.1",
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 557,
+     "ambiguity_frac": 0.0,
+     "mean_phred": 33.56,
+     "longest_homopolymer": 6
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Mikania micrantha",
+      "identity": 1.0
+     },
+     "half_b": {
+      "taxon": "Mikania micrantha",
+      "identity": 1.0
+     },
+     "reason": "halves agree"
+    }
+   }
+  },
+  "true_taxon": "Mikania micrantha",
+  "true_class": "mikania",
+  "field_call": "paederia_foetida",
+  "sterile": true,
+  "site_key": "lam_tsuen",
+  "season": "autumn_flower",
+  "lat": 22.458004816505024,
+  "lon": 114.13880300711598,
+  "n_loci_attempted": 3,
+  "correct": true
+ },
+ {
+  "voucher_id": "HK-WET-0003",
+  "status": "quarantined",
+  "certified_taxon": null,
+  "certified_class": null,
+  "proposed_taxon": "Mikania micrantha",
+  "confidence": 1.0,
+  "loci_used": [
+   "ITS2"
+  ],
+  "reasons": [
+   "only 1 locus/loci agree; need 2",
+   "no core locus (rbcL/matK) produced a usable result"
+  ],
+  "escalation": "genome skimming / additional loci",
+  "per_locus": {
+   "rbcL": {
+    "status": "chimera_suspect",
+    "call": null,
+    "call_class": null,
+    "margin_pp": 0.223,
+    "n_refs_for_best": 1,
+    "reasons": [
+     "coverage 72.098% < 80.0%",
+     "margin over Mikania micrantha is 0.22 pp < 0.6 pp \u2014 locus cannot separate these taxa",
+     "only 1 reference sequence(s) for Mikania cordata at this locus \u2014 intraspecific range is unestablished",
+     "possible chimera: halves disagree"
+    ],
+    "best_identity": 1.0,
+    "best_coverage": 0.72098,
+    "best_accession": "KX527290.1",
+    "runner_up_taxon": "Mikania micrantha",
+    "runner_up_identity": 0.99777,
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 448,
+     "ambiguity_frac": 0.0,
+     "mean_phred": 33.3,
+     "longest_homopolymer": 5
+    },
+    "chimera": {
+     "suspect": true,
+     "half_a": {
+      "taxon": "Mikania micrantha",
+      "identity": 0.99554
+     },
+     "half_b": {
+      "taxon": "Mikania cordata",
+      "identity": 1.0
+     },
+     "reason": "halves match different taxa at high identity \u2014 possible chimera"
+    }
+   },
+   "ITS2": {
+    "status": "confident",
+    "call": "Mikania micrantha",
+    "call_class": "mikania",
+    "margin_pp": 100.0,
+    "n_refs_for_best": 21,
+    "reasons": [],
+    "best_identity": 0.98878,
+    "best_coverage": 1.0,
+    "best_accession": "OQ984910.1",
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 624,
+     "ambiguity_frac": 0.0016,
+     "mean_phred": 33.35,
+     "longest_homopolymer": 6
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Mikania micrantha",
+      "identity": 0.99359
+     },
+     "half_b": {
+      "taxon": "Mikania micrantha",
+      "identity": 0.98718
+     },
+     "reason": "halves agree"
+    }
+   }
+  },
+  "true_taxon": "Mikania micrantha",
+  "true_class": "mikania",
+  "field_call": "byttneria_aspera",
+  "sterile": true,
+  "site_key": "tai_po_kau",
+  "season": "wet_summer",
+  "lat": 22.425979385744082,
+  "lon": 114.17698360512637,
+  "n_loci_attempted": 2,
+  "correct": false
+ },
+ {
+  "voucher_id": "HK-AUT-0004",
+  "status": "quarantined",
+  "certified_taxon": null,
+  "certified_class": null,
+  "proposed_taxon": "Mikania micrantha",
+  "confidence": 1.0,
+  "loci_used": [
+   "ITS2"
+  ],
+  "reasons": [
+   "only 1 locus/loci agree; need 2",
+   "no core locus (rbcL/matK) produced a usable result"
+  ],
+  "escalation": "genome skimming / additional loci",
+  "per_locus": {
+   "ITS2": {
+    "status": "confident",
+    "call": "Mikania micrantha",
+    "call_class": "mikania",
+    "margin_pp": 100.0,
+    "n_refs_for_best": 21,
+    "reasons": [],
+    "best_identity": 1.0,
+    "best_coverage": 1.0,
+    "best_accession": "OQ984910.1",
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 618,
+     "ambiguity_frac": 0.0,
+     "mean_phred": 33.42,
+     "longest_homopolymer": 6
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Mikania micrantha",
+      "identity": 1.0
+     },
+     "half_b": {
+      "taxon": "Mikania micrantha",
+      "identity": 1.0
+     },
+     "reason": "halves agree"
+    }
+   }
+  },
+  "true_taxon": "Mikania micrantha",
+  "true_class": "mikania",
+  "field_call": "mikania",
+  "sterile": false,
+  "site_key": "sai_kung_w",
+  "season": "autumn_flower",
+  "lat": 22.397533830260038,
+  "lon": 114.31133656224347,
+  "n_loci_attempted": 1,
+  "correct": false
+ },
+ {
+  "voucher_id": "HK-WET-0005",
+  "status": "quarantined",
+  "certified_taxon": null,
+  "certified_class": null,
+  "proposed_taxon": "Mikania micrantha",
+  "confidence": 1.0,
+  "loci_used": [
+   "ITS2"
+  ],
+  "reasons": [
+   "only 1 locus/loci agree; need 2",
+   "no core locus (rbcL/matK) produced a usable result"
+  ],
+  "escalation": "genome skimming / additional loci",
+  "per_locus": {
+   "ITS2": {
+    "status": "confident",
+    "call": "Mikania micrantha",
+    "call_class": "mikania",
+    "margin_pp": 100.0,
+    "n_refs_for_best": 21,
+    "reasons": [],
+    "best_identity": 0.99525,
+    "best_coverage": 1.0,
+    "best_accession": "KY909245.1",
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 631,
+     "ambiguity_frac": 0.0,
+     "mean_phred": 33.28,
+     "longest_homopolymer": 6
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Mikania micrantha",
+      "identity": 0.99048
+     },
+     "half_b": {
+      "taxon": "Mikania micrantha",
+      "identity": 1.0
+     },
+     "reason": "halves agree"
+    }
+   }
+  },
+  "true_taxon": "Mikania micrantha",
+  "true_class": "mikania",
+  "field_call": "mikania",
+  "sterile": false,
+  "site_key": "tai_lam",
+  "season": "wet_summer",
+  "lat": 22.398826925891658,
+  "lon": 114.03641746952974,
+  "n_loci_attempted": 1,
+  "correct": false
+ },
+ {
+  "voucher_id": "HK-AUT-0006",
+  "status": "quarantined",
+  "certified_taxon": null,
+  "certified_class": null,
+  "proposed_taxon": "Mikania micrantha",
+  "confidence": 1.0,
+  "loci_used": [
+   "ITS2"
+  ],
+  "reasons": [
+   "only 1 locus/loci agree; need 2",
+   "no core locus (rbcL/matK) produced a usable result"
+  ],
+  "escalation": "genome skimming / additional loci",
+  "per_locus": {
+   "ITS2": {
+    "status": "confident",
+    "call": "Mikania micrantha",
+    "call_class": "mikania",
+    "margin_pp": 100.0,
+    "n_refs_for_best": 21,
+    "reasons": [],
+    "best_identity": 1.0,
+    "best_coverage": 1.0,
+    "best_accession": "OQ984910.1",
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 645,
+     "ambiguity_frac": 0.0,
+     "mean_phred": 33.39,
+     "longest_homopolymer": 6
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Mikania micrantha",
+      "identity": 1.0
+     },
+     "half_b": {
+      "taxon": "Mikania micrantha",
+      "identity": 1.0
+     },
+     "reason": "halves agree"
+    }
+   }
+  },
+  "true_taxon": "Mikania micrantha",
+  "true_class": "mikania",
+  "field_call": "mikania",
+  "sterile": false,
+  "site_key": "shing_mun",
+  "season": "autumn_flower",
+  "lat": 22.386267438062934,
+  "lon": 114.15342006637765,
+  "n_loci_attempted": 1,
+  "correct": false
+ },
+ {
+  "voucher_id": "HK-WET-0007",
+  "status": "quarantined",
+  "certified_taxon": null,
+  "certified_class": null,
+  "proposed_taxon": "Mikania micrantha",
+  "confidence": 1.0,
+  "loci_used": [
+   "ITS2"
+  ],
+  "reasons": [
+   "only 1 locus/loci agree; need 2",
+   "no core locus (rbcL/matK) produced a usable result"
+  ],
+  "escalation": "genome skimming / additional loci",
+  "per_locus": {
+   "ITS2": {
+    "status": "confident",
+    "call": "Mikania micrantha",
+    "call_class": "mikania",
+    "margin_pp": 100.0,
+    "n_refs_for_best": 21,
+    "reasons": [],
+    "best_identity": 0.99842,
+    "best_coverage": 1.0,
+    "best_accession": "OQ984920.1",
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 633,
+     "ambiguity_frac": 0.00158,
+     "mean_phred": 33.38,
+     "longest_homopolymer": 6
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Mikania micrantha",
+      "identity": 1.0
+     },
+     "half_b": {
+      "taxon": "Mikania micrantha",
+      "identity": 0.99685
+     },
+     "reason": "halves agree"
+    }
+   }
+  },
+  "true_taxon": "Mikania micrantha",
+  "true_class": "mikania",
+  "field_call": "mikania",
+  "sterile": true,
+  "site_key": "lam_tsuen",
+  "season": "wet_summer",
+  "lat": 22.463986518175414,
+  "lon": 114.14307925890871,
+  "n_loci_attempted": 1,
+  "correct": false
+ },
+ {
+  "voucher_id": "HK-AUT-0008",
+  "status": "certified",
+  "certified_taxon": "Paederia foetida",
+  "certified_class": "paederia_foetida",
+  "confidence": 1.0,
+  "loci_used": [
+   "rbcL",
+   "matK",
+   "ITS2",
+   "trnH-psbA"
+  ],
+  "n_loci_agreeing": 4,
+  "locus_weights": {
+   "Paederia foetida": 10.0
+  },
+  "reasons": [],
+  "per_locus": {
+   "rbcL": {
+    "status": "confident",
+    "call": "Paederia foetida",
+    "call_class": "paederia_foetida",
+    "margin_pp": 100.0,
+    "n_refs_for_best": 23,
+    "reasons": [],
+    "best_identity": 0.99677,
+    "best_coverage": 0.98098,
+    "best_accession": "KC306027.1",
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 631,
+     "ambiguity_frac": 0.00317,
+     "mean_phred": 33.26,
+     "longest_homopolymer": 6
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Paederia foetida",
+      "identity": 0.99365
+     },
+     "half_b": {
+      "taxon": "Paederia foetida",
+      "identity": 0.99684
+     },
+     "reason": "halves agree"
+    }
+   },
+   "matK": {
+    "status": "confident",
+    "call": "Paederia foetida",
+    "call_class": "paederia_foetida",
+    "margin_pp": 22.272,
+    "n_refs_for_best": 6,
+    "reasons": [],
+    "best_identity": 0.99908,
+    "best_coverage": 0.99908,
+    "best_accession": "LN680369.1",
+    "runner_up_taxon": "Mikania micrantha",
+    "runner_up_identity": 0.77636,
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 1089,
+     "ambiguity_frac": 0.0,
+     "mean_phred": 33.88,
+     "longest_homopolymer": 7
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Paederia foetida",
+      "identity": 0.99816
+     },
+     "half_b": {
+      "taxon": "Paederia foetida",
+      "identity": 1.0
+     },
+     "reason": "halves agree"
+    }
+   },
+   "ITS2": {
+    "status": "confident",
+    "call": "Paederia foetida",
+    "call_class": "paederia_foetida",
+    "margin_pp": 26.259,
+    "n_refs_for_best": 6,
+    "reasons": [],
+    "best_identity": 0.98964,
+    "best_coverage": 1.0,
+    "best_accession": "PV369045.1",
+    "runner_up_taxon": "Phanera glauca",
+    "runner_up_identity": 0.72705,
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 386,
+     "ambiguity_frac": 0.0,
+     "mean_phred": 33.24,
+     "longest_homopolymer": 6
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Paederia foetida",
+      "identity": 0.98964
+     },
+     "half_b": {
+      "taxon": "Paederia foetida",
+      "identity": 0.99482
+     },
+     "reason": "halves agree"
+    }
+   },
+   "trnH-psbA": {
+    "status": "confident",
+    "call": "Paederia foetida",
+    "call_class": "paederia_foetida",
+    "margin_pp": 100.0,
+    "n_refs_for_best": 12,
+    "reasons": [],
+    "best_identity": 0.99664,
+    "best_coverage": 1.0,
+    "best_accession": "KC305984.1",
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 298,
+     "ambiguity_frac": 0.00336,
+     "mean_phred": 32.87,
+     "longest_homopolymer": 7
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Paederia foetida",
+      "identity": 1.0
+     },
+     "half_b": {
+      "taxon": "Paederia foetida",
+      "identity": 0.99329
+     },
+     "reason": "halves agree"
+    }
+   }
+  },
+  "true_taxon": "Paederia foetida",
+  "true_class": "paederia_foetida",
+  "field_call": "byttneria_aspera",
+  "sterile": true,
+  "site_key": "tai_po_kau",
+  "season": "autumn_flower",
+  "lat": 22.429334075488583,
+  "lon": 114.1714726661929,
+  "n_loci_attempted": 4,
+  "correct": true
+ },
+ {
+  "voucher_id": "HK-WET-0009",
+  "status": "certified",
+  "certified_taxon": "Paederia foetida",
+  "certified_class": "paederia_foetida",
+  "confidence": 1.0,
+  "loci_used": [
+   "rbcL",
+   "matK",
+   "ITS2",
+   "trnH-psbA"
+  ],
+  "n_loci_agreeing": 4,
+  "locus_weights": {
+   "Paederia foetida": 10.0
+  },
+  "reasons": [],
+  "per_locus": {
+   "rbcL": {
+    "status": "confident",
+    "call": "Paederia foetida",
+    "call_class": "paederia_foetida",
+    "margin_pp": 100.0,
+    "n_refs_for_best": 23,
+    "reasons": [],
+    "best_identity": 1.0,
+    "best_coverage": 0.99832,
+    "best_accession": "KC306027.1",
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 594,
+     "ambiguity_frac": 0.00168,
+     "mean_phred": 33.38,
+     "longest_homopolymer": 6
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Paederia foetida",
+      "identity": 0.99663
+     },
+     "half_b": {
+      "taxon": "Paederia foetida",
+      "identity": 1.0
+     },
+     "reason": "halves agree"
+    }
+   },
+   "matK": {
+    "status": "confident",
+    "call": "Paederia foetida",
+    "call_class": "paederia_foetida",
+    "margin_pp": 24.009,
+    "n_refs_for_best": 6,
+    "reasons": [],
+    "best_identity": 0.99862,
+    "best_coverage": 1.0,
+    "best_accession": "HG004977.1",
+    "runner_up_taxon": "Phanera glauca",
+    "runner_up_identity": 0.75853,
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 725,
+     "ambiguity_frac": 0.0,
+     "mean_phred": 33.62,
+     "longest_homopolymer": 8
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Paederia foetida",
+      "identity": 0.99725
+     },
+     "half_b": {
+      "taxon": "Paederia foetida",
+      "identity": 1.0
+     },
+     "reason": "halves agree"
+    }
+   },
+   "ITS2": {
+    "status": "confident",
+    "call": "Paederia foetida",
+    "call_class": "paederia_foetida",
+    "margin_pp": 27.889,
+    "n_refs_for_best": 6,
+    "reasons": [],
+    "best_identity": 0.99816,
+    "best_coverage": 0.80896,
+    "best_accession": "ON924534.1",
+    "runner_up_taxon": "Byttneria aspera",
+    "runner_up_identity": 0.71927,
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 670,
+     "ambiguity_frac": 0.0,
+     "mean_phred": 33.44,
+     "longest_homopolymer": 7
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Paederia foetida",
+      "identity": 1.0
+     },
+     "half_b": {
+      "taxon": "Paederia foetida",
+      "identity": 0.99645
+     },
+     "reason": "halves agree"
+    }
+   },
+   "trnH-psbA": {
+    "status": "confident",
+    "call": "Paederia foetida",
+    "call_class": "paederia_foetida",
+    "margin_pp": 100.0,
+    "n_refs_for_best": 12,
+    "reasons": [],
+    "best_identity": 1.0,
+    "best_coverage": 0.98966,
+    "best_accession": "KC305982.1",
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 290,
+     "ambiguity_frac": 0.0,
+     "mean_phred": 32.8,
+     "longest_homopolymer": 6
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Paederia foetida",
+      "identity": 1.0
+     },
+     "half_b": {
+      "taxon": "Paederia foetida",
+      "identity": 1.0
+     },
+     "reason": "halves agree"
+    }
+   }
+  },
+  "true_taxon": "Paederia foetida",
+  "true_class": "paederia_foetida",
+  "field_call": "paederia_foetida",
+  "sterile": true,
+  "site_key": "sai_kung_w",
+  "season": "wet_summer",
+  "lat": 22.402326627237912,
+  "lon": 114.31034073843331,
+  "n_loci_attempted": 4,
+  "correct": true
+ },
+ {
+  "voucher_id": "HK-AUT-0010",
+  "status": "certified",
+  "certified_taxon": "Paederia foetida",
+  "certified_class": "paederia_foetida",
+  "confidence": 1.0,
+  "loci_used": [
+   "rbcL",
+   "trnH-psbA"
+  ],
+  "n_loci_agreeing": 2,
+  "locus_weights": {
+   "Paederia foetida": 3.0
+  },
+  "reasons": [],
+  "per_locus": {
+   "rbcL": {
+    "status": "confident",
+    "call": "Paederia foetida",
+    "call_class": "paederia_foetida",
+    "margin_pp": 100.0,
+    "n_refs_for_best": 23,
+    "reasons": [],
+    "best_identity": 0.99583,
+    "best_coverage": 1.0,
+    "best_accession": "KF181549.1",
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 480,
+     "ambiguity_frac": 0.0,
+     "mean_phred": 33.57,
+     "longest_homopolymer": 5
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Paederia foetida",
+      "identity": 1.0
+     },
+     "half_b": {
+      "taxon": "Paederia foetida",
+      "identity": 0.99583
+     },
+     "reason": "halves agree"
+    }
+   },
+   "trnH-psbA": {
+    "status": "confident",
+    "call": "Paederia foetida",
+    "call_class": "paederia_foetida",
+    "margin_pp": 100.0,
+    "n_refs_for_best": 12,
+    "reasons": [],
+    "best_identity": 0.99317,
+    "best_coverage": 1.0,
+    "best_accession": "KC305985.1",
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 293,
+     "ambiguity_frac": 0.0,
+     "mean_phred": 32.86,
+     "longest_homopolymer": 7
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Paederia foetida",
+      "identity": 0.9863
+     },
+     "half_b": {
+      "taxon": "Paederia foetida",
+      "identity": 1.0
+     },
+     "reason": "halves agree"
+    }
+   }
+  },
+  "true_taxon": "Paederia foetida",
+  "true_class": "paederia_foetida",
+  "field_call": "paederia_foetida",
+  "sterile": true,
+  "site_key": "tai_lam",
+  "season": "autumn_flower",
+  "lat": 22.390460265144394,
+  "lon": 114.04276533224345,
+  "n_loci_attempted": 2,
+  "correct": true
+ },
+ {
+  "voucher_id": "HK-WET-0011",
+  "status": "certified",
+  "certified_taxon": "Paederia foetida",
+  "certified_class": "paederia_foetida",
+  "confidence": 1.0,
+  "loci_used": [
+   "rbcL",
+   "trnH-psbA"
+  ],
+  "n_loci_agreeing": 2,
+  "locus_weights": {
+   "Paederia foetida": 3.0
+  },
+  "reasons": [],
+  "per_locus": {
+   "rbcL": {
+    "status": "confident",
+    "call": "Paederia foetida",
+    "call_class": "paederia_foetida",
+    "margin_pp": 100.0,
+    "n_refs_for_best": 23,
+    "reasons": [],
+    "best_identity": 1.0,
+    "best_coverage": 1.0,
+    "best_accession": "KC306038.1",
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 653,
+     "ambiguity_frac": 0.0,
+     "mean_phred": 33.37,
+     "longest_homopolymer": 6
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Paederia foetida",
+      "identity": 1.0
+     },
+     "half_b": {
+      "taxon": "Paederia foetida",
+      "identity": 1.0
+     },
+     "reason": "halves agree"
+    }
+   },
+   "trnH-psbA": {
+    "status": "confident",
+    "call": "Paederia foetida",
+    "call_class": "paederia_foetida",
+    "margin_pp": 100.0,
+    "n_refs_for_best": 12,
+    "reasons": [],
+    "best_identity": 1.0,
+    "best_coverage": 1.0,
+    "best_accession": "KC305985.1",
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 296,
+     "ambiguity_frac": 0.0,
+     "mean_phred": 32.81,
+     "longest_homopolymer": 7
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Paederia foetida",
+      "identity": 1.0
+     },
+     "half_b": {
+      "taxon": "Paederia foetida",
+      "identity": 1.0
+     },
+     "reason": "halves agree"
+    }
+   }
+  },
+  "true_taxon": "Paederia foetida",
+  "true_class": "paederia_foetida",
+  "field_call": "paederia_foetida",
+  "sterile": false,
+  "site_key": "shing_mun",
+  "season": "wet_summer",
+  "lat": 22.384610348936384,
+  "lon": 114.1469668123063,
+  "n_loci_attempted": 2,
+  "correct": true
+ },
+ {
+  "voucher_id": "HK-AUT-0012",
+  "status": "quarantined",
+  "certified_taxon": null,
+  "certified_class": null,
+  "proposed_taxon": "Paederia foetida",
+  "confidence": 1.0,
+  "loci_used": [
+   "rbcL"
+  ],
+  "reasons": [
+   "only 1 locus/loci agree; need 2"
+  ],
+  "escalation": "genome skimming / additional loci",
+  "per_locus": {
+   "rbcL": {
+    "status": "confident",
+    "call": "Paederia foetida",
+    "call_class": "paederia_foetida",
+    "margin_pp": 100.0,
+    "n_refs_for_best": 23,
+    "reasons": [],
+    "best_identity": 1.0,
+    "best_coverage": 1.0,
+    "best_accession": "KF181549.1",
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 475,
+     "ambiguity_frac": 0.0,
+     "mean_phred": 33.5,
+     "longest_homopolymer": 5
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Paederia foetida",
+      "identity": 1.0
+     },
+     "half_b": {
+      "taxon": "Paederia foetida",
+      "identity": 1.0
+     },
+     "reason": "halves agree"
+    }
+   }
+  },
+  "true_taxon": "Paederia foetida",
+  "true_class": "paederia_foetida",
+  "field_call": "paederia_foetida",
+  "sterile": false,
+  "site_key": "lam_tsuen",
+  "season": "autumn_flower",
+  "lat": 22.46315623069314,
+  "lon": 114.13459666072575,
+  "n_loci_attempted": 1,
+  "correct": false
+ },
+ {
+  "voucher_id": "HK-WET-0013",
+  "status": "quarantined",
+  "certified_taxon": null,
+  "certified_class": null,
+  "proposed_taxon": "Paederia foetida",
+  "confidence": 1.0,
+  "loci_used": [
+   "rbcL"
+  ],
+  "reasons": [
+   "only 1 locus/loci agree; need 2"
+  ],
+  "escalation": "genome skimming / additional loci",
+  "per_locus": {
+   "rbcL": {
+    "status": "confident",
+    "call": "Paederia foetida",
+    "call_class": "paederia_foetida",
+    "margin_pp": 100.0,
+    "n_refs_for_best": 23,
+    "reasons": [],
+    "best_identity": 0.99382,
+    "best_coverage": 0.99382,
+    "best_accession": "KC306038.1",
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 647,
+     "ambiguity_frac": 0.0,
+     "mean_phred": 33.73,
+     "longest_homopolymer": 6
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Paederia foetida",
+      "identity": 0.98762
+     },
+     "half_b": {
+      "taxon": "Paederia foetida",
+      "identity": 1.0
+     },
+     "reason": "halves agree"
+    }
+   }
+  },
+  "true_taxon": "Paederia foetida",
+  "true_class": "paederia_foetida",
+  "field_call": "paederia_foetida",
+  "sterile": true,
+  "site_key": "tai_po_kau",
+  "season": "wet_summer",
+  "lat": 22.423420423283986,
+  "lon": 114.1764990891545,
+  "n_loci_attempted": 1,
+  "correct": false
+ },
+ {
+  "voucher_id": "HK-AUT-0014",
+  "status": "quarantined",
+  "certified_taxon": null,
+  "certified_class": null,
+  "proposed_taxon": "Paederia foetida",
+  "confidence": 1.0,
+  "loci_used": [
+   "rbcL"
+  ],
+  "reasons": [
+   "only 1 locus/loci agree; need 2"
+  ],
+  "escalation": "genome skimming / additional loci",
+  "per_locus": {
+   "rbcL": {
+    "status": "confident",
+    "call": "Paederia foetida",
+    "call_class": "paederia_foetida",
+    "margin_pp": 100.0,
+    "n_refs_for_best": 23,
+    "reasons": [],
+    "best_identity": 0.99838,
+    "best_coverage": 1.0,
+    "best_accession": "KC306038.1",
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 619,
+     "ambiguity_frac": 0.0,
+     "mean_phred": 33.67,
+     "longest_homopolymer": 6
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Paederia foetida",
+      "identity": 1.0
+     },
+     "half_b": {
+      "taxon": "Paederia foetida",
+      "identity": 0.99677
+     },
+     "reason": "halves agree"
+    }
+   }
+  },
+  "true_taxon": "Paederia foetida",
+  "true_class": "paederia_foetida",
+  "field_call": "mikania",
+  "sterile": true,
+  "site_key": "sai_kung_w",
+  "season": "autumn_flower",
+  "lat": 22.39127702356768,
+  "lon": 114.31167483082342,
+  "n_loci_attempted": 1,
+  "correct": false
+ },
+ {
+  "voucher_id": "HK-WET-0015",
+  "status": "quarantined",
+  "certified_taxon": null,
+  "certified_class": null,
+  "proposed_taxon": "Paederia foetida",
+  "confidence": 1.0,
+  "loci_used": [
+   "rbcL"
+  ],
+  "reasons": [
+   "only 1 locus/loci agree; need 2"
+  ],
+  "escalation": "genome skimming / additional loci",
+  "per_locus": {
+   "rbcL": {
+    "status": "confident",
+    "call": "Paederia foetida",
+    "call_class": "paederia_foetida",
+    "margin_pp": 100.0,
+    "n_refs_for_best": 23,
+    "reasons": [],
+    "best_identity": 0.99843,
+    "best_coverage": 1.0,
+    "best_accession": "KC306038.1",
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 637,
+     "ambiguity_frac": 0.0,
+     "mean_phred": 33.44,
+     "longest_homopolymer": 6
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Paederia foetida",
+      "identity": 0.99687
+     },
+     "half_b": {
+      "taxon": "Paederia foetida",
+      "identity": 1.0
+     },
+     "reason": "halves agree"
+    }
+   }
+  },
+  "true_taxon": "Paederia foetida",
+  "true_class": "paederia_foetida",
+  "field_call": "paederia_foetida",
+  "sterile": true,
+  "site_key": "tai_lam",
+  "season": "wet_summer",
+  "lat": 22.387641922195098,
+  "lon": 114.04067646307959,
+  "n_loci_attempted": 1,
+  "correct": false
+ },
+ {
+  "voucher_id": "HK-AUT-0016",
+  "status": "certified",
+  "certified_taxon": "Dalbergia benthamii",
+  "certified_class": "paederia_foetida",
+  "confidence": 1.0,
+  "loci_used": [
+   "rbcL",
+   "matK",
+   "ITS2"
+  ],
+  "n_loci_agreeing": 3,
+  "locus_weights": {
+   "Dalbergia benthamii": 8.0
+  },
+  "reasons": [],
+  "per_locus": {
+   "rbcL": {
+    "status": "confident",
+    "call": "Dalbergia benthamii",
+    "call_class": "paederia_foetida",
+    "margin_pp": 5.556,
+    "n_refs_for_best": 3,
+    "reasons": [],
+    "best_identity": 1.0,
+    "best_coverage": 1.0,
+    "best_accession": "KM510238.1",
+    "runner_up_taxon": "Phanera glauca",
+    "runner_up_identity": 0.94444,
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 432,
+     "ambiguity_frac": 0.0,
+     "mean_phred": 33.2,
+     "longest_homopolymer": 5
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Dalbergia benthamii",
+      "identity": 1.0
+     },
+     "half_b": {
+      "taxon": "Dalbergia benthamii",
+      "identity": 1.0
+     },
+     "reason": "halves agree"
+    }
+   },
+   "matK": {
+    "status": "confident",
+    "call": "Dalbergia benthamii",
+    "call_class": "paederia_foetida",
+    "margin_pp": 17.353,
+    "n_refs_for_best": 3,
+    "reasons": [],
+    "best_identity": 0.99706,
+    "best_coverage": 1.0,
+    "best_accession": "KM521278.1",
+    "runner_up_taxon": "Phanera glauca",
+    "runner_up_identity": 0.82353,
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 340,
+     "ambiguity_frac": 0.0,
+     "mean_phred": 33.17,
+     "longest_homopolymer": 9
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Dalbergia benthamii",
+      "identity": 1.0
+     },
+     "half_b": {
+      "taxon": "Dalbergia benthamii",
+      "identity": 0.99412
+     },
+     "reason": "halves agree"
+    }
+   },
+   "ITS2": {
+    "status": "confident",
+    "call": "Dalbergia benthamii",
+    "call_class": "paederia_foetida",
+    "margin_pp": 100.0,
+    "n_refs_for_best": 9,
+    "reasons": [],
+    "best_identity": 0.99731,
+    "best_coverage": 1.0,
+    "best_accession": "OQ319229.1",
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 372,
+     "ambiguity_frac": 0.00269,
+     "mean_phred": 32.81,
+     "longest_homopolymer": 6
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Dalbergia benthamii",
+      "identity": 0.99462
+     },
+     "half_b": {
+      "taxon": "Dalbergia benthamii",
+      "identity": 1.0
+     },
+     "reason": "halves agree"
+    }
+   }
+  },
+  "true_taxon": "Dalbergia benthamii",
+  "true_class": "paederia_foetida",
+  "field_call": "paederia_foetida",
+  "sterile": true,
+  "site_key": "shing_mun",
+  "season": "autumn_flower",
+  "lat": 22.37997067154212,
+  "lon": 114.14876364582706,
+  "n_loci_attempted": 3,
+  "correct": true
+ },
+ {
+  "voucher_id": "HK-WET-0017",
+  "status": "quarantined",
+  "certified_taxon": null,
+  "certified_class": null,
+  "proposed_taxon": "Dalbergia benthamii",
+  "confidence": 1.0,
+  "loci_used": [
+   "ITS2"
+  ],
+  "reasons": [
+   "only 1 locus/loci agree; need 2",
+   "no core locus (rbcL/matK) produced a usable result"
+  ],
+  "escalation": "genome skimming / additional loci",
+  "per_locus": {
+   "ITS2": {
+    "status": "confident",
+    "call": "Dalbergia benthamii",
+    "call_class": "paederia_foetida",
+    "margin_pp": 100.0,
+    "n_refs_for_best": 9,
+    "reasons": [],
+    "best_identity": 1.0,
+    "best_coverage": 1.0,
+    "best_accession": "OQ319229.1",
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 364,
+     "ambiguity_frac": 0.0,
+     "mean_phred": 33.26,
+     "longest_homopolymer": 6
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Dalbergia benthamii",
+      "identity": 1.0
+     },
+     "half_b": {
+      "taxon": "Dalbergia benthamii",
+      "identity": 1.0
+     },
+     "reason": "halves agree"
+    }
+   }
+  },
+  "true_taxon": "Dalbergia benthamii",
+  "true_class": "paederia_foetida",
+  "field_call": "mikania",
+  "sterile": true,
+  "site_key": "lam_tsuen",
+  "season": "wet_summer",
+  "lat": 22.465176786700727,
+  "lon": 114.1362419240147,
+  "n_loci_attempted": 1,
+  "correct": false
+ },
+ {
+  "voucher_id": "HK-AUT-0018",
+  "status": "quarantined",
+  "certified_taxon": null,
+  "certified_class": null,
+  "proposed_taxon": "Dalbergia benthamii",
+  "confidence": 1.0,
+  "loci_used": [
+   "ITS2"
+  ],
+  "reasons": [
+   "only 1 locus/loci agree; need 2",
+   "no core locus (rbcL/matK) produced a usable result"
+  ],
+  "escalation": "genome skimming / additional loci",
+  "per_locus": {
+   "ITS2": {
+    "status": "ambiguous",
+    "call": null,
+    "call_class": null,
+    "margin_pp": 100.0,
+    "n_refs_for_best": 9,
+    "reasons": [
+     "coverage 45.987% < 80.0%"
+    ],
+    "best_identity": 1.0,
+    "best_coverage": 0.45987,
+    "best_accession": "OQ319251.1",
+    "placement": {
+     "status": "placed",
+     "placement": "Dalbergia benthamii",
+     "support": 1.0,
+     "n_reference_seqs": 52
+    },
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 598,
+     "ambiguity_frac": 0.0,
+     "mean_phred": 33.39,
+     "longest_homopolymer": 6
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Dalbergia benthamii",
+      "identity": 0.99331
+     },
+     "half_b": {
+      "taxon": "Dalbergia benthamii",
+      "identity": 1.0
+     },
+     "reason": "halves agree"
+    }
+   }
+  },
+  "true_taxon": "Dalbergia benthamii",
+  "true_class": "paederia_foetida",
+  "field_call": "paederia_foetida",
+  "sterile": true,
+  "site_key": "tai_po_kau",
+  "season": "autumn_flower",
+  "lat": 22.428701842281978,
+  "lon": 114.17736422317337,
+  "n_loci_attempted": 1,
+  "correct": false
+ },
+ {
+  "voucher_id": "HK-WET-0019",
+  "status": "quarantined",
+  "certified_taxon": null,
+  "certified_class": null,
+  "proposed_taxon": "Phanera glauca",
+  "confidence": 1.0,
+  "loci_used": [
+   "ITS2"
+  ],
+  "reasons": [
+   "only 1 locus/loci agree; need 2",
+   "no core locus (rbcL/matK) produced a usable result"
+  ],
+  "escalation": "genome skimming / additional loci",
+  "per_locus": {
+   "matK": {
+    "status": "ambiguous",
+    "call": null,
+    "call_class": null,
+    "margin_pp": 15.681,
+    "n_refs_for_best": 3,
+    "reasons": [
+     "best identity 96.503% < 97.0%"
+    ],
+    "best_identity": 0.96503,
+    "best_coverage": 1.0,
+    "best_accession": "KT347037.1",
+    "runner_up_taxon": "Bauhinia championii",
+    "runner_up_identity": 0.80822,
+    "placement": {
+     "status": "unresolved",
+     "placement": null,
+     "support": 0.255,
+     "n_reference_seqs": 26
+    },
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 286,
+     "ambiguity_frac": 0.0,
+     "mean_phred": 32.88,
+     "longest_homopolymer": 4
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Phanera glauca",
+      "identity": 0.93007
+     },
+     "half_b": {
+      "taxon": "Phanera glauca",
+      "identity": 1.0
+     },
+     "reason": "halves agree"
+    }
+   },
+   "ITS2": {
+    "status": "confident",
+    "call": "Phanera glauca",
+    "call_class": "bauhinia_glauca",
+    "margin_pp": 6.189,
+    "n_refs_for_best": 3,
+    "reasons": [],
+    "best_identity": 0.99435,
+    "best_coverage": 1.0,
+    "best_accession": "AY258384.1",
+    "runner_up_taxon": "Bauhinia championii",
+    "runner_up_identity": 0.93246,
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 531,
+     "ambiguity_frac": 0.00188,
+     "mean_phred": 33.43,
+     "longest_homopolymer": 4
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Phanera glauca",
+      "identity": 0.99623
+     },
+     "half_b": {
+      "taxon": "Phanera glauca",
+      "identity": 0.99248
+     },
+     "reason": "halves agree"
+    }
+   }
+  },
+  "true_taxon": "Phanera glauca",
+  "true_class": "bauhinia_glauca",
+  "field_call": "bauhinia_glauca",
+  "sterile": false,
+  "site_key": "sai_kung_w",
+  "season": "wet_summer",
+  "lat": 22.396403129351164,
+  "lon": 114.3083773745015,
+  "n_loci_attempted": 2,
+  "correct": false
+ },
+ {
+  "voucher_id": "HK-AUT-0020",
+  "status": "certified",
+  "certified_taxon": "Bauhinia championii",
+  "certified_class": "bauhinia_glauca",
+  "confidence": 1.0,
+  "loci_used": [
+   "matK",
+   "ITS2"
+  ],
+  "n_loci_agreeing": 2,
+  "locus_weights": {
+   "Bauhinia championii": 7.0
+  },
+  "reasons": [],
+  "per_locus": {
+   "matK": {
+    "status": "confident",
+    "call": "Bauhinia championii",
+    "call_class": "bauhinia_glauca",
+    "margin_pp": 4.991,
+    "n_refs_for_best": 5,
+    "reasons": [],
+    "best_identity": 0.99856,
+    "best_coverage": 0.93784,
+    "best_accession": "KP093599.1",
+    "runner_up_taxon": "Phanera glauca",
+    "runner_up_identity": 0.94865,
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 740,
+     "ambiguity_frac": 0.0,
+     "mean_phred": 33.57,
+     "longest_homopolymer": 7
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Bauhinia championii",
+      "identity": 1.0
+     },
+     "half_b": {
+      "taxon": "Bauhinia championii",
+      "identity": 0.9973
+     },
+     "reason": "halves agree"
+    }
+   },
+   "ITS2": {
+    "status": "confident",
+    "call": "Bauhinia championii",
+    "call_class": "bauhinia_glauca",
+    "margin_pp": 5.893,
+    "n_refs_for_best": 8,
+    "reasons": [],
+    "best_identity": 0.99459,
+    "best_coverage": 1.0,
+    "best_accession": "MG730634.1",
+    "runner_up_taxon": "Phanera glauca",
+    "runner_up_identity": 0.93566,
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 370,
+     "ambiguity_frac": 0.0027,
+     "mean_phred": 33.22,
+     "longest_homopolymer": 4
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Bauhinia championii",
+      "identity": 1.0
+     },
+     "half_b": {
+      "taxon": "Bauhinia championii",
+      "identity": 0.98919
+     },
+     "reason": "halves agree"
+    }
+   }
+  },
+  "true_taxon": "Bauhinia championii",
+  "true_class": "bauhinia_glauca",
+  "field_call": "bauhinia_glauca",
+  "sterile": true,
+  "site_key": "tai_lam",
+  "season": "autumn_flower",
+  "lat": 22.39451999119288,
+  "lon": 114.04903827455442,
+  "n_loci_attempted": 2,
+  "correct": true
+ },
+ {
+  "voucher_id": "HK-WET-0021",
+  "status": "quarantined",
+  "certified_taxon": null,
+  "certified_class": null,
+  "proposed_taxon": "Bauhinia championii",
+  "confidence": 1.0,
+  "loci_used": [
+   "ITS2"
+  ],
+  "reasons": [
+   "only 1 locus/loci agree; need 2",
+   "no core locus (rbcL/matK) produced a usable result"
+  ],
+  "escalation": "genome skimming / additional loci",
+  "per_locus": {
+   "ITS2": {
+    "status": "ambiguous",
+    "call": null,
+    "call_class": null,
+    "margin_pp": 8.691,
+    "n_refs_for_best": 8,
+    "reasons": [
+     "best identity 96.075% < 97.0%"
+    ],
+    "best_identity": 0.96075,
+    "best_coverage": 1.0,
+    "best_accession": "AY258377.1",
+    "runner_up_taxon": "Phanera glauca",
+    "runner_up_identity": 0.87384,
+    "placement": {
+     "status": "placed",
+     "placement": "Bauhinia championii",
+     "support": 1.0,
+     "n_reference_seqs": 52
+    },
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 535,
+     "ambiguity_frac": 0.0,
+     "mean_phred": 33.57,
+     "longest_homopolymer": 5
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Bauhinia championii",
+      "identity": 0.97753
+     },
+     "half_b": {
+      "taxon": "Bauhinia championii",
+      "identity": 0.95522
+     },
+     "reason": "halves agree"
+    }
+   }
+  },
+  "true_taxon": "Bauhinia championii",
+  "true_class": "bauhinia_glauca",
+  "field_call": "bauhinia_glauca",
+  "sterile": false,
+  "site_key": "shing_mun",
+  "season": "wet_summer",
+  "lat": 22.385166427269635,
+  "lon": 114.15773229735359,
+  "n_loci_attempted": 1,
+  "correct": false
+ },
+ {
+  "voucher_id": "HK-AUT-0022",
+  "status": "quarantined",
+  "certified_taxon": null,
+  "certified_class": null,
+  "proposed_taxon": "Byttneria aspera",
+  "confidence": 1.0,
+  "loci_used": [
+   "ITS2"
+  ],
+  "reasons": [
+   "only 1 locus/loci agree; need 2",
+   "no core locus (rbcL/matK) produced a usable result"
+  ],
+  "escalation": "genome skimming / additional loci",
+  "per_locus": {
+   "ITS2": {
+    "status": "confident",
+    "call": "Byttneria aspera",
+    "call_class": "byttneria_aspera",
+    "margin_pp": 25.755,
+    "n_refs_for_best": 4,
+    "reasons": [],
+    "best_identity": 0.99684,
+    "best_coverage": 1.0,
+    "best_accession": "KP092991.1",
+    "runner_up_taxon": "Paederia foetida",
+    "runner_up_identity": 0.73929,
+    "qc": {
+     "pass": true,
+     "reasons": [],
+     "length_bp": 633,
+     "ambiguity_frac": 0.00316,
+     "mean_phred": 33.59,
+     "longest_homopolymer": 6
+    },
+    "chimera": {
+     "suspect": false,
+     "half_a": {
+      "taxon": "Byttneria aspera",
+      "identity": 0.99684
+     },
+     "half_b": {
+      "taxon": "Byttneria aspera",
+      "identity": 0.99685
+     },
+     "reason": "halves agree"
+    }
+   }
+  },
+  "true_taxon": "Byttneria aspera",
+  "true_class": "byttneria_aspera",
+  "field_call": "byttneria_aspera",
+  "sterile": false,
+  "site_key": "lam_tsuen",
+  "season": "autumn_flower",
+  "lat": 22.46458782254302,
+  "lon": 114.14458006399211,
+  "n_loci_attempted": 1,
+  "correct": false
+ }
+]

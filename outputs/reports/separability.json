@@ -1,0 +1,253 @@
+{
+  "season": "wet_summer",
+  "n_per_class": 500,
+  "features": {
+    "bb_BGDI": {
+      "bauhinia_glauca": 0.07663615273198754,
+      "byttneria_aspera": 0.16123141135427096,
+      "paederia_foetida": 0.13060482876763313,
+      "worst_case": 0.07663615273198754,
+      "tier": "rgb"
+    },
+    "bb_EGI": {
+      "bauhinia_glauca": 0.1780190833674227,
+      "byttneria_aspera": 0.2588439438383686,
+      "paederia_foetida": 0.12224594962492409,
+      "worst_case": 0.12224594962492409,
+      "tier": "rgb"
+    },
+    "bb_GRDI": {
+      "bauhinia_glauca": 0.22768986492324586,
+      "byttneria_aspera": 0.3818713270845957,
+      "paederia_foetida": 0.14541726969898336,
+      "worst_case": 0.14541726969898336,
+      "tier": "rgb"
+    },
+    "bb_NEGI": {
+      "bauhinia_glauca": 0.1292611105815015,
+      "byttneria_aspera": 0.28017638118225435,
+      "paederia_foetida": 0.138921558660789,
+      "worst_case": 0.1292611105815015,
+      "tier": "rgb"
+    },
+    "bb_NGRDI": {
+      "bauhinia_glauca": 0.15244691715802233,
+      "byttneria_aspera": 0.37424141511238934,
+      "paederia_foetida": 0.1433374161548268,
+      "worst_case": 0.1433374161548268,
+      "tier": "rgb"
+    },
+    "bb_PPR": {
+      "bauhinia_glauca": 0.07663615273198754,
+      "byttneria_aspera": 0.16123141135427096,
+      "paederia_foetida": 0.13060482876763313,
+      "worst_case": 0.07663615273198754,
+      "tier": "rgb"
+    },
+    "nb_ARI": {
+      "bauhinia_glauca": 1.2533970865359174,
+      "byttneria_aspera": 1.1223173175006473,
+      "paederia_foetida": 0.15126733608109486,
+      "worst_case": 0.15126733608109486,
+      "tier": "hyperspectral"
+    },
+    "nb_CRI": {
+      "bauhinia_glauca": 0.058573004060069066,
+      "byttneria_aspera": 0.06838522947387225,
+      "paederia_foetida": 0.0044122629333592876,
+      "worst_case": 0.0044122629333592876,
+      "tier": "hyperspectral"
+    },
+    "nb_GREEN_PEAK": {
+      "bauhinia_glauca": 0.97655209131368,
+      "byttneria_aspera": 0.7452999210078062,
+      "paederia_foetida": 0.5721624465448465,
+      "worst_case": 0.5721624465448465,
+      "tier": "hyperspectral"
+    },
+    "nb_NDVI": {
+      "bauhinia_glauca": 0.008872938157528121,
+      "byttneria_aspera": 0.12757297377604215,
+      "paederia_foetida": 0.07640892898405328,
+      "worst_case": 0.008872938157528121,
+      "tier": "multispectral"
+    },
+    "nb_NIR_slope": {
+      "bauhinia_glauca": 0.16813973295207144,
+      "byttneria_aspera": 0.11654921235232166,
+      "paederia_foetida": 0.0886746422080176,
+      "worst_case": 0.0886746422080176,
+      "tier": "hyperspectral"
+    },
+    "nb_PRI": {
+      "bauhinia_glauca": 1.392935068807144,
+      "byttneria_aspera": 0.8071110995831339,
+      "paederia_foetida": 0.6545009050591326,
+      "worst_case": 0.6545009050591326,
+      "tier": "hyperspectral"
+    },
+    "nb_PSRI": {
+      "bauhinia_glauca": 0.4672077652290418,
+      "byttneria_aspera": 0.7243962516096187,
+      "paederia_foetida": 0.33943832849688554,
+      "worst_case": 0.33943832849688554,
+      "tier": "hyperspectral"
+    },
+    "nb_RED_DEPTH": {
+      "bauhinia_glauca": 0.07525288779552906,
+      "byttneria_aspera": 0.20080264651914204,
+      "paederia_foetida": 0.1290320544756758,
+      "worst_case": 0.07525288779552906,
+      "tier": "hyperspectral"
+    },
+    "nb_RENDVI": {
+      "bauhinia_glauca": 0.7841747991806786,
+      "byttneria_aspera": 1.0360009902289697,
+      "paederia_foetida": 0.38971549178197284,
+      "worst_case": 0.38971549178197284,
+      "tier": "multispectral"
+    },
+    "nb_REP_deriv": {
+      "bauhinia_glauca": 0.8646955530836578,
+      "byttneria_aspera": 1.0974571443181618,
+      "paederia_foetida": 0.4740611293629977,
+      "worst_case": 0.4740611293629977,
+      "tier": "hyperspectral"
+    },
+    "nb_REP_linear4": {
+      "bauhinia_glauca": 0.5697055825541602,
+      "byttneria_aspera": 0.8503765662785673,
+      "paederia_foetida": 0.3559005883424269,
+      "worst_case": 0.3559005883424269,
+      "tier": "hyperspectral"
+    },
+    "nb_WBI": {
+      "bauhinia_glauca": 0.8118752245235845,
+      "byttneria_aspera": 1.1035719766737528,
+      "paederia_foetida": 0.3811656803678325,
+      "worst_case": 0.3811656803678325,
+      "tier": "hyperspectral"
+    },
+    "nb_mND705": {
+      "bauhinia_glauca": 0.8428116030804933,
+      "byttneria_aspera": 1.085065279916914,
+      "paederia_foetida": 0.39250957311359125,
+      "worst_case": 0.39250957311359125,
+      "tier": "hyperspectral"
+    }
+  },
+  "summary": {
+    "best_per_tier": {
+      "rgb": {
+        "feature": "bb_GRDI",
+        "dprime": 0.14541726969898336
+      },
+      "multispectral": {
+        "feature": "nb_RENDVI",
+        "dprime": 0.38971549178197284
+      },
+      "hyperspectral": {
+        "feature": "nb_PRI",
+        "dprime": 0.6545009050591326
+      }
+    },
+    "multispectral_ceiling_dprime": 0.38971549178197284,
+    "hyperspectral_ceiling_dprime": 0.6545009050591326,
+    "advantage_ratio": 1.6794326088152907,
+    "interpretation": "d' is the class-mean separation in pooled standard deviations, for Mikania against the WORST-CASE native climber. d' < 1 means the distributions overlap so heavily that no threshold separates them; d' > 2 is comfortably separable. The multispectral ceiling is the best of the RGB and 5-band tiers, since a multispectral sensor also carries the visible bands.",
+    "caveat": "These are single-feature separabilities on library-drawn spectra at leaf/patch scale. They bound what any THRESHOLD on one index can do; a multivariate classifier on many weak features can exceed the best single d'. Stage 05 measures that properly, on spatially disjoint sites."
+  },
+  "sensor_ablation": {
+    "autumn_flower": {
+      "rgb": {
+        "label": "RGB camera (consumer Bayer)",
+        "example": "DJI Zenmuse P1 / any consumer payload",
+        "n_bands": 3,
+        "n_features": 9,
+        "balanced_accuracy_4class": 0.524621212121212,
+        "balanced_accuracy_4class_sd": 0.010991377370111298,
+        "balanced_accuracy_mikania_vs_native": 1.0,
+        "balanced_accuracy_mikania_vs_native_sd": 0.0,
+        "false_positive_rate": 0.0,
+        "leaky_random_split_accuracy": 1.0,
+        "leakage_inflation_pp": 0.0
+      },
+      "multispectral": {
+        "label": "5-band multispectral",
+        "example": "MicaSense RedEdge-MX / DJI P4 Multispectral",
+        "n_bands": 5,
+        "n_features": 25,
+        "balanced_accuracy_4class": 0.540719696969697,
+        "balanced_accuracy_4class_sd": 0.048777305107724885,
+        "balanced_accuracy_mikania_vs_native": 1.0,
+        "balanced_accuracy_mikania_vs_native_sd": 0.0,
+        "false_positive_rate": 0.0,
+        "leaky_random_split_accuracy": 1.0,
+        "leakage_inflation_pp": 0.0
+      },
+      "hyperspectral": {
+        "label": "VNIR hyperspectral pushbroom",
+        "example": "400-1000 nm, 121 contiguous bands",
+        "n_bands": 121,
+        "n_features": 242,
+        "balanced_accuracy_4class": 0.6829545454545455,
+        "balanced_accuracy_4class_sd": 0.08744340948441424,
+        "balanced_accuracy_mikania_vs_native": 1.0,
+        "balanced_accuracy_mikania_vs_native_sd": 0.0,
+        "false_positive_rate": 0.0,
+        "leaky_random_split_accuracy": 1.0,
+        "leakage_inflation_pp": 0.0
+      }
+    },
+    "wet_summer": {
+      "rgb": {
+        "label": "RGB camera (consumer Bayer)",
+        "example": "DJI Zenmuse P1 / any consumer payload",
+        "n_bands": 3,
+        "n_features": 9,
+        "balanced_accuracy_4class": 0.30359848484848484,
+        "balanced_accuracy_4class_sd": 0.017621780456714545,
+        "balanced_accuracy_mikania_vs_native": 0.5306818181818181,
+        "balanced_accuracy_mikania_vs_native_sd": 0.019154086181470503,
+        "false_positive_rate": 0.13484848484848486,
+        "leaky_random_split_accuracy": 0.532449494949495,
+        "leakage_inflation_pp": 0.17676767676768623
+      },
+      "multispectral": {
+        "label": "5-band multispectral",
+        "example": "MicaSense RedEdge-MX / DJI P4 Multispectral",
+        "n_bands": 5,
+        "n_features": 25,
+        "balanced_accuracy_4class": 0.3524621212121212,
+        "balanced_accuracy_4class_sd": 0.044942267961184945,
+        "balanced_accuracy_mikania_vs_native": 0.6202020202020202,
+        "balanced_accuracy_mikania_vs_native_sd": 0.06262371695705872,
+        "false_positive_rate": 0.1452020202020202,
+        "leaky_random_split_accuracy": 0.6319444444444444,
+        "leakage_inflation_pp": 1.174242424242422
+      },
+      "hyperspectral": {
+        "label": "VNIR hyperspectral pushbroom",
+        "example": "400-1000 nm, 121 contiguous bands",
+        "n_bands": 121,
+        "n_features": 242,
+        "balanced_accuracy_4class": 0.5284090909090909,
+        "balanced_accuracy_4class_sd": 0.09988155864610725,
+        "balanced_accuracy_mikania_vs_native": 0.6867424242424242,
+        "balanced_accuracy_mikania_vs_native_sd": 0.07314007164054268,
+        "false_positive_rate": 0.07878787878787878,
+        "leaky_random_split_accuracy": 0.7119949494949495,
+        "leakage_inflation_pp": 2.5252525252525304
+      }
+    },
+    "_summary": {
+      "rgb_seasonal_collapse_pp": 46.93181818181819,
+      "hyperspectral_seasonal_collapse_pp": 31.325757575757585,
+      "foliage_only_hyperspectral_gain_over_multispectral_pp": 6.654040404040396,
+      "foliage_only_hyperspectral_gain_over_rgb_pp": 15.606060606060602,
+      "validation": "leave-one-site-out over 6 virtual sites with (site, species) random effects",
+      "finding": "During the autumn bloom every sensor tier performs well \u2014 which REPRODUCES the published result that RGB deep learning succeeds on blooming outbreak points, and is therefore a validation of the simulator rather than a weakness of it. The commercial argument is entirely in the foliage-only case, where the bloom is absent and the broadband tiers lose their cue. That is proposal \u00a76.1(2): 'RGB can do it for two months a year.'",
+      "note": "Library-level (leaf/patch scale). Optimistic bound, not a field result: no atmosphere, no BRDF, no mixed pixels, no georeferencing error. Stage 05 repeats this on simulated scenes; only site-disjoint scene numbers may be quoted externally."
+    }
+  }
+}

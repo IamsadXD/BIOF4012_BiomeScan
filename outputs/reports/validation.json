@@ -1,0 +1,2199 @@
+{
+  "models": {
+    "plsda": {
+      "strategy": "leave_one_site_out",
+      "model": "plsda",
+      "n_sites": 3,
+      "folds": [
+        {
+          "overall_accuracy": 0.5213273851451827,
+          "balanced_accuracy": 0.4754669872901791,
+          "kappa": 0.447472259857973,
+          "confusion_matrix": [
+            [
+              117,
+              0,
+              27,
+              45,
+              1352,
+              259,
+              0,
+              0
+            ],
+            [
+              12,
+              0,
+              381,
+              463,
+              364,
+              270,
+              0,
+              0
+            ],
+            [
+              43,
+              0,
+              127,
+              17,
+              33,
+              603,
+              0,
+              0
+            ],
+            [
+              131,
+              0,
+              60,
+              0,
+              1063,
+              245,
+              0,
+              0
+            ],
+            [
+              40,
+              0,
+              34,
+              377,
+              1336,
+              13,
+              0,
+              0
+            ],
+            [
+              7,
+              0,
+              232,
+              9,
+              33,
+              1518,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1763,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1800
+            ]
+          ],
+          "confusion_labels": [
+            "mikania",
+            "bauhinia_glauca",
+            "byttneria_aspera",
+            "paederia_foetida",
+            "host_canopy",
+            "shrub_grass",
+            "soil_rock",
+            "shadow"
+          ],
+          "per_class": {
+            "mikania": {
+              "support": 1800,
+              "recall": 0.065,
+              "precision": 0.3342857142857143,
+              "f1": 0.10883720930232559
+            },
+            "bauhinia_glauca": {
+              "support": 1490,
+              "recall": 0.0,
+              "precision": 0.0,
+              "f1": 0.0
+            },
+            "byttneria_aspera": {
+              "support": 823,
+              "recall": 0.1543134872417983,
+              "precision": 0.14750290360046459,
+              "f1": 0.1508313539192399
+            },
+            "paederia_foetida": {
+              "support": 1499,
+              "recall": 0.0,
+              "precision": 0.0,
+              "f1": 0.0
+            },
+            "host_canopy": {
+              "support": 1800,
+              "recall": 0.7422222222222222,
+              "precision": 0.3194643711142994,
+              "f1": 0.4466733533935139
+            },
+            "shrub_grass": {
+              "support": 1800,
+              "recall": 0.8433333333333334,
+              "precision": 0.5218288071502234,
+              "f1": 0.6447228710978976
+            },
+            "soil_rock": {
+              "support": 1765,
+              "recall": 0.9988668555240793,
+              "precision": 1.0,
+              "f1": 0.9994331065759637
+            },
+            "shadow": {
+              "support": 1800,
+              "recall": 1.0,
+              "precision": 0.9994447529150472,
+              "f1": 0.9997222993612885
+            }
+          },
+          "climber": {
+            "n": 5612,
+            "balanced_accuracy": 0.5081033578174187,
+            "accuracy": 0.6669636493228795,
+            "recall_mikania": 0.065,
+            "precision_mikania": 0.38613861386138615,
+            "false_positive_rate": 0.04879328436516264,
+            "tp": 117,
+            "fp": 186,
+            "fn": 1683,
+            "tn": 3626
+          },
+          "held_out_site": "lam_tsuen",
+          "n_train": 25221,
+          "n_test": 12777
+        },
+        {
+          "overall_accuracy": 0.7158730158730159,
+          "balanced_accuracy": 0.6357517102017188,
+          "kappa": 0.6684985899209475,
+          "confusion_matrix": [
+            [
+              1776,
+              0,
+              17,
+              1,
+              1,
+              5,
+              0,
+              0
+            ],
+            [
+              33,
+              17,
+              2,
+              15,
+              278,
+              24,
+              0,
+              0
+            ],
+            [
+              5,
+              30,
+              663,
+              3,
+              49,
+              260,
+              0,
+              0
+            ],
+            [
+              39,
+              216,
+              19,
+              10,
+              1191,
+              116,
+              0,
+              0
+            ],
+            [
+              394,
+              21,
+              16,
+              301,
+              953,
+              115,
+              0,
+              0
+            ],
+            [
+              133,
+              2,
+              19,
+              49,
+              46,
+              1550,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1800,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1800
+            ]
+          ],
+          "confusion_labels": [
+            "mikania",
+            "bauhinia_glauca",
+            "byttneria_aspera",
+            "paederia_foetida",
+            "host_canopy",
+            "shrub_grass",
+            "soil_rock",
+            "shadow"
+          ],
+          "per_class": {
+            "mikania": {
+              "support": 1800,
+              "recall": 0.9866666666666667,
+              "precision": 0.746218487394958,
+              "f1": 0.8497607655502393
+            },
+            "bauhinia_glauca": {
+              "support": 369,
+              "recall": 0.04607046070460705,
+              "precision": 0.05944055944055944,
+              "f1": 0.051908396946564885
+            },
+            "byttneria_aspera": {
+              "support": 1010,
+              "recall": 0.6564356435643565,
+              "precision": 0.9008152173913043,
+              "f1": 0.7594501718213058
+            },
+            "paederia_foetida": {
+              "support": 1591,
+              "recall": 0.006285355122564425,
+              "precision": 0.026385224274406333,
+              "f1": 0.01015228426395939
+            },
+            "host_canopy": {
+              "support": 1800,
+              "recall": 0.5294444444444445,
+              "precision": 0.3784749801429706,
+              "f1": 0.4414080592867068
+            },
+            "shrub_grass": {
+              "support": 1800,
+              "recall": 0.8611111111111112,
+              "precision": 0.748792270531401,
+              "f1": 0.8010335917312662
+            },
+            "soil_rock": {
+              "support": 1800,
+              "recall": 1.0,
+              "precision": 1.0,
+              "f1": 1.0
+            },
+            "shadow": {
+              "support": 1800,
+              "recall": 1.0,
+              "precision": 0.9994447529150472,
+              "f1": 0.9997222993612885
+            }
+          },
+          "climber": {
+            "n": 4770,
+            "balanced_accuracy": 0.9803703703703703,
+            "accuracy": 0.9788259958071279,
+            "recall_mikania": 0.9866666666666667,
+            "precision_mikania": 0.9584457636265515,
+            "false_positive_rate": 0.025925925925925925,
+            "tp": 1776,
+            "fp": 77,
+            "fn": 24,
+            "tn": 2893
+          },
+          "held_out_site": "shing_mun",
+          "n_train": 26028,
+          "n_test": 11970
+        },
+        {
+          "overall_accuracy": 0.7161723643498604,
+          "balanced_accuracy": 0.6751847810370892,
+          "kappa": 0.6726938997602647,
+          "confusion_matrix": [
+            [
+              1791,
+              0,
+              0,
+              0,
+              9,
+              0,
+              0,
+              0
+            ],
+            [
+              86,
+              63,
+              67,
+              22,
+              772,
+              55,
+              0,
+              0
+            ],
+            [
+              46,
+              61,
+              1007,
+              82,
+              61,
+              272,
+              0,
+              0
+            ],
+            [
+              503,
+              35,
+              15,
+              124,
+              496,
+              484,
+              0,
+              0
+            ],
+            [
+              251,
+              85,
+              2,
+              121,
+              1195,
+              146,
+              0,
+              0
+            ],
+            [
+              78,
+              1,
+              3,
+              4,
+              4,
+              1710,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1800,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1800
+            ]
+          ],
+          "confusion_labels": [
+            "mikania",
+            "bauhinia_glauca",
+            "byttneria_aspera",
+            "paederia_foetida",
+            "host_canopy",
+            "shrub_grass",
+            "soil_rock",
+            "shadow"
+          ],
+          "per_class": {
+            "mikania": {
+              "support": 1800,
+              "recall": 0.995,
+              "precision": 0.6500907441016334,
+              "f1": 0.7863885839736553
+            },
+            "bauhinia_glauca": {
+              "support": 1065,
+              "recall": 0.059154929577464786,
+              "precision": 0.2571428571428571,
+              "f1": 0.09618320610687023
+            },
+            "byttneria_aspera": {
+              "support": 1529,
+              "recall": 0.658600392413342,
+              "precision": 0.9204753199268738,
+              "f1": 0.7678231033168128
+            },
+            "paederia_foetida": {
+              "support": 1657,
+              "recall": 0.0748340374170187,
+              "precision": 0.35127478753541075,
+              "f1": 0.12338308457711443
+            },
+            "host_canopy": {
+              "support": 1800,
+              "recall": 0.6638888888888889,
+              "precision": 0.47102877414268823,
+              "f1": 0.5510721697025593
+            },
+            "shrub_grass": {
+              "support": 1800,
+              "recall": 0.95,
+              "precision": 0.641169853768279,
+              "f1": 0.7656145063801209
+            },
+            "soil_rock": {
+              "support": 1800,
+              "recall": 1.0,
+              "precision": 1.0,
+              "f1": 1.0
+            },
+            "shadow": {
+              "support": 1800,
+              "recall": 1.0,
+              "precision": 1.0,
+              "f1": 1.0
+            }
+          },
+          "climber": {
+            "n": 6051,
+            "balanced_accuracy": 0.9228116913667372,
+            "accuracy": 0.8935713105271856,
+            "recall_mikania": 0.995,
+            "precision_mikania": 0.738252267106348,
+            "false_positive_rate": 0.1493766172665255,
+            "tp": 1791,
+            "fp": 635,
+            "fn": 9,
+            "tn": 3616
+          },
+          "held_out_site": "tai_lam",
+          "n_train": 24747,
+          "n_test": 13251
+        }
+      ],
+      "pooled": {
+        "overall_accuracy": 0.6505605558187273,
+        "balanced_accuracy": 0.6002426054220806,
+        "kappa": 0.5953076146220228,
+        "confusion_matrix": [
+          [
+            3684,
+            0,
+            44,
+            46,
+            1362,
+            264,
+            0,
+            0
+          ],
+          [
+            131,
+            80,
+            450,
+            500,
+            1414,
+            349,
+            0,
+            0
+          ],
+          [
+            94,
+            91,
+            1797,
+            102,
+            143,
+            1135,
+            0,
+            0
+          ],
+          [
+            673,
+            251,
+            94,
+            134,
+            2750,
+            845,
+            0,
+            0
+          ],
+          [
+            685,
+            106,
+            52,
+            799,
+            3484,
+            274,
+            0,
+            0
+          ],
+          [
+            218,
+            3,
+            254,
+            62,
+            83,
+            4778,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            5363,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5400
+          ]
+        ],
+        "confusion_labels": [
+          "mikania",
+          "bauhinia_glauca",
+          "byttneria_aspera",
+          "paederia_foetida",
+          "host_canopy",
+          "shrub_grass",
+          "soil_rock",
+          "shadow"
+        ],
+        "per_class": {
+          "mikania": {
+            "support": 5400,
+            "recall": 0.6822222222222222,
+            "precision": 0.6716499544211486,
+            "f1": 0.6768948093706936
+          },
+          "bauhinia_glauca": {
+            "support": 2924,
+            "recall": 0.027359781121751026,
+            "precision": 0.15065913370998116,
+            "f1": 0.04630969609261939
+          },
+          "byttneria_aspera": {
+            "support": 3362,
+            "recall": 0.5345032718619869,
+            "precision": 0.6677814938684504,
+            "f1": 0.5937551627292251
+          },
+          "paederia_foetida": {
+            "support": 4747,
+            "recall": 0.028228354750368653,
+            "precision": 0.0815581253804017,
+            "f1": 0.04194053208137715
+          },
+          "host_canopy": {
+            "support": 5400,
+            "recall": 0.6451851851851852,
+            "precision": 0.37717873768539567,
+            "f1": 0.4760538361686138
+          },
+          "shrub_grass": {
+            "support": 5400,
+            "recall": 0.8848148148148148,
+            "precision": 0.6249019094951609,
+            "f1": 0.7324850528897746
+          },
+          "soil_rock": {
+            "support": 5365,
+            "recall": 0.9996272134203169,
+            "precision": 1.0,
+            "f1": 0.999813571961223
+          },
+          "shadow": {
+            "support": 5400,
+            "recall": 1.0,
+            "precision": 0.9996297667530544,
+            "f1": 0.9998148491020181
+          }
+        },
+        "climber": {
+          "n": 16433,
+          "balanced_accuracy": 0.800415017573542,
+          "accuracy": 0.8409298363049961,
+          "recall_mikania": 0.6822222222222222,
+          "precision_mikania": 0.8040157136621563,
+          "false_positive_rate": 0.08139218707513822,
+          "tp": 3684,
+          "fp": 898,
+          "fn": 1716,
+          "tn": 10135
+        }
+      },
+      "overall_accuracy_ci": [
+        0.6511242551226863,
+        0.5213273851451827,
+        0.7161723643498604
+      ],
+      "kappa_ci": [
+        0.5962215831797284,
+        0.447472259857973,
+        0.6726938997602647
+      ],
+      "climber_balanced_accuracy_ci": [
+        0.8037618065181755,
+        0.5081033578174187,
+        0.9803703703703702
+      ],
+      "climber_false_positive_ci": [
+        0.07469860918587136,
+        0.025925925925925925,
+        0.1493766172665255
+      ],
+      "reportable": true
+    },
+    "rf": {
+      "strategy": "leave_one_site_out",
+      "model": "rf",
+      "n_sites": 3,
+      "folds": [
+        {
+          "overall_accuracy": 0.49158644439226734,
+          "balanced_accuracy": 0.451826636277139,
+          "kappa": 0.4142651461715917,
+          "confusion_matrix": [
+            [
+              43,
+              64,
+              12,
+              387,
+              1163,
+              131,
+              0,
+              0
+            ],
+            [
+              4,
+              92,
+              107,
+              934,
+              262,
+              91,
+              0,
+              0
+            ],
+            [
+              17,
+              10,
+              109,
+              95,
+              39,
+              553,
+              0,
+              0
+            ],
+            [
+              47,
+              8,
+              56,
+              208,
+              1062,
+              118,
+              0,
+              0
+            ],
+            [
+              7,
+              382,
+              6,
+              498,
+              895,
+              12,
+              0,
+              0
+            ],
+            [
+              3,
+              4,
+              256,
+              135,
+              33,
+              1369,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1765,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1800
+            ]
+          ],
+          "confusion_labels": [
+            "mikania",
+            "bauhinia_glauca",
+            "byttneria_aspera",
+            "paederia_foetida",
+            "host_canopy",
+            "shrub_grass",
+            "soil_rock",
+            "shadow"
+          ],
+          "per_class": {
+            "mikania": {
+              "support": 1800,
+              "recall": 0.02388888888888889,
+              "precision": 0.35537190082644626,
+              "f1": 0.04476834981780323
+            },
+            "bauhinia_glauca": {
+              "support": 1490,
+              "recall": 0.06174496644295302,
+              "precision": 0.16428571428571428,
+              "f1": 0.0897560975609756
+            },
+            "byttneria_aspera": {
+              "support": 823,
+              "recall": 0.1324422843256379,
+              "precision": 0.19963369963369965,
+              "f1": 0.15924032140248356
+            },
+            "paederia_foetida": {
+              "support": 1499,
+              "recall": 0.13875917278185457,
+              "precision": 0.0921577315019938,
+              "f1": 0.11075612353567625
+            },
+            "host_canopy": {
+              "support": 1800,
+              "recall": 0.49722222222222223,
+              "precision": 0.25911986103068907,
+              "f1": 0.34069280548153785
+            },
+            "shrub_grass": {
+              "support": 1800,
+              "recall": 0.7605555555555555,
+              "precision": 0.6020228671943711,
+              "f1": 0.6720667648502701
+            },
+            "soil_rock": {
+              "support": 1765,
+              "recall": 1.0,
+              "precision": 1.0,
+              "f1": 1.0
+            },
+            "shadow": {
+              "support": 1800,
+              "recall": 1.0,
+              "precision": 1.0,
+              "f1": 1.0
+            }
+          },
+          "climber": {
+            "n": 5612,
+            "balanced_accuracy": 0.5030252419260813,
+            "accuracy": 0.6748039914468995,
+            "recall_mikania": 0.02388888888888889,
+            "precision_mikania": 0.38738738738738737,
+            "false_positive_rate": 0.017838405036726127,
+            "tp": 43,
+            "fp": 68,
+            "fn": 1757,
+            "tn": 3744
+          },
+          "held_out_site": "lam_tsuen",
+          "n_train": 25221,
+          "n_test": 12777
+        },
+        {
+          "overall_accuracy": 0.6928153717627402,
+          "balanced_accuracy": 0.633611025954238,
+          "kappa": 0.6450574077356869,
+          "confusion_matrix": [
+            [
+              1662,
+              10,
+              25,
+              14,
+              11,
+              78,
+              0,
+              0
+            ],
+            [
+              40,
+              67,
+              0,
+              25,
+              224,
+              13,
+              0,
+              0
+            ],
+            [
+              3,
+              124,
+              722,
+              16,
+              21,
+              124,
+              0,
+              0
+            ],
+            [
+              31,
+              609,
+              20,
+              49,
+              817,
+              65,
+              0,
+              0
+            ],
+            [
+              275,
+              120,
+              21,
+              463,
+              851,
+              69,
+              0,
+              1
+            ],
+            [
+              34,
+              12,
+              171,
+              207,
+              33,
+              1342,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1800,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1800
+            ]
+          ],
+          "confusion_labels": [
+            "mikania",
+            "bauhinia_glauca",
+            "byttneria_aspera",
+            "paederia_foetida",
+            "host_canopy",
+            "shrub_grass",
+            "soil_rock",
+            "shadow"
+          ],
+          "per_class": {
+            "mikania": {
+              "support": 1800,
+              "recall": 0.9233333333333333,
+              "precision": 0.8127139364303179,
+              "f1": 0.8644993498049415
+            },
+            "bauhinia_glauca": {
+              "support": 369,
+              "recall": 0.18157181571815717,
+              "precision": 0.07112526539278131,
+              "f1": 0.10221205186880244
+            },
+            "byttneria_aspera": {
+              "support": 1010,
+              "recall": 0.7148514851485148,
+              "precision": 0.7528675703858185,
+              "f1": 0.7333671914677501
+            },
+            "paederia_foetida": {
+              "support": 1591,
+              "recall": 0.030798240100565682,
+              "precision": 0.06330749354005168,
+              "f1": 0.04143763213530655
+            },
+            "host_canopy": {
+              "support": 1800,
+              "recall": 0.4727777777777778,
+              "precision": 0.4348492590700051,
+              "f1": 0.4530210274154911
+            },
+            "shrub_grass": {
+              "support": 1800,
+              "recall": 0.7455555555555555,
+              "precision": 0.7936132465996452,
+              "f1": 0.768834144944142
+            },
+            "soil_rock": {
+              "support": 1800,
+              "recall": 1.0,
+              "precision": 1.0,
+              "f1": 1.0
+            },
+            "shadow": {
+              "support": 1800,
+              "recall": 1.0,
+              "precision": 0.9988901220865705,
+              "f1": 0.9994447529150472
+            }
+          },
+          "climber": {
+            "n": 4770,
+            "balanced_accuracy": 0.9492087542087542,
+            "accuracy": 0.9555555555555556,
+            "recall_mikania": 0.9233333333333333,
+            "precision_mikania": 0.9573732718894009,
+            "false_positive_rate": 0.024915824915824916,
+            "tp": 1662,
+            "fp": 74,
+            "fn": 138,
+            "tn": 2896
+          },
+          "held_out_site": "shing_mun",
+          "n_train": 26028,
+          "n_test": 11970
+        },
+        {
+          "overall_accuracy": 0.726058410685986,
+          "balanced_accuracy": 0.6919829675534614,
+          "kappa": 0.6851073672893264,
+          "confusion_matrix": [
+            [
+              1722,
+              0,
+              5,
+              3,
+              63,
+              7,
+              0,
+              0
+            ],
+            [
+              58,
+              127,
+              158,
+              188,
+              507,
+              27,
+              0,
+              0
+            ],
+            [
+              2,
+              51,
+              1345,
+              68,
+              17,
+              46,
+              0,
+              0
+            ],
+            [
+              482,
+              163,
+              89,
+              203,
+              336,
+              384,
+              0,
+              0
+            ],
+            [
+              230,
+              262,
+              33,
+              190,
+              980,
+              105,
+              0,
+              0
+            ],
+            [
+              42,
+              27,
+              59,
+              20,
+              8,
+              1644,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1800,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1800
+            ]
+          ],
+          "confusion_labels": [
+            "mikania",
+            "bauhinia_glauca",
+            "byttneria_aspera",
+            "paederia_foetida",
+            "host_canopy",
+            "shrub_grass",
+            "soil_rock",
+            "shadow"
+          ],
+          "per_class": {
+            "mikania": {
+              "support": 1800,
+              "recall": 0.9566666666666667,
+              "precision": 0.6790220820189274,
+              "f1": 0.794280442804428
+            },
+            "bauhinia_glauca": {
+              "support": 1065,
+              "recall": 0.11924882629107982,
+              "precision": 0.2015873015873016,
+              "f1": 0.14985250737463127
+            },
+            "byttneria_aspera": {
+              "support": 1529,
+              "recall": 0.8796599084368869,
+              "precision": 0.7963291888691534,
+              "f1": 0.8359229334990678
+            },
+            "paederia_foetida": {
+              "support": 1657,
+              "recall": 0.12251056125528063,
+              "precision": 0.3020833333333333,
+              "f1": 0.17432374409617862
+            },
+            "host_canopy": {
+              "support": 1800,
+              "recall": 0.5444444444444444,
+              "precision": 0.5128205128205128,
+              "f1": 0.5281595257343035
+            },
+            "shrub_grass": {
+              "support": 1800,
+              "recall": 0.9133333333333333,
+              "precision": 0.7428829643018527,
+              "f1": 0.8193371542486918
+            },
+            "soil_rock": {
+              "support": 1800,
+              "recall": 1.0,
+              "precision": 1.0,
+              "f1": 1.0
+            },
+            "shadow": {
+              "support": 1800,
+              "recall": 1.0,
+              "precision": 1.0,
+              "f1": 1.0
+            }
+          },
+          "climber": {
+            "n": 6051,
+            "balanced_accuracy": 0.9145836273817924,
+            "accuracy": 0.8975375970913898,
+            "recall_mikania": 0.9566666666666667,
+            "precision_mikania": 0.7606007067137809,
+            "false_positive_rate": 0.12749941190308162,
+            "tp": 1722,
+            "fp": 542,
+            "fn": 78,
+            "tn": 3709
+          },
+          "held_out_site": "tai_lam",
+          "n_train": 24747,
+          "n_test": 13251
+        }
+      ],
+      "pooled": {
+        "overall_accuracy": 0.6367440391599558,
+        "balanced_accuracy": 0.5984842800249078,
+        "kappa": 0.581433139593007,
+        "confusion_matrix": [
+          [
+            3427,
+            74,
+            42,
+            404,
+            1237,
+            216,
+            0,
+            0
+          ],
+          [
+            102,
+            286,
+            265,
+            1147,
+            993,
+            131,
+            0,
+            0
+          ],
+          [
+            22,
+            185,
+            2176,
+            179,
+            77,
+            723,
+            0,
+            0
+          ],
+          [
+            560,
+            780,
+            165,
+            460,
+            2215,
+            567,
+            0,
+            0
+          ],
+          [
+            512,
+            764,
+            60,
+            1151,
+            2726,
+            186,
+            0,
+            1
+          ],
+          [
+            79,
+            43,
+            486,
+            362,
+            74,
+            4355,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5365,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5400
+          ]
+        ],
+        "confusion_labels": [
+          "mikania",
+          "bauhinia_glauca",
+          "byttneria_aspera",
+          "paederia_foetida",
+          "host_canopy",
+          "shrub_grass",
+          "soil_rock",
+          "shadow"
+        ],
+        "per_class": {
+          "mikania": {
+            "support": 5400,
+            "recall": 0.6346296296296297,
+            "precision": 0.7288387920034028,
+            "f1": 0.6784795090081172
+          },
+          "bauhinia_glauca": {
+            "support": 2924,
+            "recall": 0.09781121751025992,
+            "precision": 0.13414634146341464,
+            "f1": 0.11313291139240507
+          },
+          "byttneria_aspera": {
+            "support": 3362,
+            "recall": 0.6472337894110648,
+            "precision": 0.6812773951158422,
+            "f1": 0.6638194020744357
+          },
+          "paederia_foetida": {
+            "support": 4747,
+            "recall": 0.0969033073520118,
+            "precision": 0.12422360248447205,
+            "f1": 0.10887573964497041
+          },
+          "host_canopy": {
+            "support": 5400,
+            "recall": 0.5048148148148148,
+            "precision": 0.3723026495493035,
+            "f1": 0.4285489702876906
+          },
+          "shrub_grass": {
+            "support": 5400,
+            "recall": 0.8064814814814815,
+            "precision": 0.7049206863062479,
+            "f1": 0.7522888236310243
+          },
+          "soil_rock": {
+            "support": 5365,
+            "recall": 1.0,
+            "precision": 1.0,
+            "f1": 1.0
+          },
+          "shadow": {
+            "support": 5400,
+            "recall": 1.0,
+            "precision": 0.9996297667530544,
+            "f1": 0.9998148491020181
+          }
+        },
+        "climber": {
+          "n": 16433,
+          "balanced_accuracy": 0.7863168994699403,
+          "accuracy": 0.8383131503681617,
+          "recall_mikania": 0.6346296296296297,
+          "precision_mikania": 0.8336171247871564,
+          "false_positive_rate": 0.06199583068974893,
+          "tp": 3427,
+          "fp": 684,
+          "fn": 1973,
+          "tn": 10349
+        }
+      },
+      "overall_accuracy_ci": [
+        0.6368200756136645,
+        0.5586627535157583,
+        0.7260584106859861
+      ],
+      "kappa_ci": [
+        0.5814766403988684,
+        0.41426514617159177,
+        0.6851073672893264
+      ],
+      "climber_balanced_accuracy_ci": [
+        0.7889392078388759,
+        0.5030252419260813,
+        0.9492087542087542
+      ],
+      "climber_false_positive_ci": [
+        0.05675121395187755,
+        0.017838405036726127,
+        0.12749941190308162
+      ],
+      "reportable": true
+    },
+    "svm": {
+      "strategy": "leave_one_site_out",
+      "model": "svm",
+      "n_sites": 3,
+      "folds": [
+        {
+          "overall_accuracy": 0.523440557251311,
+          "balanced_accuracy": 0.4895047091013076,
+          "kappa": 0.4518554851558736,
+          "confusion_matrix": [
+            [
+              15,
+              226,
+              15,
+              425,
+              1008,
+              111,
+              0,
+              0
+            ],
+            [
+              2,
+              513,
+              81,
+              667,
+              155,
+              72,
+              0,
+              0
+            ],
+            [
+              7,
+              50,
+              110,
+              68,
+              30,
+              558,
+              0,
+              0
+            ],
+            [
+              26,
+              27,
+              56,
+              441,
+              825,
+              124,
+              0,
+              0
+            ],
+            [
+              3,
+              654,
+              4,
+              483,
+              652,
+              4,
+              0,
+              0
+            ],
+            [
+              5,
+              41,
+              237,
+              99,
+              26,
+              1392,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1765,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1800
+            ]
+          ],
+          "confusion_labels": [
+            "mikania",
+            "bauhinia_glauca",
+            "byttneria_aspera",
+            "paederia_foetida",
+            "host_canopy",
+            "shrub_grass",
+            "soil_rock",
+            "shadow"
+          ],
+          "per_class": {
+            "mikania": {
+              "support": 1800,
+              "recall": 0.008333333333333333,
+              "precision": 0.25862068965517243,
+              "f1": 0.016146393972012917
+            },
+            "bauhinia_glauca": {
+              "support": 1490,
+              "recall": 0.34429530201342284,
+              "precision": 0.33951025810721375,
+              "f1": 0.3418860379873376
+            },
+            "byttneria_aspera": {
+              "support": 823,
+              "recall": 0.1336573511543135,
+              "precision": 0.21868787276341947,
+              "f1": 0.16591251885369532
+            },
+            "paederia_foetida": {
+              "support": 1499,
+              "recall": 0.2941961307538359,
+              "precision": 0.20201557489693084,
+              "f1": 0.23954372623574144
+            },
+            "host_canopy": {
+              "support": 1800,
+              "recall": 0.3622222222222222,
+              "precision": 0.24183976261127596,
+              "f1": 0.2900355871886121
+            },
+            "shrub_grass": {
+              "support": 1800,
+              "recall": 0.7733333333333333,
+              "precision": 0.6156567890314021,
+              "f1": 0.6855454321595666
+            },
+            "soil_rock": {
+              "support": 1765,
+              "recall": 1.0,
+              "precision": 1.0,
+              "f1": 1.0
+            },
+            "shadow": {
+              "support": 1800,
+              "recall": 1.0,
+              "precision": 1.0,
+              "f1": 1.0
+            }
+          },
+          "climber": {
+            "n": 5612,
+            "balanced_accuracy": 0.49957590066456803,
+            "accuracy": 0.6756949394155382,
+            "recall_mikania": 0.008333333333333333,
+            "precision_mikania": 0.3,
+            "false_positive_rate": 0.009181532004197272,
+            "tp": 15,
+            "fp": 35,
+            "fn": 1785,
+            "tn": 3777
+          },
+          "held_out_site": "lam_tsuen",
+          "n_train": 25221,
+          "n_test": 12777
+        },
+        {
+          "overall_accuracy": 0.6779448621553885,
+          "balanced_accuracy": 0.6308867974407242,
+          "kappa": 0.6295203767225075,
+          "confusion_matrix": [
+            [
+              1638,
+              14,
+              46,
+              21,
+              5,
+              76,
+              0,
+              0
+            ],
+            [
+              49,
+              90,
+              2,
+              22,
+              202,
+              4,
+              0,
+              0
+            ],
+            [
+              4,
+              109,
+              779,
+              15,
+              4,
+              99,
+              0,
+              0
+            ],
+            [
+              25,
+              740,
+              14,
+              87,
+              704,
+              21,
+              0,
+              0
+            ],
+            [
+              309,
+              198,
+              31,
+              450,
+              767,
+              44,
+              0,
+              1
+            ],
+            [
+              41,
+              23,
+              357,
+              205,
+              20,
+              1154,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1800,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1800
+            ]
+          ],
+          "confusion_labels": [
+            "mikania",
+            "bauhinia_glauca",
+            "byttneria_aspera",
+            "paederia_foetida",
+            "host_canopy",
+            "shrub_grass",
+            "soil_rock",
+            "shadow"
+          ],
+          "per_class": {
+            "mikania": {
+              "support": 1800,
+              "recall": 0.91,
+              "precision": 0.7928363988383349,
+              "f1": 0.8473874806001035
+            },
+            "bauhinia_glauca": {
+              "support": 369,
+              "recall": 0.24390243902439024,
+              "precision": 0.07666098807495741,
+              "f1": 0.11665586519766688
+            },
+            "byttneria_aspera": {
+              "support": 1010,
+              "recall": 0.7712871287128713,
+              "precision": 0.6338486574450773,
+              "f1": 0.6958463599821348
+            },
+            "paederia_foetida": {
+              "support": 1591,
+              "recall": 0.054682589566310495,
+              "precision": 0.10875,
+              "f1": 0.07277289836888332
+            },
+            "host_canopy": {
+              "support": 1800,
+              "recall": 0.4261111111111111,
+              "precision": 0.4506462984723854,
+              "f1": 0.4380354083380925
+            },
+            "shrub_grass": {
+              "support": 1800,
+              "recall": 0.6411111111111111,
+              "precision": 0.8254649499284692,
+              "f1": 0.7217010631644778
+            },
+            "soil_rock": {
+              "support": 1800,
+              "recall": 1.0,
+              "precision": 1.0,
+              "f1": 1.0
+            },
+            "shadow": {
+              "support": 1800,
+              "recall": 1.0,
+              "precision": 0.9994447529150472,
+              "f1": 0.9997222993612885
+            }
+          },
+          "climber": {
+            "n": 4770,
+            "balanced_accuracy": 0.941868686868687,
+            "accuracy": 0.949685534591195,
+            "recall_mikania": 0.91,
+            "precision_mikania": 0.9545454545454546,
+            "false_positive_rate": 0.026262626262626262,
+            "tp": 1638,
+            "fp": 78,
+            "fn": 162,
+            "tn": 2892
+          },
+          "held_out_site": "shing_mun",
+          "n_train": 26028,
+          "n_test": 11970
+        },
+        {
+          "overall_accuracy": 0.7186627424345332,
+          "balanced_accuracy": 0.6888653904955722,
+          "kappa": 0.6771385671516329,
+          "confusion_matrix": [
+            [
+              1695,
+              1,
+              5,
+              42,
+              55,
+              2,
+              0,
+              0
+            ],
+            [
+              81,
+              199,
+              172,
+              188,
+              414,
+              11,
+              0,
+              0
+            ],
+            [
+              9,
+              71,
+              1356,
+              45,
+              11,
+              37,
+              0,
+              0
+            ],
+            [
+              506,
+              229,
+              155,
+              220,
+              316,
+              231,
+              0,
+              0
+            ],
+            [
+              254,
+              348,
+              48,
+              182,
+              936,
+              32,
+              0,
+              0
+            ],
+            [
+              39,
+              34,
+              188,
+              16,
+              6,
+              1517,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1800,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1800
+            ]
+          ],
+          "confusion_labels": [
+            "mikania",
+            "bauhinia_glauca",
+            "byttneria_aspera",
+            "paederia_foetida",
+            "host_canopy",
+            "shrub_grass",
+            "soil_rock",
+            "shadow"
+          ],
+          "per_class": {
+            "mikania": {
+              "support": 1800,
+              "recall": 0.9416666666666667,
+              "precision": 0.6559597523219814,
+              "f1": 0.7732664233576643
+            },
+            "bauhinia_glauca": {
+              "support": 1065,
+              "recall": 0.18685446009389672,
+              "precision": 0.2256235827664399,
+              "f1": 0.20441705187467898
+            },
+            "byttneria_aspera": {
+              "support": 1529,
+              "recall": 0.8868541530412034,
+              "precision": 0.7047817047817048,
+              "f1": 0.7854039965247611
+            },
+            "paederia_foetida": {
+              "support": 1657,
+              "recall": 0.1327700663850332,
+              "precision": 0.31746031746031744,
+              "f1": 0.18723404255319148
+            },
+            "host_canopy": {
+              "support": 1800,
+              "recall": 0.52,
+              "precision": 0.5385500575373993,
+              "f1": 0.529112492933861
+            },
+            "shrub_grass": {
+              "support": 1800,
+              "recall": 0.8427777777777777,
+              "precision": 0.8289617486338798,
+              "f1": 0.8358126721763085
+            },
+            "soil_rock": {
+              "support": 1800,
+              "recall": 1.0,
+              "precision": 1.0,
+              "f1": 1.0
+            },
+            "shadow": {
+              "support": 1800,
+              "recall": 1.0,
+              "precision": 1.0,
+              "f1": 1.0
+            }
+          },
+          "climber": {
+            "n": 6051,
+            "balanced_accuracy": 0.9007321806633732,
+            "accuracy": 0.8841513799372005,
+            "recall_mikania": 0.9416666666666667,
+            "precision_mikania": 0.7398515931907464,
+            "false_positive_rate": 0.14020230533992,
+            "tp": 1695,
+            "fp": 596,
+            "fn": 105,
+            "tn": 3655
+          },
+          "held_out_site": "tai_lam",
+          "n_train": 24747,
+          "n_test": 13251
+        }
+      ],
+      "pooled": {
+        "overall_accuracy": 0.6401915890310016,
+        "balanced_accuracy": 0.6135163519652459,
+        "kappa": 0.5868816430069455,
+        "confusion_matrix": [
+          [
+            3348,
+            241,
+            66,
+            488,
+            1068,
+            189,
+            0,
+            0
+          ],
+          [
+            132,
+            802,
+            255,
+            877,
+            771,
+            87,
+            0,
+            0
+          ],
+          [
+            20,
+            230,
+            2245,
+            128,
+            45,
+            694,
+            0,
+            0
+          ],
+          [
+            557,
+            996,
+            225,
+            748,
+            1845,
+            376,
+            0,
+            0
+          ],
+          [
+            566,
+            1200,
+            83,
+            1115,
+            2355,
+            80,
+            0,
+            1
+          ],
+          [
+            85,
+            98,
+            782,
+            320,
+            52,
+            4063,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5365,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5400
+          ]
+        ],
+        "confusion_labels": [
+          "mikania",
+          "bauhinia_glauca",
+          "byttneria_aspera",
+          "paederia_foetida",
+          "host_canopy",
+          "shrub_grass",
+          "soil_rock",
+          "shadow"
+        ],
+        "per_class": {
+          "mikania": {
+            "support": 5400,
+            "recall": 0.62,
+            "precision": 0.7111299915038233,
+            "f1": 0.6624455876533439
+          },
+          "bauhinia_glauca": {
+            "support": 2924,
+            "recall": 0.27428180574555405,
+            "precision": 0.22483880011213905,
+            "f1": 0.2471113849946079
+          },
+          "byttneria_aspera": {
+            "support": 3362,
+            "recall": 0.6677572873289709,
+            "precision": 0.6140590809628009,
+            "f1": 0.6397834140780849
+          },
+          "paederia_foetida": {
+            "support": 4747,
+            "recall": 0.15757320412892353,
+            "precision": 0.20348204570184983,
+            "f1": 0.17760892793541494
+          },
+          "host_canopy": {
+            "support": 5400,
+            "recall": 0.4361111111111111,
+            "precision": 0.3838005215123859,
+            "f1": 0.4082871012482663
+          },
+          "shrub_grass": {
+            "support": 5400,
+            "recall": 0.7524074074074074,
+            "precision": 0.7402076881034797,
+            "f1": 0.7462576912480485
+          },
+          "soil_rock": {
+            "support": 5365,
+            "recall": 1.0,
+            "precision": 1.0,
+            "f1": 1.0
+          },
+          "shadow": {
+            "support": 5400,
+            "recall": 1.0,
+            "precision": 0.9998148491020181,
+            "f1": 0.9999074159800019
+          }
+        },
+        "climber": {
+          "n": 16433,
+          "balanced_accuracy": 0.7778691199129883,
+          "accuracy": 0.8319844215907016,
+          "recall_mikania": 0.62,
+          "precision_mikania": 0.8252403253635692,
+          "false_positive_rate": 0.06426176017402338,
+          "tp": 3348,
+          "fp": 709,
+          "fn": 2052,
+          "tn": 10324
+        }
+      },
+      "overall_accuracy_ci": [
+        0.6400160539470776,
+        0.523440557251311,
+        0.7186627424345332
+      ],
+      "kappa_ci": [
+        0.586171476343338,
+        0.4518554851558736,
+        0.6771385671516329
+      ],
+      "climber_balanced_accuracy_ci": [
+        0.7807255893988762,
+        0.4995759006645681,
+        0.9418686868686871
+      ],
+      "climber_false_positive_ci": [
+        0.05854882120224785,
+        0.009181532004197272,
+        0.14020230533992
+      ],
+      "reportable": true
+    }
+  },
+  "best_model": "plsda",
+  "leakage_demo": {
+    "overall_accuracy": 0.7202631578947368,
+    "balanced_accuracy": 0.6753644777696141,
+    "kappa": 0.676045095767354,
+    "confusion_matrix": [
+      [
+        1235,
+        1,
+        5,
+        77,
+        242,
+        60,
+        0,
+        0
+      ],
+      [
+        53,
+        110,
+        90,
+        16,
+        456,
+        152,
+        0,
+        0
+      ],
+      [
+        42,
+        0,
+        686,
+        7,
+        16,
+        258,
+        0,
+        0
+      ],
+      [
+        321,
+        31,
+        48,
+        168,
+        583,
+        273,
+        0,
+        0
+      ],
+      [
+        188,
+        13,
+        14,
+        51,
+        1271,
+        83,
+        0,
+        0
+      ],
+      [
+        52,
+        0,
+        31,
+        7,
+        19,
+        1511,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1610,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1620
+      ]
+    ],
+    "confusion_labels": [
+      "mikania",
+      "bauhinia_glauca",
+      "byttneria_aspera",
+      "paederia_foetida",
+      "host_canopy",
+      "shrub_grass",
+      "soil_rock",
+      "shadow"
+    ],
+    "per_class": {
+      "mikania": {
+        "support": 1620,
+        "recall": 0.7623456790123457,
+        "precision": 0.6530936012691697,
+        "f1": 0.7035032754201083
+      },
+      "bauhinia_glauca": {
+        "support": 877,
+        "recall": 0.12542759407069556,
+        "precision": 0.7096774193548387,
+        "f1": 0.2131782945736434
+      },
+      "byttneria_aspera": {
+        "support": 1009,
+        "recall": 0.6798810703666998,
+        "precision": 0.7848970251716247,
+        "f1": 0.7286245353159851
+      },
+      "paederia_foetida": {
+        "support": 1424,
+        "recall": 0.11797752808988764,
+        "precision": 0.5153374233128835,
+        "f1": 0.192
+      },
+      "host_canopy": {
+        "support": 1620,
+        "recall": 0.7845679012345679,
+        "precision": 0.49130266718206417,
+        "f1": 0.6042310434989303
+      },
+      "shrub_grass": {
+        "support": 1620,
+        "recall": 0.932716049382716,
+        "precision": 0.6465554129225503,
+        "f1": 0.7637098812231489
+      },
+      "soil_rock": {
+        "support": 1610,
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "shadow": {
+        "support": 1620,
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      }
+    },
+    "climber": {
+      "n": 4930,
+      "balanced_accuracy": 0.8183329603520944,
+      "accuracy": 0.837525354969574,
+      "recall_mikania": 0.7623456790123457,
+      "precision_mikania": 0.7480314960629921,
+      "false_positive_rate": 0.1256797583081571,
+      "tp": 1235,
+      "fp": 416,
+      "fn": 385,
+      "tn": 2894
+    },
+    "strategy": "random_pixel_split",
+    "model": "plsda",
+    "reportable": false,
+    "warning": "NOT REPORTABLE. Spatially autocorrelated pixels appear in both train and test. Included only to quantify the inflation this produces relative to leave-one-site-out (proposal \u00a75.1 mitigation 6)."
+  },
+  "leakage_inflation_pp": 6.913890277205049,
+  "kill_criterion": {
+    "threshold_accuracy": 0.75,
+    "threshold_false_positive": 0.2,
+    "measured_accuracy": 0.8037618065181755,
+    "measured_accuracy_lower_ci": 0.5081033578174187,
+    "measured_false_positive": 0.07469860918587136,
+    "accuracy_pass": true,
+    "false_positive_pass": true,
+    "verdict": "PASS"
+  },
+  "caveat": "All figures are from SIMULATED scenes at species contrast 1.0. They validate the pipeline and the validation methodology, not Hong Kong field separability, which is unmeasured (proposal Appendix B.5) and is what Phase 0 buys."
+}

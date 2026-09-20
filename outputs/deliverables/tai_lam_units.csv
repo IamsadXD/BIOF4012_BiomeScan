@@ -1,0 +1,8 @@
+rank,unit_id,site_name,area_ha,severity,band,action,mean_coverage_fraction,survey_cost_hkd
+1,tai_lam-218,Tai Lam Country Park,0.4979,0.5658,Priority,Clear this season,0.5393,"[249, 598]"
+2,tai_lam-801,Tai Lam Country Park,0.2652,0.6302,Priority,Clear this season,0.77,"[133, 318]"
+3,tai_lam-001,Tai Lam Country Park,0.3162,0.5165,Schedule,Add to annual clearance plan,0.5108,"[158, 379]"
+4,tai_lam-713,Tai Lam Country Park,0.2509,0.608,Priority,Clear this season,0.722,"[125, 301]"
+5,tai_lam-881,Tai Lam Country Park,0.0684,0.5298,Schedule,Add to annual clearance plan,0.6377,"[34, 82]"
+6,tai_lam-011,Tai Lam Country Park,0.0379,0.4371,Schedule,Add to annual clearance plan,0.2916,"[19, 45]"
+7,tai_lam-466,Tai Lam Country Park,0.0236,0.4779,Schedule,Add to annual clearance plan,0.3668,"[12, 28]"

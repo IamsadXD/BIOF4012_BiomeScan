@@ -1,0 +1,1435 @@
+{
+ "meta": {
+  "title": "Mikania micrantha comparative-genomic priors on VNIR reflectance",
+  "proposal_section": "\u00a73.3, \u00a74.2, \u00a710 action 0",
+  "open_data_only": true,
+  "evidence_weight": {
+   "published_genomic": 1.0,
+   "published_transcriptomic": 0.85,
+   "published_physiological": 0.9,
+   "inferred_trait": 0.65,
+   "inferred_optical": 0.55
+  }
+ },
+ "n_findings": 8,
+ "n_traits": 5,
+ "n_predictions": 8,
+ "findings": [
+  {
+   "id": "F1_photoreaction_selection",
+   "claim": "Sixteen positively-selected genes concentrated in photoreaction and the utilisation of photoassimilates",
+   "evidence": "published_genomic",
+   "source": "Liu B. et al. (2020) Nature Communications 11:340",
+   "url": "https://www.nature.com/articles/s41467-019-13926-4",
+   "note": "Selection scan on the chromosome-scale assembly. Positive selection acting on photoreaction genes implies the light reactions themselves, not just growth rate, are the target of adaptation \u2014 which is what makes a *pigment* and *photosystem* difference plausible rather than a generic vigour difference.\n",
+   "proposal_ref": "\u00a71, \u00a73.3, \u00a74.2"
+  },
+  {
+   "id": "F2_night_co2",
+   "claim": "Enhanced photosynthetic capacity via night-time CO2 absorption supplementing daytime carbon fixation",
+   "evidence": "published_physiological",
+   "source": "Liu B. et al. (2020) Nature Communications 11:340",
+   "url": "https://www.nature.com/articles/s41467-019-13926-4",
+   "note": "A CAM-like supplementary carbon route in an otherwise C3 vine. Relevant here mainly because it implies elevated whole-plant carbon gain and therefore supports the high-SLA / fast-turnover leaf economics inference (T3), and because it predicts a DIURNAL component to any spectral difference \u2014 which is an acquisition-window constraint, not just a band choice.\n",
+   "proposal_ref": "\u00a71, \u00a73.3, \u00a74.2"
+  },
+  {
+   "id": "F3_stem_photosynthesis",
+   "claim": "Elevated stem photosynthesis efficiency \u2014 photosynthetically active tissue outside the leaf lamina",
+   "evidence": "published_physiological",
+   "source": "Liu B. et al. (2020) Nature Communications 11:340",
+   "url": "https://www.nature.com/articles/s41467-019-13926-4",
+   "note": "The single most operationally useful finding in the whole literature for this product. A green stem is a chlorophyll-bearing surface with a very different internal structure from a leaf: little spongy mesophyll, so it scatters far less in the NIR while still absorbing in the red. A canopy blanket that mixes leaf and photosynthetic stem therefore has a *shallower NIR plateau relative to its red absorption depth* than a pure-leaf canopy of the same greenness. That is a shape difference, not an amplitude difference, and shape survives illumination variation (proposal \u00a73.2, NIR row).\n",
+   "proposal_ref": "\u00a73.2 (stem row), \u00a73.3"
+  },
+  {
+   "id": "F4_wgd_and_lTR",
+   "claim": "~half the genome is LTR retrotransposon, 80% from an expansion within the last ~1 Myr, plus a whole-genome duplication and recent segmental duplications",
+   "evidence": "published_genomic",
+   "source": "Liu B. et al. (2020) Nature Communications 11:340; Wang et al. (2025) New Phytologist",
+   "url": "https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.70448",
+   "note": "Genome architecture, not phenotype. Included because it is the mechanism by which gene-family dosage changes (F5) arose, and because it is the part of the story that is unambiguously established \u2014 useful for credibility even though it makes no direct spectral prediction. Deliberately given no spectral prediction below; a desk study that turns every genomic fact into a band prediction is not a desk study, it is astrology.\n",
+   "proposal_ref": "\u00a73.3, \u00a74.2"
+  },
+  {
+   "id": "F5_gene_family_expansion",
+   "claim": "Gene family expansion and transposable-element dynamics associated with invasiveness; population structure resolved",
+   "evidence": "published_genomic",
+   "source": "Wang et al. (2025) New Phytologist \u2014 chromosome-scale M. micrantha (~1.53 Gb) and native congener M. cordata (~1.68 Gb)",
+   "url": "https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.70448",
+   "note": "Supplies the direct comparative contrast against a *native congener*, which is the closest published analogue of the discrimination problem AFCD has. Population structure is the hook for the \u00a73.4 roadmap item (regrowth vs recolonisation at treated sites).\n",
+   "proposal_ref": "\u00a73.3, \u00a73.4, \u00a74.2"
+  },
+  {
+   "id": "F6_diurnal_photosynthetic_genes",
+   "claim": "Evolution and diurnal expression patterns of photosynthetic pathway genes diverge from congeners",
+   "evidence": "published_transcriptomic",
+   "source": "The Crop Journal (2023) \u2014 diurnal expression of photosynthetic pathway genes in M. micrantha",
+   "url": "https://www.sciencedirect.com/science/article/pii/S2095311923000813",
+   "note": "Diurnal divergence is the reason this project constrains its acquisition window rather than flying whenever the weather allows. If the transcriptional difference has a time-of-day structure, the phenotype plausibly does too, and an inconsistent solar window would add a nuisance factor that looks exactly like species variance.\n",
+   "proposal_ref": "\u00a73.3, \u00a75.2"
+  },
+  {
+   "id": "F7_comparative_transcriptome",
+   "claim": "Comparative transcriptomics against native congeners shows divergence in photosynthesis and secondary-metabolite pathways",
+   "evidence": "published_transcriptomic",
+   "source": "Comparative transcriptome analysis of M. micrantha with native congeners",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5968712/",
+   "note": "Independent replication of the light-and-carbon convergence in F1/F2/F3 by a different method on different material. Two methods agreeing is the reason \u00a74.2 can call the science \"published, replicated in adjacent species, and consistent\" rather than a single-paper result.\n",
+   "proposal_ref": "\u00a74.2"
+  },
+  {
+   "id": "F8_defensive_metabolites",
+   "claim": "Defensive secondary-metabolite mechanisms likely enhance invasiveness",
+   "evidence": "published_genomic",
+   "source": "Defensive Mechanisms of Mikania micrantha ... (2025)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11768483/",
+   "note": "The basis for the anthocyanin / flavonoid row of the \u00a73.2 table. Weakest link in the set: \"secondary metabolite pathway divergence\" is a long way from \"a measurable 550-580 nm shoulder\", and the desk study scores it accordingly rather than flattering it.\n",
+   "proposal_ref": "\u00a73.2 (550-580 nm row)"
+  }
+ ],
+ "traits": [
+  {
+   "id": "T1_pigment_pool",
+   "trait": "Altered standing chlorophyll pool and chlorophyll a/b ratio",
+   "from": [
+    "F1_photoreaction_selection",
+    "F6_diurnal_photosynthetic_genes",
+    "F7_comparative_transcriptome"
+   ],
+   "evidence": "inferred_trait",
+   "rationale": "Selection on photoreaction genes and divergent expression of photosynthetic pathway genes act on the light-harvesting apparatus. Light-harvesting complex composition sets the chlorophyll a/b ratio and the total pigment pool per unit leaf area. This is the least contentious of the trait inferences, but it is still an inference: transcript abundance is not pigment concentration.\n"
+  },
+  {
+   "id": "T2_photosynthetic_stem",
+   "trait": "Chlorophyll-bearing, low-mesophyll stem tissue contributing to the canopy signal",
+   "from": [
+    "F3_stem_photosynthesis"
+   ],
+   "evidence": "inferred_trait",
+   "rationale": "Directly implied by the published finding rather than inferred at a distance \u2014 elevated stem photosynthesis requires chlorophyll in the stem. The inference is only about the *proportion of a canopy patch* that this tissue occupies at 8 cm GSD, which is a canopy-architecture question the ground library must measure.\n"
+  },
+  {
+   "id": "T3_leaf_economics",
+   "trait": "High specific leaf area, thin lamina, rapid leaf turnover",
+   "from": [
+    "F2_night_co2",
+    "F1_photoreaction_selection",
+    "F5_gene_family_expansion"
+   ],
+   "evidence": "inferred_trait",
+   "rationale": "The classic fast-growth end of the leaf economics spectrum, consistent with a vine that blankets a canopy in a season. Thin lamina means fewer internal air-cell interfaces and therefore a lower NIR plateau \u2014 but this is an AMPLITUDE effect, and \u00a73.2 warns that amplitude differences are confounded by illumination. Ranked accordingly.\n"
+  },
+  {
+   "id": "T4_secondary_metabolites",
+   "trait": "Divergent flavonoid / anthocyanin standing pools",
+   "from": [
+    "F8_defensive_metabolites",
+    "F7_comparative_transcriptome"
+   ],
+   "evidence": "inferred_trait",
+   "rationale": "Weak chain, honestly labelled. Defensive-chemistry divergence need not touch the specific pigments that absorb in the visible, and anthocyanin is the most environmentally labile pigment of the three (config/default.yaml `nuisance` gives it the largest within-class CV for that reason).\n"
+  },
+  {
+   "id": "T5_canopy_architecture",
+   "trait": "Two-layer blanket: vine layer draped over, not integrated into, host canopy",
+   "from": [
+    "F2_night_co2",
+    "F5_gene_family_expansion"
+   ],
+   "evidence": "inferred_trait",
+   "rationale": "Growth-habit trait rather than a molecular one; the genomic findings support only the growth *rate* that makes the habit possible. Included because the resulting mixed-pixel structure is what makes unmixing the right tool (\u00a73.2, final paragraph), and because that is a structural prediction the imagery can test independently of any pigment claim.\n"
+  }
+ ],
+ "ranked_operational": [
+  {
+   "id": "P1_red_edge_position",
+   "window_nm": [
+    680.0,
+    760.0
+   ],
+   "feature": "red_edge_position",
+   "measures": "Wavelength of maximum first derivative across the red edge",
+   "direction": "positive",
+   "expected_magnitude": "+3 to +6 nm",
+   "nuisance_exposure": 0.25,
+   "sensor_required": "hyperspectral",
+   "proposal_row": "\u00a73.2 680-750 nm red edge",
+   "falsification": "Mikania mean REP does not exceed the native-climber mean REP by at least 1 nm in the ground spectral library, in either season, at p < 0.05 by a site-blocked test.",
+   "why_broadband_misses": "Multispectral gives a red-edge BAND, not a POSITION.",
+   "biological_score": 0.3642,
+   "operational_score": 0.2731,
+   "weakest_link": "inferred_optical",
+   "n_independent_findings": 3,
+   "chain": {
+    "prediction_id": "P1_red_edge_position",
+    "prediction_evidence": "inferred_optical",
+    "traits": [
+     {
+      "id": "T1_pigment_pool",
+      "trait": "Altered standing chlorophyll pool and chlorophyll a/b ratio",
+      "evidence": "inferred_trait",
+      "weight": 0.65,
+      "rationale": "Selection on photoreaction genes and divergent expression of photosynthetic pathway genes act on the light-harvesting apparatus. Light-harvesting complex composition sets the chlorophyll a/b ratio and the total pigment pool per unit leaf area. This is the least contentious of the trait inferences, but it is still an inference: transcript abundance is not pigment concentration.",
+      "from": [
+       "F1_photoreaction_selection",
+       "F6_diurnal_photosynthetic_genes",
+       "F7_comparative_transcriptome"
+      ]
+     }
+    ],
+    "findings": [
+     {
+      "id": "F1_photoreaction_selection",
+      "claim": "Sixteen positively-selected genes concentrated in photoreaction and the utilisation of photoassimilates",
+      "evidence": "published_genomic",
+      "weight": 1.0,
+      "source": "Liu B. et al. (2020) Nature Communications 11:340",
+      "url": "https://www.nature.com/articles/s41467-019-13926-4",
+      "proposal_ref": "\u00a71, \u00a73.3, \u00a74.2"
+     },
+     {
+      "id": "F6_diurnal_photosynthetic_genes",
+      "claim": "Evolution and diurnal expression patterns of photosynthetic pathway genes diverge from congeners",
+      "evidence": "published_transcriptomic",
+      "weight": 0.85,
+      "source": "The Crop Journal (2023) \u2014 diurnal expression of photosynthetic pathway genes in M. micrantha",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2095311923000813",
+      "proposal_ref": "\u00a73.3, \u00a75.2"
+     },
+     {
+      "id": "F7_comparative_transcriptome",
+      "claim": "Comparative transcriptomics against native congeners shows divergence in photosynthesis and secondary-metabolite pathways",
+      "evidence": "published_transcriptomic",
+      "weight": 0.85,
+      "source": "Comparative transcriptome analysis of M. micrantha with native congeners",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5968712/",
+      "proposal_ref": "\u00a74.2"
+     }
+    ],
+    "n_independent_findings": 3,
+    "weakest_link": "inferred_optical",
+    "weakest_link_weight": 0.55
+   },
+   "rank_operational_score": 1
+  },
+  {
+   "id": "P3_green_peak_position",
+   "window_nm": [
+    520.0,
+    600.0
+   ],
+   "feature": "green_peak_position",
+   "measures": "Wavelength of the green reflectance maximum",
+   "direction": "positive",
+   "expected_magnitude": "+2 to +5 nm",
+   "nuisance_exposure": 0.3,
+   "sensor_required": "hyperspectral",
+   "proposal_row": "\u00a73.2 500-600 nm green peak",
+   "falsification": "Green-peak position distributions of Mikania and native climbers overlap with Cohen's d < 0.3 in the ground library.",
+   "why_broadband_misses": "A single 40 nm green band integrates over the whole feature.",
+   "biological_score": 0.3642,
+   "operational_score": 0.2549,
+   "weakest_link": "inferred_optical",
+   "n_independent_findings": 3,
+   "chain": {
+    "prediction_id": "P3_green_peak_position",
+    "prediction_evidence": "inferred_optical",
+    "traits": [
+     {
+      "id": "T1_pigment_pool",
+      "trait": "Altered standing chlorophyll pool and chlorophyll a/b ratio",
+      "evidence": "inferred_trait",
+      "weight": 0.65,
+      "rationale": "Selection on photoreaction genes and divergent expression of photosynthetic pathway genes act on the light-harvesting apparatus. Light-harvesting complex composition sets the chlorophyll a/b ratio and the total pigment pool per unit leaf area. This is the least contentious of the trait inferences, but it is still an inference: transcript abundance is not pigment concentration.",
+      "from": [
+       "F1_photoreaction_selection",
+       "F6_diurnal_photosynthetic_genes",
+       "F7_comparative_transcriptome"
+      ]
+     }
+    ],
+    "findings": [
+     {
+      "id": "F1_photoreaction_selection",
+      "claim": "Sixteen positively-selected genes concentrated in photoreaction and the utilisation of photoassimilates",
+      "evidence": "published_genomic",
+      "weight": 1.0,
+      "source": "Liu B. et al. (2020) Nature Communications 11:340",
+      "url": "https://www.nature.com/articles/s41467-019-13926-4",
+      "proposal_ref": "\u00a71, \u00a73.3, \u00a74.2"
+     },
+     {
+      "id": "F6_diurnal_photosynthetic_genes",
+      "claim": "Evolution and diurnal expression patterns of photosynthetic pathway genes diverge from congeners",
+      "evidence": "published_transcriptomic",
+      "weight": 0.85,
+      "source": "The Crop Journal (2023) \u2014 diurnal expression of photosynthetic pathway genes in M. micrantha",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2095311923000813",
+      "proposal_ref": "\u00a73.3, \u00a75.2"
+     },
+     {
+      "id": "F7_comparative_transcriptome",
+      "claim": "Comparative transcriptomics against native congeners shows divergence in photosynthesis and secondary-metabolite pathways",
+      "evidence": "published_transcriptomic",
+      "weight": 0.85,
+      "source": "Comparative transcriptome analysis of M. micrantha with native congeners",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5968712/",
+      "proposal_ref": "\u00a74.2"
+     }
+    ],
+    "n_independent_findings": 3,
+    "weakest_link": "inferred_optical",
+    "weakest_link_weight": 0.55
+   },
+   "rank_operational_score": 2
+  },
+  {
+   "id": "P2_stem_shape_ratio",
+   "window_nm": [
+    670.0,
+    900.0
+   ],
+   "feature": "nir_to_red_shape",
+   "measures": "NIR plateau height relative to red absorption depth (shape, not amplitude)",
+   "direction": "negative",
+   "expected_magnitude": "-4 to -12% relative",
+   "nuisance_exposure": 0.35,
+   "sensor_required": "multispectral",
+   "proposal_row": "\u00a73.2 stem/green-tissue contribution",
+   "falsification": "Canopy-patch spectra of Mikania show no reduction in NIR-to-red shape ratio relative to native climbers once leaf-only spectra are compared with whole-patch spectra of the same individuals.",
+   "why_broadband_misses": "Broadband cannot separate a stem-derived green signal from leaf signal.",
+   "biological_score": 0.3777,
+   "operational_score": 0.2455,
+   "weakest_link": "inferred_optical",
+   "n_independent_findings": 3,
+   "chain": {
+    "prediction_id": "P2_stem_shape_ratio",
+    "prediction_evidence": "inferred_optical",
+    "traits": [
+     {
+      "id": "T2_photosynthetic_stem",
+      "trait": "Chlorophyll-bearing, low-mesophyll stem tissue contributing to the canopy signal",
+      "evidence": "inferred_trait",
+      "weight": 0.65,
+      "rationale": "Directly implied by the published finding rather than inferred at a distance \u2014 elevated stem photosynthesis requires chlorophyll in the stem. The inference is only about the *proportion of a canopy patch* that this tissue occupies at 8 cm GSD, which is a canopy-architecture question the ground library must measure.",
+      "from": [
+       "F3_stem_photosynthesis"
+      ]
+     },
+     {
+      "id": "T5_canopy_architecture",
+      "trait": "Two-layer blanket: vine layer draped over, not integrated into, host canopy",
+      "evidence": "inferred_trait",
+      "weight": 0.65,
+      "rationale": "Growth-habit trait rather than a molecular one; the genomic findings support only the growth *rate* that makes the habit possible. Included because the resulting mixed-pixel structure is what makes unmixing the right tool (\u00a73.2, final paragraph), and because that is a structural prediction the imagery can test independently of any pigment claim.",
+      "from": [
+       "F2_night_co2",
+       "F5_gene_family_expansion"
+      ]
+     }
+    ],
+    "findings": [
+     {
+      "id": "F2_night_co2",
+      "claim": "Enhanced photosynthetic capacity via night-time CO2 absorption supplementing daytime carbon fixation",
+      "evidence": "published_physiological",
+      "weight": 0.9,
+      "source": "Liu B. et al. (2020) Nature Communications 11:340",
+      "url": "https://www.nature.com/articles/s41467-019-13926-4",
+      "proposal_ref": "\u00a71, \u00a73.3, \u00a74.2"
+     },
+     {
+      "id": "F3_stem_photosynthesis",
+      "claim": "Elevated stem photosynthesis efficiency \u2014 photosynthetically active tissue outside the leaf lamina",
+      "evidence": "published_physiological",
+      "weight": 0.9,
+      "source": "Liu B. et al. (2020) Nature Communications 11:340",
+      "url": "https://www.nature.com/articles/s41467-019-13926-4",
+      "proposal_ref": "\u00a73.2 (stem row), \u00a73.3"
+     },
+     {
+      "id": "F5_gene_family_expansion",
+      "claim": "Gene family expansion and transposable-element dynamics associated with invasiveness; population structure resolved",
+      "evidence": "published_genomic",
+      "weight": 1.0,
+      "source": "Wang et al. (2025) New Phytologist \u2014 chromosome-scale M. micrantha (~1.53 Gb) and native congener M. cordata (~1.68 Gb)",
+      "url": "https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.70448",
+      "proposal_ref": "\u00a73.3, \u00a73.4, \u00a74.2"
+     }
+    ],
+    "n_independent_findings": 3,
+    "weakest_link": "inferred_optical",
+    "weakest_link_weight": 0.55
+   },
+   "rank_operational_score": 3
+  },
+  {
+   "id": "P4_derivative_shape",
+   "window_nm": [
+    690.0,
+    750.0
+   ],
+   "feature": "red_edge_derivative_shape",
+   "measures": "First- and second-derivative shape across the red edge (not just its peak)",
+   "direction": "two_sided",
+   "expected_magnitude": "detectable as a multivariate contrast, not a scalar offset",
+   "nuisance_exposure": 0.3,
+   "sensor_required": "hyperspectral",
+   "proposal_row": "\u00a73.2 derivative features",
+   "falsification": "A classifier restricted to derivative features in this window performs no better than chance on site-disjoint validation.",
+   "why_broadband_misses": "Requires contiguous sampling \u2014 impossible with 5 discrete bands.",
+   "biological_score": 0.3753,
+   "operational_score": 0.2233,
+   "weakest_link": "inferred_optical",
+   "n_independent_findings": 4,
+   "chain": {
+    "prediction_id": "P4_derivative_shape",
+    "prediction_evidence": "inferred_optical",
+    "traits": [
+     {
+      "id": "T1_pigment_pool",
+      "trait": "Altered standing chlorophyll pool and chlorophyll a/b ratio",
+      "evidence": "inferred_trait",
+      "weight": 0.65,
+      "rationale": "Selection on photoreaction genes and divergent expression of photosynthetic pathway genes act on the light-harvesting apparatus. Light-harvesting complex composition sets the chlorophyll a/b ratio and the total pigment pool per unit leaf area. This is the least contentious of the trait inferences, but it is still an inference: transcript abundance is not pigment concentration.",
+      "from": [
+       "F1_photoreaction_selection",
+       "F6_diurnal_photosynthetic_genes",
+       "F7_comparative_transcriptome"
+      ]
+     },
+     {
+      "id": "T2_photosynthetic_stem",
+      "trait": "Chlorophyll-bearing, low-mesophyll stem tissue contributing to the canopy signal",
+      "evidence": "inferred_trait",
+      "weight": 0.65,
+      "rationale": "Directly implied by the published finding rather than inferred at a distance \u2014 elevated stem photosynthesis requires chlorophyll in the stem. The inference is only about the *proportion of a canopy patch* that this tissue occupies at 8 cm GSD, which is a canopy-architecture question the ground library must measure.",
+      "from": [
+       "F3_stem_photosynthesis"
+      ]
+     }
+    ],
+    "findings": [
+     {
+      "id": "F1_photoreaction_selection",
+      "claim": "Sixteen positively-selected genes concentrated in photoreaction and the utilisation of photoassimilates",
+      "evidence": "published_genomic",
+      "weight": 1.0,
+      "source": "Liu B. et al. (2020) Nature Communications 11:340",
+      "url": "https://www.nature.com/articles/s41467-019-13926-4",
+      "proposal_ref": "\u00a71, \u00a73.3, \u00a74.2"
+     },
+     {
+      "id": "F3_stem_photosynthesis",
+      "claim": "Elevated stem photosynthesis efficiency \u2014 photosynthetically active tissue outside the leaf lamina",
+      "evidence": "published_physiological",
+      "weight": 0.9,
+      "source": "Liu B. et al. (2020) Nature Communications 11:340",
+      "url": "https://www.nature.com/articles/s41467-019-13926-4",
+      "proposal_ref": "\u00a73.2 (stem row), \u00a73.3"
+     },
+     {
+      "id": "F6_diurnal_photosynthetic_genes",
+      "claim": "Evolution and diurnal expression patterns of photosynthetic pathway genes diverge from congeners",
+      "evidence": "published_transcriptomic",
+      "weight": 0.85,
+      "source": "The Crop Journal (2023) \u2014 diurnal expression of photosynthetic pathway genes in M. micrantha",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2095311923000813",
+      "proposal_ref": "\u00a73.3, \u00a75.2"
+     },
+     {
+      "id": "F7_comparative_transcriptome",
+      "claim": "Comparative transcriptomics against native congeners shows divergence in photosynthesis and secondary-metabolite pathways",
+      "evidence": "published_transcriptomic",
+      "weight": 0.85,
+      "source": "Comparative transcriptome analysis of M. micrantha with native congeners",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5968712/",
+      "proposal_ref": "\u00a74.2"
+     }
+    ],
+    "n_independent_findings": 4,
+    "weakest_link": "inferred_optical",
+    "weakest_link_weight": 0.55
+   },
+   "rank_operational_score": 4
+  },
+  {
+   "id": "P5_carotenoid_depth",
+   "window_nm": [
+    470.0,
+    520.0
+   ],
+   "feature": "carotenoid_depth",
+   "measures": "Continuum-removed absorption depth in the carotenoid region",
+   "direction": "negative",
+   "expected_magnitude": "-5 to -10% relative depth",
+   "nuisance_exposure": 0.45,
+   "sensor_required": "hyperspectral",
+   "proposal_row": "\u00a73.2 500-600 nm carotenoid",
+   "falsification": "No consistent sign of difference across seasons, or the difference is smaller than the sensor's blue-region noise floor at operational integration times.",
+   "why_broadband_misses": "Requires narrow bands to resolve.",
+   "biological_score": 0.3857,
+   "operational_score": 0.2121,
+   "weakest_link": "inferred_optical",
+   "n_independent_findings": 4,
+   "chain": {
+    "prediction_id": "P5_carotenoid_depth",
+    "prediction_evidence": "inferred_optical",
+    "traits": [
+     {
+      "id": "T1_pigment_pool",
+      "trait": "Altered standing chlorophyll pool and chlorophyll a/b ratio",
+      "evidence": "inferred_trait",
+      "weight": 0.65,
+      "rationale": "Selection on photoreaction genes and divergent expression of photosynthetic pathway genes act on the light-harvesting apparatus. Light-harvesting complex composition sets the chlorophyll a/b ratio and the total pigment pool per unit leaf area. This is the least contentious of the trait inferences, but it is still an inference: transcript abundance is not pigment concentration.",
+      "from": [
+       "F1_photoreaction_selection",
+       "F6_diurnal_photosynthetic_genes",
+       "F7_comparative_transcriptome"
+      ]
+     },
+     {
+      "id": "T4_secondary_metabolites",
+      "trait": "Divergent flavonoid / anthocyanin standing pools",
+      "evidence": "inferred_trait",
+      "weight": 0.65,
+      "rationale": "Weak chain, honestly labelled. Defensive-chemistry divergence need not touch the specific pigments that absorb in the visible, and anthocyanin is the most environmentally labile pigment of the three (config/default.yaml `nuisance` gives it the largest within-class CV for that reason).",
+      "from": [
+       "F8_defensive_metabolites",
+       "F7_comparative_transcriptome"
+      ]
+     }
+    ],
+    "findings": [
+     {
+      "id": "F1_photoreaction_selection",
+      "claim": "Sixteen positively-selected genes concentrated in photoreaction and the utilisation of photoassimilates",
+      "evidence": "published_genomic",
+      "weight": 1.0,
+      "source": "Liu B. et al. (2020) Nature Communications 11:340",
+      "url": "https://www.nature.com/articles/s41467-019-13926-4",
+      "proposal_ref": "\u00a71, \u00a73.3, \u00a74.2"
+     },
+     {
+      "id": "F6_diurnal_photosynthetic_genes",
+      "claim": "Evolution and diurnal expression patterns of photosynthetic pathway genes diverge from congeners",
+      "evidence": "published_transcriptomic",
+      "weight": 0.85,
+      "source": "The Crop Journal (2023) \u2014 diurnal expression of photosynthetic pathway genes in M. micrantha",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2095311923000813",
+      "proposal_ref": "\u00a73.3, \u00a75.2"
+     },
+     {
+      "id": "F7_comparative_transcriptome",
+      "claim": "Comparative transcriptomics against native congeners shows divergence in photosynthesis and secondary-metabolite pathways",
+      "evidence": "published_transcriptomic",
+      "weight": 0.85,
+      "source": "Comparative transcriptome analysis of M. micrantha with native congeners",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5968712/",
+      "proposal_ref": "\u00a74.2"
+     },
+     {
+      "id": "F8_defensive_metabolites",
+      "claim": "Defensive secondary-metabolite mechanisms likely enhance invasiveness",
+      "evidence": "published_genomic",
+      "weight": 1.0,
+      "source": "Defensive Mechanisms of Mikania micrantha ... (2025)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11768483/",
+      "proposal_ref": "\u00a73.2 (550-580 nm row)"
+     }
+    ],
+    "n_independent_findings": 4,
+    "weakest_link": "inferred_optical",
+    "weakest_link_weight": 0.55
+   },
+   "rank_operational_score": 5
+  },
+  {
+   "id": "P8_water_band",
+   "window_nm": [
+    950.0,
+    1000.0
+   ],
+   "feature": "water_band_depth",
+   "measures": "Depth of the ~970 nm leaf water absorption feature",
+   "direction": "negative",
+   "expected_magnitude": "-8 to -15% relative depth",
+   "nuisance_exposure": 0.55,
+   "sensor_required": "hyperspectral",
+   "proposal_row": "not in the \u00a73.2 table \u2014 added by this desk study",
+   "falsification": "Difference disappears once measurements are matched for time of day and days since rainfall.",
+   "why_broadband_misses": "Outside the range of every RGB and most 5-band multispectral sensors entirely.",
+   "biological_score": 0.3911,
+   "operational_score": 0.176,
+   "weakest_link": "inferred_optical",
+   "n_independent_findings": 3,
+   "chain": {
+    "prediction_id": "P8_water_band",
+    "prediction_evidence": "inferred_optical",
+    "traits": [
+     {
+      "id": "T3_leaf_economics",
+      "trait": "High specific leaf area, thin lamina, rapid leaf turnover",
+      "evidence": "inferred_trait",
+      "weight": 0.65,
+      "rationale": "The classic fast-growth end of the leaf economics spectrum, consistent with a vine that blankets a canopy in a season. Thin lamina means fewer internal air-cell interfaces and therefore a lower NIR plateau \u2014 but this is an AMPLITUDE effect, and \u00a73.2 warns that amplitude differences are confounded by illumination. Ranked accordingly.",
+      "from": [
+       "F2_night_co2",
+       "F1_photoreaction_selection",
+       "F5_gene_family_expansion"
+      ]
+     }
+    ],
+    "findings": [
+     {
+      "id": "F1_photoreaction_selection",
+      "claim": "Sixteen positively-selected genes concentrated in photoreaction and the utilisation of photoassimilates",
+      "evidence": "published_genomic",
+      "weight": 1.0,
+      "source": "Liu B. et al. (2020) Nature Communications 11:340",
+      "url": "https://www.nature.com/articles/s41467-019-13926-4",
+      "proposal_ref": "\u00a71, \u00a73.3, \u00a74.2"
+     },
+     {
+      "id": "F2_night_co2",
+      "claim": "Enhanced photosynthetic capacity via night-time CO2 absorption supplementing daytime carbon fixation",
+      "evidence": "published_physiological",
+      "weight": 0.9,
+      "source": "Liu B. et al. (2020) Nature Communications 11:340",
+      "url": "https://www.nature.com/articles/s41467-019-13926-4",
+      "proposal_ref": "\u00a71, \u00a73.3, \u00a74.2"
+     },
+     {
+      "id": "F5_gene_family_expansion",
+      "claim": "Gene family expansion and transposable-element dynamics associated with invasiveness; population structure resolved",
+      "evidence": "published_genomic",
+      "weight": 1.0,
+      "source": "Wang et al. (2025) New Phytologist \u2014 chromosome-scale M. micrantha (~1.53 Gb) and native congener M. cordata (~1.68 Gb)",
+      "url": "https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.70448",
+      "proposal_ref": "\u00a73.3, \u00a73.4, \u00a74.2"
+     }
+    ],
+    "n_independent_findings": 3,
+    "weakest_link": "inferred_optical",
+    "weakest_link_weight": 0.55
+   },
+   "rank_operational_score": 6
+  },
+  {
+   "id": "P6_anthocyanin_shoulder",
+   "window_nm": [
+    550.0,
+    580.0
+   ],
+   "feature": "anthocyanin_shoulder",
+   "measures": "Reflectance shoulder ratio in the anthocyanin-sensitive region",
+   "direction": "negative",
+   "expected_magnitude": "weak; sign uncertain",
+   "nuisance_exposure": 0.6,
+   "sensor_required": "hyperspectral",
+   "proposal_row": "\u00a73.2 550-580 nm anthocyanin",
+   "falsification": "Within-species seasonal variation exceeds between-species variation \u2014 which on current evidence is the EXPECTED outcome. This row is included so that it can be struck, per \u00a73.2: \"rows that fail should be struck rather than quietly retained.\"",
+   "why_broadband_misses": "Requires narrow bands to resolve.",
+   "biological_score": 0.3582,
+   "operational_score": 0.1433,
+   "weakest_link": "inferred_optical",
+   "n_independent_findings": 2,
+   "chain": {
+    "prediction_id": "P6_anthocyanin_shoulder",
+    "prediction_evidence": "inferred_optical",
+    "traits": [
+     {
+      "id": "T4_secondary_metabolites",
+      "trait": "Divergent flavonoid / anthocyanin standing pools",
+      "evidence": "inferred_trait",
+      "weight": 0.65,
+      "rationale": "Weak chain, honestly labelled. Defensive-chemistry divergence need not touch the specific pigments that absorb in the visible, and anthocyanin is the most environmentally labile pigment of the three (config/default.yaml `nuisance` gives it the largest within-class CV for that reason).",
+      "from": [
+       "F8_defensive_metabolites",
+       "F7_comparative_transcriptome"
+      ]
+     }
+    ],
+    "findings": [
+     {
+      "id": "F7_comparative_transcriptome",
+      "claim": "Comparative transcriptomics against native congeners shows divergence in photosynthesis and secondary-metabolite pathways",
+      "evidence": "published_transcriptomic",
+      "weight": 0.85,
+      "source": "Comparative transcriptome analysis of M. micrantha with native congeners",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5968712/",
+      "proposal_ref": "\u00a74.2"
+     },
+     {
+      "id": "F8_defensive_metabolites",
+      "claim": "Defensive secondary-metabolite mechanisms likely enhance invasiveness",
+      "evidence": "published_genomic",
+      "weight": 1.0,
+      "source": "Defensive Mechanisms of Mikania micrantha ... (2025)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11768483/",
+      "proposal_ref": "\u00a73.2 (550-580 nm row)"
+     }
+    ],
+    "n_independent_findings": 2,
+    "weakest_link": "inferred_optical",
+    "weakest_link_weight": 0.55
+   },
+   "rank_operational_score": 7
+  },
+  {
+   "id": "P7_nir_plateau_amplitude",
+   "window_nm": [
+    780.0,
+    900.0
+   ],
+   "feature": "nir_plateau",
+   "measures": "Mean reflectance across the NIR plateau",
+   "direction": "negative",
+   "expected_magnitude": "-3 to -6%",
+   "nuisance_exposure": 0.85,
+   "sensor_required": "multispectral",
+   "proposal_row": "\u00a73.2 750-900 nm NIR plateau",
+   "falsification": "Between-species amplitude difference is smaller than within-species variability driven by LAI and illumination \u2014 which config/default.yaml already asserts to be the case (`nuisance.lai_plateau_cv` = 0.16 against a species contrast of ~0.05). This prediction is expected to FAIL as a standalone discriminator and is retained only as a covariate.",
+   "why_broadband_misses": "Amplitude differences confounded by illumination \u2014 so broadband does not miss it, it is simply not usable.",
+   "biological_score": 0.3911,
+   "operational_score": 0.0587,
+   "weakest_link": "inferred_optical",
+   "n_independent_findings": 3,
+   "chain": {
+    "prediction_id": "P7_nir_plateau_amplitude",
+    "prediction_evidence": "inferred_optical",
+    "traits": [
+     {
+      "id": "T3_leaf_economics",
+      "trait": "High specific leaf area, thin lamina, rapid leaf turnover",
+      "evidence": "inferred_trait",
+      "weight": 0.65,
+      "rationale": "The classic fast-growth end of the leaf economics spectrum, consistent with a vine that blankets a canopy in a season. Thin lamina means fewer internal air-cell interfaces and therefore a lower NIR plateau \u2014 but this is an AMPLITUDE effect, and \u00a73.2 warns that amplitude differences are confounded by illumination. Ranked accordingly.",
+      "from": [
+       "F2_night_co2",
+       "F1_photoreaction_selection",
+       "F5_gene_family_expansion"
+      ]
+     }
+    ],
+    "findings": [
+     {
+      "id": "F1_photoreaction_selection",
+      "claim": "Sixteen positively-selected genes concentrated in photoreaction and the utilisation of photoassimilates",
+      "evidence": "published_genomic",
+      "weight": 1.0,
+      "source": "Liu B. et al. (2020) Nature Communications 11:340",
+      "url": "https://www.nature.com/articles/s41467-019-13926-4",
+      "proposal_ref": "\u00a71, \u00a73.3, \u00a74.2"
+     },
+     {
+      "id": "F2_night_co2",
+      "claim": "Enhanced photosynthetic capacity via night-time CO2 absorption supplementing daytime carbon fixation",
+      "evidence": "published_physiological",
+      "weight": 0.9,
+      "source": "Liu B. et al. (2020) Nature Communications 11:340",
+      "url": "https://www.nature.com/articles/s41467-019-13926-4",
+      "proposal_ref": "\u00a71, \u00a73.3, \u00a74.2"
+     },
+     {
+      "id": "F5_gene_family_expansion",
+      "claim": "Gene family expansion and transposable-element dynamics associated with invasiveness; population structure resolved",
+      "evidence": "published_genomic",
+      "weight": 1.0,
+      "source": "Wang et al. (2025) New Phytologist \u2014 chromosome-scale M. micrantha (~1.53 Gb) and native congener M. cordata (~1.68 Gb)",
+      "url": "https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.70448",
+      "proposal_ref": "\u00a73.3, \u00a73.4, \u00a74.2"
+     }
+    ],
+    "n_independent_findings": 3,
+    "weakest_link": "inferred_optical",
+    "weakest_link_weight": 0.55
+   },
+   "rank_operational_score": 8
+  }
+ ],
+ "ranked_biological": [
+  {
+   "id": "P7_nir_plateau_amplitude",
+   "window_nm": [
+    780.0,
+    900.0
+   ],
+   "feature": "nir_plateau",
+   "measures": "Mean reflectance across the NIR plateau",
+   "direction": "negative",
+   "expected_magnitude": "-3 to -6%",
+   "nuisance_exposure": 0.85,
+   "sensor_required": "multispectral",
+   "proposal_row": "\u00a73.2 750-900 nm NIR plateau",
+   "falsification": "Between-species amplitude difference is smaller than within-species variability driven by LAI and illumination \u2014 which config/default.yaml already asserts to be the case (`nuisance.lai_plateau_cv` = 0.16 against a species contrast of ~0.05). This prediction is expected to FAIL as a standalone discriminator and is retained only as a covariate.",
+   "why_broadband_misses": "Amplitude differences confounded by illumination \u2014 so broadband does not miss it, it is simply not usable.",
+   "biological_score": 0.3911,
+   "operational_score": 0.0587,
+   "weakest_link": "inferred_optical",
+   "n_independent_findings": 3,
+   "chain": {
+    "prediction_id": "P7_nir_plateau_amplitude",
+    "prediction_evidence": "inferred_optical",
+    "traits": [
+     {
+      "id": "T3_leaf_economics",
+      "trait": "High specific leaf area, thin lamina, rapid leaf turnover",
+      "evidence": "inferred_trait",
+      "weight": 0.65,
+      "rationale": "The classic fast-growth end of the leaf economics spectrum, consistent with a vine that blankets a canopy in a season. Thin lamina means fewer internal air-cell interfaces and therefore a lower NIR plateau \u2014 but this is an AMPLITUDE effect, and \u00a73.2 warns that amplitude differences are confounded by illumination. Ranked accordingly.",
+      "from": [
+       "F2_night_co2",
+       "F1_photoreaction_selection",
+       "F5_gene_family_expansion"
+      ]
+     }
+    ],
+    "findings": [
+     {
+      "id": "F1_photoreaction_selection",
+      "claim": "Sixteen positively-selected genes concentrated in photoreaction and the utilisation of photoassimilates",
+      "evidence": "published_genomic",
+      "weight": 1.0,
+      "source": "Liu B. et al. (2020) Nature Communications 11:340",
+      "url": "https://www.nature.com/articles/s41467-019-13926-4",
+      "proposal_ref": "\u00a71, \u00a73.3, \u00a74.2"
+     },
+     {
+      "id": "F2_night_co2",
+      "claim": "Enhanced photosynthetic capacity via night-time CO2 absorption supplementing daytime carbon fixation",
+      "evidence": "published_physiological",
+      "weight": 0.9,
+      "source": "Liu B. et al. (2020) Nature Communications 11:340",
+      "url": "https://www.nature.com/articles/s41467-019-13926-4",
+      "proposal_ref": "\u00a71, \u00a73.3, \u00a74.2"
+     },
+     {
+      "id": "F5_gene_family_expansion",
+      "claim": "Gene family expansion and transposable-element dynamics associated with invasiveness; population structure resolved",
+      "evidence": "published_genomic",
+      "weight": 1.0,
+      "source": "Wang et al. (2025) New Phytologist \u2014 chromosome-scale M. micrantha (~1.53 Gb) and native congener M. cordata (~1.68 Gb)",
+      "url": "https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.70448",
+      "proposal_ref": "\u00a73.3, \u00a73.4, \u00a74.2"
+     }
+    ],
+    "n_independent_findings": 3,
+    "weakest_link": "inferred_optical",
+    "weakest_link_weight": 0.55
+   },
+   "rank_biological_score": 1
+  },
+  {
+   "id": "P8_water_band",
+   "window_nm": [
+    950.0,
+    1000.0
+   ],
+   "feature": "water_band_depth",
+   "measures": "Depth of the ~970 nm leaf water absorption feature",
+   "direction": "negative",
+   "expected_magnitude": "-8 to -15% relative depth",
+   "nuisance_exposure": 0.55,
+   "sensor_required": "hyperspectral",
+   "proposal_row": "not in the \u00a73.2 table \u2014 added by this desk study",
+   "falsification": "Difference disappears once measurements are matched for time of day and days since rainfall.",
+   "why_broadband_misses": "Outside the range of every RGB and most 5-band multispectral sensors entirely.",
+   "biological_score": 0.3911,
+   "operational_score": 0.176,
+   "weakest_link": "inferred_optical",
+   "n_independent_findings": 3,
+   "chain": {
+    "prediction_id": "P8_water_band",
+    "prediction_evidence": "inferred_optical",
+    "traits": [
+     {
+      "id": "T3_leaf_economics",
+      "trait": "High specific leaf area, thin lamina, rapid leaf turnover",
+      "evidence": "inferred_trait",
+      "weight": 0.65,
+      "rationale": "The classic fast-growth end of the leaf economics spectrum, consistent with a vine that blankets a canopy in a season. Thin lamina means fewer internal air-cell interfaces and therefore a lower NIR plateau \u2014 but this is an AMPLITUDE effect, and \u00a73.2 warns that amplitude differences are confounded by illumination. Ranked accordingly.",
+      "from": [
+       "F2_night_co2",
+       "F1_photoreaction_selection",
+       "F5_gene_family_expansion"
+      ]
+     }
+    ],
+    "findings": [
+     {
+      "id": "F1_photoreaction_selection",
+      "claim": "Sixteen positively-selected genes concentrated in photoreaction and the utilisation of photoassimilates",
+      "evidence": "published_genomic",
+      "weight": 1.0,
+      "source": "Liu B. et al. (2020) Nature Communications 11:340",
+      "url": "https://www.nature.com/articles/s41467-019-13926-4",
+      "proposal_ref": "\u00a71, \u00a73.3, \u00a74.2"
+     },
+     {
+      "id": "F2_night_co2",
+      "claim": "Enhanced photosynthetic capacity via night-time CO2 absorption supplementing daytime carbon fixation",
+      "evidence": "published_physiological",
+      "weight": 0.9,
+      "source": "Liu B. et al. (2020) Nature Communications 11:340",
+      "url": "https://www.nature.com/articles/s41467-019-13926-4",
+      "proposal_ref": "\u00a71, \u00a73.3, \u00a74.2"
+     },
+     {
+      "id": "F5_gene_family_expansion",
+      "claim": "Gene family expansion and transposable-element dynamics associated with invasiveness; population structure resolved",
+      "evidence": "published_genomic",
+      "weight": 1.0,
+      "source": "Wang et al. (2025) New Phytologist \u2014 chromosome-scale M. micrantha (~1.53 Gb) and native congener M. cordata (~1.68 Gb)",
+      "url": "https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.70448",
+      "proposal_ref": "\u00a73.3, \u00a73.4, \u00a74.2"
+     }
+    ],
+    "n_independent_findings": 3,
+    "weakest_link": "inferred_optical",
+    "weakest_link_weight": 0.55
+   },
+   "rank_biological_score": 2
+  },
+  {
+   "id": "P5_carotenoid_depth",
+   "window_nm": [
+    470.0,
+    520.0
+   ],
+   "feature": "carotenoid_depth",
+   "measures": "Continuum-removed absorption depth in the carotenoid region",
+   "direction": "negative",
+   "expected_magnitude": "-5 to -10% relative depth",
+   "nuisance_exposure": 0.45,
+   "sensor_required": "hyperspectral",
+   "proposal_row": "\u00a73.2 500-600 nm carotenoid",
+   "falsification": "No consistent sign of difference across seasons, or the difference is smaller than the sensor's blue-region noise floor at operational integration times.",
+   "why_broadband_misses": "Requires narrow bands to resolve.",
+   "biological_score": 0.3857,
+   "operational_score": 0.2121,
+   "weakest_link": "inferred_optical",
+   "n_independent_findings": 4,
+   "chain": {
+    "prediction_id": "P5_carotenoid_depth",
+    "prediction_evidence": "inferred_optical",
+    "traits": [
+     {
+      "id": "T1_pigment_pool",
+      "trait": "Altered standing chlorophyll pool and chlorophyll a/b ratio",
+      "evidence": "inferred_trait",
+      "weight": 0.65,
+      "rationale": "Selection on photoreaction genes and divergent expression of photosynthetic pathway genes act on the light-harvesting apparatus. Light-harvesting complex composition sets the chlorophyll a/b ratio and the total pigment pool per unit leaf area. This is the least contentious of the trait inferences, but it is still an inference: transcript abundance is not pigment concentration.",
+      "from": [
+       "F1_photoreaction_selection",
+       "F6_diurnal_photosynthetic_genes",
+       "F7_comparative_transcriptome"
+      ]
+     },
+     {
+      "id": "T4_secondary_metabolites",
+      "trait": "Divergent flavonoid / anthocyanin standing pools",
+      "evidence": "inferred_trait",
+      "weight": 0.65,
+      "rationale": "Weak chain, honestly labelled. Defensive-chemistry divergence need not touch the specific pigments that absorb in the visible, and anthocyanin is the most environmentally labile pigment of the three (config/default.yaml `nuisance` gives it the largest within-class CV for that reason).",
+      "from": [
+       "F8_defensive_metabolites",
+       "F7_comparative_transcriptome"
+      ]
+     }
+    ],
+    "findings": [
+     {
+      "id": "F1_photoreaction_selection",
+      "claim": "Sixteen positively-selected genes concentrated in photoreaction and the utilisation of photoassimilates",
+      "evidence": "published_genomic",
+      "weight": 1.0,
+      "source": "Liu B. et al. (2020) Nature Communications 11:340",
+      "url": "https://www.nature.com/articles/s41467-019-13926-4",
+      "proposal_ref": "\u00a71, \u00a73.3, \u00a74.2"
+     },
+     {
+      "id": "F6_diurnal_photosynthetic_genes",
+      "claim": "Evolution and diurnal expression patterns of photosynthetic pathway genes diverge from congeners",
+      "evidence": "published_transcriptomic",
+      "weight": 0.85,
+      "source": "The Crop Journal (2023) \u2014 diurnal expression of photosynthetic pathway genes in M. micrantha",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2095311923000813",
+      "proposal_ref": "\u00a73.3, \u00a75.2"
+     },
+     {
+      "id": "F7_comparative_transcriptome",
+      "claim": "Comparative transcriptomics against native congeners shows divergence in photosynthesis and secondary-metabolite pathways",
+      "evidence": "published_transcriptomic",
+      "weight": 0.85,
+      "source": "Comparative transcriptome analysis of M. micrantha with native congeners",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5968712/",
+      "proposal_ref": "\u00a74.2"
+     },
+     {
+      "id": "F8_defensive_metabolites",
+      "claim": "Defensive secondary-metabolite mechanisms likely enhance invasiveness",
+      "evidence": "published_genomic",
+      "weight": 1.0,
+      "source": "Defensive Mechanisms of Mikania micrantha ... (2025)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11768483/",
+      "proposal_ref": "\u00a73.2 (550-580 nm row)"
+     }
+    ],
+    "n_independent_findings": 4,
+    "weakest_link": "inferred_optical",
+    "weakest_link_weight": 0.55
+   },
+   "rank_biological_score": 3
+  },
+  {
+   "id": "P2_stem_shape_ratio",
+   "window_nm": [
+    670.0,
+    900.0
+   ],
+   "feature": "nir_to_red_shape",
+   "measures": "NIR plateau height relative to red absorption depth (shape, not amplitude)",
+   "direction": "negative",
+   "expected_magnitude": "-4 to -12% relative",
+   "nuisance_exposure": 0.35,
+   "sensor_required": "multispectral",
+   "proposal_row": "\u00a73.2 stem/green-tissue contribution",
+   "falsification": "Canopy-patch spectra of Mikania show no reduction in NIR-to-red shape ratio relative to native climbers once leaf-only spectra are compared with whole-patch spectra of the same individuals.",
+   "why_broadband_misses": "Broadband cannot separate a stem-derived green signal from leaf signal.",
+   "biological_score": 0.3777,
+   "operational_score": 0.2455,
+   "weakest_link": "inferred_optical",
+   "n_independent_findings": 3,
+   "chain": {
+    "prediction_id": "P2_stem_shape_ratio",
+    "prediction_evidence": "inferred_optical",
+    "traits": [
+     {
+      "id": "T2_photosynthetic_stem",
+      "trait": "Chlorophyll-bearing, low-mesophyll stem tissue contributing to the canopy signal",
+      "evidence": "inferred_trait",
+      "weight": 0.65,
+      "rationale": "Directly implied by the published finding rather than inferred at a distance \u2014 elevated stem photosynthesis requires chlorophyll in the stem. The inference is only about the *proportion of a canopy patch* that this tissue occupies at 8 cm GSD, which is a canopy-architecture question the ground library must measure.",
+      "from": [
+       "F3_stem_photosynthesis"
+      ]
+     },
+     {
+      "id": "T5_canopy_architecture",
+      "trait": "Two-layer blanket: vine layer draped over, not integrated into, host canopy",
+      "evidence": "inferred_trait",
+      "weight": 0.65,
+      "rationale": "Growth-habit trait rather than a molecular one; the genomic findings support only the growth *rate* that makes the habit possible. Included because the resulting mixed-pixel structure is what makes unmixing the right tool (\u00a73.2, final paragraph), and because that is a structural prediction the imagery can test independently of any pigment claim.",
+      "from": [
+       "F2_night_co2",
+       "F5_gene_family_expansion"
+      ]
+     }
+    ],
+    "findings": [
+     {
+      "id": "F2_night_co2",
+      "claim": "Enhanced photosynthetic capacity via night-time CO2 absorption supplementing daytime carbon fixation",
+      "evidence": "published_physiological",
+      "weight": 0.9,
+      "source": "Liu B. et al. (2020) Nature Communications 11:340",
+      "url": "https://www.nature.com/articles/s41467-019-13926-4",
+      "proposal_ref": "\u00a71, \u00a73.3, \u00a74.2"
+     },
+     {
+      "id": "F3_stem_photosynthesis",
+      "claim": "Elevated stem photosynthesis efficiency \u2014 photosynthetically active tissue outside the leaf lamina",
+      "evidence": "published_physiological",
+      "weight": 0.9,
+      "source": "Liu B. et al. (2020) Nature Communications 11:340",
+      "url": "https://www.nature.com/articles/s41467-019-13926-4",
+      "proposal_ref": "\u00a73.2 (stem row), \u00a73.3"
+     },
+     {
+      "id": "F5_gene_family_expansion",
+      "claim": "Gene family expansion and transposable-element dynamics associated with invasiveness; population structure resolved",
+      "evidence": "published_genomic",
+      "weight": 1.0,
+      "source": "Wang et al. (2025) New Phytologist \u2014 chromosome-scale M. micrantha (~1.53 Gb) and native congener M. cordata (~1.68 Gb)",
+      "url": "https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.70448",
+      "proposal_ref": "\u00a73.3, \u00a73.4, \u00a74.2"
+     }
+    ],
+    "n_independent_findings": 3,
+    "weakest_link": "inferred_optical",
+    "weakest_link_weight": 0.55
+   },
+   "rank_biological_score": 4
+  },
+  {
+   "id": "P4_derivative_shape",
+   "window_nm": [
+    690.0,
+    750.0
+   ],
+   "feature": "red_edge_derivative_shape",
+   "measures": "First- and second-derivative shape across the red edge (not just its peak)",
+   "direction": "two_sided",
+   "expected_magnitude": "detectable as a multivariate contrast, not a scalar offset",
+   "nuisance_exposure": 0.3,
+   "sensor_required": "hyperspectral",
+   "proposal_row": "\u00a73.2 derivative features",
+   "falsification": "A classifier restricted to derivative features in this window performs no better than chance on site-disjoint validation.",
+   "why_broadband_misses": "Requires contiguous sampling \u2014 impossible with 5 discrete bands.",
+   "biological_score": 0.3753,
+   "operational_score": 0.2233,
+   "weakest_link": "inferred_optical",
+   "n_independent_findings": 4,
+   "chain": {
+    "prediction_id": "P4_derivative_shape",
+    "prediction_evidence": "inferred_optical",
+    "traits": [
+     {
+      "id": "T1_pigment_pool",
+      "trait": "Altered standing chlorophyll pool and chlorophyll a/b ratio",
+      "evidence": "inferred_trait",
+      "weight": 0.65,
+      "rationale": "Selection on photoreaction genes and divergent expression of photosynthetic pathway genes act on the light-harvesting apparatus. Light-harvesting complex composition sets the chlorophyll a/b ratio and the total pigment pool per unit leaf area. This is the least contentious of the trait inferences, but it is still an inference: transcript abundance is not pigment concentration.",
+      "from": [
+       "F1_photoreaction_selection",
+       "F6_diurnal_photosynthetic_genes",
+       "F7_comparative_transcriptome"
+      ]
+     },
+     {
+      "id": "T2_photosynthetic_stem",
+      "trait": "Chlorophyll-bearing, low-mesophyll stem tissue contributing to the canopy signal",
+      "evidence": "inferred_trait",
+      "weight": 0.65,
+      "rationale": "Directly implied by the published finding rather than inferred at a distance \u2014 elevated stem photosynthesis requires chlorophyll in the stem. The inference is only about the *proportion of a canopy patch* that this tissue occupies at 8 cm GSD, which is a canopy-architecture question the ground library must measure.",
+      "from": [
+       "F3_stem_photosynthesis"
+      ]
+     }
+    ],
+    "findings": [
+     {
+      "id": "F1_photoreaction_selection",
+      "claim": "Sixteen positively-selected genes concentrated in photoreaction and the utilisation of photoassimilates",
+      "evidence": "published_genomic",
+      "weight": 1.0,
+      "source": "Liu B. et al. (2020) Nature Communications 11:340",
+      "url": "https://www.nature.com/articles/s41467-019-13926-4",
+      "proposal_ref": "\u00a71, \u00a73.3, \u00a74.2"
+     },
+     {
+      "id": "F3_stem_photosynthesis",
+      "claim": "Elevated stem photosynthesis efficiency \u2014 photosynthetically active tissue outside the leaf lamina",
+      "evidence": "published_physiological",
+      "weight": 0.9,
+      "source": "Liu B. et al. (2020) Nature Communications 11:340",
+      "url": "https://www.nature.com/articles/s41467-019-13926-4",
+      "proposal_ref": "\u00a73.2 (stem row), \u00a73.3"
+     },
+     {
+      "id": "F6_diurnal_photosynthetic_genes",
+      "claim": "Evolution and diurnal expression patterns of photosynthetic pathway genes diverge from congeners",
+      "evidence": "published_transcriptomic",
+      "weight": 0.85,
+      "source": "The Crop Journal (2023) \u2014 diurnal expression of photosynthetic pathway genes in M. micrantha",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2095311923000813",
+      "proposal_ref": "\u00a73.3, \u00a75.2"
+     },
+     {
+      "id": "F7_comparative_transcriptome",
+      "claim": "Comparative transcriptomics against native congeners shows divergence in photosynthesis and secondary-metabolite pathways",
+      "evidence": "published_transcriptomic",
+      "weight": 0.85,
+      "source": "Comparative transcriptome analysis of M. micrantha with native congeners",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5968712/",
+      "proposal_ref": "\u00a74.2"
+     }
+    ],
+    "n_independent_findings": 4,
+    "weakest_link": "inferred_optical",
+    "weakest_link_weight": 0.55
+   },
+   "rank_biological_score": 5
+  },
+  {
+   "id": "P1_red_edge_position",
+   "window_nm": [
+    680.0,
+    760.0
+   ],
+   "feature": "red_edge_position",
+   "measures": "Wavelength of maximum first derivative across the red edge",
+   "direction": "positive",
+   "expected_magnitude": "+3 to +6 nm",
+   "nuisance_exposure": 0.25,
+   "sensor_required": "hyperspectral",
+   "proposal_row": "\u00a73.2 680-750 nm red edge",
+   "falsification": "Mikania mean REP does not exceed the native-climber mean REP by at least 1 nm in the ground spectral library, in either season, at p < 0.05 by a site-blocked test.",
+   "why_broadband_misses": "Multispectral gives a red-edge BAND, not a POSITION.",
+   "biological_score": 0.3642,
+   "operational_score": 0.2731,
+   "weakest_link": "inferred_optical",
+   "n_independent_findings": 3,
+   "chain": {
+    "prediction_id": "P1_red_edge_position",
+    "prediction_evidence": "inferred_optical",
+    "traits": [
+     {
+      "id": "T1_pigment_pool",
+      "trait": "Altered standing chlorophyll pool and chlorophyll a/b ratio",
+      "evidence": "inferred_trait",
+      "weight": 0.65,
+      "rationale": "Selection on photoreaction genes and divergent expression of photosynthetic pathway genes act on the light-harvesting apparatus. Light-harvesting complex composition sets the chlorophyll a/b ratio and the total pigment pool per unit leaf area. This is the least contentious of the trait inferences, but it is still an inference: transcript abundance is not pigment concentration.",
+      "from": [
+       "F1_photoreaction_selection",
+       "F6_diurnal_photosynthetic_genes",
+       "F7_comparative_transcriptome"
+      ]
+     }
+    ],
+    "findings": [
+     {
+      "id": "F1_photoreaction_selection",
+      "claim": "Sixteen positively-selected genes concentrated in photoreaction and the utilisation of photoassimilates",
+      "evidence": "published_genomic",
+      "weight": 1.0,
+      "source": "Liu B. et al. (2020) Nature Communications 11:340",
+      "url": "https://www.nature.com/articles/s41467-019-13926-4",
+      "proposal_ref": "\u00a71, \u00a73.3, \u00a74.2"
+     },
+     {
+      "id": "F6_diurnal_photosynthetic_genes",
+      "claim": "Evolution and diurnal expression patterns of photosynthetic pathway genes diverge from congeners",
+      "evidence": "published_transcriptomic",
+      "weight": 0.85,
+      "source": "The Crop Journal (2023) \u2014 diurnal expression of photosynthetic pathway genes in M. micrantha",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2095311923000813",
+      "proposal_ref": "\u00a73.3, \u00a75.2"
+     },
+     {
+      "id": "F7_comparative_transcriptome",
+      "claim": "Comparative transcriptomics against native congeners shows divergence in photosynthesis and secondary-metabolite pathways",
+      "evidence": "published_transcriptomic",
+      "weight": 0.85,
+      "source": "Comparative transcriptome analysis of M. micrantha with native congeners",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5968712/",
+      "proposal_ref": "\u00a74.2"
+     }
+    ],
+    "n_independent_findings": 3,
+    "weakest_link": "inferred_optical",
+    "weakest_link_weight": 0.55
+   },
+   "rank_biological_score": 6
+  },
+  {
+   "id": "P3_green_peak_position",
+   "window_nm": [
+    520.0,
+    600.0
+   ],
+   "feature": "green_peak_position",
+   "measures": "Wavelength of the green reflectance maximum",
+   "direction": "positive",
+   "expected_magnitude": "+2 to +5 nm",
+   "nuisance_exposure": 0.3,
+   "sensor_required": "hyperspectral",
+   "proposal_row": "\u00a73.2 500-600 nm green peak",
+   "falsification": "Green-peak position distributions of Mikania and native climbers overlap with Cohen's d < 0.3 in the ground library.",
+   "why_broadband_misses": "A single 40 nm green band integrates over the whole feature.",
+   "biological_score": 0.3642,
+   "operational_score": 0.2549,
+   "weakest_link": "inferred_optical",
+   "n_independent_findings": 3,
+   "chain": {
+    "prediction_id": "P3_green_peak_position",
+    "prediction_evidence": "inferred_optical",
+    "traits": [
+     {
+      "id": "T1_pigment_pool",
+      "trait": "Altered standing chlorophyll pool and chlorophyll a/b ratio",
+      "evidence": "inferred_trait",
+      "weight": 0.65,
+      "rationale": "Selection on photoreaction genes and divergent expression of photosynthetic pathway genes act on the light-harvesting apparatus. Light-harvesting complex composition sets the chlorophyll a/b ratio and the total pigment pool per unit leaf area. This is the least contentious of the trait inferences, but it is still an inference: transcript abundance is not pigment concentration.",
+      "from": [
+       "F1_photoreaction_selection",
+       "F6_diurnal_photosynthetic_genes",
+       "F7_comparative_transcriptome"
+      ]
+     }
+    ],
+    "findings": [
+     {
+      "id": "F1_photoreaction_selection",
+      "claim": "Sixteen positively-selected genes concentrated in photoreaction and the utilisation of photoassimilates",
+      "evidence": "published_genomic",
+      "weight": 1.0,
+      "source": "Liu B. et al. (2020) Nature Communications 11:340",
+      "url": "https://www.nature.com/articles/s41467-019-13926-4",
+      "proposal_ref": "\u00a71, \u00a73.3, \u00a74.2"
+     },
+     {
+      "id": "F6_diurnal_photosynthetic_genes",
+      "claim": "Evolution and diurnal expression patterns of photosynthetic pathway genes diverge from congeners",
+      "evidence": "published_transcriptomic",
+      "weight": 0.85,
+      "source": "The Crop Journal (2023) \u2014 diurnal expression of photosynthetic pathway genes in M. micrantha",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2095311923000813",
+      "proposal_ref": "\u00a73.3, \u00a75.2"
+     },
+     {
+      "id": "F7_comparative_transcriptome",
+      "claim": "Comparative transcriptomics against native congeners shows divergence in photosynthesis and secondary-metabolite pathways",
+      "evidence": "published_transcriptomic",
+      "weight": 0.85,
+      "source": "Comparative transcriptome analysis of M. micrantha with native congeners",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5968712/",
+      "proposal_ref": "\u00a74.2"
+     }
+    ],
+    "n_independent_findings": 3,
+    "weakest_link": "inferred_optical",
+    "weakest_link_weight": 0.55
+   },
+   "rank_biological_score": 7
+  },
+  {
+   "id": "P6_anthocyanin_shoulder",
+   "window_nm": [
+    550.0,
+    580.0
+   ],
+   "feature": "anthocyanin_shoulder",
+   "measures": "Reflectance shoulder ratio in the anthocyanin-sensitive region",
+   "direction": "negative",
+   "expected_magnitude": "weak; sign uncertain",
+   "nuisance_exposure": 0.6,
+   "sensor_required": "hyperspectral",
+   "proposal_row": "\u00a73.2 550-580 nm anthocyanin",
+   "falsification": "Within-species seasonal variation exceeds between-species variation \u2014 which on current evidence is the EXPECTED outcome. This row is included so that it can be struck, per \u00a73.2: \"rows that fail should be struck rather than quietly retained.\"",
+   "why_broadband_misses": "Requires narrow bands to resolve.",
+   "biological_score": 0.3582,
+   "operational_score": 0.1433,
+   "weakest_link": "inferred_optical",
+   "n_independent_findings": 2,
+   "chain": {
+    "prediction_id": "P6_anthocyanin_shoulder",
+    "prediction_evidence": "inferred_optical",
+    "traits": [
+     {
+      "id": "T4_secondary_metabolites",
+      "trait": "Divergent flavonoid / anthocyanin standing pools",
+      "evidence": "inferred_trait",
+      "weight": 0.65,
+      "rationale": "Weak chain, honestly labelled. Defensive-chemistry divergence need not touch the specific pigments that absorb in the visible, and anthocyanin is the most environmentally labile pigment of the three (config/default.yaml `nuisance` gives it the largest within-class CV for that reason).",
+      "from": [
+       "F8_defensive_metabolites",
+       "F7_comparative_transcriptome"
+      ]
+     }
+    ],
+    "findings": [
+     {
+      "id": "F7_comparative_transcriptome",
+      "claim": "Comparative transcriptomics against native congeners shows divergence in photosynthesis and secondary-metabolite pathways",
+      "evidence": "published_transcriptomic",
+      "weight": 0.85,
+      "source": "Comparative transcriptome analysis of M. micrantha with native congeners",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5968712/",
+      "proposal_ref": "\u00a74.2"
+     },
+     {
+      "id": "F8_defensive_metabolites",
+      "claim": "Defensive secondary-metabolite mechanisms likely enhance invasiveness",
+      "evidence": "published_genomic",
+      "weight": 1.0,
+      "source": "Defensive Mechanisms of Mikania micrantha ... (2025)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11768483/",
+      "proposal_ref": "\u00a73.2 (550-580 nm row)"
+     }
+    ],
+    "n_independent_findings": 2,
+    "weakest_link": "inferred_optical",
+    "weakest_link_weight": 0.55
+   },
+   "rank_biological_score": 8
+  }
+ ],
+ "rank_disagreement": [
+  {
+   "id": "P7_nir_plateau_amplitude",
+   "biological_rank": 1,
+   "operational_rank": 8,
+   "shift": -7
+  },
+  {
+   "id": "P1_red_edge_position",
+   "biological_rank": 6,
+   "operational_rank": 1,
+   "shift": 5
+  },
+  {
+   "id": "P3_green_peak_position",
+   "biological_rank": 7,
+   "operational_rank": 2,
+   "shift": 5
+  },
+  {
+   "id": "P8_water_band",
+   "biological_rank": 2,
+   "operational_rank": 6,
+   "shift": -4
+  },
+  {
+   "id": "P5_carotenoid_depth",
+   "biological_rank": 3,
+   "operational_rank": 5,
+   "shift": -2
+  },
+  {
+   "id": "P2_stem_shape_ratio",
+   "biological_rank": 4,
+   "operational_rank": 3,
+   "shift": 1
+  },
+  {
+   "id": "P4_derivative_shape",
+   "biological_rank": 5,
+   "operational_rank": 4,
+   "shift": 1
+  },
+  {
+   "id": "P6_anthocyanin_shoulder",
+   "biological_rank": 8,
+   "operational_rank": 7,
+   "shift": 1
+  }
+ ],
+ "weakest_link_counts": {
+  "inferred_optical": 8
+ },
+ "acquisition_constraints": [
+  {
+   "id": "A1_diurnal_window",
+   "from": [
+    "F2_night_co2",
+    "F6_diurnal_photosynthetic_genes"
+   ],
+   "constraint": "Restrict acquisition to a fixed solar-time window; do not mix morning and afternoon sorties within a comparison",
+   "rationale": "Night-time CO2 uptake and diurnally-structured expression of photosynthetic genes both imply the physiological state \u2014 and therefore plausibly the pigment and water status driving P1, P5 and P8 \u2014 varies through the day. A time-of-day difference between two flights would masquerade as a species or site difference. This is a batch effect in the \u00a75.1(7) sense, and the control is design, not correction.\n",
+   "cost_consequence": "Narrows usable hours below the ~8 h daylight assumption in \u00a75.2, worsening \u00a75.3 coverage economics"
+  },
+  {
+   "id": "A2_seasonal_pairing",
+   "from": [
+    "F1_photoreaction_selection"
+   ],
+   "constraint": "A constitutive photosystem signal should be measured OUT of the flowering window to be worth anything",
+   "rationale": "\u00a76.1(2) claims year-round capability on the grounds that a constitutive photosystem signal is more temporally stable than a transient flowering one. That claim is only tested by measuring in the foliage-only season. Measuring in bloom and inferring the rest would be assuming the conclusion.\n",
+   "cost_consequence": "Requires at least two acquisition seasons in Phase 0 \u2014 already budgeted in \u00a77.3 item 1"
+  }
+ ],
+ "headline": "8 falsifiable spectral predictions derived from 8 published genomic, transcriptomic and physiological findings via 5 inferred trait chains. Every chain terminates in an `inferred_optical` step: no leaf-optical measurement linking these genes to reflectance exists for Hong Kong material. These are the measurements the Phase 0 spectroradiometer campaign should make, ranked by what is worth measuring rather than by what is best cited."
+}

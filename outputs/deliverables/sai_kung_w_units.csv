@@ -1,0 +1,7 @@
+rank,unit_id,site_name,area_ha,severity,band,action,mean_coverage_fraction,survey_cost_hkd
+1,sai_kung_w-009,Sai Kung West Country Park,0.0732,0.7023,Priority,Clear this season,0.7363,"[37, 88]"
+2,sai_kung_w-1089,Sai Kung West Country Park,0.0238,0.6395,Priority,Clear this season,0.6773,"[12, 29]"
+3,sai_kung_w-448,Sai Kung West Country Park,0.0128,0.6328,Priority,Clear this season,0.6942,"[6, 15]"
+4,sai_kung_w-080,Sai Kung West Country Park,0.0108,0.5775,Priority,Clear this season,0.6343,"[5, 13]"
+5,sai_kung_w-684,Sai Kung West Country Park,0.0095,0.6027,Priority,Clear this season,0.6546,"[5, 11]"
+6,sai_kung_w-045,Sai Kung West Country Park,0.0064,0.579,Priority,Clear this season,0.6409,"[3, 8]"

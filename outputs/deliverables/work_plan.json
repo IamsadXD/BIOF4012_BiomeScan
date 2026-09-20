@@ -1,0 +1,1197 @@
+{
+  "units": [
+    {
+      "unit_id": "tai_lam-218",
+      "site": "tai_lam",
+      "site_name": "Tai Lam Country Park",
+      "area_ha": 0.4979,
+      "n_pixels": 1945,
+      "severity": 0.5658,
+      "severity_max": 0.7617,
+      "mean_coverage_fraction": 0.5393,
+      "band": "Priority",
+      "action": "Clear this season",
+      "centroid_rc": [
+        110,
+        72
+      ],
+      "bbox_rc": [
+        57,
+        39,
+        155,
+        101
+      ],
+      "survey_cost_hkd": [
+        249,
+        598
+      ],
+      "components": {
+        "coverage_fraction": 0.5393,
+        "host_maturity": 0.5974,
+        "ecological_sensitivity": 0.4954,
+        "spread_trajectory": 0.7662,
+        "access_cost": 0.4268
+      },
+      "rank": 1,
+      "role": "train",
+      "territory_rank": 1
+    },
+    {
+      "unit_id": "tai_lam-801",
+      "site": "tai_lam",
+      "site_name": "Tai Lam Country Park",
+      "area_ha": 0.2652,
+      "n_pixels": 1036,
+      "severity": 0.6302,
+      "severity_max": 0.7617,
+      "mean_coverage_fraction": 0.77,
+      "band": "Priority",
+      "action": "Clear this season",
+      "centroid_rc": [
+        188,
+        141
+      ],
+      "bbox_rc": [
+        159,
+        111,
+        213,
+        165
+      ],
+      "survey_cost_hkd": [
+        133,
+        318
+      ],
+      "components": {
+        "coverage_fraction": 0.77,
+        "host_maturity": 0.7125,
+        "ecological_sensitivity": 0.4507,
+        "spread_trajectory": 0.3665,
+        "access_cost": 0.6499
+      },
+      "rank": 2,
+      "role": "train",
+      "territory_rank": 2
+    },
+    {
+      "unit_id": "shing_mun-907",
+      "site": "shing_mun",
+      "site_name": "Shing Mun Country Park",
+      "area_ha": 0.2742,
+      "n_pixels": 1071,
+      "severity": 0.6069,
+      "severity_max": 0.8507,
+      "mean_coverage_fraction": 0.4019,
+      "band": "Priority",
+      "action": "Clear this season",
+      "centroid_rc": [
+        135,
+        152
+      ],
+      "bbox_rc": [
+        88,
+        110,
+        175,
+        199
+      ],
+      "survey_cost_hkd": [
+        137,
+        329
+      ],
+      "components": {
+        "coverage_fraction": 0.4019,
+        "host_maturity": 0.6029,
+        "ecological_sensitivity": 0.7076,
+        "spread_trajectory": 1.0,
+        "access_cost": 0.582
+      },
+      "rank": 1,
+      "role": "train",
+      "territory_rank": 3
+    },
+    {
+      "unit_id": "tai_lam-001",
+      "site": "tai_lam",
+      "site_name": "Tai Lam Country Park",
+      "area_ha": 0.3162,
+      "n_pixels": 1235,
+      "severity": 0.5165,
+      "severity_max": 0.7105,
+      "mean_coverage_fraction": 0.5108,
+      "band": "Schedule",
+      "action": "Add to annual clearance plan",
+      "centroid_rc": [
+        17,
+        69
+      ],
+      "bbox_rc": [
+        0,
+        38,
+        33,
+        120
+      ],
+      "survey_cost_hkd": [
+        158,
+        379
+      ],
+      "components": {
+        "coverage_fraction": 0.5108,
+        "host_maturity": 0.5471,
+        "ecological_sensitivity": 0.446,
+        "spread_trajectory": 0.4286,
+        "access_cost": 0.7129
+      },
+      "rank": 3,
+      "role": "train",
+      "territory_rank": 4
+    },
+    {
+      "unit_id": "tai_lam-713",
+      "site": "tai_lam",
+      "site_name": "Tai Lam Country Park",
+      "area_ha": 0.2509,
+      "n_pixels": 980,
+      "severity": 0.608,
+      "severity_max": 0.7472,
+      "mean_coverage_fraction": 0.722,
+      "band": "Priority",
+      "action": "Clear this season",
+      "centroid_rc": [
+        186,
+        8
+      ],
+      "bbox_rc": [
+        147,
+        0,
+        219,
+        26
+      ],
+      "survey_cost_hkd": [
+        125,
+        301
+      ],
+      "components": {
+        "coverage_fraction": 0.722,
+        "host_maturity": 0.6818,
+        "ecological_sensitivity": 0.4285,
+        "spread_trajectory": 0.3212,
+        "access_cost": 0.7675
+      },
+      "rank": 4,
+      "role": "train",
+      "territory_rank": 5
+    },
+    {
+      "unit_id": "shing_mun-001",
+      "site": "shing_mun",
+      "site_name": "Shing Mun Country Park",
+      "area_ha": 0.2079,
+      "n_pixels": 812,
+      "severity": 0.7126,
+      "severity_max": 0.8061,
+      "mean_coverage_fraction": 0.8401,
+      "band": "Priority",
+      "action": "Clear this season",
+      "centroid_rc": [
+        26,
+        18
+      ],
+      "bbox_rc": [
+        0,
+        0,
+        63,
+        37
+      ],
+      "survey_cost_hkd": [
+        104,
+        249
+      ],
+      "components": {
+        "coverage_fraction": 0.8401,
+        "host_maturity": 0.7483,
+        "ecological_sensitivity": 0.6681,
+        "spread_trajectory": 0.3711,
+        "access_cost": 0.7518
+      },
+      "rank": 2,
+      "role": "train",
+      "territory_rank": 6
+    },
+    {
+      "unit_id": "tai_po_kau-220",
+      "site": "tai_po_kau",
+      "site_name": "Tai Po Kau Nature Reserve",
+      "area_ha": 0.222,
+      "n_pixels": 867,
+      "severity": 0.6073,
+      "severity_max": 0.7915,
+      "mean_coverage_fraction": 0.5728,
+      "band": "Priority",
+      "action": "Clear this season",
+      "centroid_rc": [
+        151,
+        64
+      ],
+      "bbox_rc": [
+        129,
+        43,
+        186,
+        96
+      ],
+      "survey_cost_hkd": [
+        111,
+        266
+      ],
+      "components": {
+        "coverage_fraction": 0.5728,
+        "host_maturity": 0.6269,
+        "ecological_sensitivity": 0.822,
+        "spread_trajectory": 0.4708,
+        "access_cost": 0.4817
+      },
+      "rank": 1,
+      "role": "holdout",
+      "territory_rank": 7
+    },
+    {
+      "unit_id": "tai_po_kau-068",
+      "site": "tai_po_kau",
+      "site_name": "Tai Po Kau Nature Reserve",
+      "area_ha": 0.2476,
+      "n_pixels": 967,
+      "severity": 0.536,
+      "severity_max": 0.6993,
+      "mean_coverage_fraction": 0.5266,
+      "band": "Schedule",
+      "action": "Add to annual clearance plan",
+      "centroid_rc": [
+        66,
+        57
+      ],
+      "bbox_rc": [
+        42,
+        41,
+        93,
+        74
+      ],
+      "survey_cost_hkd": [
+        124,
+        297
+      ],
+      "components": {
+        "coverage_fraction": 0.5266,
+        "host_maturity": 0.5665,
+        "ecological_sensitivity": 0.8169,
+        "spread_trajectory": 0.1631,
+        "access_cost": 0.5115
+      },
+      "rank": 2,
+      "role": "holdout",
+      "territory_rank": 8
+    },
+    {
+      "unit_id": "tai_po_kau-001",
+      "site": "tai_po_kau",
+      "site_name": "Tai Po Kau Nature Reserve",
+      "area_ha": 0.1853,
+      "n_pixels": 724,
+      "severity": 0.5803,
+      "severity_max": 0.7707,
+      "mean_coverage_fraction": 0.4275,
+      "band": "Priority",
+      "action": "Clear this season",
+      "centroid_rc": [
+        19,
+        33
+      ],
+      "bbox_rc": [
+        0,
+        0,
+        40,
+        61
+      ],
+      "survey_cost_hkd": [
+        93,
+        222
+      ],
+      "components": {
+        "coverage_fraction": 0.4275,
+        "host_maturity": 0.539,
+        "ecological_sensitivity": 0.7762,
+        "spread_trajectory": 0.6658,
+        "access_cost": 0.726
+      },
+      "rank": 3,
+      "role": "holdout",
+      "territory_rank": 9
+    },
+    {
+      "unit_id": "shing_mun-006",
+      "site": "shing_mun",
+      "site_name": "Shing Mun Country Park",
+      "area_ha": 0.1318,
+      "n_pixels": 515,
+      "severity": 0.6629,
+      "severity_max": 0.7879,
+      "mean_coverage_fraction": 0.7728,
+      "band": "Priority",
+      "action": "Clear this season",
+      "centroid_rc": [
+        7,
+        102
+      ],
+      "bbox_rc": [
+        0,
+        83,
+        21,
+        120
+      ],
+      "survey_cost_hkd": [
+        66,
+        158
+      ],
+      "components": {
+        "coverage_fraction": 0.7728,
+        "host_maturity": 0.7075,
+        "ecological_sensitivity": 0.6813,
+        "spread_trajectory": 0.2218,
+        "access_cost": 0.7668
+      },
+      "rank": 3,
+      "role": "train",
+      "territory_rank": 10
+    },
+    {
+      "unit_id": "shing_mun-1620",
+      "site": "shing_mun",
+      "site_name": "Shing Mun Country Park",
+      "area_ha": 0.1513,
+      "n_pixels": 591,
+      "severity": 0.5571,
+      "severity_max": 0.7646,
+      "mean_coverage_fraction": 0.5294,
+      "band": "Priority",
+      "action": "Clear this season",
+      "centroid_rc": [
+        205,
+        11
+      ],
+      "bbox_rc": [
+        178,
+        0,
+        219,
+        28
+      ],
+      "survey_cost_hkd": [
+        76,
+        182
+      ],
+      "components": {
+        "coverage_fraction": 0.5294,
+        "host_maturity": 0.6257,
+        "ecological_sensitivity": 0.6623,
+        "spread_trajectory": 0.2235,
+        "access_cost": 0.7642
+      },
+      "rank": 4,
+      "role": "train",
+      "territory_rank": 11
+    },
+    {
+      "unit_id": "sai_kung_w-009",
+      "site": "sai_kung_w",
+      "site_name": "Sai Kung West Country Park",
+      "area_ha": 0.0732,
+      "n_pixels": 286,
+      "severity": 0.7023,
+      "severity_max": 0.8118,
+      "mean_coverage_fraction": 0.7363,
+      "band": "Priority",
+      "action": "Clear this season",
+      "centroid_rc": [
+        22,
+        188
+      ],
+      "bbox_rc": [
+        2,
+        173,
+        38,
+        199
+      ],
+      "survey_cost_hkd": [
+        37,
+        88
+      ],
+      "components": {
+        "coverage_fraction": 0.7363,
+        "host_maturity": 0.4936,
+        "ecological_sensitivity": 0.6528,
+        "spread_trajectory": 1.0,
+        "access_cost": 0.7605
+      },
+      "rank": 1,
+      "role": "holdout",
+      "territory_rank": 12
+    },
+    {
+      "unit_id": "shing_mun-007",
+      "site": "shing_mun",
+      "site_name": "Shing Mun Country Park",
+      "area_ha": 0.0832,
+      "n_pixels": 325,
+      "severity": 0.5799,
+      "severity_max": 0.7711,
+      "mean_coverage_fraction": 0.5779,
+      "band": "Priority",
+      "action": "Clear this season",
+      "centroid_rc": [
+        9,
+        143
+      ],
+      "bbox_rc": [
+        0,
+        132,
+        29,
+        158
+      ],
+      "survey_cost_hkd": [
+        42,
+        100
+      ],
+      "components": {
+        "coverage_fraction": 0.5779,
+        "host_maturity": 0.6488,
+        "ecological_sensitivity": 0.675,
+        "spread_trajectory": 0.2161,
+        "access_cost": 0.7592
+      },
+      "rank": 5,
+      "role": "train",
+      "territory_rank": 13
+    },
+    {
+      "unit_id": "shing_mun-736",
+      "site": "shing_mun",
+      "site_name": "Shing Mun Country Park",
+      "area_ha": 0.0883,
+      "n_pixels": 345,
+      "severity": 0.5244,
+      "severity_max": 0.7204,
+      "mean_coverage_fraction": 0.5659,
+      "band": "Schedule",
+      "action": "Add to annual clearance plan",
+      "centroid_rc": [
+        81,
+        80
+      ],
+      "bbox_rc": [
+        68,
+        68,
+        91,
+        90
+      ],
+      "survey_cost_hkd": [
+        44,
+        106
+      ],
+      "components": {
+        "coverage_fraction": 0.5659,
+        "host_maturity": 0.6659,
+        "ecological_sensitivity": 0.7351,
+        "spread_trajectory": 0.0,
+        "access_cost": 0.3982
+      },
+      "rank": 6,
+      "role": "train",
+      "territory_rank": 14
+    },
+    {
+      "unit_id": "tai_po_kau-327",
+      "site": "tai_po_kau",
+      "site_name": "Tai Po Kau Nature Reserve",
+      "area_ha": 0.064,
+      "n_pixels": 250,
+      "severity": 0.5837,
+      "severity_max": 0.7581,
+      "mean_coverage_fraction": 0.5999,
+      "band": "Priority",
+      "action": "Clear this season",
+      "centroid_rc": [
+        210,
+        66
+      ],
+      "bbox_rc": [
+        200,
+        58,
+        219,
+        75
+      ],
+      "survey_cost_hkd": [
+        32,
+        77
+      ],
+      "components": {
+        "coverage_fraction": 0.5999,
+        "host_maturity": 0.6467,
+        "ecological_sensitivity": 0.7822,
+        "spread_trajectory": 0.0552,
+        "access_cost": 0.7603
+      },
+      "rank": 4,
+      "role": "holdout",
+      "territory_rank": 15
+    },
+    {
+      "unit_id": "tai_lam-881",
+      "site": "tai_lam",
+      "site_name": "Tai Lam Country Park",
+      "area_ha": 0.0684,
+      "n_pixels": 267,
+      "severity": 0.5298,
+      "severity_max": 0.6847,
+      "mean_coverage_fraction": 0.6377,
+      "band": "Schedule",
+      "action": "Add to annual clearance plan",
+      "centroid_rc": [
+        185,
+        54
+      ],
+      "bbox_rc": [
+        171,
+        45,
+        200,
+        64
+      ],
+      "survey_cost_hkd": [
+        34,
+        82
+      ],
+      "components": {
+        "coverage_fraction": 0.6377,
+        "host_maturity": 0.664,
+        "ecological_sensitivity": 0.452,
+        "spread_trajectory": 0.0656,
+        "access_cost": 0.6314
+      },
+      "rank": 5,
+      "role": "train",
+      "territory_rank": 16
+    },
+    {
+      "unit_id": "tai_po_kau-003",
+      "site": "tai_po_kau",
+      "site_name": "Tai Po Kau Nature Reserve",
+      "area_ha": 0.0417,
+      "n_pixels": 163,
+      "severity": 0.7697,
+      "severity_max": 0.8147,
+      "mean_coverage_fraction": 0.9816,
+      "band": "Urgent",
+      "action": "Clear within 8 weeks; mature host at risk",
+      "centroid_rc": [
+        5,
+        189
+      ],
+      "bbox_rc": [
+        0,
+        176,
+        14,
+        199
+      ],
+      "survey_cost_hkd": [
+        21,
+        50
+      ],
+      "components": {
+        "coverage_fraction": 0.9816,
+        "host_maturity": 0.7554,
+        "ecological_sensitivity": 0.7633,
+        "spread_trajectory": 0.2726,
+        "access_cost": 0.7906
+      },
+      "rank": 5,
+      "role": "holdout",
+      "territory_rank": 17
+    },
+    {
+      "unit_id": "tai_po_kau-197",
+      "site": "tai_po_kau",
+      "site_name": "Tai Po Kau Nature Reserve",
+      "area_ha": 0.0366,
+      "n_pixels": 143,
+      "severity": 0.5486,
+      "severity_max": 0.6586,
+      "mean_coverage_fraction": 0.4399,
+      "band": "Schedule",
+      "action": "Add to annual clearance plan",
+      "centroid_rc": [
+        117,
+        158
+      ],
+      "bbox_rc": [
+        106,
+        147,
+        130,
+        165
+      ],
+      "survey_cost_hkd": [
+        18,
+        44
+      ],
+      "components": {
+        "coverage_fraction": 0.4399,
+        "host_maturity": 0.5845,
+        "ecological_sensitivity": 0.8156,
+        "spread_trajectory": 0.3776,
+        "access_cost": 0.591
+      },
+      "rank": 6,
+      "role": "holdout",
+      "territory_rank": 18
+    },
+    {
+      "unit_id": "tai_lam-011",
+      "site": "tai_lam",
+      "site_name": "Tai Lam Country Park",
+      "area_ha": 0.0379,
+      "n_pixels": 148,
+      "severity": 0.4371,
+      "severity_max": 0.5607,
+      "mean_coverage_fraction": 0.2916,
+      "band": "Schedule",
+      "action": "Add to annual clearance plan",
+      "centroid_rc": [
+        15,
+        10
+      ],
+      "bbox_rc": [
+        6,
+        0,
+        22,
+        20
+      ],
+      "survey_cost_hkd": [
+        19,
+        45
+      ],
+      "components": {
+        "coverage_fraction": 0.2916,
+        "host_maturity": 0.523,
+        "ecological_sensitivity": 0.4244,
+        "spread_trajectory": 0.433,
+        "access_cost": 0.7546
+      },
+      "rank": 6,
+      "role": "train",
+      "territory_rank": 19
+    },
+    {
+      "unit_id": "sai_kung_w-1089",
+      "site": "sai_kung_w",
+      "site_name": "Sai Kung West Country Park",
+      "area_ha": 0.0238,
+      "n_pixels": 93,
+      "severity": 0.6395,
+      "severity_max": 0.7618,
+      "mean_coverage_fraction": 0.6773,
+      "band": "Priority",
+      "action": "Clear this season",
+      "centroid_rc": [
+        214,
+        174
+      ],
+      "bbox_rc": [
+        207,
+        168,
+        219,
+        183
+      ],
+      "survey_cost_hkd": [
+        12,
+        29
+      ],
+      "components": {
+        "coverage_fraction": 0.6773,
+        "host_maturity": 0.4116,
+        "ecological_sensitivity": 0.6516,
+        "spread_trajectory": 0.8193,
+        "access_cost": 0.7849
+      },
+      "rank": 2,
+      "role": "holdout",
+      "territory_rank": 20
+    },
+    {
+      "unit_id": "shing_mun-1037",
+      "site": "shing_mun",
+      "site_name": "Shing Mun Country Park",
+      "area_ha": 0.0266,
+      "n_pixels": 104,
+      "severity": 0.5246,
+      "severity_max": 0.7243,
+      "mean_coverage_fraction": 0.4827,
+      "band": "Schedule",
+      "action": "Add to annual clearance plan",
+      "centroid_rc": [
+        110,
+        23
+      ],
+      "bbox_rc": [
+        104,
+        19,
+        120,
+        28
+      ],
+      "survey_cost_hkd": [
+        13,
+        32
+      ],
+      "components": {
+        "coverage_fraction": 0.4827,
+        "host_maturity": 0.6771,
+        "ecological_sensitivity": 0.6959,
+        "spread_trajectory": 0.032,
+        "access_cost": 0.6823
+      },
+      "rank": 7,
+      "role": "train",
+      "territory_rank": 21
+    },
+    {
+      "unit_id": "tai_lam-466",
+      "site": "tai_lam",
+      "site_name": "Tai Lam Country Park",
+      "area_ha": 0.0236,
+      "n_pixels": 92,
+      "severity": 0.4779,
+      "severity_max": 0.58,
+      "mean_coverage_fraction": 0.3668,
+      "band": "Schedule",
+      "action": "Add to annual clearance plan",
+      "centroid_rc": [
+        108,
+        175
+      ],
+      "bbox_rc": [
+        99,
+        165,
+        124,
+        183
+      ],
+      "survey_cost_hkd": [
+        12,
+        28
+      ],
+      "components": {
+        "coverage_fraction": 0.3668,
+        "host_maturity": 0.586,
+        "ecological_sensitivity": 0.4573,
+        "spread_trajectory": 0.4411,
+        "access_cost": 0.6848
+      },
+      "rank": 7,
+      "role": "train",
+      "territory_rank": 22
+    },
+    {
+      "unit_id": "shing_mun-1775",
+      "site": "shing_mun",
+      "site_name": "Shing Mun Country Park",
+      "area_ha": 0.02,
+      "n_pixels": 78,
+      "severity": 0.5055,
+      "severity_max": 0.598,
+      "mean_coverage_fraction": 0.3359,
+      "band": "Schedule",
+      "action": "Add to annual clearance plan",
+      "centroid_rc": [
+        206,
+        52
+      ],
+      "bbox_rc": [
+        196,
+        44,
+        213,
+        59
+      ],
+      "survey_cost_hkd": [
+        10,
+        24
+      ],
+      "components": {
+        "coverage_fraction": 0.3359,
+        "host_maturity": 0.5972,
+        "ecological_sensitivity": 0.6764,
+        "spread_trajectory": 0.3732,
+        "access_cost": 0.7396
+      },
+      "rank": 8,
+      "role": "train",
+      "territory_rank": 23
+    },
+    {
+      "unit_id": "tai_po_kau-259",
+      "site": "tai_po_kau",
+      "site_name": "Tai Po Kau Nature Reserve",
+      "area_ha": 0.0156,
+      "n_pixels": 61,
+      "severity": 0.5261,
+      "severity_max": 0.6423,
+      "mean_coverage_fraction": 0.3895,
+      "band": "Schedule",
+      "action": "Add to annual clearance plan",
+      "centroid_rc": [
+        176,
+        9
+      ],
+      "bbox_rc": [
+        166,
+        0,
+        183,
+        14
+      ],
+      "survey_cost_hkd": [
+        8,
+        19
+      ],
+      "components": {
+        "coverage_fraction": 0.3895,
+        "host_maturity": 0.5022,
+        "ecological_sensitivity": 0.7744,
+        "spread_trajectory": 0.4134,
+        "access_cost": 0.7586
+      },
+      "rank": 7,
+      "role": "holdout",
+      "territory_rank": 24
+    },
+    {
+      "unit_id": "sai_kung_w-448",
+      "site": "sai_kung_w",
+      "site_name": "Sai Kung West Country Park",
+      "area_ha": 0.0128,
+      "n_pixels": 50,
+      "severity": 0.6328,
+      "severity_max": 0.7575,
+      "mean_coverage_fraction": 0.6942,
+      "band": "Priority",
+      "action": "Clear this season",
+      "centroid_rc": [
+        115,
+        26
+      ],
+      "bbox_rc": [
+        109,
+        22,
+        120,
+        31
+      ],
+      "survey_cost_hkd": [
+        6,
+        15
+      ],
+      "components": {
+        "coverage_fraction": 0.6942,
+        "host_maturity": 0.5703,
+        "ecological_sensitivity": 0.6869,
+        "spread_trajectory": 0.497,
+        "access_cost": 0.6671
+      },
+      "rank": 3,
+      "role": "holdout",
+      "territory_rank": 25
+    },
+    {
+      "unit_id": "shing_mun-537",
+      "site": "shing_mun",
+      "site_name": "Shing Mun Country Park",
+      "area_ha": 0.0151,
+      "n_pixels": 59,
+      "severity": 0.5316,
+      "severity_max": 0.7149,
+      "mean_coverage_fraction": 0.4861,
+      "band": "Schedule",
+      "action": "Add to annual clearance plan",
+      "centroid_rc": [
+        56,
+        75
+      ],
+      "bbox_rc": [
+        52,
+        68,
+        62,
+        81
+      ],
+      "survey_cost_hkd": [
+        8,
+        18
+      ],
+      "components": {
+        "coverage_fraction": 0.4861,
+        "host_maturity": 0.6866,
+        "ecological_sensitivity": 0.717,
+        "spread_trajectory": 0.1554,
+        "access_cost": 0.507
+      },
+      "rank": 9,
+      "role": "train",
+      "territory_rank": 26
+    },
+    {
+      "unit_id": "shing_mun-1555",
+      "site": "shing_mun",
+      "site_name": "Shing Mun Country Park",
+      "area_ha": 0.0133,
+      "n_pixels": 52,
+      "severity": 0.5168,
+      "severity_max": 0.6168,
+      "mean_coverage_fraction": 0.4344,
+      "band": "Schedule",
+      "action": "Add to annual clearance plan",
+      "centroid_rc": [
+        176,
+        148
+      ],
+      "bbox_rc": [
+        170,
+        141,
+        184,
+        155
+      ],
+      "survey_cost_hkd": [
+        7,
+        16
+      ],
+      "components": {
+        "coverage_fraction": 0.4344,
+        "host_maturity": 0.5973,
+        "ecological_sensitivity": 0.6938,
+        "spread_trajectory": 0.3041,
+        "access_cost": 0.5826
+      },
+      "rank": 10,
+      "role": "train",
+      "territory_rank": 27
+    },
+    {
+      "unit_id": "sai_kung_w-080",
+      "site": "sai_kung_w",
+      "site_name": "Sai Kung West Country Park",
+      "area_ha": 0.0108,
+      "n_pixels": 42,
+      "severity": 0.5775,
+      "severity_max": 0.7098,
+      "mean_coverage_fraction": 0.6343,
+      "band": "Priority",
+      "action": "Clear this season",
+      "centroid_rc": [
+        29,
+        102
+      ],
+      "bbox_rc": [
+        24,
+        98,
+        35,
+        106
+      ],
+      "survey_cost_hkd": [
+        5,
+        13
+      ],
+      "components": {
+        "coverage_fraction": 0.6343,
+        "host_maturity": 0.5625,
+        "ecological_sensitivity": 0.6877,
+        "spread_trajectory": 0.2728,
+        "access_cost": 0.6489
+      },
+      "rank": 4,
+      "role": "holdout",
+      "territory_rank": 28
+    },
+    {
+      "unit_id": "sai_kung_w-684",
+      "site": "sai_kung_w",
+      "site_name": "Sai Kung West Country Park",
+      "area_ha": 0.0095,
+      "n_pixels": 37,
+      "severity": 0.6027,
+      "severity_max": 0.7144,
+      "mean_coverage_fraction": 0.6546,
+      "band": "Priority",
+      "action": "Clear this season",
+      "centroid_rc": [
+        158,
+        37
+      ],
+      "bbox_rc": [
+        155,
+        33,
+        163,
+        41
+      ],
+      "survey_cost_hkd": [
+        5,
+        11
+      ],
+      "components": {
+        "coverage_fraction": 0.6546,
+        "host_maturity": 0.6068,
+        "ecological_sensitivity": 0.6836,
+        "spread_trajectory": 0.3605,
+        "access_cost": 0.6102
+      },
+      "rank": 5,
+      "role": "holdout",
+      "territory_rank": 29
+    },
+    {
+      "unit_id": "lam_tsuen-124",
+      "site": "lam_tsuen",
+      "site_name": "Lam Tsuen Valley",
+      "area_ha": 0.0064,
+      "n_pixels": 25,
+      "severity": 0.599,
+      "severity_max": 0.7017,
+      "mean_coverage_fraction": 0.7586,
+      "band": "Priority",
+      "action": "Clear this season",
+      "centroid_rc": [
+        20,
+        159
+      ],
+      "bbox_rc": [
+        17,
+        155,
+        23,
+        162
+      ],
+      "survey_cost_hkd": [
+        3,
+        8
+      ],
+      "components": {
+        "coverage_fraction": 0.7586,
+        "host_maturity": 0.6627,
+        "ecological_sensitivity": 0.505,
+        "spread_trajectory": 0.1508,
+        "access_cost": 0.7009
+      },
+      "rank": 1,
+      "role": "train",
+      "territory_rank": 30
+    },
+    {
+      "unit_id": "sai_kung_w-045",
+      "site": "sai_kung_w",
+      "site_name": "Sai Kung West Country Park",
+      "area_ha": 0.0064,
+      "n_pixels": 25,
+      "severity": 0.579,
+      "severity_max": 0.6949,
+      "mean_coverage_fraction": 0.6409,
+      "band": "Priority",
+      "action": "Clear this season",
+      "centroid_rc": [
+        20,
+        103
+      ],
+      "bbox_rc": [
+        16,
+        100,
+        23,
+        106
+      ],
+      "survey_cost_hkd": [
+        3,
+        8
+      ],
+      "components": {
+        "coverage_fraction": 0.6409,
+        "host_maturity": 0.574,
+        "ecological_sensitivity": 0.6795,
+        "spread_trajectory": 0.2213,
+        "access_cost": 0.7003
+      },
+      "rank": 6,
+      "role": "holdout",
+      "territory_rank": 31
+    }
+  ],
+  "site_summary": [
+    {
+      "site": "tai_lam",
+      "name": "Tai Lam Country Park",
+      "role": "train",
+      "season": "Sep-Nov (flowering)",
+      "overall_accuracy": 0.786978221415608,
+      "climber_accuracy": 0.9532076224683229,
+      "masked_pct": 9.836363636363636,
+      "n_units": 7,
+      "infested_ha": 1.4601,
+      "urgent_units": 0,
+      "priority_units": 3,
+      "mean_unmix_rmse": 0.02256097085773945,
+      "subcanopy_occluded_pct": 18.011363636363637
+    },
+    {
+      "site": "shing_mun",
+      "name": "Shing Mun Country Park",
+      "role": "train",
+      "season": "Sep-Nov (flowering)",
+      "overall_accuracy": 0.7216416970917789,
+      "climber_accuracy": 0.9841452868261746,
+      "masked_pct": 9.738636363636363,
+      "n_units": 10,
+      "infested_ha": 1.0117,
+      "urgent_units": 0,
+      "priority_units": 5,
+      "mean_unmix_rmse": 0.018949290737509727,
+      "subcanopy_occluded_pct": 18.016528925619834
+    },
+    {
+      "site": "lam_tsuen",
+      "name": "Lam Tsuen Valley",
+      "role": "train",
+      "season": "Dec-Feb (dry)",
+      "overall_accuracy": 0.7646287989516657,
+      "climber_accuracy": 0.492184755883386,
+      "masked_pct": 9.813636363636363,
+      "n_units": 1,
+      "infested_ha": 0.0064,
+      "urgent_units": 0,
+      "priority_units": 1,
+      "mean_unmix_rmse": 0.017776833847165108,
+      "subcanopy_occluded_pct": 18.00865800865801
+    },
+    {
+      "site": "tai_po_kau",
+      "name": "Tai Po Kau Nature Reserve",
+      "role": "holdout",
+      "season": "Sep-Nov (flowering)",
+      "overall_accuracy": 0.824031417566649,
+      "climber_accuracy": 0.9666151069863367,
+      "masked_pct": 9.720454545454546,
+      "n_units": 7,
+      "infested_ha": 0.8128,
+      "urgent_units": 1,
+      "priority_units": 3,
+      "mean_unmix_rmse": 0.02223491296172142,
+      "subcanopy_occluded_pct": 18.005050505050505
+    },
+    {
+      "site": "sai_kung_w",
+      "name": "Sai Kung West Country Park",
+      "role": "holdout",
+      "season": "Jun-Aug (wet)",
+      "overall_accuracy": 0.5600393204617634,
+      "climber_accuracy": 0.6284576471854483,
+      "masked_pct": 9.831818181818182,
+      "n_units": 6,
+      "infested_ha": 0.1365,
+      "urgent_units": 0,
+      "priority_units": 6,
+      "mean_unmix_rmse": 0.023721134290099144,
+      "subcanopy_occluded_pct": 18.003246753246753
+    }
+  ]
+}

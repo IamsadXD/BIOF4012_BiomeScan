@@ -1,0 +1,260 @@
+{
+ "scope": "Database structure, release gate, versioning and valuation arithmetic are real. Voucher CONTENTS are a Phase 0 rehearsal: certificates come from real held-out GenBank sequences (stage 12), paired spectra from the modelled stage-02 library.",
+ "db_path": "data/processed/reference_db.sqlite",
+ "release": {
+  "release_id": "MIKANIA-REFDB-v1.0+2026-09-15.35d9f5",
+  "version": "MIKANIA-REFDB-v1.0",
+  "content_sha256": "35d9f5958c21e9d8312fee46b807a6a77a1a9190075faae4b12ff6f26af3c778",
+  "n_vouchers": 22,
+  "n_certified": 8,
+  "n_quarantined": 14,
+  "created_utc": "2026-09-15T08:23:31+00:00",
+  "note": "Phase 0 rehearsal build (stage 14)"
+ },
+ "summary": {
+  "counts": {
+   "voucher": 22,
+   "barcode": 40,
+   "certificate": 22,
+   "spectrum": 16,
+   "reference_sequence": 185,
+   "release": 0,
+   "deposition": 0
+  },
+  "by_class": [
+   {
+    "class_key": "paederia_foetida",
+    "n": 5
+   },
+   {
+    "class_key": "mikania",
+    "n": 2
+   },
+   {
+    "class_key": "bauhinia_glauca",
+    "n": 1
+   }
+  ],
+  "by_status": [
+   {
+    "status": "certified",
+    "n": 8
+   },
+   {
+    "status": "quarantined",
+    "n": 14
+   }
+  ],
+  "by_site": [
+   {
+    "site_key": "shing_mun",
+    "n": 5
+   },
+   {
+    "site_key": "lam_tsuen",
+    "n": 5
+   },
+   {
+    "site_key": "tai_po_kau",
+    "n": 4
+   },
+   {
+    "site_key": "tai_lam",
+    "n": 4
+   },
+   {
+    "site_key": "sai_kung_w",
+    "n": 4
+   }
+  ],
+  "by_season": [
+   {
+    "season": "autumn_flower",
+    "n": 11
+   },
+   {
+    "season": "wet_summer",
+    "n": 11
+   }
+  ],
+  "barcodes_by_locus": [
+   {
+    "locus": "ITS2",
+    "n": 16,
+    "n_qc_pass": 16
+   },
+   {
+    "locus": "matK",
+    "n": 7,
+    "n_qc_pass": 7
+   },
+   {
+    "locus": "rbcL",
+    "n": 12,
+    "n_qc_pass": 12
+   },
+   {
+    "locus": "trnH-psbA",
+    "n": 5,
+    "n_qc_pass": 5
+   }
+  ],
+  "references_by_locus": [
+   {
+    "locus": "ITS2",
+    "n": 71,
+    "n_taxa": 7
+   },
+   {
+    "locus": "matK",
+    "n": 37,
+    "n_taxa": 6
+   },
+   {
+    "locus": "rbcL",
+    "n": 53,
+    "n_taxa": 7
+   },
+   {
+    "locus": "trnH-psbA",
+    "n": 24,
+    "n_taxa": 4
+   }
+  ],
+  "releases": []
+ },
+ "integrity": {
+  "ok": true,
+  "critical": [],
+  "warnings": [
+   "class bauhinia_glauca certified from 1 site(s); \u00a713.6 asks for >= 3 for grouped CV",
+   "class mikania certified from 2 site(s); \u00a713.6 asks for >= 3 for grouped CV"
+  ],
+  "checked_utc": "2026-09-15T08:23:31+00:00"
+ },
+ "valuation": {
+  "n_vouchers": 22,
+  "n_certified": 8,
+  "n_spectra": 16,
+  "n_seasons": 2,
+  "n_sites": 5,
+  "field_days_equivalent": 2.4,
+  "field_cost_hkd": 23956,
+  "lab_cost_per_voucher_hkd": 605,
+  "lab_cost_hkd": 13310,
+  "overhead_multiplier": 1.35,
+  "replacement_cost_hkd": 50309,
+  "calendar_years_to_replicate": 1.0,
+  "licence_price_range_hkd_per_year": [
+   80000,
+   250000
+  ],
+  "note": "Replacement cost of the CURRENT contents at Phase 0 scale. It is not the value of the finished asset: \u00a77.1's 'several million dollars' describes a multi-year archive, and this database holds one campaign. The figure grows with every contract year, which is the \u00a76.1(4) argument in numeric form."
+ },
+ "licences": {
+  "academic": {
+   "tier": "academic",
+   "tables_granted": [
+    "voucher",
+    "barcode",
+    "certificate"
+   ],
+   "tables_withheld": [
+    "spectrum",
+    "reference_sequence",
+    "deposition",
+    "release",
+    "audit"
+   ],
+   "row_counts": {
+    "voucher": 22,
+    "barcode": 40,
+    "certificate": 22
+   },
+   "spectra": "aggregate_only",
+   "price_hkd_per_year": 0,
+   "notes": [
+    "Spectra supplied as per-class means and covariances only; individual voucher spectra and their coordinates are withheld.",
+    "Coordinates generalised to 5 km (\u00a713.10).",
+    "The sequence-to-spectrum linkage \u2014 the asset itself (\u00a77.1, \u00a78.4) \u2014 is not included at this tier."
+   ]
+  },
+  "consultancy": {
+   "tier": "consultancy",
+   "tables_granted": [
+    "voucher",
+    "barcode",
+    "certificate",
+    "spectrum"
+   ],
+   "tables_withheld": [
+    "reference_sequence",
+    "deposition",
+    "release",
+    "audit"
+   ],
+   "row_counts": {
+    "voucher": 22,
+    "barcode": 40,
+    "certificate": 22,
+    "spectrum": 16
+   },
+   "spectra": "full",
+   "price_hkd_per_year": [
+    80000,
+    250000
+   ],
+   "notes": [
+    "Coordinates generalised to 5 km (\u00a713.10)."
+   ]
+  },
+  "internal": {
+   "tier": "internal",
+   "tables_granted": [
+    "voucher",
+    "barcode",
+    "certificate",
+    "spectrum",
+    "reference_sequence",
+    "deposition",
+    "release",
+    "audit"
+   ],
+   "tables_withheld": [],
+   "row_counts": {
+    "voucher": 22,
+    "barcode": 40,
+    "certificate": 22,
+    "spectrum": 16,
+    "reference_sequence": 185,
+    "deposition": 22,
+    "release": 1,
+    "audit": 2
+   },
+   "spectra": "full",
+   "price_hkd_per_year": null,
+   "notes": [
+    "Coordinates generalised to 5 km (\u00a713.10)."
+   ]
+  }
+ },
+ "training_label_set_size": 8,
+ "quarantine": {
+  "n_quarantined": 14,
+  "reason_counts": {
+   "only 1 locus/loci agree; need 2": 14,
+   "no core locus (rbcL/matK) produced a usable result": 10
+  }
+ },
+ "deposition": {
+  "n_deposit": 3,
+  "n_withhold": 19,
+  "threshold": 5,
+  "withheld_fields": [
+   "paired_spectra",
+   "precise_coordinates",
+   "voucher_spectral_linkage"
+  ],
+  "coordinate_generalisation_km": 5.0
+ }
+}

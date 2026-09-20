@@ -1,0 +1,31 @@
+# MIKANIA-HSI — runtime dependencies
+#
+# Install into an isolated venv (Python >= 3.11; verified on CPython 3.14.3):
+#     python3 -m venv .venv
+#     .venv/bin/python -m pip install -r requirements.txt
+#
+# Exact resolved versions used for the run recorded in outputs/ are pinned in
+# requirements.lock.txt. This file states the *minimum contract* instead, so the
+# stack stays installable on other machines.
+
+numpy>=2.0          # array core; all cubes are float32 (n_lines, n_samples, n_bands)
+scipy>=1.13         # savgol_filter, nnls, ndimage (morphology, gaussian_filter), io.loadmat
+scikit-learn>=1.5   # PLS-DA / RandomForest / SVM, GroupKFold, metrics
+pandas>=2.2         # tabular ground-truth + spectral-library handling
+matplotlib>=3.8     # publication figures (Agg backend only, no GUI)
+joblib>=1.4         # model persistence
+PyYAML>=6.0         # config/default.yaml
+requests>=2.32      # open-data fetchers (GBIF / EcoSIS / HuggingFace)
+Pillow>=10.0        # PNG quicklooks for the web platform
+rasterio>=1.3       # GeoTIFF export of class / severity rasters
+shapely>=2.0        # polygonisation of treatment units, GeoJSON geometry
+spectral>=0.23      # ENVI header read/write (the pushbroom vendor's native format)
+
+# The v2.0 molecular layer (genomics, barcode, refdb, labelerror) adds NO new
+# dependencies. Alignment, neighbour-joining and the bootstrap are implemented on
+# numpy; the reference database is stdlib sqlite3. That is deliberate: BLAST,
+# MAFFT and RAxML are the production tools and docs/03_barcode_sop.md names them
+# for real laboratory use, but this repository has to run end to end on an
+# evaluator's laptop from `pip install -r requirements.txt`, with no
+# bioinformatics stack and no compiled binaries — the same constraint that
+# produced a standard-library-only platform server.

@@ -1,0 +1,416 @@
+# =============================================================================
+# GENOMIC PRIORS — the desk study of proposal §3.3 / Next Action 0, as data
+# =============================================================================
+# Proposal §10 item 0:
+#
+#   "Run the genomic desk study. Analyse the published M. micrantha / M. cordata
+#    genomic and transcriptomic resources to produce a ranked, falsifiable list
+#    of spectral regions predicted to carry species signal (§3.3). Zero capital,
+#    a few weeks of analyst time, uses only open data ... This is now the true
+#    first action."
+#
+# This file is the *input* to that study, not its output. It records what the
+# published literature actually states, with the citation attached to each claim,
+# and the trait chain by which a genomic finding is asserted to reach a
+# reflectance feature. `scripts/00_genomic_desk_study.py` reads it, propagates
+# confidence down each chain, ranks the resulting spectral predictions, and emits
+# a falsifiable test specification that stage 02 then executes against measured
+# leaf spectra.
+#
+# -----------------------------------------------------------------------------
+# THE EPISTEMIC RULE THIS FILE ENFORCES
+# -----------------------------------------------------------------------------
+# Proposal §3.2 is explicit that the molecular column of its mechanism table
+# "states hypotheses, not established leaf-optical measurements: the genomic and
+# transcriptomic findings are published, the *causal chain* to a specific band is
+# inference."  Appendix B.8 repeats it: "No leaf-optical measurements linking
+# these genes to reflectance features have been made by us or, as far as we are
+# aware, by anyone."
+#
+# Every entry below therefore carries an explicit `evidence` tier, and the desk
+# study is forbidden from reporting a prediction at a confidence higher than the
+# weakest link in its own chain:
+#
+#   published_genomic       assembly / selection scan / gene family result in a
+#                           peer-reviewed paper. Strong.
+#   published_transcriptomic differential or diurnal expression result. Strong
+#                           for pathway activity, weaker for standing pigment pool.
+#   published_physiological measured gas exchange or photosynthetic parameter.
+#   inferred_trait          our inference from the above to a leaf/canopy trait.
+#                           NOT published. This is where the risk sits.
+#   inferred_optical        our inference from a trait to a reflectance feature.
+#                           Standard leaf-optics reasoning, but unmeasured for
+#                           Hong Kong Mikania material specifically.
+#
+# A chain that ends in `inferred_optical` can never be reported as established.
+# It can only be reported as a prediction with a stated falsification test, which
+# is the entire commercial point: §3.3(c) "It is falsifiable. If the predicted
+# spectral features are absent in Hong Kong material, we learn that in Phase 0
+# for the cost of a spectroradiometer campaign, not in Phase 2 for the cost of a
+# failed contract."
+# =============================================================================
+
+meta:
+  title: "Mikania micrantha comparative-genomic priors on VNIR reflectance"
+  proposal_section: "§3.3, §4.2, §10 action 0"
+  # The desk study is reproducible from open sources only; nothing here requires
+  # a subscription, a data-use agreement or an unpublished dataset.
+  open_data_only: true
+  # Confidence multipliers applied per evidence tier as the chain is traversed.
+  # These are the "few weeks of analyst time" made explicit and auditable, rather
+  # than left as a vibe in a slide.
+  evidence_weight:
+    published_genomic: 1.00
+    published_transcriptomic: 0.85
+    published_physiological: 0.90
+    inferred_trait: 0.65
+    inferred_optical: 0.55
+
+# -----------------------------------------------------------------------------
+# 1. PUBLISHED FINDINGS
+# -----------------------------------------------------------------------------
+# Each finding is a claim taken from a named paper. `note` records the wording of
+# the finding closely enough that anyone can check it against the source; it is a
+# paraphrase, not a quotation, and the DOI/URL is given so the primary source is
+# one click away.
+findings:
+
+  - id: F1_photoreaction_selection
+    claim: "Sixteen positively-selected genes concentrated in photoreaction and the utilisation of photoassimilates"
+    evidence: published_genomic
+    source: "Liu B. et al. (2020) Nature Communications 11:340"
+    url: "https://www.nature.com/articles/s41467-019-13926-4"
+    note: >
+      Selection scan on the chromosome-scale assembly. Positive selection acting on
+      photoreaction genes implies the light reactions themselves, not just growth
+      rate, are the target of adaptation — which is what makes a *pigment* and
+      *photosystem* difference plausible rather than a generic vigour difference.
+    proposal_ref: "§1, §3.3, §4.2"
+
+  - id: F2_night_co2
+    claim: "Enhanced photosynthetic capacity via night-time CO2 absorption supplementing daytime carbon fixation"
+    evidence: published_physiological
+    source: "Liu B. et al. (2020) Nature Communications 11:340"
+    url: "https://www.nature.com/articles/s41467-019-13926-4"
+    note: >
+      A CAM-like supplementary carbon route in an otherwise C3 vine. Relevant here
+      mainly because it implies elevated whole-plant carbon gain and therefore
+      supports the high-SLA / fast-turnover leaf economics inference (T3), and
+      because it predicts a DIURNAL component to any spectral difference — which
+      is an acquisition-window constraint, not just a band choice.
+    proposal_ref: "§1, §3.3, §4.2"
+
+  - id: F3_stem_photosynthesis
+    claim: "Elevated stem photosynthesis efficiency — photosynthetically active tissue outside the leaf lamina"
+    evidence: published_physiological
+    source: "Liu B. et al. (2020) Nature Communications 11:340"
+    url: "https://www.nature.com/articles/s41467-019-13926-4"
+    note: >
+      The single most operationally useful finding in the whole literature for this
+      product. A green stem is a chlorophyll-bearing surface with a very different
+      internal structure from a leaf: little spongy mesophyll, so it scatters far
+      less in the NIR while still absorbing in the red. A canopy blanket that mixes
+      leaf and photosynthetic stem therefore has a *shallower NIR plateau relative
+      to its red absorption depth* than a pure-leaf canopy of the same greenness.
+      That is a shape difference, not an amplitude difference, and shape survives
+      illumination variation (proposal §3.2, NIR row).
+    proposal_ref: "§3.2 (stem row), §3.3"
+
+  - id: F4_wgd_and_lTR
+    claim: "~half the genome is LTR retrotransposon, 80% from an expansion within the last ~1 Myr, plus a whole-genome duplication and recent segmental duplications"
+    evidence: published_genomic
+    source: "Liu B. et al. (2020) Nature Communications 11:340; Wang et al. (2025) New Phytologist"
+    url: "https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.70448"
+    note: >
+      Genome architecture, not phenotype. Included because it is the mechanism by
+      which gene-family dosage changes (F5) arose, and because it is the part of
+      the story that is unambiguously established — useful for credibility even
+      though it makes no direct spectral prediction. Deliberately given no
+      spectral prediction below; a desk study that turns every genomic fact into a
+      band prediction is not a desk study, it is astrology.
+    proposal_ref: "§3.3, §4.2"
+
+  - id: F5_gene_family_expansion
+    claim: "Gene family expansion and transposable-element dynamics associated with invasiveness; population structure resolved"
+    evidence: published_genomic
+    source: "Wang et al. (2025) New Phytologist — chromosome-scale M. micrantha (~1.53 Gb) and native congener M. cordata (~1.68 Gb)"
+    url: "https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.70448"
+    note: >
+      Supplies the direct comparative contrast against a *native congener*, which
+      is the closest published analogue of the discrimination problem AFCD has.
+      Population structure is the hook for the §3.4 roadmap item (regrowth vs
+      recolonisation at treated sites).
+    proposal_ref: "§3.3, §3.4, §4.2"
+
+  - id: F6_diurnal_photosynthetic_genes
+    claim: "Evolution and diurnal expression patterns of photosynthetic pathway genes diverge from congeners"
+    evidence: published_transcriptomic
+    source: "The Crop Journal (2023) — diurnal expression of photosynthetic pathway genes in M. micrantha"
+    url: "https://www.sciencedirect.com/science/article/pii/S2095311923000813"
+    note: >
+      Diurnal divergence is the reason this project constrains its acquisition
+      window rather than flying whenever the weather allows. If the transcriptional
+      difference has a time-of-day structure, the phenotype plausibly does too, and
+      an inconsistent solar window would add a nuisance factor that looks exactly
+      like species variance.
+    proposal_ref: "§3.3, §5.2"
+
+  - id: F7_comparative_transcriptome
+    claim: "Comparative transcriptomics against native congeners shows divergence in photosynthesis and secondary-metabolite pathways"
+    evidence: published_transcriptomic
+    source: "Comparative transcriptome analysis of M. micrantha with native congeners"
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5968712/"
+    note: >
+      Independent replication of the light-and-carbon convergence in F1/F2/F3 by a
+      different method on different material. Two methods agreeing is the reason
+      §4.2 can call the science "published, replicated in adjacent species, and
+      consistent" rather than a single-paper result.
+    proposal_ref: "§4.2"
+
+  - id: F8_defensive_metabolites
+    claim: "Defensive secondary-metabolite mechanisms likely enhance invasiveness"
+    evidence: published_genomic
+    source: "Defensive Mechanisms of Mikania micrantha ... (2025)"
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11768483/"
+    note: >
+      The basis for the anthocyanin / flavonoid row of the §3.2 table. Weakest link
+      in the set: "secondary metabolite pathway divergence" is a long way from
+      "a measurable 550-580 nm shoulder", and the desk study scores it accordingly
+      rather than flattering it.
+    proposal_ref: "§3.2 (550-580 nm row)"
+
+# -----------------------------------------------------------------------------
+# 2. TRAIT CHAINS — findings to leaf/canopy phenotype
+# -----------------------------------------------------------------------------
+# This is the inferential step §3.2 flags as hypothesis. Each trait names the
+# findings it rests on; the desk study multiplies their evidence weights, so a
+# trait supported by two independent published findings outranks one resting on a
+# single inference, automatically and visibly.
+traits:
+
+  - id: T1_pigment_pool
+    trait: "Altered standing chlorophyll pool and chlorophyll a/b ratio"
+    from: [F1_photoreaction_selection, F6_diurnal_photosynthetic_genes, F7_comparative_transcriptome]
+    evidence: inferred_trait
+    rationale: >
+      Selection on photoreaction genes and divergent expression of photosynthetic
+      pathway genes act on the light-harvesting apparatus. Light-harvesting complex
+      composition sets the chlorophyll a/b ratio and the total pigment pool per unit
+      leaf area. This is the least contentious of the trait inferences, but it is
+      still an inference: transcript abundance is not pigment concentration.
+
+  - id: T2_photosynthetic_stem
+    trait: "Chlorophyll-bearing, low-mesophyll stem tissue contributing to the canopy signal"
+    from: [F3_stem_photosynthesis]
+    evidence: inferred_trait
+    rationale: >
+      Directly implied by the published finding rather than inferred at a distance —
+      elevated stem photosynthesis requires chlorophyll in the stem. The inference is
+      only about the *proportion of a canopy patch* that this tissue occupies at 8 cm
+      GSD, which is a canopy-architecture question the ground library must measure.
+
+  - id: T3_leaf_economics
+    trait: "High specific leaf area, thin lamina, rapid leaf turnover"
+    from: [F2_night_co2, F1_photoreaction_selection, F5_gene_family_expansion]
+    evidence: inferred_trait
+    rationale: >
+      The classic fast-growth end of the leaf economics spectrum, consistent with a
+      vine that blankets a canopy in a season. Thin lamina means fewer internal
+      air-cell interfaces and therefore a lower NIR plateau — but this is an
+      AMPLITUDE effect, and §3.2 warns that amplitude differences are confounded by
+      illumination. Ranked accordingly.
+
+  - id: T4_secondary_metabolites
+    trait: "Divergent flavonoid / anthocyanin standing pools"
+    from: [F8_defensive_metabolites, F7_comparative_transcriptome]
+    evidence: inferred_trait
+    rationale: >
+      Weak chain, honestly labelled. Defensive-chemistry divergence need not touch
+      the specific pigments that absorb in the visible, and anthocyanin is the most
+      environmentally labile pigment of the three (config/default.yaml `nuisance`
+      gives it the largest within-class CV for that reason).
+
+  - id: T5_canopy_architecture
+    trait: "Two-layer blanket: vine layer draped over, not integrated into, host canopy"
+    from: [F2_night_co2, F5_gene_family_expansion]
+    evidence: inferred_trait
+    rationale: >
+      Growth-habit trait rather than a molecular one; the genomic findings support
+      only the growth *rate* that makes the habit possible. Included because the
+      resulting mixed-pixel structure is what makes unmixing the right tool
+      (§3.2, final paragraph), and because that is a structural prediction the
+      imagery can test independently of any pigment claim.
+
+# -----------------------------------------------------------------------------
+# 3. SPECTRAL PREDICTIONS — trait to a measurable feature in a named window
+# -----------------------------------------------------------------------------
+# `direction` is the sign of the expected Mikania-minus-native-climber difference.
+# It matters enormously: a prediction with no sign is unfalsifiable, because any
+# observed difference confirms it. Every row here commits to a direction.
+#
+# `feature` names the function in mikania.features that measures it, so the
+# prediction and its test are bound together in code rather than in prose.
+#
+# `nuisance_exposure` is our own estimate of how badly the field confounders in
+# config/default.yaml `nuisance` corrupt this feature: position/shape features
+# are robust, amplitude features are not. It downweights the operational ranking
+# relative to the pure biological ranking, and the two rankings are reported
+# separately so the difference between "biologically best supported" and
+# "operationally most useful" stays visible.
+predictions:
+
+  - id: P1_red_edge_position
+    window_nm: [680.0, 760.0]
+    feature: red_edge_position
+    measures: "Wavelength of maximum first derivative across the red edge"
+    from: [T1_pigment_pool]
+    evidence: inferred_optical
+    direction: positive          # Mikania REP at longer wavelength than natives
+    expected_magnitude: "+3 to +6 nm"
+    nuisance_exposure: 0.25      # low: a position, not an amplitude
+    proposal_row: "§3.2 680-750 nm red edge"
+    falsification: >
+      Mikania mean REP does not exceed the native-climber mean REP by at least
+      1 nm in the ground spectral library, in either season, at p < 0.05 by a
+      site-blocked test.
+    why_broadband_misses: "Multispectral gives a red-edge BAND, not a POSITION."
+
+  - id: P2_stem_shape_ratio
+    window_nm: [670.0, 900.0]
+    feature: nir_to_red_shape
+    measures: "NIR plateau height relative to red absorption depth (shape, not amplitude)"
+    from: [T2_photosynthetic_stem, T5_canopy_architecture]
+    evidence: inferred_optical
+    direction: negative          # stem tissue lowers NIR return per unit red absorption
+    expected_magnitude: "-4 to -12% relative"
+    nuisance_exposure: 0.35
+    proposal_row: "§3.2 stem/green-tissue contribution"
+    falsification: >
+      Canopy-patch spectra of Mikania show no reduction in NIR-to-red shape ratio
+      relative to native climbers once leaf-only spectra are compared with
+      whole-patch spectra of the same individuals.
+    why_broadband_misses: "Broadband cannot separate a stem-derived green signal from leaf signal."
+
+  - id: P3_green_peak_position
+    window_nm: [520.0, 600.0]
+    feature: green_peak_position
+    measures: "Wavelength of the green reflectance maximum"
+    from: [T1_pigment_pool]
+    evidence: inferred_optical
+    direction: positive
+    expected_magnitude: "+2 to +5 nm"
+    nuisance_exposure: 0.30
+    proposal_row: "§3.2 500-600 nm green peak"
+    falsification: >
+      Green-peak position distributions of Mikania and native climbers overlap with
+      Cohen's d < 0.3 in the ground library.
+    why_broadband_misses: "A single 40 nm green band integrates over the whole feature."
+
+  - id: P4_derivative_shape
+    window_nm: [690.0, 750.0]
+    feature: red_edge_derivative_shape
+    measures: "First- and second-derivative shape across the red edge (not just its peak)"
+    from: [T1_pigment_pool, T2_photosynthetic_stem]
+    evidence: inferred_optical
+    direction: two_sided         # a shape difference has no single sign
+    expected_magnitude: "detectable as a multivariate contrast, not a scalar offset"
+    nuisance_exposure: 0.30
+    proposal_row: "§3.2 derivative features"
+    falsification: >
+      A classifier restricted to derivative features in this window performs no
+      better than chance on site-disjoint validation.
+    why_broadband_misses: "Requires contiguous sampling — impossible with 5 discrete bands."
+
+  - id: P5_carotenoid_depth
+    window_nm: [470.0, 520.0]
+    feature: carotenoid_depth
+    measures: "Continuum-removed absorption depth in the carotenoid region"
+    from: [T1_pigment_pool, T4_secondary_metabolites]
+    evidence: inferred_optical
+    direction: negative
+    expected_magnitude: "-5 to -10% relative depth"
+    nuisance_exposure: 0.45      # blue region, worst SNR (see sensor.snr_at_450nm)
+    proposal_row: "§3.2 500-600 nm carotenoid"
+    falsification: >
+      No consistent sign of difference across seasons, or the difference is smaller
+      than the sensor's blue-region noise floor at operational integration times.
+    why_broadband_misses: "Requires narrow bands to resolve."
+
+  - id: P6_anthocyanin_shoulder
+    window_nm: [550.0, 580.0]
+    feature: anthocyanin_shoulder
+    measures: "Reflectance shoulder ratio in the anthocyanin-sensitive region"
+    from: [T4_secondary_metabolites]
+    evidence: inferred_optical
+    direction: negative
+    expected_magnitude: "weak; sign uncertain"
+    nuisance_exposure: 0.60      # the most labile pigment of the three
+    proposal_row: "§3.2 550-580 nm anthocyanin"
+    falsification: >
+      Within-species seasonal variation exceeds between-species variation — which
+      on current evidence is the EXPECTED outcome. This row is included so that it
+      can be struck, per §3.2: "rows that fail should be struck rather than
+      quietly retained."
+    why_broadband_misses: "Requires narrow bands to resolve."
+
+  - id: P7_nir_plateau_amplitude
+    window_nm: [780.0, 900.0]
+    feature: nir_plateau
+    measures: "Mean reflectance across the NIR plateau"
+    from: [T3_leaf_economics]
+    evidence: inferred_optical
+    direction: negative
+    expected_magnitude: "-3 to -6%"
+    nuisance_exposure: 0.85      # highest: LAI, leaf angle, slope, aspect all hit this
+    proposal_row: "§3.2 750-900 nm NIR plateau"
+    falsification: >
+      Between-species amplitude difference is smaller than within-species
+      variability driven by LAI and illumination — which config/default.yaml
+      already asserts to be the case (`nuisance.lai_plateau_cv` = 0.16 against a
+      species contrast of ~0.05). This prediction is expected to FAIL as a
+      standalone discriminator and is retained only as a covariate.
+    why_broadband_misses: "Amplitude differences confounded by illumination — so broadband does not miss it, it is simply not usable."
+
+  - id: P8_water_band
+    window_nm: [950.0, 1000.0]
+    feature: water_band_depth
+    measures: "Depth of the ~970 nm leaf water absorption feature"
+    from: [T3_leaf_economics]
+    evidence: inferred_optical
+    direction: negative
+    expected_magnitude: "-8 to -15% relative depth"
+    nuisance_exposure: 0.55      # diurnal as well as seasonal
+    proposal_row: "not in the §3.2 table — added by this desk study"
+    falsification: >
+      Difference disappears once measurements are matched for time of day and days
+      since rainfall.
+    why_broadband_misses: "Outside the range of every RGB and most 5-band multispectral sensors entirely."
+
+# -----------------------------------------------------------------------------
+# 4. ACQUISITION CONSTRAINTS IMPLIED BY THE GENOMICS
+# -----------------------------------------------------------------------------
+# The desk study is not only a band-ranking exercise. Two findings constrain WHEN
+# the survey may fly, and those constraints have direct cost consequences in §5.3
+# that a purely spectral analysis would have missed.
+acquisition_constraints:
+  - id: A1_diurnal_window
+    from: [F2_night_co2, F6_diurnal_photosynthetic_genes]
+    constraint: "Restrict acquisition to a fixed solar-time window; do not mix morning and afternoon sorties within a comparison"
+    rationale: >
+      Night-time CO2 uptake and diurnally-structured expression of photosynthetic
+      genes both imply the physiological state — and therefore plausibly the
+      pigment and water status driving P1, P5 and P8 — varies through the day. A
+      time-of-day difference between two flights would masquerade as a species or
+      site difference. This is a batch effect in the §5.1(7) sense, and the
+      control is design, not correction.
+    cost_consequence: "Narrows usable hours below the ~8 h daylight assumption in §5.2, worsening §5.3 coverage economics"
+
+  - id: A2_seasonal_pairing
+    from: [F1_photoreaction_selection]
+    constraint: "A constitutive photosystem signal should be measured OUT of the flowering window to be worth anything"
+    rationale: >
+      §6.1(2) claims year-round capability on the grounds that a constitutive
+      photosystem signal is more temporally stable than a transient flowering one.
+      That claim is only tested by measuring in the foliage-only season. Measuring
+      in bloom and inferring the rest would be assuming the conclusion.
+    cost_consequence: "Requires at least two acquisition seasons in Phase 0 — already budgeted in §7.3 item 1"

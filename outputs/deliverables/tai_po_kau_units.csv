@@ -1,0 +1,8 @@
+rank,unit_id,site_name,area_ha,severity,band,action,mean_coverage_fraction,survey_cost_hkd
+1,tai_po_kau-220,Tai Po Kau Nature Reserve,0.222,0.6073,Priority,Clear this season,0.5728,"[111, 266]"
+2,tai_po_kau-068,Tai Po Kau Nature Reserve,0.2476,0.536,Schedule,Add to annual clearance plan,0.5266,"[124, 297]"
+3,tai_po_kau-001,Tai Po Kau Nature Reserve,0.1853,0.5803,Priority,Clear this season,0.4275,"[93, 222]"
+4,tai_po_kau-327,Tai Po Kau Nature Reserve,0.064,0.5837,Priority,Clear this season,0.5999,"[32, 77]"
+5,tai_po_kau-003,Tai Po Kau Nature Reserve,0.0417,0.7697,Urgent,Clear within 8 weeks; mature host at risk,0.9816,"[21, 50]"
+6,tai_po_kau-197,Tai Po Kau Nature Reserve,0.0366,0.5486,Schedule,Add to annual clearance plan,0.4399,"[18, 44]"
+7,tai_po_kau-259,Tai Po Kau Nature Reserve,0.0156,0.5261,Schedule,Add to annual clearance plan,0.3895,"[8, 19]"

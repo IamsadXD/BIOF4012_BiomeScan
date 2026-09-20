@@ -1,0 +1,57 @@
+[
+  {
+    "kind": "imagery",
+    "name": "Botswana / Botswana_gt",
+    "source": "https://huggingface.co/datasets/danaroth/botswana/resolve/main/Botswana_gt.mat",
+    "path": "data/raw/Botswana_gt.mat",
+    "retrieved_utc": "2026-09-15T08:13:43+00:00",
+    "note": "EO-1 Hyperion, 30 m, 145 retained bands, 400-2500 nm. Public research benchmark, widely redistributed; used here only to validate the classifier and the site-disjoint cross-validation machinery on real (non-simulated) hyperspectral data.",
+    "bytes": 4039
+  },
+  {
+    "kind": "occurrences",
+    "name": "GBIF Hong Kong climber occurrences",
+    "source": "https://www.gbif.org (GBIF.org occurrence search API)",
+    "path": "data/raw/gbif_hk_occurrences.csv",
+    "retrieved_utc": "2026-08-05T17:43:16+00:00",
+    "note": "Real georeferenced records; coordinate uncertainty > 1 km discarded. GBIF data are aggregated from many publishers, mostly iNaturalist for HK. Licence varies by record (CC0 / CC-BY / CC-BY-NC) \u2014 check before redistribution.",
+    "n_records": 1107,
+    "taxa": {
+      "Mikania micrantha": 499,
+      "Phanera glauca": 115,
+      "Bauhinia championii": 148,
+      "Byttneria aspera": 4,
+      "Paederia foetida": 213,
+      "Dalbergia benthamii": 128
+    }
+  },
+  {
+    "kind": "spectra",
+    "name": "2012-leaf-reflectance-spectra-of-tropical-trees-in-tapajos-national-forest",
+    "source": "https://ecosis.org/package/2012-leaf-reflectance-spectra-of-tropical-trees-in-tapajos-national-forest",
+    "path": "data/raw/ecosis_2012-leaf-reflectance-spectra-of-tropical-trees-.csv",
+    "retrieved_utc": "2026-08-05T17:43:19+00:00",
+    "note": "166 tropical tree leaves, Tapajos National Forest (Wu / Prohaska / Saleska). Real ASD field-spectroradiometer leaf reflectance. EcoSIS licence: 'Other (Open)'. Cite the dataset authors on reuse.",
+    "orientation": "rows_are_spectra",
+    "bytes": 4255357
+  },
+  {
+    "kind": "spectra",
+    "name": "2014-leaf-reflectance-spectra-of-tropical-plants-growing-in-biosphere2",
+    "source": "https://ecosis.org/package/2014-leaf-reflectance-spectra-of-tropical-plants-growing-in-biosphere2",
+    "path": "data/raw/ecosis_2014-leaf-reflectance-spectra-of-tropical-plants.csv",
+    "retrieved_utc": "2026-08-05T17:43:21+00:00",
+    "note": "76 tropical plants, Biosphere 2. Real ASD field-spectroradiometer leaf reflectance. EcoSIS licence: 'Other (Open)'. Cite the dataset authors on reuse.",
+    "orientation": "columns_are_spectra",
+    "bytes": 1953721
+  },
+  {
+    "kind": "imagery",
+    "name": "Botswana / Botswana",
+    "source": "https://huggingface.co/datasets/danaroth/botswana/resolve/main/Botswana.mat",
+    "path": "data/raw/Botswana.mat",
+    "retrieved_utc": "2026-08-05T17:43:45+00:00",
+    "note": "EO-1 Hyperion, 30 m, 145 retained bands, 400-2500 nm. Public research benchmark, widely redistributed; used here only to validate the classifier and the site-disjoint cross-validation machinery on real (non-simulated) hyperspectral data.",
+    "bytes": 78911133
+  }
+]

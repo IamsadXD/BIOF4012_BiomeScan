@@ -1,0 +1,387 @@
+{
+  "model": "plsda",
+  "sweep": [
+    {
+      "contrast": 0.0,
+      "n_pixels": 42838,
+      "overall_accuracy": [
+        0.3982847358701296,
+        0.3747350696798925,
+        0.4186432667882111
+      ],
+      "kappa": [
+        0.31300688613397504,
+        0.28729503964720726,
+        0.3377055974476432
+      ],
+      "climber_accuracy": [
+        0.5086031852079703,
+        0.47955160584048484,
+        0.5377361619371304
+      ],
+      "climber_false_positive": [
+        0.1389754477658776,
+        0.0915998365581018,
+        0.1850028634731628
+      ],
+      "random_split_overall": 0.4831932773109244,
+      "random_split_climber": 0.5650962032317964,
+      "per_site": {
+        "lam_tsuen": {
+          "overall_accuracy": 0.3651296491845594,
+          "kappa": 0.2726099677771786,
+          "climber_accuracy": 0.5161313264968574
+        },
+        "sai_kung_w": {
+          "overall_accuracy": 0.4262911868658078,
+          "kappa": 0.34421147619426584,
+          "climber_accuracy": 0.5623076067924737
+        },
+        "shing_mun": {
+          "overall_accuracy": 0.4135856623637047,
+          "kappa": 0.33526867152787687,
+          "climber_accuracy": 0.5235927243389931
+        },
+        "tai_lam": {
+          "overall_accuracy": 0.4134626354820308,
+          "kappa": 0.32956769179393064,
+          "climber_accuracy": 0.4555297229569818
+        },
+        "tai_po_kau": {
+          "overall_accuracy": 0.3729545454545454,
+          "kappa": 0.2833766233766234,
+          "climber_accuracy": 0.48545454545454547
+        }
+      }
+    },
+    {
+      "contrast": 0.25,
+      "n_pixels": 42838,
+      "overall_accuracy": [
+        0.4532727371076697,
+        0.4067828559211635,
+        0.48194070877865797
+      ],
+      "kappa": [
+        0.3755282794827034,
+        0.32631845201157855,
+        0.40913998434373317
+      ],
+      "climber_accuracy": [
+        0.6913234902695379,
+        0.6020654996914176,
+        0.7759329370283634
+      ],
+      "climber_false_positive": [
+        0.17917120127910616,
+        0.13101159491833975,
+        0.21684102625827176
+      ],
+      "random_split_overall": 0.5357142857142857,
+      "random_split_climber": 0.725886768598633,
+      "per_site": {
+        "lam_tsuen": {
+          "overall_accuracy": 0.3712307872814737,
+          "kappa": 0.2805871517426729,
+          "climber_accuracy": 0.5355706252067483
+        },
+        "sai_kung_w": {
+          "overall_accuracy": 0.484209326188576,
+          "kappa": 0.41041461176690175,
+          "climber_accuracy": 0.6168205441760929
+        },
+        "shing_mun": {
+          "overall_accuracy": 0.44817646321594184,
+          "kappa": 0.37218354748598215,
+          "climber_accuracy": 0.7867950786607503
+        },
+        "tai_lam": {
+          "overall_accuracy": 0.49070165430690244,
+          "kappa": 0.41783270979458376,
+          "climber_accuracy": 0.7886433245162189
+        },
+        "tai_po_kau": {
+          "overall_accuracy": 0.47204545454545455,
+          "kappa": 0.39662337662337666,
+          "climber_accuracy": 0.7287878787878788
+        }
+      }
+    },
+    {
+      "contrast": 0.5,
+      "n_pixels": 42838,
+      "overall_accuracy": [
+        0.5289219907115922,
+        0.4668918639722822,
+        0.566079059405603
+      ],
+      "kappa": [
+        0.4616106847485882,
+        0.3940015387331985,
+        0.5038776769588523
+      ],
+      "climber_accuracy": [
+        0.7752827561653695,
+        0.6323979702017944,
+        0.9106870825145149
+      ],
+      "climber_false_positive": [
+        0.14925266948744284,
+        0.105905872191065,
+        0.17514743698403196
+      ],
+      "random_split_overall": 0.6021630874572051,
+      "random_split_climber": 0.7876674173284343,
+      "per_site": {
+        "lam_tsuen": {
+          "overall_accuracy": 0.41464273143259417,
+          "kappa": 0.33002938157270234,
+          "climber_accuracy": 0.5320531982076805
+        },
+        "sai_kung_w": {
+          "overall_accuracy": 0.5563789761714741,
+          "kappa": 0.4928834277374924,
+          "climber_accuracy": 0.6287034823934854
+        },
+        "shing_mun": {
+          "overall_accuracy": 0.5341521493921544,
+          "kappa": 0.468765527505847,
+          "climber_accuracy": 0.9371267739924456
+        },
+        "tai_lam": {
+          "overall_accuracy": 0.5725042783799201,
+          "kappa": 0.511310151861964,
+          "climber_accuracy": 0.900651538354448
+        },
+        "tai_po_kau": {
+          "overall_accuracy": 0.5669318181818181,
+          "kappa": 0.505064935064935,
+          "climber_accuracy": 0.8778787878787879
+        }
+      }
+    },
+    {
+      "contrast": 0.75,
+      "n_pixels": 42838,
+      "overall_accuracy": [
+        0.59257171487089,
+        0.527483027808895,
+        0.6335542922321846
+      ],
+      "kappa": [
+        0.5341239251275864,
+        0.46648021604542,
+        0.5813592513750198
+      ],
+      "climber_accuracy": [
+        0.7954062447597826,
+        0.637447251810358,
+        0.9432456141355823
+      ],
+      "climber_false_positive": [
+        0.12155114684407105,
+        0.08013637227440608,
+        0.15832988436281514
+      ],
+      "random_split_overall": 0.6606753812636166,
+      "random_split_climber": 0.8112263442771918,
+      "per_site": {
+        "lam_tsuen": {
+          "overall_accuracy": 0.47741405608353865,
+          "kappa": 0.40134389720411723,
+          "climber_accuracy": 0.5316783448109945
+        },
+        "sai_kung_w": {
+          "overall_accuracy": 0.607228366206818,
+          "kappa": 0.5510099317491475,
+          "climber_accuracy": 0.6226176315277507
+        },
+        "shing_mun": {
+          "overall_accuracy": 0.597944604587041,
+          "kappa": 0.5409210300002745,
+          "climber_accuracy": 0.9695835930910557
+        },
+        "tai_lam": {
+          "overall_accuracy": 0.6397033656588705,
+          "kappa": 0.5881239874636138,
+          "climber_accuracy": 0.923909230126688
+        },
+        "tai_po_kau": {
+          "overall_accuracy": 0.6405681818181819,
+          "kappa": 0.5892207792207792,
+          "climber_accuracy": 0.9292424242424242
+        }
+      }
+    },
+    {
+      "contrast": 1.0,
+      "n_pixels": 42838,
+      "overall_accuracy": [
+        0.6452622958253479,
+        0.5798940240017557,
+        0.6924390031244634
+      ],
+      "kappa": [
+        0.5943233937438126,
+        0.5284644692673183,
+        0.6490249344778505
+      ],
+      "climber_accuracy": [
+        0.8071430374809356,
+        0.643015899424314,
+        0.9592242957039419
+      ],
+      "climber_false_positive": [
+        0.10153210685631087,
+        0.05476755095954657,
+        0.14321723021701288
+      ],
+      "random_split_overall": 0.7084500466853408,
+      "random_split_climber": 0.8259847497135633,
+      "per_site": {
+        "lam_tsuen": {
+          "overall_accuracy": 0.5359615158981579,
+          "kappa": 0.46813733259467694,
+          "climber_accuracy": 0.5362642468348721
+        },
+        "sai_kung_w": {
+          "overall_accuracy": 0.6470185839699009,
+          "kappa": 0.5964954277780437,
+          "climber_accuracy": 0.6244962619160113
+        },
+        "shing_mun": {
+          "overall_accuracy": 0.6445669883444041,
+          "kappa": 0.5941991195792895,
+          "climber_accuracy": 0.9817904947009425
+        },
+        "tai_lam": {
+          "overall_accuracy": 0.6893325727324586,
+          "kappa": 0.6448630108449749,
+          "climber_accuracy": 0.9393763051649728
+        },
+        "tai_po_kau": {
+          "overall_accuracy": 0.7094318181818182,
+          "kappa": 0.6679220779220779,
+          "climber_accuracy": 0.9537878787878789
+        }
+      }
+    },
+    {
+      "contrast": 1.5,
+      "n_pixels": 42838,
+      "overall_accuracy": [
+        0.7313478099405384,
+        0.6756448876294721,
+        0.7850565491279463
+      ],
+      "kappa": [
+        0.6928669457570603,
+        0.6325783868824162,
+        0.7544598222690297
+      ],
+      "climber_accuracy": [
+        0.8246017891508153,
+        0.6663817050421409,
+        0.9721651742192072
+      ],
+      "climber_false_positive": [
+        0.07552369442564229,
+        0.03168610990073357,
+        0.12375139344626063
+      ],
+      "random_split_overall": 0.7892156862745098,
+      "random_split_climber": 0.8477424835051954,
+      "per_site": {
+        "lam_tsuen": {
+          "overall_accuracy": 0.6416754663850757,
+          "kappa": 0.5894980675251974,
+          "climber_accuracy": 0.5662678555318317
+        },
+        "sai_kung_w": {
+          "overall_accuracy": 0.7265990194960665,
+          "kappa": 0.6874726148500203,
+          "climber_accuracy": 0.6423887607348322
+        },
+        "shing_mun": {
+          "overall_accuracy": 0.7112420102769771,
+          "kappa": 0.6705762541587391,
+          "climber_accuracy": 0.9907161978803769
+        },
+        "tai_lam": {
+          "overall_accuracy": 0.758813462635482,
+          "kappa": 0.7243202597838121,
+          "climber_accuracy": 0.9557573437282473
+        },
+        "tai_po_kau": {
+          "overall_accuracy": 0.8184090909090909,
+          "kappa": 0.7924675324675324,
+          "climber_accuracy": 0.9678787878787878
+        }
+      }
+    },
+    {
+      "contrast": 2.0,
+      "n_pixels": 42838,
+      "overall_accuracy": [
+        0.7944662109598298,
+        0.7479036246394761,
+        0.8425155869001062
+      ],
+      "kappa": [
+        0.7651385615033155,
+        0.7117325959797447,
+        0.8200355245659073
+      ],
+      "climber_accuracy": [
+        0.8352834445421017,
+        0.679640948055124,
+        0.9783426057457051
+      ],
+      "climber_false_positive": [
+        0.0565240200067055,
+        0.01865102964734235,
+        0.10771203561177933
+      ],
+      "random_split_overall": 0.8418145035792095,
+      "random_split_climber": 0.8598933270119711,
+      "per_site": {
+        "lam_tsuen": {
+          "overall_accuracy": 0.7209902616449607,
+          "kappa": 0.6806078476788454,
+          "climber_accuracy": 0.5811060656181397
+        },
+        "sai_kung_w": {
+          "overall_accuracy": 0.7961463915175009,
+          "kappa": 0.766985259086117,
+          "climber_accuracy": 0.6628637336371974
+        },
+        "shing_mun": {
+          "overall_accuracy": 0.7627522245895476,
+          "kappa": 0.7296054911242806,
+          "climber_accuracy": 0.9920228097840038
+        },
+        "tai_lam": {
+          "overall_accuracy": 0.814033086138049,
+          "kappa": 0.7874552485883732,
+          "climber_accuracy": 0.9672427954893499
+        },
+        "tai_po_kau": {
+          "overall_accuracy": 0.8784090909090909,
+          "kappa": 0.861038961038961,
+          "climber_accuracy": 0.9731818181818181
+        }
+      }
+    }
+  ],
+  "control_contrast_zero": {
+    "contrast_zero_climber_accuracy": 0.5086031852079703,
+    "expected": "~0.50 (chance)",
+    "passed": true,
+    "meaning": "At contrast 0 the climber species are spectrally identical, so any accuracy above chance would indicate the classifier is exploiting something other than species spectra \u2014 spatial position, illumination or a simulator artefact \u2014 and would invalidate every other figure in this study."
+  },
+  "kill_criterion": 0.75,
+  "contrast_required_mean": 0.4247171950123474,
+  "contrast_required_lower_ci": null,
+  "interpretation": "Contrast 1.0 is the nominal configuration, in which every species deviation in config.species_spectra is applied at full strength. The scale is relative, not physical: it is meaningful for comparing how much separability is NEEDED against how much Phase 0 MEASURES, once the same operators are fitted to real field spectra.",
+  "caveat": "Simulated scenes throughout. The curve characterises the pipeline's sensitivity to separability; it does not predict Hong Kong field accuracy, which remains unmeasured (proposal Appendix B.5)."
+}

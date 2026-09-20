@@ -1,0 +1,833 @@
+# =============================================================================
+# MIKANIA-HSI — master configuration
+# =============================================================================
+# Every number in this file is either (a) taken from the AFCD proposal, (b) taken
+# from published literature with the citation inline, or (c) an explicit modelling
+# assumption flagged ASSUMPTION. Nothing is a magic constant buried in code.
+#
+# Referenced document: ../AFCD_Mikania_Hyperspectral_Proposal.md  (§ numbers below)
+# =============================================================================
+
+project:
+  name: MIKANIA-HSI
+  subtitle: "Species-level invasive vine mapping — AFCD Phase 0 reference pipeline"
+  # Phase 0 in the proposal (§7.3) = spectral library + single-catchment demo.
+  phase: 0
+  random_seed: 20260806          # one seed for the whole pipeline; reproducibility
+
+# -----------------------------------------------------------------------------
+# 1. SENSOR MODEL  (proposal §5.3)
+# -----------------------------------------------------------------------------
+# A VNIR pushbroom on a DJI M350-class platform. The proposal marks swath and line
+# rate [VERIFY]; they are reproduced here as declared assumptions so that anyone
+# re-running the economics can substitute measured values in one place.
+sensor:
+  name: "VNIR pushbroom (400-1000 nm), generic"
+  wavelength_start_nm: 400.0
+  wavelength_end_nm: 1000.0
+  band_spacing_nm: 5.0           # -> 121 bands. Literature (Huang 2021) used 450-998 nm.
+  fwhm_nm: 6.0                   # spectral response width; used to convolve library spectra
+  bit_depth: 12
+  # Signal-to-noise ratio is wavelength dependent: worst in the blue (low solar
+  # irradiance + low leaf reflectance), best across the NIR plateau. ASSUMPTION.
+  snr_at_450nm: 120.0
+  snr_at_700nm: 300.0
+  snr_at_900nm: 400.0
+  # Pushbroom-specific artefacts we deliberately simulate so the pipeline is
+  # exercised against them rather than against clean data:
+  keystone_px: 0.15              # cross-track spatial misregistration between bands
+  smile_nm: 0.8                  # across-track wavelength shift, edge vs centre
+  dark_current_offset: 0.0015    # in reflectance units after vendor calibration
+
+platform:
+  agl_m: 90.0                    # CAD ceiling (proposal §5.2, §8.1) [VERIFY]
+  gsd_m: 0.08                    # 8 cm (proposal §5.3)
+  swath_m: 36.0                  # ASSUMPTION, ~22 deg FOV (proposal §5.3) [VERIFY]
+  ground_speed_ms: 6.0           # 5-7 m/s, SNR-limited not line-rate-limited
+  sidelap_frac: 0.30
+  operational_efficiency: 0.62   # turns, battery swaps, RTH — folds 46 ha/hr -> ~28 ha/hr
+  hours_per_field_day: 6.0
+
+# -----------------------------------------------------------------------------
+# 2. CLASS SCHEME  (proposal §3.1)
+# -----------------------------------------------------------------------------
+# `group` drives the metric that actually matters commercially: Mikania vs native
+# climber. Reporting overall accuracy across 8 classes flatters the model; the
+# kill criterion (§7.3) is defined on the climber sub-problem only.
+classes:
+  - {id: 0, key: unlabelled,       label: "Unlabelled",             group: none,           color: "#1b1f24"}
+  - {id: 1, key: mikania,          label: "Mikania micrantha",      group: target,         color: "#ff4d6d"}
+  - {id: 2, key: bauhinia_glauca,  label: "Bauhinia glauca",        group: native_climber, color: "#ffd166"}
+  - {id: 3, key: byttneria_aspera, label: "Byttneria aspera",       group: native_climber, color: "#f9a03f"}
+  - {id: 4, key: paederia_foetida, label: "Paederia foetida",       group: native_climber, color: "#e0a458"}
+  - {id: 5, key: host_canopy,      label: "Host canopy (broadleaf)",group: canopy,         color: "#2d9e63"}
+  - {id: 6, key: shrub_grass,      label: "Shrub / grass",          group: other_veg,      color: "#7fbf7b"}
+  - {id: 7, key: soil_rock,        label: "Bare soil / rock",       group: non_veg,        color: "#a68a64"}
+  - {id: 8, key: shadow,           label: "Deep shadow",            group: non_veg,        color: "#3b4252"}
+
+# Native climbers named explicitly in the Government greening guidance as the
+# species that must NOT be cleared by mistake (proposal §1, §2.1b).
+confusable_pair:
+  target: mikania
+  natives: [bauhinia_glauca, byttneria_aspera, paederia_foetida]
+
+# -----------------------------------------------------------------------------
+# 3. SPECIES SPECTRAL MODEL  (proposal §3.2 table)
+# -----------------------------------------------------------------------------
+# Each species is described as a deviation from a real, measured tropical broadleaf
+# reflectance curve (EcoSIS Tapajos / Biosphere2 — see scripts/01_fetch_open_data.py).
+# The deviations below are the mechanism table in §3.2 turned into numbers.
+#
+#   chl_scale        multiplies chlorophyll absorption depth (660-680 nm well)
+#   car_scale        multiplies carotenoid absorption (470-520 nm)
+#   ant_scale        anthocyanin shoulder near 550-580 nm
+#   rep_shift_nm     red-edge POSITION shift; the feature multispectral cannot see
+#   nir_plateau      multiplies 780-900 nm plateau amplitude (mesophyll structure/LAI)
+#   water_depth      relative depth of the 970 nm water absorption feature
+#   green_peak_nm    location of the green reflectance maximum
+#   within_class_cv  fractional biological variability inside the class
+#
+# ASSUMPTION: magnitudes are physiologically plausible and internally consistent
+# with Huang et al. (2021) reporting 88.71% lab separability, but they are NOT
+# measured for Hong Kong material. Replacing this block with field-spectroradiometer
+# means is precisely what Phase 0 Action 2 (proposal §10.2) buys.
+#
+# CALIBRATION NOTE — why the amplitude terms are small and the shape terms are not.
+# An earlier version of this block used large ``nir_plateau`` and ``chl_scale``
+# contrasts. It "worked" — but it made NDVI alone separate Mikania from the native
+# climbers at d' > 7, i.e. it implied a HK$40k multispectral drone solves the
+# problem outright. That contradicts both the published negative result and §3.2,
+# whose NIR row says amplitude differences are "confounded by illumination".
+# Between-species amplitude contrasts are therefore held BELOW the within-species
+# structural variability defined in `nuisance` below, and the discriminating
+# information is carried by feature POSITION and SHAPE. That is the physically
+# honest configuration and it is the one the moat argument actually rests on.
+species_spectra:
+  mikania:
+    # Fast-growing herbaceous vine: thin leaves, high chlorophyll per unit mass,
+    # forms a low-LAI blanket over the host rather than a deep canopy.
+    chl_scale: 1.05
+    car_scale: 0.93
+    ant_scale: 0.89
+    rep_shift_nm: +4.5
+    nir_plateau: 0.96
+    water_depth: 0.88
+    green_peak_nm: 553.5
+    within_class_cv: 0.085
+  bauhinia_glauca:
+    # Woody native climber, thicker cuticle, more structural scattering.
+    chl_scale: 1.00
+    car_scale: 1.04
+    ant_scale: 1.03
+    rep_shift_nm: -1.5
+    nir_plateau: 1.01
+    water_depth: 1.00
+    green_peak_nm: 550.0
+    within_class_cv: 0.080
+  byttneria_aspera:
+    chl_scale: 0.98
+    car_scale: 1.09
+    ant_scale: 1.11
+    rep_shift_nm: -3.0
+    nir_plateau: 0.99
+    water_depth: 1.04
+    green_peak_nm: 556.5
+    within_class_cv: 0.090
+  paederia_foetida:
+    chl_scale: 1.03
+    car_scale: 0.98
+    ant_scale: 0.96
+    rep_shift_nm: +1.2
+    nir_plateau: 0.98
+    water_depth: 0.95
+    green_peak_nm: 551.5
+    within_class_cv: 0.095
+  host_canopy:
+    chl_scale: 1.04
+    car_scale: 1.00
+    ant_scale: 1.00
+    rep_shift_nm: 0.0
+    nir_plateau: 1.05
+    water_depth: 1.05
+    green_peak_nm: 550.0
+    within_class_cv: 0.110
+  shrub_grass:
+    chl_scale: 0.92
+    car_scale: 1.07
+    ant_scale: 1.04
+    rep_shift_nm: -6.0
+    nir_plateau: 0.90
+    water_depth: 0.82
+    green_peak_nm: 555.5
+    within_class_cv: 0.140
+
+# WITHIN-species nuisance variability. These are the physical confounders that
+# make the field problem hard and the laboratory problem easy, and they are
+# deliberately LARGER than the between-species amplitude contrasts above:
+#   - leaf area index and leaf angle change the NIR plateau amplitude far more
+#     between two patches of the same species than between two species;
+#   - chlorophyll content varies with leaf age, light environment and nutrition;
+#   - overall brightness varies with slope, aspect and canopy gap fraction.
+# Their net effect is that amplitude-based indices (NDVI, EGI, plateau height)
+# carry little species information, and position-based features (red-edge
+# position, green-peak position, absorption-feature depth ratios) carry most of
+# it. That is exactly the asymmetry proposal §3.2 describes.
+# IMPORTANT — these must jitter EVERY parameter that also distinguishes species.
+# An earlier version jittered chlorophyll and NIR plateau but not carotenoid,
+# anthocyanin, water depth or green-peak position. That left the between-species
+# differences in those parameters sitting in directions with no within-class
+# variance at all, so a linear projection separated the classes perfectly and
+# every sensor tier — including a 3-band RGB camera — scored 100%. The physics
+# does not work that way: whatever varies between species also varies within one.
+nuisance:
+  lai_plateau_cv: 0.16        # multiplicative sd on nir_plateau, within class
+  chl_content_cv: 0.14        # multiplicative sd on chl_scale, within class
+  car_content_cv: 0.13        # carotenoid — varies with light environment / stress
+  ant_content_cv: 0.15        # anthocyanin — the most labile pigment of the three
+  water_content_cv: 0.12      # leaf water — diurnal as well as seasonal
+  brightness_cv: 0.10         # log-normal sd on overall reflectance amplitude
+  rep_jitter_nm: 2.6          # sd of within-class red-edge position wander
+  green_peak_jitter_nm: 1.8   # sd of within-class green-peak position wander
+  # CANOPY-PATCH REALISM. A contact-probe leaf measurement is clean; a canopy
+  # patch at 8 cm GSD never is. Every patch contains some shaded leaf area, some
+  # non-photosynthetic material (dry stems, litter, senescent leaves) and some
+  # visible substrate through gaps. These fractions vary far more WITHIN a
+  # species than the species means differ, and — critically — they move the red
+  # trough and the NIR plateau in different directions, which is what destroys
+  # ratio indices like NDVI as species discriminators in the field.
+  # Omitting this was the single biggest realism error in the first draft of
+  # this config: it left NDVI separating Mikania from native climbers at d' > 6,
+  # which would have implied a cheap multispectral drone solves the problem.
+  background_shadow_mean: 0.12
+  background_shadow_sd: 0.07
+  background_npv_mean: 0.09    # non-photosynthetic vegetation (litter, dry stem)
+  background_npv_sd: 0.06
+  background_soil_mean: 0.03
+  background_soil_sd: 0.03
+
+# -----------------------------------------------------------------------------
+# SPECIES CONTRAST — the honest handling of the one thing we cannot know yet
+# -----------------------------------------------------------------------------
+# Appendix B.5 of the proposal states the central unknown plainly: "Mikania is
+# separable from Bauhinia glauca and Byttneria aspera in real canopy conditions.
+# This is the central scientific assumption and is unproven for Hong Kong."
+#
+# It follows that ANY single accuracy figure a simulator produces is a function
+# of parameters chosen by whoever wrote the simulator. Tuning `species_spectra`
+# until the pipeline reports a pleasing number would be reverse-engineering the
+# answer — precisely the failure mode §5.1(6) and Appendix B warn against.
+#
+# So difficulty is an explicit, swept parameter instead. `scale` multiplies every
+# species deviation from spectral neutrality: 0.0 makes the climbers spectrally
+# identical (accuracy must collapse to chance), 1.0 is the nominal literature-
+# consistent contrast, 2.0 is optimistic. Stage 05 sweeps it and reports accuracy
+# as a CURVE against contrast, with the §7.3 kill criterion drawn on it.
+#
+# The deliverable is therefore not "the pipeline achieves X%". It is: "here is
+# how accuracy depends on real separability, and here is the field measurement
+# that tells you where Hong Kong sits on that curve." That is a decision tool
+# for the Phase 0 go/no-go, which is what §7.3 actually needs.
+species_contrast:
+  scale: 1.0
+  sweep: [0.0, 0.25, 0.5, 0.75, 1.0, 1.5, 2.0]
+  # Parameter -> neutral value. Deviations from these are what `scale` multiplies.
+  neutral:
+    chl_scale: 1.0
+    car_scale: 1.0
+    ant_scale: 1.0
+    nir_plateau: 1.0
+    water_depth: 1.0
+    rep_shift_nm: 0.0
+    green_peak_nm: 550.0
+
+# SITE-LEVEL RANDOM EFFECTS — the term that makes field classification hard.
+#
+# The same species at a different catchment is a different spectrum: soil
+# chemistry, aspect, water availability, canopy position, leaf age structure and
+# local ecotype all shift its mean. These offsets are drawn ONCE per (site,
+# species) pair and applied to every pixel of that species at that site, which
+# is what makes the error structure spatially correlated rather than i.i.d.
+#
+# The magnitudes below are deliberately comparable to the BETWEEN-species
+# differences above (e.g. site sd of 2.2 nm in red-edge position against a
+# 6.0 nm Mikania-vs-Bauhinia separation). That is not pessimism, it is the
+# documented reality of applied vegetation spectroscopy, and it is the reason
+# proposal §5.1(6) insists on leave-one-SITE-out validation:
+#
+#   "Adjacent pixels in a hyperspectral scene are spatially autocorrelated.
+#    Random pixel-level train/test splitting leaks catastrophically and produces
+#    99% accuracies that collapse on new ground."
+#
+# Without this block the simulation reproduces exactly that failure: every
+# sensor tier, including a 3-band RGB camera, scores 100%. With it, the numbers
+# become informative and the hyperspectral advantage becomes measurable instead
+# of being an artefact of an over-clean generative model.
+site_random_effects:
+  rep_shift_sd_nm: 2.2        # site-to-site red-edge position shift, per species
+  green_peak_sd_nm: 1.6
+  chl_scale_sd: 0.07
+  car_scale_sd: 0.06
+  nir_plateau_sd: 0.08
+  water_depth_sd: 0.07
+  background_shift_sd: 0.05   # site-level shift in shadow / NPV / soil fractions
+
+# Autumn flowering (proposal §5.1 mitigation 3): Mikania carries a dense white
+# bloom. Modelled as an additive spectrally-flat-ish bright fraction that also
+# suppresses the red-edge contrast.
+phenology:
+  seasons:
+    dry_winter:      {flower_fraction: 0.00, leaf_water_scale: 0.88, label: "Dec-Feb (dry)"}
+    spring_flush:    {flower_fraction: 0.00, leaf_water_scale: 1.06, label: "Mar-May (flush)"}
+    wet_summer:      {flower_fraction: 0.00, leaf_water_scale: 1.10, label: "Jun-Aug (wet)"}
+    autumn_flower:   {flower_fraction: 0.22, leaf_water_scale: 0.95, label: "Sep-Nov (flowering)"}
+  flower_reflectance: {r450: 0.55, r550: 0.68, r680: 0.66, r800: 0.72}
+
+# -----------------------------------------------------------------------------
+# 4. SIMULATED SURVEY SITES  (proposal §7.3.3 candidate catchments)
+# -----------------------------------------------------------------------------
+# Real Hong Kong catchment names and approximate centroids. Infestation geometry
+# is simulated; the coordinates are real so the GIS deliverable lands in the right
+# place on a map and so GBIF occurrence density can be joined to each site.
+sites:
+  - key: tai_lam
+    name: "Tai Lam Country Park"
+    centroid: [22.3936, 114.0402]
+    area_ha: 62.0
+    terrain_relief_m: 180.0
+    mikania_prevalence: 0.16       # fraction of canopy pixels invaded
+    season: autumn_flower
+    role: train
+  - key: shing_mun
+    name: "Shing Mun Country Park"
+    centroid: [22.3833, 114.1500]
+    area_ha: 55.0
+    terrain_relief_m: 220.0
+    mikania_prevalence: 0.11
+    season: autumn_flower
+    role: train
+  - key: lam_tsuen
+    name: "Lam Tsuen Valley"
+    centroid: [22.4600, 114.1400]
+    area_ha: 48.0
+    terrain_relief_m: 120.0
+    mikania_prevalence: 0.21
+    season: dry_winter             # deliberate season mismatch -> tests classifier drift
+    role: train
+  - key: tai_po_kau
+    name: "Tai Po Kau Nature Reserve"
+    centroid: [22.4269, 114.1789]
+    area_ha: 44.0
+    terrain_relief_m: 260.0
+    mikania_prevalence: 0.09
+    season: autumn_flower
+    role: holdout                  # NEVER seen in training. This is the honest number.
+  - key: sai_kung_w
+    name: "Sai Kung West Country Park"
+    centroid: [22.3950, 114.3100]
+    area_ha: 51.0
+    terrain_relief_m: 300.0
+    mikania_prevalence: 0.14
+    season: wet_summer
+    role: holdout
+
+scene:
+  # Simulated cube geometry. 8 cm GSD would make a 60 ha site ~10^8 pixels, which
+  # is right for production and wrong for a laptop demo, so the demo synthesises at
+  # a coarser effective pixel and states the scaling explicitly.
+  lines: 220
+  samples: 200
+  demo_gsd_m: 1.6                 # 20x coarser than the 0.08 m production GSD
+  patch_scale_px: 14.0            # spatial correlation length of infestation patches
+  shadow_fraction: 0.10
+  soil_fraction: 0.05
+  shrub_fraction: 0.18            # open shrub/grass; host canopy is the remainder
+  illumination_gradient: 0.18     # slope/aspect brightness modulation, peak-to-peak
+  brdf_strength: 0.06             # across-track view-angle brightening
+  # Proposal §5.2, final row — the limitation that must be volunteered rather
+  # than discovered by an evaluator: "Mikania under closed canopy is invisible
+  # from above." This fraction of infested canopy is removed from BOTH the
+  # imagery and the ground truth, and reported separately, so that accuracy is
+  # honestly scoped to canopy-level detection instead of being penalised for
+  # missing what no nadir sensor could ever see.
+  subcanopy_occluded_fraction: 0.18
+
+# -----------------------------------------------------------------------------
+# 5. PREPROCESSING  (proposal §4.1 — the Huang et al. chain)
+# -----------------------------------------------------------------------------
+preprocess:
+  clip_reflectance: [0.0, 1.2]
+  savgol:
+    window_length: 11             # bands (11 x 5 nm = 55 nm)
+    polyorder: 3
+  derivative_orders: [0, 1, 2]    # raw + 1st + 2nd derivative, concatenated
+  snv: true                       # standard normal variate — kills illumination scaling
+  continuum_removal: true         # convex-hull normalisation, isolates absorption depth
+  brightness_mask_min: 0.04       # below this NIR reflectance -> deep shadow, excluded
+
+features:
+  # Interpretable features carried alongside the raw derivative stack. These are
+  # what goes in the report to AFCD when they ask "what is the model looking at?".
+  red_edge_window_nm: [680.0, 760.0]
+  green_peak_window_nm: [520.0, 600.0]
+  water_band_nm: 970.0
+  nir_plateau_window_nm: [780.0, 900.0]
+  use_pca: true
+  pca_components: 24              # Huang et al. used SG + PCA before RF/SVM
+
+# -----------------------------------------------------------------------------
+# 6. MODELS AND VALIDATION  (proposal §5.1 mitigation 6 — THE methodological rule)
+# -----------------------------------------------------------------------------
+# Random pixel splits leak through spatial autocorrelation and produce 99%
+# accuracies that collapse on new ground. Validation here is leave-one-SITE-out,
+# full stop. `allow_random_split` exists only so the leakage can be demonstrated
+# side by side in the report; it is never used for a reported figure.
+validation:
+  strategy: leave_one_site_out
+  allow_random_split: true        # for the leakage demonstration ONLY
+  bootstrap_iters: 400            # for accuracy confidence intervals
+  ci: 0.95
+  min_pixels_per_class: 60
+
+models:
+  plsda:
+    n_components: 18
+  random_forest:
+    n_estimators: 400
+    max_depth: 22
+    min_samples_leaf: 3
+    class_weight: balanced_subsample
+    n_jobs: -1
+  svm:
+    C: 60.0
+    gamma: scale
+    kernel: rbf
+    class_weight: balanced
+
+# Kill criterion, quoted verbatim from proposal §7.3:
+# "if field-validated per-class accuracy for Mikania versus native climbers falls
+#  below ~75% with acceptable false-positive rate, the ... project stops."
+kill_criteria:
+  mikania_vs_native_min_accuracy: 0.75
+  max_false_positive_rate: 0.20   # Mikania called on a native climber pixel
+
+# -----------------------------------------------------------------------------
+# 7. UNMIXING  (proposal §3.2 — two-layer blanket over host canopy)
+# -----------------------------------------------------------------------------
+unmixing:
+  method: fcls                    # fully-constrained (sum-to-one, non-negative) least squares
+  endmembers: [mikania, host_canopy, shrub_grass, soil_rock, shadow]
+  sum_to_one_weight: 30.0         # penalty weight in the augmented NNLS system
+  min_abundance_report: 0.10      # abundances below this are noise, not infestation
+
+# -----------------------------------------------------------------------------
+# 8. SEVERITY / PRIORITISATION  (proposal §3.1 deliverable 2)
+# -----------------------------------------------------------------------------
+# Weights sum to 1.0. They encode the Government's own stated prioritisation rule
+# (§2.2): priority to ecologically important areas and to sites where mature trees
+# and woodland habitat are adversely affected.
+severity:
+  weights:
+    coverage_fraction: 0.34       # how much of the canopy the blanket covers
+    host_maturity: 0.24           # mature trees / woodland habitat -> higher damage
+    ecological_sensitivity: 0.18  # distance to designated / high-value habitat
+    spread_trajectory: 0.14       # growth between epochs, or patch-edge convexity proxy
+    access_cost: 0.10             # cheaper-to-treat sites rank up (cost-effectiveness)
+  patch_min_area_px: 25           # below this, do not raise a work order
+  bands:                          # severity -> action band
+    - {min: 0.00, max: 0.30, label: "Monitor",        action: "Re-survey next cycle"}
+    - {min: 0.30, max: 0.55, label: "Schedule",       action: "Add to annual clearance plan"}
+    - {min: 0.55, max: 0.75, label: "Priority",       action: "Clear this season"}
+    - {min: 0.75, max: 1.01, label: "Urgent",         action: "Clear within 8 weeks; mature host at risk"}
+
+# -----------------------------------------------------------------------------
+# 9. EFFICACY / CHANGE DETECTION  (proposal §3.1 deliverable 3)
+# -----------------------------------------------------------------------------
+efficacy:
+  # Simulated treatment outcomes per method, used to demonstrate the deliverable
+  # AFCD currently cannot produce at all. ASSUMPTION — real numbers come from
+  # re-flights of actual treated polygons.
+  methods:
+    manual_pull:         {clearance: 0.92, reemergence_rate: 0.46, cost_hkd_per_ha: 22000}
+    cut_and_tarp:        {clearance: 0.88, reemergence_rate: 0.28, cost_hkd_per_ha: 31000}
+    cut_stump_herbicide: {clearance: 0.96, reemergence_rate: 0.14, cost_hkd_per_ha: 27000}
+    no_treatment:        {clearance: 0.00, reemergence_rate: 1.00, cost_hkd_per_ha: 0}
+  reflight_interval_months: 6
+  detection_floor_ha: 0.02        # smallest re-emergence patch we will claim to see
+
+# -----------------------------------------------------------------------------
+# 10. COMMERCIAL MODEL  (proposal §7.2)
+# -----------------------------------------------------------------------------
+economics:
+  currency: HKD
+  tier2_survey_hkd_per_ha: [500, 1200]
+  reflight_hkd_per_ha: [400, 800]
+  tier1_screening_hkd: [150000, 300000]
+  platform_licence_hkd_per_year: [180000, 350000]
+  rapid_response_hkd: [25000, 60000]
+  phase0_budget_hkd: 1400000
+  phase0_months: 10
+  afcd_total_area_ha: 44300       # 25 country parks + 22 special areas
+  tier1_flag_fraction: [0.05, 0.10]
+
+# -----------------------------------------------------------------------------
+# 11. OPEN DATA SOURCES  (script 01)
+# -----------------------------------------------------------------------------
+open_data:
+  gbif:
+    base_url: "https://api.gbif.org/v1/occurrence/search"
+    country: HK
+    page_size: 300
+    max_records_per_taxon: 900
+    taxa:
+      # GBIF accepts the currently-accepted name; Bauhinia glauca is filed under
+      # Phanera glauca, which is why a naive query for it returns zero HK records.
+      - {query: "Mikania micrantha",  class_key: mikania,          note: "target species"}
+      - {query: "Phanera glauca",     class_key: bauhinia_glauca,  note: "= Bauhinia glauca, Climbing Bauhinia"}
+      - {query: "Bauhinia championii",class_key: bauhinia_glauca,  note: "congeneric native climber"}
+      - {query: "Byttneria aspera",   class_key: byttneria_aspera, note: "Spiny-fruited Vine"}
+      - {query: "Paederia foetida",   class_key: paederia_foetida, note: "common native climber"}
+      - {query: "Dalbergia benthamii",class_key: paederia_foetida, note: "woody native climber, extra decoy"}
+  ecosis:
+    # Real ASD field-spectroradiometer leaf reflectance, 350-2500 nm at 1 nm.
+    # `orientation: auto` is correct and deliberate. EcoSIS's /export endpoint
+    # normalises packages to rows-are-spectra regardless of how the original
+    # resource file was laid out, so a hard-coded per-package flag goes stale and
+    # silently transposes the data — which is exactly what happened on the first
+    # run here (the Biosphere 2 package was read transposed, failed every QC
+    # check, and was dropped without comment). Detection is by evidence now.
+    packages:
+      - name: "2012-leaf-reflectance-spectra-of-tropical-trees-in-tapajos-national-forest"
+        orientation: auto
+        note: "166 tropical tree leaves, Tapajos National Forest (Wu / Prohaska / Saleska)"
+      - name: "2014-leaf-reflectance-spectra-of-tropical-plants-growing-in-biosphere2"
+        orientation: auto
+        note: "76 tropical plants, Biosphere 2"
+  benchmark_hsi:
+    # Real hyperspectral imagery with species-level vegetation classes, used to
+    # prove the classifier + spatial-CV machinery on data we did not synthesise.
+    name: Botswana
+    sensor: "EO-1 Hyperion, 30 m, 145 retained bands, 400-2500 nm"
+    files:
+      - {url: "https://huggingface.co/datasets/danaroth/botswana/resolve/main/Botswana.mat",     dest: "Botswana.mat",     key: Botswana}
+      - {url: "https://huggingface.co/datasets/danaroth/botswana/resolve/main/Botswana_gt.mat",  dest: "Botswana_gt.mat",  key: Botswana_gt}
+
+# -----------------------------------------------------------------------------
+# 12. PLATFORM
+# -----------------------------------------------------------------------------
+platform_server:
+  port: 8790
+  host: "127.0.0.1"
+
+# =============================================================================
+# 13. MOLECULAR WORKSTREAM  (proposal v2.0 — §3.4, §5.1, §8.4, Risk 8/9/10)
+# =============================================================================
+# Added in proposal v2.0. The premise, stated in §3.4:
+#
+#   "Supervised classification inherits the error rate of its labels ... the
+#    labels themselves are generated by visual field identification of sterile,
+#    canopy-entangled vines — the single most error-prone identification task in
+#    the entire workflow, and the one on which everything downstream depends.
+#    Every voucher entering the reference library is therefore barcode-verified
+#    before it can train anything."
+#
+# Note the direction of causation this section encodes: the molecular block does
+# not improve the classifier's algorithm at all. It improves the *labels*, which
+# is a strictly larger effect (see §12 below and mikania/labelerror.py) and one
+# that no amount of model tuning can substitute for.
+molecular:
+
+  # ---------------------------------------------------------------------------
+  # 13.1 Barcode loci  (§3.4 marker table, §4.2 "Barcoding reference resources")
+  # ---------------------------------------------------------------------------
+  # "Plant DNA barcoding has no single universal locus with adequate resolution,
+  #  hence the standard multi-locus approach (rbcL + matK as core, ITS2 and
+  #  trnH-psbA as supplementary)."  (§4.2)
+  #
+  # `discrimination_rank` is the expected within-genus resolving power, worst (1)
+  # to best (4). It is what drives adjudication weighting: a confident rbcL match
+  # is much weaker evidence at species level than a confident ITS2 match, and a
+  # pipeline that averaged them equally would systematically over-call.
+  loci:
+    - key: rbcL
+      genome: plastid
+      role: core
+      typical_length_bp: 600         # barcode region, not the full ~1400 bp gene
+      discrimination_rank: 1         # excellent amplification, poor species resolution
+      ncbi_query: "rbcL"
+      note: "CBOL core barcode. Reliable to genus; rarely resolves congeners."
+    - key: matK
+      genome: plastid
+      role: core
+      typical_length_bp: 830
+      discrimination_rank: 3
+      ncbi_query: "matK"
+      note: "CBOL core barcode. Better species resolution than rbcL; primer universality is the weak point."
+    - key: ITS2
+      genome: nuclear_ribosomal
+      role: supplementary
+      typical_length_bp: 250
+      discrimination_rank: 4         # best species-level resolution of the four
+      ncbi_query: "(ITS2 OR internal transcribed spacer 2 OR internal transcribed spacer)"
+      note: >
+        Highest species-level discrimination and by far the best-represented locus
+        for Mikania in public databases. Caveat carried into adjudication: ITS is
+        nuclear and multi-copy, so intragenomic variants and fungal-endophyte
+        co-amplification are real failure modes, not theoretical ones.
+    - key: trnH-psbA
+      genome: plastid
+      role: supplementary
+      typical_length_bp: 450
+      discrimination_rank: 2
+      ncbi_query: "(trnH-psbA OR trnH OR psbA)"
+      note: >
+        Highly variable intergenic spacer; length variation and mononucleotide
+        repeats make alignment and Sanger base-calling harder than the length
+        suggests. Reference coverage for HK climbers is the sparsest of the four —
+        which is Risk 10 made measurable rather than assumed.
+
+  # ---------------------------------------------------------------------------
+  # 13.2 Sequence QC  (§3.4 "QC and assembly" row)
+  # ---------------------------------------------------------------------------
+  # Thresholds are conventional Sanger-barcoding practice. They are set here, once,
+  # so that "passing QC" is a defined and auditable state rather than an operator
+  # judgement — which is the whole point of §6.1(6): "an auditable, reproducible,
+  # versioned procedure."
+  qc:
+    min_phred: 20                    # per-base call quality floor (Q20 = 1% error)
+    trim_window: 10                  # sliding window (bp) for end trimming
+    trim_window_min_mean_phred: 25   # window mean below this -> trim from that end
+    min_trimmed_length_bp: 200       # shorter than this, the read is not a barcode
+    max_ambiguity_frac: 0.02         # >2% N/IUPAC ambiguity -> fail
+    max_homopolymer_run: 12          # nanopore artefact guard, mostly for trnH-psbA
+    min_double_strand_agreement: 0.98 # forward/reverse consensus concordance
+
+  # ---------------------------------------------------------------------------
+  # 13.3 Identification thresholds  (§3.4 "Identification" row)
+  # ---------------------------------------------------------------------------
+  # "Similarity search against BOLD and GenBank, with explicit identity/coverage
+  #  thresholds" (§3.4). Explicit means here, in config, versioned — not in a lab
+  #  notebook.
+  #
+  # `min_margin_pp` is the load-bearing one and the one most pipelines omit. A 99.4%
+  # match to species A means nothing if species B also matches at 99.3%; what
+  # licenses a species call is the SEPARATION between the best and second-best
+  # species, not the absolute identity. Omitting it is how barcoding pipelines
+  # silently produce confident wrong answers within a genus.
+  identification:
+    min_identity: 0.970              # best-hit identity floor for any species call
+    min_query_coverage: 0.800        # of the trimmed query length
+    min_margin_pp: 0.6               # percentage points over the best hit of ANY other species
+    min_reference_seqs_per_species: 2 # a single reference sequence cannot establish intraspecific range
+    ambiguous_action: phylogenetic_placement
+
+  # ---------------------------------------------------------------------------
+  # 13.4 Phylogenetic adjudication  (§3.4 "Adjudication" row)
+  # ---------------------------------------------------------------------------
+  # "Phylogenetic placement against a curated reference alignment where similarity
+  #  search is ambiguous — the Mikania congener case in particular."
+  #
+  # Distance-based (p-distance / Jukes-Cantor + neighbour-joining) rather than
+  # maximum likelihood, deliberately: at four loci and tens of reference sequences
+  # per genus, ML adds runtime and a dependency without changing which clade a
+  # 250 bp ITS2 barcode falls into. If a specimen's placement genuinely depends on
+  # the substitution model, that specimen belongs in the escalation bucket
+  # (§5.4 Risk 10: "escalate to genome-skimming for a small number of hard cases"),
+  # not in a better tree.
+  phylogeny:
+    distance_model: jukes_cantor     # p_distance | jukes_cantor
+    bootstrap_replicates: 200
+    min_clade_support: 0.80          # bootstrap support to accept a monophyletic placement
+    max_within_species_distance: 0.030  # above this, the "species" reference set is incoherent
+    min_between_species_distance: 0.010 # barcode gap floor; below this the locus cannot resolve the pair
+
+  # ---------------------------------------------------------------------------
+  # 13.5 Release gate  (§3.4 "Release" row)
+  # ---------------------------------------------------------------------------
+  # "Only vouchers passing a defined confidence threshold enter the training set."
+  #
+  # This is the gate that makes the §7.3 kill criterion a real test: "This
+  # threshold is now measured against barcode-certified labels, which makes it a
+  # real test rather than a measure of agreement with our own field judgement."
+  release:
+    min_confidence: 0.90             # composite confidence to certify a voucher
+    min_loci_agreeing: 2             # multi-locus concordance requirement
+    require_core_locus: true         # at least one of rbcL / matK must have passed QC
+    # A voucher that fails the gate is NOT discarded. It is held in the database
+    # with status `quarantined` and an explicit reason, because the set of
+    # specimens that cannot be identified molecularly is itself a finding — it is
+    # the direct measurement of Risk 10 (loci lack resolution between the
+    # confusable taxa) and the evidence for escalating those specimens.
+    quarantine_rather_than_discard: true
+
+  # ---------------------------------------------------------------------------
+  # 13.6 Voucher collection plan  (§7.3 Phase 0 items 1-2, §5.1)
+  # ---------------------------------------------------------------------------
+  # Sized to the Phase 0 budget line of HK$150-250k in §7.3, and to the field
+  # reality that vouchers are collected on visits that were happening anyway:
+  # "it uses the same field visits that were already being made to collect spectra."
+  voucher_plan:
+    species_targets:                 # vouchers per species, per season, across all sites
+      mikania: 24
+      bauhinia_glauca: 14
+      byttneria_aspera: 14
+      paederia_foetida: 12
+      host_canopy: 10
+    seasons: [autumn_flower, wet_summer]
+    min_sites_per_species: 3         # population coverage; also the unit of grouped CV
+    paired_spectra_required: true    # a voucher without paired field spectra is a herbarium
+                                     # specimen, not a row in this company's asset (§7.1)
+    # Fraction of collected vouchers that are sterile (no flowers/fruit) and
+    # therefore genuinely hard to identify by eye. This is the population the
+    # molecular workstream exists for. ASSUMPTION, from the §2.1(b) description of
+    # the field problem; measurable in Phase 0 and worth reporting to AFCD.
+    sterile_fraction: 0.72
+
+  # ---------------------------------------------------------------------------
+  # 13.7 Field-identification error model  (Risk 9, §5.1, §3.4)
+  # ---------------------------------------------------------------------------
+  # Risk 9: "Training labels corrupted by field misidentification. Impact:
+  # Critical. Likelihood: High if unaddressed."
+  #
+  # Every number in this block is an ASSUMPTION used to *quantify* the risk, not a
+  # measurement. Phase 0 item 4 replaces them: "measure their concordance with
+  # barcode identity on a sample of cleared sites." Reporting the modelled curve
+  # now is what makes the case for measuring it then.
+  field_error:
+    # Probability that a visual field call is wrong, by specimen condition.
+    misid_rate_sterile: 0.18         # sterile vine in a canopy — the §2.1(b) problem
+    misid_rate_fertile: 0.03         # in flower or fruit — much easier
+    # Where the errors GO. Misidentification is not symmetric noise: a surveyor
+    # looking for Mikania in a control programme is primed to see Mikania, so
+    # native->Mikania errors outnumber the reverse. This asymmetry is what makes
+    # the resulting label error a systematic BIAS rather than noise, and it is why
+    # §5.1 says label error "is more damaging than measurement noise".
+    confusion_bias_toward_target: 0.65
+    # AFCD removal records (§5.1 mitigation 2) record where staff judged a climber
+    # to be Mikania and cleared it. Modelled concordance with barcode identity.
+    removal_record_concordance: 0.88
+    # Sweep for the propagation study in stage 12.
+    sweep_rates: [0.00, 0.05, 0.10, 0.15, 0.20, 0.30]
+
+  # ---------------------------------------------------------------------------
+  # 13.8 Reference sequence acquisition  (real open data — stage 10)
+  # ---------------------------------------------------------------------------
+  # NCBI E-utilities is free and needs no key at this volume; BOLD's public API is
+  # queried as a secondary source. Both are genuinely open, which keeps the desk
+  # study reproducible by anyone evaluating the proposal.
+  #
+  # `expected_sparse` marks the taxon/locus combinations we already know are thin
+  # in public databases. Recording the expectation BEFORE the fetch is what turns
+  # a disappointing result into a measurement of Risk 10 rather than a surprise.
+  references:
+    ncbi:
+      esearch_url: "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
+      efetch_url: "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi"
+      max_per_taxon_locus: 40
+      request_interval_s: 0.4        # NCBI asks for <= 3 req/s without an API key
+      email: "afcd-phase0@example.org"   # [VERIFY] replace before any real bulk use
+    bold:
+      combined_url: "https://www.boldsystems.org/index.php/API_Public/combined"
+      timeout_s: 45
+      optional: true                 # pipeline must not fail if BOLD is unreachable
+    taxa:
+      # `class_key` ties each taxon back to the spectral class scheme in §2 above, so a
+      # certified barcode identity maps directly onto a training label.
+      #
+      # `accepted_name` is NOT decoration, and getting it wrong silently destroys the
+      # Risk-10 measurement. The GBIF version of this trap is already documented in the
+      # README: querying for "Bauhinia glauca" returns zero HK occurrences because the
+      # accepted name is *Phanera glauca*. The sequence-database version is worse rather
+      # than better, because it fails LOUDLY NOWHERE — both names return records, many of
+      # them the same records. Treated as two taxa, they generate "interspecific" pairs at
+      # ~zero distance, which collapses the minimum between-species distance and makes
+      # every locus report NO barcode gap. The pipeline would then conclude that DNA
+      # barcoding cannot separate Hong Kong climbers, on the strength of a nomenclatural
+      # artefact. Sequences are therefore grouped by `accepted_name`, not by query string.
+      #
+      # NOTE the deliberate asymmetry with `class_key`: *Bauhinia championii* is a
+      # genuinely distinct species that shares the bauhinia_glauca SPECTRAL class as a
+      # decoy, so it keeps its own accepted name while sharing a class.
+      - {name: "Mikania micrantha",   accepted_name: "Mikania micrantha",   class_key: mikania,          role: target}
+      - {name: "Mikania cordata",     accepted_name: "Mikania cordata",     class_key: mikania,          role: congener_control}
+      - {name: "Phanera glauca",      accepted_name: "Phanera glauca",      class_key: bauhinia_glauca,  role: native_climber}
+      - {name: "Bauhinia glauca",     accepted_name: "Phanera glauca",      class_key: bauhinia_glauca,  role: native_climber, note: "synonym of Phanera glauca"}
+      - {name: "Bauhinia championii", accepted_name: "Bauhinia championii", class_key: bauhinia_glauca,  role: native_climber}
+      - {name: "Byttneria aspera",    accepted_name: "Byttneria aspera",    class_key: byttneria_aspera, role: native_climber}
+      - {name: "Paederia foetida",    accepted_name: "Paederia foetida",    class_key: paederia_foetida, role: native_climber}
+      - {name: "Dalbergia benthamii", accepted_name: "Dalbergia benthamii", class_key: paederia_foetida, role: native_climber}
+    expected_sparse:
+      - {taxon: "Byttneria aspera", locus: "trnH-psbA", reason: "no HK-region submissions known"}
+      - {taxon: "Mikania cordata",  locus: "ITS2",      reason: "congener under-sampled relative to the invasive"}
+
+  # ---------------------------------------------------------------------------
+  # 13.9 Costs  (§7.3 budget line, §7.2 pricing — ALL MODELLED, NOT QUOTED)
+  # ---------------------------------------------------------------------------
+  # Proposal §7.2 [VERIFY]: "per-specimen barcoding cost depends heavily on batch
+  # size and on whether sequencing is outsourced or brought in-house, and neither
+  # has been quoted."  Appendix B.12 repeats it. These figures exist to make the
+  # §7.3 envelope checkable, and must be replaced by real quotations (§10 item 8)
+  # before any external circulation.
+  costs_hkd:
+    extraction_per_sample: 45
+    pcr_per_reaction: 30             # x 4 loci per voucher
+    sanger_per_reaction: 55          # bidirectional -> x 2 per locus
+    nanopore_batch_flowcell: 6500    # amortised over a barcoded batch
+    nanopore_batch_size: 96
+    lab_access_per_month: 12000      # university bench arrangement [VERIFY §10.8]
+    bioinformatics_hours_per_batch: 6
+    analyst_hourly: 650
+    phase0_budget_line: [150000, 250000]   # §7.3 molecular workstream allocation
+
+  # ---------------------------------------------------------------------------
+  # 13.10 Sequence deposition policy  (§8.4)
+  # ---------------------------------------------------------------------------
+  # "Recommended position: deposit barcode sequences for taxa where reference
+  #  coverage is currently poor ... Retain the paired spectra, the georeferenced
+  #  metadata and the linkage between them; that linkage is the asset (§7.1), and
+  #  it is not reconstructable from public sequence data."
+  deposition:
+    deposit_sequences: true
+    deposit_when_public_coverage_below: 5    # reference seqs for that taxon/locus
+    withhold: [paired_spectra, precise_coordinates, voucher_spectral_linkage]
+    coordinate_generalisation_km: 5          # published records rounded to this
+    rationale: >
+      A barcode sequence alone does not let a competitor build the product; the
+      sequence-to-spectrum-to-place linkage does. Depositing the former buys
+      scientific credibility (§10.7 academic collaboration, §7.4 ECF application)
+      at no competitive cost.
+
+# =============================================================================
+# 14. REFERENCE DATABASE — deliverable 4, the company's actual asset (§7.1)
+# =============================================================================
+# "It is not the drone, the sensor, or the classifier — all three are purchasable
+#  by anyone. It is the molecularly-verified spectral reference database of Hong
+#  Kong invasive flora (deliverable 4, §3.1): barcode-certified vouchers, paired
+#  field and airborne spectra, indexed across seasons, sites, infestation levels
+#  and illumination conditions, accumulating year on year."
+#
+# Being an asset has consequences a folder of CSVs cannot satisfy: it must be
+# versioned (so a classifier can name the release it was trained on), it must be
+# checksummed (so a licensee can prove what they received), and it must be
+# valuable to state a replacement cost for (so §7.1's pricing floor has a number
+# behind it).
+reference_database:
+  path: "data/processed/reference_db.sqlite"
+  release_prefix: "MIKANIA-REFDB"
+  schema_version: 2
+  # Licence tiers -> which tables a licensee receives. The withheld join is the
+  # asset: sequences alone are a public good, spectra alone are uninterpretable,
+  # and the LINK between them plus its geography is what took years to build.
+  licence_tiers:
+    academic:    {tables: [voucher, barcode, certificate], spectra: aggregate_only, price_hkd_per_year: 0}
+    consultancy: {tables: [voucher, barcode, certificate, spectrum], spectra: full, price_hkd_per_year: [80000, 250000]}
+    internal:    {tables: all, spectra: full, price_hkd_per_year: null}
+  # Replacement-cost model behind the §7.1 pricing floor: "the replacement cost of
+  # a multi-season, barcode-verified, HK-specific reference set is several years
+  # and several million dollars". Stage 13 computes it from the actual row counts
+  # rather than asserting it.
+  valuation:
+    field_day_hkd: 9800              # two people, vehicle, spectroradiometer amortisation
+    vouchers_per_field_day: 9
+    seasons_required: 2
+    years_to_replicate_multiplier: 1.0   # seasons cannot be parallelised; this is calendar time
+    overhead_multiplier: 1.35        # permits, curation, QC failures, re-collection

@@ -1,0 +1,410 @@
+{
+  "dataset": "Botswana (EO-1 Hyperion)",
+  "provenance": "https://huggingface.co/datasets/danaroth/botswana",
+  "shape": [
+    1476,
+    256,
+    145
+  ],
+  "n_classes": 14,
+  "class_names": [
+    "Water",
+    "Hippo grass",
+    "Floodplain grasses 1",
+    "Floodplain grasses 2",
+    "Reeds",
+    "Riparian",
+    "Firescar",
+    "Island interior",
+    "Acacia woodlands",
+    "Acacia shrublands",
+    "Acacia grasslands",
+    "Short mopane",
+    "Mixed mopane",
+    "Exposed soils"
+  ],
+  "model": "rf",
+  "blocked_overall_accuracy": [
+    0.47302757727430383,
+    0.2503517601835931,
+    0.71589271634575
+  ],
+  "blocked_overall_accuracy_trainable_classes": [
+    0.5892268650077661,
+    0.4124479931834306,
+    0.7659861532319214
+  ],
+  "per_fold_class_coverage": [
+    1.0,
+    0.0,
+    1.0,
+    0.7699570815450644,
+    1.0,
+    1.0
+  ],
+  "class_coverage_note": "Botswana classes are spatially segregated, so some blocks contain classes no training fold saw. The 'trainable' figure excludes those pixels; it is the fair comparison against a random split, which by construction never has unseen classes.",
+  "blocked_kappa": [
+    0.3913166666607502,
+    0.12286197906166706,
+    0.6658036320070088
+  ],
+  "random_split_overall_accuracy": 0.9374358974358974,
+  "random_split_kappa": 0.9322197504638345,
+  "leakage_inflation_pp": 46.440832016159355,
+  "leakage_inflation_pp_trainable": 34.82090324281313,
+  "per_fold_overall": [
+    0.3291139240506329,
+    0.0,
+    0.8706293706293706,
+    0.36137339055793993,
+    0.811623246492986,
+    0.4654255319148936
+  ],
+  "pooled": {
+    "overall_accuracy": 0.5233990147783252,
+    "balanced_accuracy": 0.5309503055438404,
+    "kappa": 0.4838898286990655,
+    "confusion_matrix": [
+      [
+        263,
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        90,
+        0,
+        0,
+        6,
+        3,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        101,
+        2,
+        0,
+        0,
+        17,
+        0,
+        3,
+        127,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        15,
+        173,
+        15,
+        0,
+        3,
+        0,
+        8,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        0,
+        10,
+        230,
+        16,
+        0,
+        0,
+        7,
+        0,
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        58,
+        54,
+        0,
+        0,
+        141,
+        0,
+        0,
+        0,
+        13,
+        0
+      ],
+      [
+        2,
+        0,
+        12,
+        5,
+        1,
+        1,
+        237,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        139,
+        0,
+        47,
+        10,
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        3,
+        1,
+        167,
+        0,
+        0,
+        142,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        82,
+        0,
+        0,
+        0,
+        0,
+        42,
+        1,
+        109,
+        12,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        22,
+        0,
+        0,
+        0,
+        0,
+        66,
+        0,
+        17,
+        123,
+        42,
+        0,
+        35
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        181,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        0,
+        125,
+        0,
+        5,
+        0,
+        1,
+        0,
+        134,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        12,
+        0,
+        0,
+        44,
+        0,
+        0,
+        39
+      ]
+    ],
+    "confusion_labels": [
+      "mikania",
+      "bauhinia_glauca",
+      "byttneria_aspera",
+      "paederia_foetida",
+      "host_canopy",
+      "shrub_grass",
+      "soil_rock",
+      "shadow",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "per_class": {
+      "mikania": {
+        "support": 270,
+        "recall": 0.9740740740740741,
+        "precision": 0.9887218045112782,
+        "f1": 0.9813432835820896
+      },
+      "bauhinia_glauca": {
+        "support": 101,
+        "recall": 0.8910891089108911,
+        "precision": 0.9375,
+        "f1": 0.9137055837563451
+      },
+      "byttneria_aspera": {
+        "support": 251,
+        "recall": 0.40239043824701193,
+        "precision": 0.4297872340425532,
+        "f1": 0.4156378600823045
+      },
+      "paederia_foetida": {
+        "support": 215,
+        "recall": 0.8046511627906977,
+        "precision": 0.8963730569948186,
+        "f1": 0.8480392156862745
+      },
+      "host_canopy": {
+        "support": 269,
+        "recall": 0.8550185873605948,
+        "precision": 0.732484076433121,
+        "f1": 0.7890222984562607
+      },
+      "shrub_grass": {
+        "support": 269,
+        "recall": 0.20074349442379183,
+        "precision": 0.14754098360655737,
+        "f1": 0.1700787401574803
+      },
+      "soil_rock": {
+        "support": 259,
+        "recall": 0.915057915057915,
+        "precision": 0.8943396226415095,
+        "f1": 0.9045801526717557
+      },
+      "shadow": {
+        "support": 203,
+        "recall": 0.6847290640394089,
+        "precision": 0.5265151515151515,
+        "f1": 0.5952890792291221
+      },
+      "9": {
+        "support": 314,
+        "recall": 0.45222929936305734,
+        "precision": 0.47019867549668876,
+        "f1": 0.461038961038961
+      },
+      "10": {
+        "support": 248,
+        "recall": 0.43951612903225806,
+        "precision": 0.35973597359735976,
+        "f1": 0.3956442831215971
+      },
+      "11": {
+        "support": 305,
+        "recall": 0.40327868852459015,
+        "precision": 0.6473684210526316,
+        "f1": 0.49696969696969695
+      },
+      "12": {
+        "support": 181,
+        "recall": 0.0,
+        "precision": 0.0,
+        "f1": 0.0
+      },
+      "13": {
+        "support": 268,
+        "recall": 0.0,
+        "precision": 0.0,
+        "f1": 0.0
+      },
+      "14": {
+        "support": 95,
+        "recall": 0.4105263157894737,
+        "precision": 0.4936708860759494,
+        "f1": 0.4482758620689655
+      }
+    },
+    "climber": {
+      "n": 837,
+      "balanced_accuracy": 0.9861552028218694,
+      "accuracy": 0.9904420549581839,
+      "recall_mikania": 0.9740740740740741,
+      "precision_mikania": 0.9962121212121212,
+      "false_positive_rate": 0.001763668430335097,
+      "tp": 263,
+      "fp": 1,
+      "fn": 7,
+      "tn": 566
+    }
+  },
+  "what_this_proves": "The preprocessing chain, feature stack, model factory and spatially-blocked validation machinery all function on real hyperspectral imagery with real sensor noise and real spatial autocorrelation, and the leakage effect reproduces on data this project did not generate.",
+  "what_this_does_not_prove": "Nothing about Mikania micrantha, Hong Kong, or separability from Bauhinia glauca / Byttneria aspera. Different continent, different species, 30 m pixels versus 8 cm. Machinery check only."
+}

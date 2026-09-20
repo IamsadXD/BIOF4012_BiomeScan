@@ -1,0 +1,62 @@
+{
+  "tai_lam": {
+    "name": "Tai Lam Country Park",
+    "centroid": [
+      22.3936,
+      114.0402
+    ],
+    "radius_km": 3.0,
+    "n_records_total": 8,
+    "n_mikania": 4,
+    "n_native_climbers": 4,
+    "nearest_mikania_km": 1.664321267401824
+  },
+  "shing_mun": {
+    "name": "Shing Mun Country Park",
+    "centroid": [
+      22.3833,
+      114.15
+    ],
+    "radius_km": 3.0,
+    "n_records_total": 22,
+    "n_mikania": 4,
+    "n_native_climbers": 18,
+    "nearest_mikania_km": 0.8436564111176732
+  },
+  "lam_tsuen": {
+    "name": "Lam Tsuen Valley",
+    "centroid": [
+      22.46,
+      114.14
+    ],
+    "radius_km": 3.0,
+    "n_records_total": 17,
+    "n_mikania": 10,
+    "n_native_climbers": 7,
+    "nearest_mikania_km": 0.3749339180554296
+  },
+  "tai_po_kau": {
+    "name": "Tai Po Kau Nature Reserve",
+    "centroid": [
+      22.4269,
+      114.1789
+    ],
+    "radius_km": 3.0,
+    "n_records_total": 56,
+    "n_mikania": 25,
+    "n_native_climbers": 31,
+    "nearest_mikania_km": 0.2948208122831088
+  },
+  "sai_kung_w": {
+    "name": "Sai Kung West Country Park",
+    "centroid": [
+      22.395,
+      114.31
+    ],
+    "radius_km": 3.0,
+    "n_records_total": 30,
+    "n_mikania": 13,
+    "n_native_climbers": 17,
+    "nearest_mikania_km": 1.2921735535529428
+  }
+}

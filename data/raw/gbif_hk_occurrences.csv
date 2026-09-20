@@ -1,0 +1,1108 @@
+gbif_key,query_name,class_key,scientific_name,lat,lon,uncertainty_m,year,month,basis,dataset
+6129844222,Mikania micrantha,mikania,Mikania micrantha Kunth,22.40722,113.985504,15.0,2026,1.0,HUMAN_OBSERVATION,iNaturalist
+6130115171,Mikania micrantha,mikania,Mikania micrantha Kunth,22.374056,114.021906,3.0,2026,1.0,HUMAN_OBSERVATION,iNaturalist
+6130297401,Mikania micrantha,mikania,Mikania micrantha Kunth,22.304522,114.234108,,2026,1.0,HUMAN_OBSERVATION,iNaturalist
+6131166839,Mikania micrantha,mikania,Mikania micrantha Kunth,22.374061,114.021916,4.0,2026,1.0,HUMAN_OBSERVATION,iNaturalist
+6131485765,Mikania micrantha,mikania,Mikania micrantha Kunth,22.39458,114.284185,,2026,1.0,HUMAN_OBSERVATION,iNaturalist
+6185301508,Mikania micrantha,mikania,Mikania micrantha Kunth,22.431978,114.185404,8.0,2026,1.0,HUMAN_OBSERVATION,iNaturalist
+6147358015,Mikania micrantha,mikania,Mikania micrantha Kunth,22.495368,114.054553,479.0,2026,2.0,HUMAN_OBSERVATION,iNaturalist
+6159347802,Mikania micrantha,mikania,Mikania micrantha Kunth,22.494287,114.051147,9.0,2026,2.0,HUMAN_OBSERVATION,iNaturalist
+6159477751,Mikania micrantha,mikania,Mikania micrantha Kunth,22.436386,114.03699,7.0,2026,2.0,HUMAN_OBSERVATION,iNaturalist
+6162984464,Mikania micrantha,mikania,Mikania micrantha Kunth,22.509722,114.243992,,2026,2.0,HUMAN_OBSERVATION,iNaturalist
+6163381041,Mikania micrantha,mikania,Mikania micrantha Kunth,22.45166,114.023993,13.0,2026,2.0,HUMAN_OBSERVATION,iNaturalist
+6184819580,Mikania micrantha,mikania,Mikania micrantha Kunth,22.431979,114.185359,3.0,2026,3.0,HUMAN_OBSERVATION,iNaturalist
+6274234319,Mikania micrantha,mikania,Mikania micrantha Kunth,22.43189,114.185214,4.0,2026,3.0,HUMAN_OBSERVATION,iNaturalist
+6195878319,Mikania micrantha,mikania,Mikania micrantha Kunth,22.417556,114.204352,3.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6234284470,Mikania micrantha,mikania,Mikania micrantha Kunth,22.268337,114.151383,4.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6234583818,Mikania micrantha,mikania,Mikania micrantha Kunth,22.507975,114.111521,14.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6234926613,Mikania micrantha,mikania,Mikania micrantha Kunth,22.432384,114.186153,61.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6235017583,Mikania micrantha,mikania,Mikania micrantha Kunth,22.504076,114.23972,244.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6235066952,Mikania micrantha,mikania,Mikania micrantha Kunth,22.352088,114.138228,,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6235097825,Mikania micrantha,mikania,Mikania micrantha Kunth,22.374424,114.265239,8.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6235258896,Mikania micrantha,mikania,Mikania micrantha Kunth,22.264478,114.151528,4.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6235591679,Mikania micrantha,mikania,Mikania micrantha Kunth,22.402044,113.961381,109.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6235724909,Mikania micrantha,mikania,Mikania micrantha Kunth,22.5112,114.113503,3.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6235801315,Mikania micrantha,mikania,Mikania micrantha Kunth,22.472908,114.043821,57.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6235840177,Mikania micrantha,mikania,Mikania micrantha Kunth,22.429429,114.182194,14.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6235868390,Mikania micrantha,mikania,Mikania micrantha Kunth,22.429204,114.182192,4.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6236155885,Mikania micrantha,mikania,Mikania micrantha Kunth,22.466579,114.179779,28.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6236442527,Mikania micrantha,mikania,Mikania micrantha Kunth,22.316311,114.286719,94.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6236549545,Mikania micrantha,mikania,Mikania micrantha Kunth,22.444016,114.044729,9.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6251835581,Mikania micrantha,mikania,Mikania micrantha Kunth,22.266822,114.129726,91.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6251922566,Mikania micrantha,mikania,Mikania micrantha Kunth,22.470932,114.04325,13.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6252821479,Mikania micrantha,mikania,Mikania micrantha Kunth,22.266176,114.130287,30.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6253073605,Mikania micrantha,mikania,Mikania micrantha Kunth,22.505287,114.244006,1.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6253259933,Mikania micrantha,mikania,Mikania micrantha Kunth,22.520358,114.163903,3.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6253273983,Mikania micrantha,mikania,Mikania micrantha Kunth,22.384917,114.108223,4.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6253299889,Mikania micrantha,mikania,Mikania micrantha Kunth,22.27493,114.159903,23.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6253351769,Mikania micrantha,mikania,Mikania micrantha Kunth,22.316316,114.286704,73.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6253362147,Mikania micrantha,mikania,Mikania micrantha Kunth,22.38387,114.108373,4.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6273329927,Mikania micrantha,mikania,Mikania micrantha Kunth,22.320898,114.255989,,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6274108674,Mikania micrantha,mikania,Mikania micrantha Kunth,22.437007,114.125403,,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6334504747,Mikania micrantha,mikania,Mikania micrantha Kunth,22.38652,114.275134,4.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6251435455,Mikania micrantha,mikania,Mikania micrantha Kunth,22.506861,114.242436,4.0,2026,5.0,HUMAN_OBSERVATION,iNaturalist
+6320330774,Mikania micrantha,mikania,Mikania micrantha Kunth,22.223667,114.113048,3.0,2026,5.0,HUMAN_OBSERVATION,iNaturalist
+6320959824,Mikania micrantha,mikania,Mikania micrantha Kunth,22.342681,114.152566,3.0,2026,5.0,HUMAN_OBSERVATION,iNaturalist
+6399409783,Mikania micrantha,mikania,Mikania micrantha Kunth,22.220117,113.916528,13.0,2026,6.0,HUMAN_OBSERVATION,iNaturalist
+6399708763,Mikania micrantha,mikania,Mikania micrantha Kunth,22.432062,114.18547,11.0,2026,6.0,HUMAN_OBSERVATION,iNaturalist
+6423203979,Mikania micrantha,mikania,Mikania micrantha Kunth,22.509578,114.126275,4.0,2026,6.0,HUMAN_OBSERVATION,iNaturalist
+6441710709,Mikania micrantha,mikania,Mikania micrantha Kunth,22.219875,113.917183,8.0,2026,6.0,HUMAN_OBSERVATION,iNaturalist
+5063255889,Mikania micrantha,mikania,Mikania micrantha Kunth,22.41273,113.990508,4.0,2025,1.0,HUMAN_OBSERVATION,iNaturalist
+5104321078,Mikania micrantha,mikania,Mikania micrantha Kunth,22.412722,113.990503,3.0,2025,1.0,HUMAN_OBSERVATION,iNaturalist
+5759739664,Mikania micrantha,mikania,Mikania micrantha Kunth,22.340319,114.208504,23.0,2025,1.0,HUMAN_OBSERVATION,iNaturalist
+5063809523,Mikania micrantha,mikania,Mikania micrantha Kunth,22.503887,114.11276,,2025,2.0,HUMAN_OBSERVATION,iNaturalist
+5069928840,Mikania micrantha,mikania,Mikania micrantha Kunth,22.510395,114.179092,28.0,2025,2.0,HUMAN_OBSERVATION,iNaturalist
+5087304328,Mikania micrantha,mikania,Mikania micrantha Kunth,22.283242,114.1335,19.0,2025,2.0,HUMAN_OBSERVATION,iNaturalist
+5087620624,Mikania micrantha,mikania,Mikania micrantha Kunth,22.449858,114.144851,35.0,2025,3.0,HUMAN_OBSERVATION,iNaturalist
+5088023658,Mikania micrantha,mikania,Mikania micrantha Kunth,22.390858,114.209542,14.0,2025,3.0,HUMAN_OBSERVATION,iNaturalist
+5177170566,Mikania micrantha,mikania,Mikania micrantha Kunth,22.449947,114.144886,35.0,2025,3.0,HUMAN_OBSERVATION,iNaturalist
+5134654820,Mikania micrantha,mikania,Mikania micrantha Kunth,22.319124,114.227526,8.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140153967,Mikania micrantha,mikania,Mikania micrantha Kunth,22.373955,114.181286,6.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140198149,Mikania micrantha,mikania,Mikania micrantha Kunth,22.383459,114.107722,1.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140247263,Mikania micrantha,mikania,Mikania micrantha Kunth,22.374125,114.26387,5.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140344868,Mikania micrantha,mikania,Mikania micrantha Kunth,22.456633,114.140092,3.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140355505,Mikania micrantha,mikania,Mikania micrantha Kunth,22.441997,114.165137,7.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140716266,Mikania micrantha,mikania,Mikania micrantha Kunth,22.458384,114.325843,9.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5141059882,Mikania micrantha,mikania,Mikania micrantha Kunth,22.496947,114.038196,2.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5153059796,Mikania micrantha,mikania,Mikania micrantha Kunth,22.415762,114.086747,,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5153480159,Mikania micrantha,mikania,Mikania micrantha Kunth,22.430624,114.237721,,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5153632801,Mikania micrantha,mikania,Mikania micrantha Kunth,22.384489,114.201169,8.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5153906255,Mikania micrantha,mikania,Mikania micrantha Kunth,22.373928,114.000067,47.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5153935409,Mikania micrantha,mikania,Mikania micrantha Kunth,22.273492,114.175025,60.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5154299200,Mikania micrantha,mikania,Mikania micrantha Kunth,22.400168,114.197971,20.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5154633078,Mikania micrantha,mikania,Mikania micrantha Kunth,22.456137,114.139053,3.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5167842052,Mikania micrantha,mikania,Mikania micrantha Kunth,22.43253,114.185905,3.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5176668500,Mikania micrantha,mikania,Mikania micrantha Kunth,22.458129,114.326009,3.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5176769438,Mikania micrantha,mikania,Mikania micrantha Kunth,22.448849,114.320549,4.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5167437176,Mikania micrantha,mikania,Mikania micrantha Kunth,22.275084,114.165727,126.0,2025,5.0,HUMAN_OBSERVATION,iNaturalist
+5215715029,Mikania micrantha,mikania,Mikania micrantha Kunth,22.292927,113.94956,7.0,2025,6.0,HUMAN_OBSERVATION,iNaturalist
+5230467550,Mikania micrantha,mikania,Mikania micrantha Kunth,22.274447,114.15142,4.0,2025,6.0,HUMAN_OBSERVATION,iNaturalist
+5230557786,Mikania micrantha,mikania,Mikania micrantha Kunth,22.288337,113.947187,3.0,2025,7.0,HUMAN_OBSERVATION,iNaturalist
+5231080760,Mikania micrantha,mikania,Mikania micrantha Kunth,22.297537,113.964679,88.0,2025,7.0,HUMAN_OBSERVATION,iNaturalist
+5231713689,Mikania micrantha,mikania,Mikania micrantha Kunth,22.297556,113.964182,4.0,2025,7.0,HUMAN_OBSERVATION,iNaturalist
+5890189513,Mikania micrantha,mikania,Mikania micrantha Kunth,22.493764,114.044369,,2025,10.0,HUMAN_OBSERVATION,iNaturalist
+6170995455,Mikania micrantha,mikania,Mikania micrantha Kunth,22.373552,114.140932,,2025,10.0,HUMAN_OBSERVATION,iNaturalist
+6171393616,Mikania micrantha,mikania,Mikania micrantha Kunth,22.374276,114.140795,,2025,10.0,HUMAN_OBSERVATION,iNaturalist
+6320661351,Mikania micrantha,mikania,Mikania micrantha Kunth,22.377814,114.302153,7.0,2025,10.0,HUMAN_OBSERVATION,iNaturalist
+5889409578,Mikania micrantha,mikania,Mikania micrantha Kunth,22.377296,114.301703,5.0,2025,11.0,HUMAN_OBSERVATION,iNaturalist
+5889622213,Mikania micrantha,mikania,Mikania micrantha Kunth,22.377022,114.302225,5.0,2025,11.0,HUMAN_OBSERVATION,iNaturalist
+5890403472,Mikania micrantha,mikania,Mikania micrantha Kunth,22.377093,114.303134,373.0,2025,11.0,HUMAN_OBSERVATION,iNaturalist
+5892793617,Mikania micrantha,mikania,Mikania micrantha Kunth,22.4077,114.034823,3.0,2025,11.0,HUMAN_OBSERVATION,iNaturalist
+5892876445,Mikania micrantha,mikania,Mikania micrantha Kunth,22.341076,114.265393,6.0,2025,11.0,HUMAN_OBSERVATION,iNaturalist
+5897307500,Mikania micrantha,mikania,Mikania micrantha Kunth,22.242964,113.881273,61.0,2025,11.0,HUMAN_OBSERVATION,iNaturalist
+5897450114,Mikania micrantha,mikania,Mikania micrantha Kunth,22.403703,114.240888,4.0,2025,11.0,HUMAN_OBSERVATION,iNaturalist
+5903727810,Mikania micrantha,mikania,Mikania micrantha Kunth,22.341602,114.265138,97.0,2025,11.0,HUMAN_OBSERVATION,iNaturalist
+5903834842,Mikania micrantha,mikania,Mikania micrantha Kunth,22.287815,113.93578,16.0,2025,11.0,HUMAN_OBSERVATION,iNaturalist
+5903935523,Mikania micrantha,mikania,Mikania micrantha Kunth,22.341663,114.264992,84.0,2025,11.0,HUMAN_OBSERVATION,iNaturalist
+5904009198,Mikania micrantha,mikania,Mikania micrantha Kunth,22.431668,114.185181,209.0,2025,11.0,HUMAN_OBSERVATION,iNaturalist
+5904027473,Mikania micrantha,mikania,Mikania micrantha Kunth,22.471945,114.220502,,2025,11.0,HUMAN_OBSERVATION,iNaturalist
+5904057304,Mikania micrantha,mikania,Mikania micrantha Kunth,22.341402,114.265025,8.0,2025,11.0,HUMAN_OBSERVATION,iNaturalist
+5908717391,Mikania micrantha,mikania,Mikania micrantha Kunth,22.548089,114.223688,,2025,11.0,HUMAN_OBSERVATION,iNaturalist
+6170916341,Mikania micrantha,mikania,Mikania micrantha Kunth,22.377368,114.301731,8.0,2025,11.0,HUMAN_OBSERVATION,iNaturalist
+6171161016,Mikania micrantha,mikania,Mikania micrantha Kunth,22.385325,114.103482,4.0,2025,11.0,HUMAN_OBSERVATION,iNaturalist
+6171205017,Mikania micrantha,mikania,Mikania micrantha Kunth,22.377126,114.301946,3.0,2025,11.0,HUMAN_OBSERVATION,iNaturalist
+6320843900,Mikania micrantha,mikania,Mikania micrantha Kunth,22.377105,114.301978,14.0,2025,11.0,HUMAN_OBSERVATION,iNaturalist
+5932425035,Mikania micrantha,mikania,Mikania micrantha Kunth,22.540151,114.209665,6.0,2025,12.0,HUMAN_OBSERVATION,iNaturalist
+5932538900,Mikania micrantha,mikania,Mikania micrantha Kunth,22.430809,114.244196,23.0,2025,12.0,HUMAN_OBSERVATION,iNaturalist
+5936006614,Mikania micrantha,mikania,Mikania micrantha Kunth,22.502463,114.099016,5.0,2025,12.0,HUMAN_OBSERVATION,iNaturalist
+5936341687,Mikania micrantha,mikania,Mikania micrantha Kunth,22.430986,114.243673,32.0,2025,12.0,HUMAN_OBSERVATION,iNaturalist
+5938466555,Mikania micrantha,mikania,Mikania micrantha Kunth,22.220175,113.916376,204.0,2025,12.0,HUMAN_OBSERVATION,iNaturalist
+4512123964,Mikania micrantha,mikania,Mikania micrantha Kunth,22.39675,114.322541,4.0,2024,1.0,HUMAN_OBSERVATION,iNaturalist
+4512254119,Mikania micrantha,mikania,Mikania micrantha Kunth,22.398082,114.322104,8.0,2024,1.0,HUMAN_OBSERVATION,iNaturalist
+4528079300,Mikania micrantha,mikania,Mikania micrantha Kunth,22.396257,113.963348,60.0,2024,2.0,HUMAN_OBSERVATION,iNaturalist
+4536003586,Mikania micrantha,mikania,Mikania micrantha Kunth,22.221276,113.914802,60.0,2024,3.0,HUMAN_OBSERVATION,iNaturalist
+4596881722,Mikania micrantha,mikania,Mikania micrantha Kunth,22.264794,114.130317,35.0,2024,3.0,HUMAN_OBSERVATION,iNaturalist
+4597068383,Mikania micrantha,mikania,Mikania micrantha Kunth,22.37729,114.183292,7.0,2024,3.0,HUMAN_OBSERVATION,iNaturalist
+4606795939,Mikania micrantha,mikania,Mikania micrantha Kunth,22.246053,114.246563,184.0,2024,3.0,HUMAN_OBSERVATION,iNaturalist
+5086998690,Mikania micrantha,mikania,Mikania micrantha Kunth,22.265578,114.130235,8.0,2024,3.0,HUMAN_OBSERVATION,iNaturalist
+4846869647,Mikania micrantha,mikania,Mikania micrantha Kunth,22.432594,114.184805,240.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4851786693,Mikania micrantha,mikania,Mikania micrantha Kunth,22.510437,114.107781,4.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4852159274,Mikania micrantha,mikania,Mikania micrantha Kunth,22.272463,114.1577,8.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4852160597,Mikania micrantha,mikania,Mikania micrantha Kunth,22.395011,113.979969,14.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4852244895,Mikania micrantha,mikania,Mikania micrantha Kunth,22.352362,114.138202,,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4852254937,Mikania micrantha,mikania,Mikania micrantha Kunth,22.384035,114.108008,2.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4852313091,Mikania micrantha,mikania,Mikania micrantha Kunth,22.27152,114.158211,8.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4852371200,Mikania micrantha,mikania,Mikania micrantha Kunth,22.297453,114.27627,3.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4852394442,Mikania micrantha,mikania,Mikania micrantha Kunth,22.428473,114.181205,343.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4852412148,Mikania micrantha,mikania,Mikania micrantha Kunth,22.416324,114.209513,15.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4852492693,Mikania micrantha,mikania,Mikania micrantha Kunth,22.472336,114.041689,500.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4852526277,Mikania micrantha,mikania,Mikania micrantha Kunth,22.395152,113.978162,14.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4852603416,Mikania micrantha,mikania,Mikania micrantha Kunth,22.284743,113.937109,32.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4852712506,Mikania micrantha,mikania,Mikania micrantha Kunth,22.374146,114.183508,4.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4853211837,Mikania micrantha,mikania,Mikania micrantha Kunth,22.502758,114.176506,86.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+5008245342,Mikania micrantha,mikania,Mikania micrantha Kunth,22.400255,114.197717,5.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+5087002895,Mikania micrantha,mikania,Mikania micrantha Kunth,22.436352,114.124944,104.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+5087004937,Mikania micrantha,mikania,Mikania micrantha Kunth,22.265488,114.130075,15.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+5087010927,Mikania micrantha,mikania,Mikania micrantha Kunth,22.436422,114.124813,69.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+5087012885,Mikania micrantha,mikania,Mikania micrantha Kunth,22.250286,113.863176,86.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+5087018918,Mikania micrantha,mikania,Mikania micrantha Kunth,22.375446,114.263729,2.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+5087034824,Mikania micrantha,mikania,Mikania micrantha Kunth,22.405044,113.986339,17.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4855220681,Mikania micrantha,mikania,Mikania micrantha Kunth,22.278083,114.135359,772.0,2024,5.0,HUMAN_OBSERVATION,iNaturalist
+4863680668,Mikania micrantha,mikania,Mikania micrantha Kunth,22.278083,114.135359,772.0,2024,5.0,HUMAN_OBSERVATION,iNaturalist
+4868031103,Mikania micrantha,mikania,Mikania micrantha Kunth,22.525706,114.258726,4.0,2024,5.0,HUMAN_OBSERVATION,iNaturalist
+4868123313,Mikania micrantha,mikania,Mikania micrantha Kunth,22.241126,114.167761,4.0,2024,5.0,HUMAN_OBSERVATION,iNaturalist
+4872088775,Mikania micrantha,mikania,Mikania micrantha Kunth,22.524577,114.208242,30.0,2024,5.0,HUMAN_OBSERVATION,iNaturalist
+4872176058,Mikania micrantha,mikania,Mikania micrantha Kunth,22.282072,114.134793,,2024,5.0,HUMAN_OBSERVATION,iNaturalist
+4901697929,Mikania micrantha,mikania,Mikania micrantha Kunth,22.526678,114.219794,4.0,2024,5.0,HUMAN_OBSERVATION,iNaturalist
+5176397373,Mikania micrantha,mikania,Mikania micrantha Kunth,22.241223,114.167753,9.0,2024,5.0,HUMAN_OBSERVATION,iNaturalist
+6253350851,Mikania micrantha,mikania,Mikania micrantha Kunth,22.341224,114.20297,21.0,2024,5.0,HUMAN_OBSERVATION,iNaturalist
+4875424905,Mikania micrantha,mikania,Mikania micrantha Kunth,22.372626,114.113531,,2024,6.0,HUMAN_OBSERVATION,iNaturalist
+4901694532,Mikania micrantha,mikania,Mikania micrantha Kunth,22.374247,114.263899,3.0,2024,6.0,HUMAN_OBSERVATION,iNaturalist
+4901983871,Mikania micrantha,mikania,Mikania micrantha Kunth,22.294388,114.01277,8.0,2024,6.0,HUMAN_OBSERVATION,iNaturalist
+4921465395,Mikania micrantha,mikania,Mikania micrantha Kunth,22.394662,114.196406,18.0,2024,6.0,HUMAN_OBSERVATION,iNaturalist
+5007312803,Mikania micrantha,mikania,Mikania micrantha Kunth,22.376982,114.302092,,2024,6.0,HUMAN_OBSERVATION,iNaturalist
+5087057369,Mikania micrantha,mikania,Mikania micrantha Kunth,22.35772,114.081957,8.0,2024,6.0,HUMAN_OBSERVATION,iNaturalist
+4925864877,Mikania micrantha,mikania,Mikania micrantha Kunth,22.246286,114.174074,,2024,7.0,HUMAN_OBSERVATION,iNaturalist
+4946428230,Mikania micrantha,mikania,Mikania micrantha Kunth,22.433967,114.117547,,2024,9.0,HUMAN_OBSERVATION,iNaturalist
+4954770099,Mikania micrantha,mikania,Mikania micrantha Kunth,22.282175,114.199544,,2024,9.0,HUMAN_OBSERVATION,iNaturalist
+5087068036,Mikania micrantha,mikania,Mikania micrantha Kunth,22.529995,114.227622,,2024,9.0,HUMAN_OBSERVATION,iNaturalist
+4976564944,Mikania micrantha,mikania,Mikania micrantha Kunth,22.374997,114.264045,3.0,2024,10.0,HUMAN_OBSERVATION,iNaturalist
+5007315191,Mikania micrantha,mikania,Mikania micrantha Kunth,22.52521,114.213182,2.0,2024,10.0,HUMAN_OBSERVATION,iNaturalist
+4980599501,Mikania micrantha,mikania,Mikania micrantha Kunth,22.31353,114.281083,57.0,2024,11.0,HUMAN_OBSERVATION,iNaturalist
+4982210480,Mikania micrantha,mikania,Mikania micrantha Kunth,22.374073,114.26504,8.0,2024,11.0,HUMAN_OBSERVATION,iNaturalist
+4987719077,Mikania micrantha,mikania,Mikania micrantha Kunth,22.431878,114.185043,,2024,11.0,HUMAN_OBSERVATION,iNaturalist
+5008256013,Mikania micrantha,mikania,Mikania micrantha Kunth,22.496614,114.11804,,2024,11.0,HUMAN_OBSERVATION,iNaturalist
+6129827401,Mikania micrantha,mikania,Mikania micrantha Kunth,22.477328,114.182205,4.0,2024,11.0,HUMAN_OBSERVATION,iNaturalist
+6131278770,Mikania micrantha,mikania,Mikania micrantha Kunth,22.478338,114.184463,14.0,2024,11.0,HUMAN_OBSERVATION,iNaturalist
+4994643226,Mikania micrantha,mikania,Mikania micrantha Kunth,22.399888,114.143476,7.0,2024,12.0,HUMAN_OBSERVATION,iNaturalist
+5007149053,Mikania micrantha,mikania,Mikania micrantha Kunth,22.377167,114.302658,4.0,2024,12.0,HUMAN_OBSERVATION,iNaturalist
+5007155921,Mikania micrantha,mikania,Mikania micrantha Kunth,22.526499,114.260225,342.0,2024,12.0,HUMAN_OBSERVATION,iNaturalist
+5007406400,Mikania micrantha,mikania,Mikania micrantha Kunth,22.556398,114.178084,103.0,2024,12.0,HUMAN_OBSERVATION,iNaturalist
+5008039174,Mikania micrantha,mikania,Mikania micrantha Kunth,22.246281,114.175427,4.0,2024,12.0,HUMAN_OBSERVATION,iNaturalist
+4075693881,Mikania micrantha,mikania,Mikania micrantha Kunth,22.487644,114.041399,8.0,2023,1.0,HUMAN_OBSERVATION,iNaturalist
+4945836224,Mikania micrantha,mikania,Mikania micrantha Kunth,22.485979,114.011376,207.0,2023,1.0,HUMAN_OBSERVATION,iNaturalist
+5206031351,Mikania micrantha,mikania,Mikania micrantha Kunth,22.485979,114.011376,207.0,2023,1.0,HUMAN_OBSERVATION,iNaturalist
+4102646938,Mikania micrantha,mikania,Mikania micrantha Kunth,22.22264,114.118816,10.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4102684954,Mikania micrantha,mikania,Mikania micrantha Kunth,22.464386,114.153427,35.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4102688988,Mikania micrantha,mikania,Mikania micrantha Kunth,22.277062,114.182938,21.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4102823500,Mikania micrantha,mikania,Mikania micrantha Kunth,22.3712,114.053793,396.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4102989633,Mikania micrantha,mikania,Mikania micrantha Kunth,22.523582,114.2109,2.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4103001542,Mikania micrantha,mikania,Mikania micrantha Kunth,22.383441,114.107432,2.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4103336771,Mikania micrantha,mikania,Mikania micrantha Kunth,22.526909,114.219958,4.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4103338690,Mikania micrantha,mikania,Mikania micrantha Kunth,22.526099,114.219548,7.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4103358772,Mikania micrantha,mikania,Mikania micrantha Kunth,22.51037,114.107837,4.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4111731563,Mikania micrantha,mikania,Mikania micrantha Kunth,22.432658,114.083564,5.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4111736177,Mikania micrantha,mikania,Mikania micrantha Kunth,22.471682,114.041538,600.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4112161373,Mikania micrantha,mikania,Mikania micrantha Kunth,22.507444,114.243002,400.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4465601846,Mikania micrantha,mikania,Mikania micrantha Kunth,22.278854,114.138497,4.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4512083745,Mikania micrantha,mikania,Mikania micrantha Kunth,22.203957,114.147281,,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+5086942873,Mikania micrantha,mikania,Mikania micrantha Kunth,22.373422,114.269525,4.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+5086949906,Mikania micrantha,mikania,Mikania micrantha Kunth,22.205625,114.026823,8.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+5176386396,Mikania micrantha,mikania,Mikania micrantha Kunth,22.468469,114.1495,4.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4103185657,Mikania micrantha,mikania,Mikania micrantha Kunth,22.446194,114.138216,10.0,2023,5.0,HUMAN_OBSERVATION,iNaturalist
+4111602975,Mikania micrantha,mikania,Mikania micrantha Kunth,22.374553,114.189028,21.0,2023,5.0,HUMAN_OBSERVATION,iNaturalist
+4111725621,Mikania micrantha,mikania,Mikania micrantha Kunth,22.269372,114.156625,34.0,2023,5.0,HUMAN_OBSERVATION,iNaturalist
+4111729666,Mikania micrantha,mikania,Mikania micrantha Kunth,22.278372,113.997697,3.0,2023,5.0,HUMAN_OBSERVATION,iNaturalist
+4111891475,Mikania micrantha,mikania,Mikania micrantha Kunth,22.298996,114.275792,408.0,2023,5.0,HUMAN_OBSERVATION,iNaturalist
+4112101700,Mikania micrantha,mikania,Mikania micrantha Kunth,22.301367,114.158592,4.0,2023,5.0,HUMAN_OBSERVATION,iNaturalist
+4137742512,Mikania micrantha,mikania,Mikania micrantha Kunth,22.280067,114.138594,10.0,2023,5.0,HUMAN_OBSERVATION,iNaturalist
+4465378847,Mikania micrantha,mikania,Mikania micrantha Kunth,22.278192,113.997658,4.0,2023,5.0,HUMAN_OBSERVATION,iNaturalist
+4512215653,Mikania micrantha,mikania,Mikania micrantha Kunth,22.280042,114.138681,10.0,2023,5.0,HUMAN_OBSERVATION,iNaturalist
+4407174778,Mikania micrantha,mikania,Mikania micrantha Kunth,22.375008,114.263524,15.0,2023,8.0,HUMAN_OBSERVATION,iNaturalist
+4413703800,Mikania micrantha,mikania,Mikania micrantha Kunth,22.378506,114.143652,3.0,2023,9.0,HUMAN_OBSERVATION,iNaturalist
+4416955997,Mikania micrantha,mikania,Mikania micrantha Kunth,22.281856,114.210931,5.0,2023,9.0,HUMAN_OBSERVATION,iNaturalist
+4424362664,Mikania micrantha,mikania,Mikania micrantha Kunth,22.432182,114.185458,26.0,2023,10.0,HUMAN_OBSERVATION,iNaturalist
+4430521831,Mikania micrantha,mikania,Mikania micrantha Kunth,22.204247,114.147278,,2023,10.0,HUMAN_OBSERVATION,iNaturalist
+4516749358,Mikania micrantha,mikania,Mikania micrantha Kunth,22.38466,114.187607,4.0,2023,10.0,HUMAN_OBSERVATION,iNaturalist
+4442427547,Mikania micrantha,mikania,Mikania micrantha Kunth,22.51837,114.258657,35.0,2023,11.0,HUMAN_OBSERVATION,iNaturalist
+4453741565,Mikania micrantha,mikania,Mikania micrantha Kunth,22.396778,114.322596,4.0,2023,11.0,HUMAN_OBSERVATION,iNaturalist
+4453920292,Mikania micrantha,mikania,Mikania micrantha Kunth,22.28883,113.994438,4.0,2023,11.0,HUMAN_OBSERVATION,iNaturalist
+4453992507,Mikania micrantha,mikania,Mikania micrantha Kunth,22.394305,113.980858,5.0,2023,11.0,HUMAN_OBSERVATION,iNaturalist
+4528256784,Mikania micrantha,mikania,Mikania micrantha Kunth,22.411303,114.118522,4.0,2023,11.0,HUMAN_OBSERVATION,iNaturalist
+4946372434,Mikania micrantha,mikania,Mikania micrantha Kunth,22.430342,114.183617,7.0,2023,11.0,HUMAN_OBSERVATION,iNaturalist
+4465412609,Mikania micrantha,mikania,Mikania micrantha Kunth,22.503005,114.237403,3.0,2023,12.0,HUMAN_OBSERVATION,iNaturalist
+4465772694,Mikania micrantha,mikania,Mikania micrantha Kunth,22.44793,114.040526,35.0,2023,12.0,HUMAN_OBSERVATION,iNaturalist
+4500527139,Mikania micrantha,mikania,Mikania micrantha Kunth,22.39975,113.98085,35.0,2023,12.0,HUMAN_OBSERVATION,iNaturalist
+4510323402,Mikania micrantha,mikania,Mikania micrantha Kunth,22.254995,113.910599,,2023,12.0,HUMAN_OBSERVATION,iNaturalist
+4512048240,Mikania micrantha,mikania,Mikania micrantha Kunth,22.518132,114.256164,20.0,2023,12.0,HUMAN_OBSERVATION,iNaturalist
+3773137389,Mikania micrantha,mikania,Mikania micrantha Kunth,22.507444,114.243002,400.0,2022,4.0,HUMAN_OBSERVATION,iNaturalist
+4946546390,Mikania micrantha,mikania,Mikania micrantha Kunth,22.265912,114.130048,9.0,2022,4.0,HUMAN_OBSERVATION,iNaturalist
+4946576713,Mikania micrantha,mikania,Mikania micrantha Kunth,22.459993,114.033606,4.0,2022,4.0,HUMAN_OBSERVATION,iNaturalist
+5086876279,Mikania micrantha,mikania,Mikania micrantha Kunth,22.266209,114.130367,9.0,2022,4.0,HUMAN_OBSERVATION,iNaturalist
+5086919324,Mikania micrantha,mikania,Mikania micrantha Kunth,22.328355,114.250084,4.0,2022,4.0,HUMAN_OBSERVATION,iNaturalist
+5086961306,Mikania micrantha,mikania,Mikania micrantha Kunth,22.328732,114.249987,4.0,2022,4.0,HUMAN_OBSERVATION,iNaturalist
+5086991308,Mikania micrantha,mikania,Mikania micrantha Kunth,22.328782,114.250005,4.0,2022,4.0,HUMAN_OBSERVATION,iNaturalist
+3772546075,Mikania micrantha,mikania,Mikania micrantha Kunth,22.460653,114.328925,4.0,2022,5.0,HUMAN_OBSERVATION,iNaturalist
+3772663902,Mikania micrantha,mikania,Mikania micrantha Kunth,22.280064,114.138633,10.0,2022,5.0,HUMAN_OBSERVATION,iNaturalist
+3772757196,Mikania micrantha,mikania,Mikania micrantha Kunth,22.352168,114.137813,,2022,5.0,HUMAN_OBSERVATION,iNaturalist
+3773083640,Mikania micrantha,mikania,Mikania micrantha Kunth,22.280917,114.139664,10.0,2022,5.0,HUMAN_OBSERVATION,iNaturalist
+3773227420,Mikania micrantha,mikania,Mikania micrantha Kunth,22.280808,114.139481,10.0,2022,5.0,HUMAN_OBSERVATION,iNaturalist
+3773655356,Mikania micrantha,mikania,Mikania micrantha Kunth,22.280961,114.139769,10.0,2022,5.0,HUMAN_OBSERVATION,iNaturalist
+3773668927,Mikania micrantha,mikania,Mikania micrantha Kunth,22.494942,114.047748,,2022,5.0,HUMAN_OBSERVATION,iNaturalist
+3773727638,Mikania micrantha,mikania,Mikania micrantha Kunth,22.280072,114.138656,10.0,2022,5.0,HUMAN_OBSERVATION,iNaturalist
+3802337814,Mikania micrantha,mikania,Mikania micrantha Kunth,22.206054,114.037551,9.0,2022,5.0,HUMAN_OBSERVATION,iNaturalist
+4946001246,Mikania micrantha,mikania,Mikania micrantha Kunth,22.280042,114.138681,10.0,2022,5.0,HUMAN_OBSERVATION,iNaturalist
+4946533507,Mikania micrantha,mikania,Mikania micrantha Kunth,22.202708,113.851538,6.0,2022,5.0,HUMAN_OBSERVATION,iNaturalist
+5086910297,Mikania micrantha,mikania,Mikania micrantha Kunth,22.432013,114.185356,354.0,2022,5.0,HUMAN_OBSERVATION,iNaturalist
+5086954362,Mikania micrantha,mikania,Mikania micrantha Kunth,22.279497,114.138778,10.0,2022,5.0,HUMAN_OBSERVATION,iNaturalist
+5086965315,Mikania micrantha,mikania,Mikania micrantha Kunth,22.280067,114.138594,10.0,2022,5.0,HUMAN_OBSERVATION,iNaturalist
+3859221019,Mikania micrantha,mikania,Mikania micrantha Kunth,22.223695,114.112942,7.0,2022,6.0,HUMAN_OBSERVATION,iNaturalist
+5237719332,Mikania micrantha,mikania,Mikania micrantha Kunth,22.305913,114.251441,,2022,7.0,HUMAN_OBSERVATION,iNaturalist
+3923370137,Mikania micrantha,mikania,Mikania micrantha Kunth,22.45434,114.311989,165.0,2022,9.0,HUMAN_OBSERVATION,iNaturalist
+3966365963,Mikania micrantha,mikania,Mikania micrantha Kunth,22.29997,114.18095,,2022,11.0,HUMAN_OBSERVATION,iNaturalist
+3966710927,Mikania micrantha,mikania,Mikania micrantha Kunth,22.525585,114.211515,204.0,2022,11.0,HUMAN_OBSERVATION,iNaturalist
+3985894554,Mikania micrantha,mikania,Mikania micrantha Kunth,22.409207,114.276484,2.0,2022,11.0,HUMAN_OBSERVATION,iNaturalist
+4407338503,Mikania micrantha,mikania,Mikania micrantha Kunth,22.409205,114.27648,2.0,2022,11.0,HUMAN_OBSERVATION,iNaturalist
+4009694664,Mikania micrantha,mikania,Mikania micrantha Kunth,22.501377,114.098677,133.0,2022,12.0,HUMAN_OBSERVATION,iNaturalist
+4011854634,Mikania micrantha,mikania,Mikania micrantha Kunth,22.502649,114.0987,2.0,2022,12.0,HUMAN_OBSERVATION,iNaturalist
+5086971691,Mikania micrantha,mikania,Mikania micrantha Kunth,22.32906,114.2143,115.0,2022,12.0,HUMAN_OBSERVATION,iNaturalist
+3032004180,Mikania micrantha,mikania,Mikania micrantha Kunth,22.221889,113.913669,65.0,2021,1.0,HUMAN_OBSERVATION,iNaturalist
+5086859744,Mikania micrantha,mikania,Mikania micrantha Kunth,22.271769,113.99344,6.0,2021,1.0,HUMAN_OBSERVATION,iNaturalist
+3044616200,Mikania micrantha,mikania,Mikania micrantha Kunth,22.395394,114.218271,65.0,2021,2.0,HUMAN_OBSERVATION,iNaturalist
+5086913723,Mikania micrantha,mikania,Mikania micrantha Kunth,22.375179,114.262368,7.0,2021,2.0,HUMAN_OBSERVATION,iNaturalist
+3059048273,Mikania micrantha,mikania,Mikania micrantha Kunth,22.273186,114.151226,10.0,2021,3.0,HUMAN_OBSERVATION,iNaturalist
+3067832400,Mikania micrantha,mikania,Mikania micrantha Kunth,22.311235,114.264612,4.0,2021,3.0,HUMAN_OBSERVATION,iNaturalist
+5086861773,Mikania micrantha,mikania,Mikania micrantha Kunth,22.308233,114.264874,76.0,2021,3.0,HUMAN_OBSERVATION,iNaturalist
+5086864798,Mikania micrantha,mikania,Mikania micrantha Kunth,22.271097,114.149475,165.0,2021,3.0,HUMAN_OBSERVATION,iNaturalist
+5086870739,Mikania micrantha,mikania,Mikania micrantha Kunth,22.202666,114.129508,,2021,3.0,HUMAN_OBSERVATION,iNaturalist
+5086900768,Mikania micrantha,mikania,Mikania micrantha Kunth,22.203953,114.130205,,2021,3.0,HUMAN_OBSERVATION,iNaturalist
+3097094762,Mikania micrantha,mikania,Mikania micrantha Kunth,22.445787,114.17864,5.0,2021,4.0,HUMAN_OBSERVATION,iNaturalist
+3112676524,Mikania micrantha,mikania,Mikania micrantha Kunth,22.446273,114.178666,10.0,2021,4.0,HUMAN_OBSERVATION,iNaturalist
+5086904779,Mikania micrantha,mikania,Mikania micrantha Kunth,22.328755,114.245088,65.0,2021,4.0,HUMAN_OBSERVATION,iNaturalist
+5086912823,Mikania micrantha,mikania,Mikania micrantha Kunth,22.396488,114.217956,65.0,2021,4.0,HUMAN_OBSERVATION,iNaturalist
+5086914748,Mikania micrantha,mikania,Mikania micrantha Kunth,22.467136,114.179491,206.0,2021,4.0,HUMAN_OBSERVATION,iNaturalist
+3112409780,Mikania micrantha,mikania,Mikania micrantha Kunth,22.493715,114.045577,5.0,2021,5.0,HUMAN_OBSERVATION,iNaturalist
+3112628662,Mikania micrantha,mikania,Mikania micrantha Kunth,22.263287,113.992347,30.0,2021,5.0,HUMAN_OBSERVATION,iNaturalist
+3112966537,Mikania micrantha,mikania,Mikania micrantha Kunth,22.470026,114.02032,500.0,2021,5.0,HUMAN_OBSERVATION,iNaturalist
+5086866822,Mikania micrantha,mikania,Mikania micrantha Kunth,22.221083,113.91464,4.0,2021,5.0,HUMAN_OBSERVATION,iNaturalist
+5086880831,Mikania micrantha,mikania,Mikania micrantha Kunth,22.262497,114.051638,11.0,2021,5.0,HUMAN_OBSERVATION,iNaturalist
+5086884861,Mikania micrantha,mikania,Mikania micrantha Kunth,22.35205,114.137795,5.0,2021,5.0,HUMAN_OBSERVATION,iNaturalist
+5086911844,Mikania micrantha,mikania,Mikania micrantha Kunth,22.222687,114.118879,16.0,2021,5.0,HUMAN_OBSERVATION,iNaturalist
+5086969445,Mikania micrantha,mikania,Mikania micrantha Kunth,22.422218,114.101777,,2021,5.0,HUMAN_OBSERVATION,iNaturalist
+3385220604,Mikania micrantha,mikania,Mikania micrantha Kunth,22.223447,114.113998,7.0,2021,10.0,HUMAN_OBSERVATION,iNaturalist
+3415463165,Mikania micrantha,mikania,Mikania micrantha Kunth,22.451688,114.023548,8.0,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+3415505383,Mikania micrantha,mikania,Mikania micrantha Kunth,22.461108,114.328797,98.0,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+3415535236,Mikania micrantha,mikania,Mikania micrantha Kunth,22.466829,114.181654,,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+3415774895,Mikania micrantha,mikania,Mikania micrantha Kunth,22.461183,114.329322,3.0,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+3415775322,Mikania micrantha,mikania,Mikania micrantha Kunth,22.399947,114.197792,5.0,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+3415791424,Mikania micrantha,mikania,Mikania micrantha Kunth,22.428126,114.293295,8.0,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+3415843090,Mikania micrantha,mikania,Mikania micrantha Kunth,22.433536,114.060882,9.0,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+3416066305,Mikania micrantha,mikania,Mikania micrantha Kunth,22.467356,114.179227,,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+3416129226,Mikania micrantha,mikania,Mikania micrantha Kunth,22.451688,114.023548,8.0,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+3455480547,Mikania micrantha,mikania,Mikania micrantha Kunth,22.433729,114.174805,,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+3455518150,Mikania micrantha,mikania,Mikania micrantha Kunth,22.303923,114.257337,5.0,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+3466328646,Mikania micrantha,mikania,Mikania micrantha Kunth,22.393422,114.188252,65.0,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+3947461552,Mikania micrantha,mikania,Mikania micrantha Kunth,22.278238,113.997738,8.0,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+5086910105,Mikania micrantha,mikania,Mikania micrantha Kunth,22.286182,114.222195,46.0,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+5086913162,Mikania micrantha,mikania,Mikania micrantha Kunth,22.393523,114.187603,4.0,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+5176414344,Mikania micrantha,mikania,Mikania micrantha Kunth,22.451688,114.023548,8.0,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+3456079235,Mikania micrantha,mikania,Mikania micrantha Kunth,22.390995,113.923387,19.0,2021,12.0,HUMAN_OBSERVATION,iNaturalist
+3456465946,Mikania micrantha,mikania,Mikania micrantha Kunth,22.217215,114.208801,3.0,2021,12.0,HUMAN_OBSERVATION,iNaturalist
+4522678538,Mikania micrantha,mikania,Mikania micrantha Kunth,22.498964,114.152108,14.0,2021,12.0,HUMAN_OBSERVATION,iNaturalist
+5086866168,Mikania micrantha,mikania,Mikania micrantha Kunth,22.261482,114.191657,65.0,2021,12.0,HUMAN_OBSERVATION,iNaturalist
+5086872204,Mikania micrantha,mikania,Mikania micrantha Kunth,22.219117,113.918319,204.0,2021,12.0,HUMAN_OBSERVATION,iNaturalist
+5086908171,Mikania micrantha,mikania,Mikania micrantha Kunth,22.261538,114.191687,65.0,2021,12.0,HUMAN_OBSERVATION,iNaturalist
+2563513453,Mikania micrantha,mikania,Mikania micrantha Kunth,22.418587,114.207885,75.0,2020,1.0,HUMAN_OBSERVATION,iNaturalist
+2611087732,Mikania micrantha,mikania,Mikania micrantha Kunth,22.487593,114.039477,30.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+2611111744,Mikania micrantha,mikania,Mikania micrantha Kunth,22.309393,114.016922,5.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+2611154167,Mikania micrantha,mikania,Mikania micrantha Kunth,22.2619,113.9944,4.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+2611187542,Mikania micrantha,mikania,Mikania micrantha Kunth,22.30877,114.015536,5.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+2611189661,Mikania micrantha,mikania,Mikania micrantha Kunth,22.493727,114.045687,5.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+2611401506,Mikania micrantha,mikania,Mikania micrantha Kunth,22.492877,114.045048,,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+3466082612,Mikania micrantha,mikania,Mikania micrantha Kunth,22.48287,114.03263,170.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+5086855564,Mikania micrantha,mikania,Mikania micrantha Kunth,22.446331,114.03971,145.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+5086864562,Mikania micrantha,mikania,Mikania micrantha Kunth,22.305795,114.012288,65.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+5086878517,Mikania micrantha,mikania,Mikania micrantha Kunth,22.305559,114.012163,19.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+5086881536,Mikania micrantha,mikania,Mikania micrantha Kunth,22.312368,114.217705,,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+5086894517,Mikania micrantha,mikania,Mikania micrantha Kunth,22.452388,114.020611,142.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+5086907538,Mikania micrantha,mikania,Mikania micrantha Kunth,22.452299,114.022598,175.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+5086916466,Mikania micrantha,mikania,Mikania micrantha Kunth,22.306644,114.012509,10.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+5177111321,Mikania micrantha,mikania,Mikania micrantha Kunth,22.257195,114.239625,7.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+3067599158,Mikania micrantha,mikania,Mikania micrantha Kunth,22.444468,114.13845,,2020,9.0,HUMAN_OBSERVATION,iNaturalist
+2984443527,Mikania micrantha,mikania,Mikania micrantha Kunth,22.266522,113.990412,,2020,10.0,HUMAN_OBSERVATION,iNaturalist
+2988354778,Mikania micrantha,mikania,Mikania micrantha Kunth,22.22966,114.114962,7.0,2020,10.0,HUMAN_OBSERVATION,iNaturalist
+5086870701,Mikania micrantha,mikania,Mikania micrantha Kunth,22.44546,114.178642,9.0,2020,10.0,HUMAN_OBSERVATION,iNaturalist
+2980789764,Mikania micrantha,mikania,Mikania micrantha Kunth,22.365242,114.175852,5.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+2980860119,Mikania micrantha,mikania,Mikania micrantha Kunth,22.534997,114.21293,5.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+2984454867,Mikania micrantha,mikania,Mikania micrantha Kunth,22.320372,114.184863,65.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+2984553562,Mikania micrantha,mikania,Mikania micrantha Kunth,22.444922,114.04145,24.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+2988388494,Mikania micrantha,mikania,Mikania micrantha Kunth,22.261582,114.191137,20.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+2988393479,Mikania micrantha,mikania,Mikania micrantha Kunth,22.252542,114.182105,10.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+2988396759,Mikania micrantha,mikania,Mikania micrantha Kunth,22.400395,114.197803,6.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+2988555406,Mikania micrantha,mikania,Mikania micrantha Kunth,22.500154,114.112904,17.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+2988562664,Mikania micrantha,mikania,Mikania micrantha Kunth,22.393522,114.187713,,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+2988629958,Mikania micrantha,mikania,Mikania micrantha Kunth,22.400437,114.196333,10.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+2988644941,Mikania micrantha,mikania,Mikania micrantha Kunth,22.400339,114.19634,5.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+2988646412,Mikania micrantha,mikania,Mikania micrantha Kunth,22.253078,114.18273,4.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+2988667953,Mikania micrantha,mikania,Mikania micrantha Kunth,22.392366,114.18784,7.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+2988674739,Mikania micrantha,mikania,Mikania micrantha Kunth,22.451098,114.02389,109.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+2992720610,Mikania micrantha,mikania,Mikania micrantha Kunth,22.391328,114.188713,,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+2992726698,Mikania micrantha,mikania,Mikania micrantha Kunth,22.401772,114.197992,5.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+2992762852,Mikania micrantha,mikania,Mikania micrantha Kunth,22.451653,114.023636,20.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+2992847705,Mikania micrantha,mikania,Mikania micrantha Kunth,22.401884,114.198001,4.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+2992862850,Mikania micrantha,mikania,Mikania micrantha Kunth,22.451659,114.023634,15.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+2992871601,Mikania micrantha,mikania,Mikania micrantha Kunth,22.399967,114.196889,6.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+2999136601,Mikania micrantha,mikania,Mikania micrantha Kunth,22.400209,114.198892,40.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+2999174586,Mikania micrantha,mikania,Mikania micrantha Kunth,22.304991,114.259838,10.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3455164677,Mikania micrantha,mikania,Mikania micrantha Kunth,22.401891,114.197974,4.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3455164678,Mikania micrantha,mikania,Mikania micrantha Kunth,22.252804,114.183033,65.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3455164679,Mikania micrantha,mikania,Mikania micrantha Kunth,22.261507,114.191325,10.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3455169905,Mikania micrantha,mikania,Mikania micrantha Kunth,22.385525,114.274787,15.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3455173724,Mikania micrantha,mikania,Mikania micrantha Kunth,22.388507,114.267193,9.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3455174907,Mikania micrantha,mikania,Mikania micrantha Kunth,22.39235,114.18898,,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3455207858,Mikania micrantha,mikania,Mikania micrantha Kunth,22.392667,114.188828,,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3455208845,Mikania micrantha,mikania,Mikania micrantha Kunth,22.392612,114.187912,7.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3455209825,Mikania micrantha,mikania,Mikania micrantha Kunth,22.253201,114.183576,65.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3455216857,Mikania micrantha,mikania,Mikania micrantha Kunth,22.388151,114.275627,137.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3455220842,Mikania micrantha,mikania,Mikania micrantha Kunth,22.261506,114.191245,15.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3455231730,Mikania micrantha,mikania,Mikania micrantha Kunth,22.252598,114.183463,65.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3455233818,Mikania micrantha,mikania,Mikania micrantha Kunth,22.406102,114.177068,,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3455251879,Mikania micrantha,mikania,Mikania micrantha Kunth,22.450904,114.025259,55.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3455333855,Mikania micrantha,mikania,Mikania micrantha Kunth,22.252948,114.182951,65.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3455339822,Mikania micrantha,mikania,Mikania micrantha Kunth,22.267628,113.988412,4.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3455339824,Mikania micrantha,mikania,Mikania micrantha Kunth,22.261615,114.191134,65.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3455346813,Mikania micrantha,mikania,Mikania micrantha Kunth,22.392158,114.189087,9.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3455463918,Mikania micrantha,mikania,Mikania micrantha Kunth,22.267687,114.237142,65.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3455539665,Mikania micrantha,mikania,Mikania micrantha Kunth,22.53143,114.20887,5.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3455539714,Mikania micrantha,mikania,Mikania micrantha Kunth,22.253179,114.183528,65.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3455628795,Mikania micrantha,mikania,Mikania micrantha Kunth,22.39155,114.189453,,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3455845808,Mikania micrantha,mikania,Mikania micrantha Kunth,22.393225,114.188233,,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3455846853,Mikania micrantha,mikania,Mikania micrantha Kunth,22.275293,114.149321,5.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3455922866,Mikania micrantha,mikania,Mikania micrantha Kunth,22.27488,114.149252,139.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3455922886,Mikania micrantha,mikania,Mikania micrantha Kunth,22.400088,114.197583,5.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3455927832,Mikania micrantha,mikania,Mikania micrantha Kunth,22.393217,114.188063,,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3455929853,Mikania micrantha,mikania,Mikania micrantha Kunth,22.39083,114.18833,,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3456002825,Mikania micrantha,mikania,Mikania micrantha Kunth,22.268405,114.237737,65.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3456010859,Mikania micrantha,mikania,Mikania micrantha Kunth,22.261722,114.191296,5.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3456010868,Mikania micrantha,mikania,Mikania micrantha Kunth,22.400456,114.197272,5.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3456035667,Mikania micrantha,mikania,Mikania micrantha Kunth,22.531366,114.208849,4.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3456035691,Mikania micrantha,mikania,Mikania micrantha Kunth,22.252553,114.182083,7.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3456096805,Mikania micrantha,mikania,Mikania micrantha Kunth,22.267929,114.238358,65.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3466224507,Mikania micrantha,mikania,Mikania micrantha Kunth,22.261515,114.191111,65.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3759540518,Mikania micrantha,mikania,Mikania micrantha Kunth,22.261329,114.236942,79.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+4867679534,Mikania micrantha,mikania,Mikania micrantha Kunth,22.253126,114.182502,6.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+4868148663,Mikania micrantha,mikania,Mikania micrantha Kunth,22.253161,114.183567,65.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086855754,Mikania micrantha,mikania,Mikania micrantha Kunth,22.274127,114.176132,4.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086859705,Mikania micrantha,mikania,Mikania micrantha Kunth,22.534969,114.212917,5.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086860684,Mikania micrantha,mikania,Mikania micrantha Kunth,22.534979,114.21292,4.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086860690,Mikania micrantha,mikania,Mikania micrantha Kunth,22.393597,114.187563,,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086861730,Mikania micrantha,mikania,Mikania micrantha Kunth,22.385339,114.273017,65.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086863708,Mikania micrantha,mikania,Mikania micrantha Kunth,22.26155,114.191154,65.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086865693,Mikania micrantha,mikania,Mikania micrantha Kunth,22.261561,114.191142,65.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086866727,Mikania micrantha,mikania,Mikania micrantha Kunth,22.261552,114.191148,27.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086866733,Mikania micrantha,mikania,Mikania micrantha Kunth,22.265655,114.237988,70.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086869709,Mikania micrantha,mikania,Mikania micrantha Kunth,22.392728,114.188902,732.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086873666,Mikania micrantha,mikania,Mikania micrantha Kunth,22.392417,114.189292,,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086873667,Mikania micrantha,mikania,Mikania micrantha Kunth,22.245424,114.148717,65.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086874737,Mikania micrantha,mikania,Mikania micrantha Kunth,22.392417,114.189292,,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086874739,Mikania micrantha,mikania,Mikania micrantha Kunth,22.393147,114.188195,,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086875699,Mikania micrantha,mikania,Mikania micrantha Kunth,22.252513,114.182591,65.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086875700,Mikania micrantha,mikania,Mikania micrantha Kunth,22.392395,114.189292,,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086878719,Mikania micrantha,mikania,Mikania micrantha Kunth,22.523891,114.208294,6.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086878733,Mikania micrantha,mikania,Mikania micrantha Kunth,22.39322,114.188178,,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086887711,Mikania micrantha,mikania,Mikania micrantha Kunth,22.261468,114.191715,65.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086890738,Mikania micrantha,mikania,Mikania micrantha Kunth,22.392437,114.189255,,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086891750,Mikania micrantha,mikania,Mikania micrantha Kunth,22.252931,114.183253,10.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086897692,Mikania micrantha,mikania,Mikania micrantha Kunth,22.333639,114.268691,38.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086897695,Mikania micrantha,mikania,Mikania micrantha Kunth,22.274275,114.176758,10.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086898699,Mikania micrantha,mikania,Mikania micrantha Kunth,22.365678,114.17595,10.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086901744,Mikania micrantha,mikania,Mikania micrantha Kunth,22.261631,114.191386,50.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086906717,Mikania micrantha,mikania,Mikania micrantha Kunth,22.274308,114.176446,21.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086908677,Mikania micrantha,mikania,Mikania micrantha Kunth,22.39322,114.188178,,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086909685,Mikania micrantha,mikania,Mikania micrantha Kunth,22.393203,114.188195,65.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086912738,Mikania micrantha,mikania,Mikania micrantha Kunth,22.393278,114.188203,,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086916651,Mikania micrantha,mikania,Mikania micrantha Kunth,22.451711,114.023622,53.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086917710,Mikania micrantha,mikania,Mikania micrantha Kunth,22.385535,114.27477,65.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086918138,Mikania micrantha,mikania,Mikania micrantha Kunth,22.393522,114.187713,,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5086918695,Mikania micrantha,mikania,Mikania micrantha Kunth,22.302392,114.290518,65.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+5176347319,Mikania micrantha,mikania,Mikania micrantha Kunth,22.531347,114.209004,164.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3005111685,Mikania micrantha,mikania,Mikania micrantha Kunth,22.351253,114.202209,19.0,2020,12.0,HUMAN_OBSERVATION,iNaturalist
+3005150694,Mikania micrantha,mikania,Mikania micrantha Kunth,22.390967,113.920894,194.0,2020,12.0,HUMAN_OBSERVATION,iNaturalist
+5086868695,Mikania micrantha,mikania,Mikania micrantha Kunth,22.262936,114.132693,114.0,2020,12.0,HUMAN_OBSERVATION,iNaturalist
+5086881704,Mikania micrantha,mikania,Mikania micrantha Kunth,22.389926,113.921688,194.0,2020,12.0,HUMAN_OBSERVATION,iNaturalist
+5086900728,Mikania micrantha,mikania,Mikania micrantha Kunth,22.263024,114.131463,157.0,2020,12.0,HUMAN_OBSERVATION,iNaturalist
+1990542529,Mikania micrantha,mikania,Mikania micrantha Kunth,22.447806,114.040731,76.0,2019,1.0,HUMAN_OBSERVATION,iNaturalist
+2238781972,Mikania micrantha,mikania,Mikania micrantha Kunth,22.266673,113.991921,5.0,2019,2.0,HUMAN_OBSERVATION,iNaturalist
+2238833279,Mikania micrantha,mikania,Mikania micrantha Kunth,22.312336,114.217368,,2019,4.0,HUMAN_OBSERVATION,iNaturalist
+2238840188,Mikania micrantha,mikania,Mikania micrantha Kunth,22.445594,114.179034,10.0,2019,4.0,HUMAN_OBSERVATION,iNaturalist
+2238849839,Mikania micrantha,mikania,Mikania micrantha Kunth,22.278559,114.138428,,2019,4.0,HUMAN_OBSERVATION,iNaturalist
+2238851958,Mikania micrantha,mikania,Mikania micrantha Kunth,22.277817,114.135532,200.0,2019,4.0,HUMAN_OBSERVATION,iNaturalist
+2238880099,Mikania micrantha,mikania,Mikania micrantha Kunth,22.491096,114.038675,700.0,2019,4.0,HUMAN_OBSERVATION,iNaturalist
+2238886340,Mikania micrantha,mikania,Mikania micrantha Kunth,22.408718,114.073013,,2019,4.0,HUMAN_OBSERVATION,iNaturalist
+2238891399,Mikania micrantha,mikania,Mikania micrantha Kunth,22.282025,114.136039,10.0,2019,4.0,HUMAN_OBSERVATION,iNaturalist
+2238891488,Mikania micrantha,mikania,Mikania micrantha Kunth,22.448325,114.040902,5.0,2019,4.0,HUMAN_OBSERVATION,iNaturalist
+2238929561,Mikania micrantha,mikania,Mikania micrantha Kunth,22.26283,113.991822,14.0,2019,4.0,HUMAN_OBSERVATION,iNaturalist
+2238946670,Mikania micrantha,mikania,Mikania micrantha Kunth,22.279558,114.13862,10.0,2019,4.0,HUMAN_OBSERVATION,iNaturalist
+2239040139,Mikania micrantha,mikania,Mikania micrantha Kunth,22.307919,114.267242,,2019,4.0,HUMAN_OBSERVATION,iNaturalist
+5086891459,Mikania micrantha,mikania,Mikania micrantha Kunth,22.218429,113.926246,,2019,7.0,HUMAN_OBSERVATION,iNaturalist
+2465356791,Mikania micrantha,mikania,Mikania micrantha Kunth,22.414805,114.181743,750.0,2019,10.0,HUMAN_OBSERVATION,iNaturalist
+5086906463,Mikania micrantha,mikania,Mikania micrantha Kunth,22.404774,113.986165,30.0,2019,10.0,HUMAN_OBSERVATION,iNaturalist
+2451691990,Mikania micrantha,mikania,Mikania micrantha Kunth,22.494648,114.047353,5.0,2019,11.0,HUMAN_OBSERVATION,iNaturalist
+2451735608,Mikania micrantha,mikania,Mikania micrantha Kunth,22.285805,114.19576,18.0,2019,11.0,HUMAN_OBSERVATION,iNaturalist
+2456533092,Mikania micrantha,mikania,Mikania micrantha Kunth,22.272694,114.232581,19.0,2019,11.0,HUMAN_OBSERVATION,iNaturalist
+2456544871,Mikania micrantha,mikania,Mikania micrantha Kunth,22.283369,114.148179,2.0,2019,11.0,HUMAN_OBSERVATION,iNaturalist
+2456549258,Mikania micrantha,mikania,Mikania micrantha Kunth,22.28338,114.148049,1.0,2019,11.0,HUMAN_OBSERVATION,iNaturalist
+2460059440,Mikania micrantha,mikania,Mikania micrantha Kunth,22.448862,114.042584,445.0,2019,11.0,HUMAN_OBSERVATION,iNaturalist
+3455284555,Mikania micrantha,mikania,Mikania micrantha Kunth,22.265044,114.130167,10.0,2019,11.0,HUMAN_OBSERVATION,iNaturalist
+3455710644,Mikania micrantha,mikania,Mikania micrantha Kunth,22.274407,114.189924,16.0,2019,11.0,HUMAN_OBSERVATION,iNaturalist
+3456305752,Mikania micrantha,mikania,Mikania micrantha Kunth,22.454608,114.171415,58.0,2019,11.0,HUMAN_OBSERVATION,iNaturalist
+5086864484,Mikania micrantha,mikania,Mikania micrantha Kunth,22.451655,114.023599,71.0,2019,11.0,HUMAN_OBSERVATION,iNaturalist
+5086873455,Mikania micrantha,mikania,Mikania micrantha Kunth,22.273776,114.189369,36.0,2019,11.0,HUMAN_OBSERVATION,iNaturalist
+5086884481,Mikania micrantha,mikania,Mikania micrantha Kunth,22.454707,114.171795,5.0,2019,11.0,HUMAN_OBSERVATION,iNaturalist
+5086884482,Mikania micrantha,mikania,Mikania micrantha Kunth,22.454772,114.171216,5.0,2019,11.0,HUMAN_OBSERVATION,iNaturalist
+5086892493,Mikania micrantha,mikania,Mikania micrantha Kunth,22.273976,114.189521,6.0,2019,11.0,HUMAN_OBSERVATION,iNaturalist
+5086894461,Mikania micrantha,mikania,Mikania micrantha Kunth,22.245038,114.148629,22.0,2019,11.0,HUMAN_OBSERVATION,iNaturalist
+5086902472,Mikania micrantha,mikania,Mikania micrantha Kunth,22.454814,114.170736,59.0,2019,11.0,HUMAN_OBSERVATION,iNaturalist
+5086913448,Mikania micrantha,mikania,Mikania micrantha Kunth,22.272752,114.189784,10.0,2019,11.0,HUMAN_OBSERVATION,iNaturalist
+2540881891,Mikania micrantha,mikania,Mikania micrantha Kunth,22.461005,114.035807,5.0,2019,12.0,HUMAN_OBSERVATION,iNaturalist
+5086859477,Mikania micrantha,mikania,Mikania micrantha Kunth,22.458856,114.036114,5.0,2019,12.0,HUMAN_OBSERVATION,iNaturalist
+5086868451,Mikania micrantha,mikania,Mikania micrantha Kunth,22.232974,114.223871,5.0,2019,12.0,HUMAN_OBSERVATION,iNaturalist
+5086876478,Mikania micrantha,mikania,Mikania micrantha Kunth,22.218184,114.209078,98.0,2019,12.0,HUMAN_OBSERVATION,iNaturalist
+5086894472,Mikania micrantha,mikania,Mikania micrantha Kunth,22.23321,114.2232,65.0,2019,12.0,HUMAN_OBSERVATION,iNaturalist
+1841196813,Mikania micrantha,mikania,Mikania micrantha Kunth,22.470017,114.2192,10.0,2018,4.0,HUMAN_OBSERVATION,iNaturalist
+1841196874,Mikania micrantha,mikania,Mikania micrantha Kunth,22.28391,114.139928,10.0,2018,4.0,HUMAN_OBSERVATION,iNaturalist
+1841197029,Mikania micrantha,mikania,Mikania micrantha Kunth,22.494294,114.046254,73.0,2018,4.0,HUMAN_OBSERVATION,iNaturalist
+1841197452,Mikania micrantha,mikania,Mikania micrantha Kunth,22.499932,114.042312,5.0,2018,4.0,HUMAN_OBSERVATION,iNaturalist
+1841197511,Mikania micrantha,mikania,Mikania micrantha Kunth,22.495857,114.04778,7.0,2018,4.0,HUMAN_OBSERVATION,iNaturalist
+1841200113,Mikania micrantha,mikania,Mikania micrantha Kunth,22.467135,114.220838,733.0,2018,4.0,HUMAN_OBSERVATION,iNaturalist
+1841214644,Mikania micrantha,mikania,Mikania micrantha Kunth,22.49427,114.046081,9.0,2018,4.0,HUMAN_OBSERVATION,iNaturalist
+1841218734,Mikania micrantha,mikania,Mikania micrantha Kunth,22.395178,114.108159,10.0,2018,4.0,HUMAN_OBSERVATION,iNaturalist
+1841218745,Mikania micrantha,mikania,Mikania micrantha Kunth,22.395327,114.108223,10.0,2018,4.0,HUMAN_OBSERVATION,iNaturalist
+1841219078,Mikania micrantha,mikania,Mikania micrantha Kunth,22.395722,114.111142,10.0,2018,4.0,HUMAN_OBSERVATION,iNaturalist
+1841219386,Mikania micrantha,mikania,Mikania micrantha Kunth,22.393332,114.110928,30.0,2018,4.0,HUMAN_OBSERVATION,iNaturalist
+1841250776,Mikania micrantha,mikania,Mikania micrantha Kunth,22.495064,114.0597,,2018,4.0,HUMAN_OBSERVATION,iNaturalist
+1841272309,Mikania micrantha,mikania,Mikania micrantha Kunth,22.423309,114.23877,,2018,4.0,HUMAN_OBSERVATION,iNaturalist
+1841272990,Mikania micrantha,mikania,Mikania micrantha Kunth,22.243892,114.1773,5.0,2018,4.0,HUMAN_OBSERVATION,iNaturalist
+1841294864,Mikania micrantha,mikania,Mikania micrantha Kunth,22.503781,114.245191,600.0,2018,4.0,HUMAN_OBSERVATION,iNaturalist
+1841299982,Mikania micrantha,mikania,Mikania micrantha Kunth,22.49607,114.04812,300.0,2018,4.0,HUMAN_OBSERVATION,iNaturalist
+1847450652,Mikania micrantha,mikania,Mikania micrantha Kunth,22.509683,114.115865,10.0,2018,5.0,HUMAN_OBSERVATION,iNaturalist
+1880619363,Mikania micrantha,mikania,Mikania micrantha Kunth,22.446097,114.137881,,2018,5.0,HUMAN_OBSERVATION,iNaturalist
+2238777531,Mikania micrantha,mikania,Mikania micrantha Kunth,22.313695,114.265634,11.0,2018,10.0,HUMAN_OBSERVATION,iNaturalist
+1935606587,Mikania micrantha,mikania,Mikania micrantha Kunth,22.274746,114.23187,66.0,2018,11.0,HUMAN_OBSERVATION,iNaturalist
+1935613225,Mikania micrantha,mikania,Mikania micrantha Kunth,22.272777,114.189793,38.0,2018,11.0,HUMAN_OBSERVATION,iNaturalist
+1935613244,Mikania micrantha,mikania,Mikania micrantha Kunth,22.273688,114.189732,9.0,2018,11.0,HUMAN_OBSERVATION,iNaturalist
+1935619114,Mikania micrantha,mikania,Mikania micrantha Kunth,22.273514,114.23248,53.0,2018,11.0,HUMAN_OBSERVATION,iNaturalist
+1935624246,Mikania micrantha,mikania,Mikania micrantha Kunth,22.349444,114.09814,5.0,2018,11.0,HUMAN_OBSERVATION,iNaturalist
+1944381761,Mikania micrantha,mikania,Mikania micrantha Kunth,22.349474,114.098155,5.0,2018,11.0,HUMAN_OBSERVATION,iNaturalist
+1944385161,Mikania micrantha,mikania,Mikania micrantha Kunth,22.463531,114.203721,12.0,2018,11.0,HUMAN_OBSERVATION,iNaturalist
+1945434133,Mikania micrantha,mikania,Mikania micrantha Kunth,22.445635,114.178765,8.0,2018,11.0,HUMAN_OBSERVATION,iNaturalist
+1946311339,Mikania micrantha,mikania,Mikania micrantha Kunth,22.349844,114.097495,10.0,2018,11.0,HUMAN_OBSERVATION,iNaturalist
+1946312297,Mikania micrantha,mikania,Mikania micrantha Kunth,22.468157,114.178718,5.0,2018,11.0,HUMAN_OBSERVATION,iNaturalist
+1946344715,Mikania micrantha,mikania,Mikania micrantha Kunth,22.274602,114.15194,10.0,2018,11.0,HUMAN_OBSERVATION,iNaturalist
+1948742493,Mikania micrantha,mikania,Mikania micrantha Kunth,22.275883,114.151981,25.0,2018,11.0,HUMAN_OBSERVATION,iNaturalist
+1948742547,Mikania micrantha,mikania,Mikania micrantha Kunth,22.274271,114.151125,10.0,2018,11.0,HUMAN_OBSERVATION,iNaturalist
+1948765326,Mikania micrantha,mikania,Mikania micrantha Kunth,22.444023,114.069145,,2018,11.0,HUMAN_OBSERVATION,iNaturalist
+2238778784,Mikania micrantha,mikania,Mikania micrantha Kunth,22.23937,114.167595,5.0,2018,11.0,HUMAN_OBSERVATION,iNaturalist
+2238778786,Mikania micrantha,mikania,Mikania micrantha Kunth,22.284614,114.195051,,2018,11.0,HUMAN_OBSERVATION,iNaturalist
+2451578859,Mikania micrantha,mikania,Mikania micrantha Kunth,22.349492,114.098148,5.0,2018,11.0,HUMAN_OBSERVATION,iNaturalist
+5206515304,Mikania micrantha,mikania,Mikania micrantha Kunth,22.392673,114.188054,7.0,2018,11.0,HUMAN_OBSERVATION,iNaturalist
+1948773052,Mikania micrantha,mikania,Mikania micrantha Kunth,22.404757,113.986433,,2018,12.0,HUMAN_OBSERVATION,iNaturalist
+1950027718,Mikania micrantha,mikania,Mikania micrantha Kunth,22.241117,114.21933,6.0,2018,12.0,HUMAN_OBSERVATION,iNaturalist
+1978434272,Mikania micrantha,mikania,Mikania micrantha Kunth,22.241225,114.219147,6.0,2018,12.0,HUMAN_OBSERVATION,iNaturalist
+1843245122,Mikania micrantha,mikania,Mikania micrantha Kunth,22.243376,113.975349,,2017,7.0,HUMAN_OBSERVATION,iNaturalist
+1948792464,Mikania micrantha,mikania,Mikania micrantha Kunth,22.243376,113.975349,,2017,7.0,HUMAN_OBSERVATION,iNaturalist
+1703218981,Mikania micrantha,mikania,Mikania micrantha Kunth,22.488695,114.041589,5.0,2017,11.0,HUMAN_OBSERVATION,iNaturalist
+1802650260,Mikania micrantha,mikania,Mikania micrantha Kunth,22.284145,113.99778,5.0,2017,11.0,HUMAN_OBSERVATION,iNaturalist
+1802659257,Mikania micrantha,mikania,Mikania micrantha Kunth,22.494918,114.047621,,2017,11.0,HUMAN_OBSERVATION,iNaturalist
+1802675347,Mikania micrantha,mikania,Mikania micrantha Kunth,22.208208,114.246788,5.0,2017,12.0,HUMAN_OBSERVATION,iNaturalist
+1802675951,Mikania micrantha,mikania,Mikania micrantha Kunth,22.471512,114.360251,7.0,2017,12.0,HUMAN_OBSERVATION,iNaturalist
+1802686153,Mikania micrantha,mikania,Mikania micrantha Kunth,22.28417,113.992937,5.0,2017,12.0,HUMAN_OBSERVATION,iNaturalist
+2238781488,Mikania micrantha,mikania,Mikania micrantha Kunth,22.282854,114.138505,10.0,2015,9.0,HUMAN_OBSERVATION,iNaturalist
+6234307935,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.265839,113.994903,15.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6234758506,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.524462,114.216879,,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6235373479,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.252347,114.147439,4.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6235670493,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.458532,114.325836,18.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6235714657,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.373346,114.166962,,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6235871438,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.243641,114.217237,,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6236148650,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.243662,114.217287,72.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6236304903,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.390991,114.189044,173.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6236381474,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.355864,114.171049,8.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6273398081,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.261665,114.245186,47.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6274249667,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.262932,114.244536,57.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6431341540,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.31331,114.266013,,2026,7.0,HUMAN_OBSERVATION,iNaturalist
+5139999496,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.240808,113.881683,4.0,2025,2.0,HUMAN_OBSERVATION,iNaturalist
+5140078535,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.362117,114.174233,13.0,2025,2.0,HUMAN_OBSERVATION,iNaturalist
+5140147025,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.348363,114.151961,3.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140161177,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.461409,114.329917,209.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140250397,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.463351,114.332681,62.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140345115,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.27739,114.117182,8.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140355785,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.356778,114.173932,,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140373128,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.2528,114.150725,27.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140373375,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.419728,114.195625,28.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140395459,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.219687,113.918722,488.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140437078,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.457637,114.325819,4.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140661958,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.396682,114.229938,7.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140662166,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.348374,114.15195,3.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140685053,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.396194,114.230215,3.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140685054,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.396275,114.230212,3.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140730301,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.383542,114.20385,14.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140782138,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.422657,114.103579,,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140875217,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.348402,114.254692,3.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140966032,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.422627,114.101234,4.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140970286,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.422538,114.103953,,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+6184967347,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.506801,114.174481,149.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5154054971,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.230172,113.926947,3.0,2025,5.0,HUMAN_OBSERVATION,iNaturalist
+5838236568,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.527047,114.260513,,2025,5.0,HUMAN_OBSERVATION,iNaturalist
+6185449843,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.49895,114.178695,3.0,2025,5.0,HUMAN_OBSERVATION,iNaturalist
+6187897279,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.35975,114.178293,180.0,2025,5.0,HUMAN_OBSERVATION,iNaturalist
+6185416655,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.273772,113.946755,14.0,2025,6.0,HUMAN_OBSERVATION,iNaturalist
+6185670372,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.293601,113.932504,4.0,2025,6.0,HUMAN_OBSERVATION,iNaturalist
+6184834688,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.292252,113.976187,4.0,2025,7.0,HUMAN_OBSERVATION,iNaturalist
+4851846423,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.366005,114.177453,,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4852221074,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.433161,114.117374,40.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4852337802,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.253746,114.288575,,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4852351564,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.524569,114.217303,31.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4852706396,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.498878,114.178603,53.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4854864083,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.32687,114.173028,25.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4854864686,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.328107,114.174151,89.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4855412983,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.326862,114.172975,25.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+6184988924,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.524417,114.21687,3.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+6185400545,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.318224,114.164975,30.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+6186126579,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.375377,114.263762,4.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4901841338,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.208628,114.140922,4.0,2024,6.0,HUMAN_OBSERVATION,iNaturalist
+4910842881,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.245697,114.159751,8.0,2024,6.0,HUMAN_OBSERVATION,iNaturalist
+4921537774,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.204683,114.138515,647.0,2024,6.0,HUMAN_OBSERVATION,iNaturalist
+4921606046,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.208617,114.141015,92.0,2024,6.0,HUMAN_OBSERVATION,iNaturalist
+4080468690,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.243582,114.217247,6.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4080764493,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.361871,114.18228,2.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4091617838,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.212404,114.245279,,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4096583784,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.257472,113.921853,7.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4102680999,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.408264,114.277427,7.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4102740318,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.37547,114.263672,3.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4102758435,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.275899,113.943411,,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4103103994,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.434728,114.336602,123.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4103117295,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.273784,113.94667,,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4111698833,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.392837,113.922172,264.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4420938640,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.224797,114.113756,5.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+6185152617,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.521928,114.207989,400.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+6185871547,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.290047,113.9086,4.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4103332228,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.499437,114.178322,26.0,2023,5.0,HUMAN_OBSERVATION,iNaturalist
+4111829384,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.25416,114.207231,204.0,2023,5.0,HUMAN_OBSERVATION,iNaturalist
+4116634411,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.253526,113.985974,45.0,2023,5.0,HUMAN_OBSERVATION,iNaturalist
+3759641246,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.272794,113.947513,4.0,2022,4.0,HUMAN_OBSERVATION,iNaturalist
+3759713321,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.295633,114.025063,,2022,4.0,HUMAN_OBSERVATION,iNaturalist
+3759935367,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.277186,114.117041,,2022,4.0,HUMAN_OBSERVATION,iNaturalist
+3764431586,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.396803,114.230122,,2022,4.0,HUMAN_OBSERVATION,iNaturalist
+3772537029,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.523439,114.215584,61.0,2022,4.0,HUMAN_OBSERVATION,iNaturalist
+3773312026,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.228594,113.928994,204.0,2022,4.0,HUMAN_OBSERVATION,iNaturalist
+3773576391,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.4588,114.325675,4.0,2022,4.0,HUMAN_OBSERVATION,iNaturalist
+6185047070,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.476644,114.23339,425.0,2022,4.0,HUMAN_OBSERVATION,iNaturalist
+6185262479,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.373058,114.166703,11.0,2022,4.0,HUMAN_OBSERVATION,iNaturalist
+6185747175,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.295803,114.0253,4.0,2022,4.0,HUMAN_OBSERVATION,iNaturalist
+3772642205,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.224713,114.19825,3.0,2022,5.0,HUMAN_OBSERVATION,iNaturalist
+3773139342,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.274025,114.119295,11.0,2022,5.0,HUMAN_OBSERVATION,iNaturalist
+3773412505,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.300467,114.169887,155.0,2022,5.0,HUMAN_OBSERVATION,iNaturalist
+3773521748,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.46363,114.332427,,2022,5.0,HUMAN_OBSERVATION,iNaturalist
+3773573692,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.271264,113.949205,4.0,2022,5.0,HUMAN_OBSERVATION,iNaturalist
+3079843555,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.438836,114.190788,2.0,2021,4.0,HUMAN_OBSERVATION,iNaturalist
+3090791328,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.377833,114.138472,3.0,2021,4.0,HUMAN_OBSERVATION,iNaturalist
+3109167378,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.491419,114.182114,223.0,2021,4.0,HUMAN_OBSERVATION,iNaturalist
+3112433790,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.38626,114.10124,369.0,2021,4.0,HUMAN_OBSERVATION,iNaturalist
+3113352746,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.523963,114.215883,400.0,2021,4.0,HUMAN_OBSERVATION,iNaturalist
+3112502885,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.239054,114.223244,308.0,2021,5.0,HUMAN_OBSERVATION,iNaturalist
+3112862860,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.458587,114.325639,44.0,2021,5.0,HUMAN_OBSERVATION,iNaturalist
+3759133571,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.438842,114.190812,2.0,2021,5.0,HUMAN_OBSERVATION,iNaturalist
+3963679364,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.243538,114.217362,10.0,2021,5.0,HUMAN_OBSERVATION,iNaturalist
+2603474241,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.360623,114.180608,8.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+2609112116,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.477169,114.227731,3.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+2610957653,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.463702,114.332384,148.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+2610974597,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.399595,114.215757,5.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+2611195670,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.455505,114.136138,2.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+2611250141,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.312725,114.172392,8.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+2620122569,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.520778,114.215627,400.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+2626106483,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.476541,114.232887,95.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+3759056388,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.222129,113.991553,4.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+3773239346,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.243703,114.217311,30.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+4075692356,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.424296,114.200466,9.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+4075708373,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.424608,114.201128,30.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+6184805824,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.225725,113.900746,170.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+6185205031,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.208605,114.140389,10.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+2239044530,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.507539,114.242993,300.0,2019,4.0,HUMAN_OBSERVATION,iNaturalist
+3947774311,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.207458,114.143323,11.0,2019,4.0,HUMAN_OBSERVATION,iNaturalist
+1841220879,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.461657,114.329277,553.0,2018,4.0,HUMAN_OBSERVATION,iNaturalist
+1841272819,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.422372,114.240899,,2018,4.0,HUMAN_OBSERVATION,iNaturalist
+3067608376,Phanera glauca,bauhinia_glauca,Cheniella glauca (Benth.) R.Clark & Mackinder,22.421887,114.202847,,2018,4.0,HUMAN_OBSERVATION,iNaturalist
+2514200829,Phanera glauca,bauhinia_glauca,Bauhinia glauca (Benth.) Wall. ex Benth.,22.48333,114.18333,,1992,4.0,PRESERVED_SPECIMEN,396d5f30-dea9-11db-8ab4-b8a03c50a862
+6129900624,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.386239,114.095932,,2026,1.0,HUMAN_OBSERVATION,iNaturalist
+6185846652,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.43152,114.119604,8.0,2026,2.0,HUMAN_OBSERVATION,iNaturalist
+6186049314,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.4215,114.112931,3.0,2026,2.0,HUMAN_OBSERVATION,iNaturalist
+6178900492,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.430352,114.183978,6.0,2026,3.0,HUMAN_OBSERVATION,iNaturalist
+6195731673,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.35601,114.17763,4.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6195927200,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.356343,114.177471,3.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6234324451,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.460097,114.328048,23.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6234555875,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.396256,114.262278,6.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6234620786,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.374406,114.265364,5.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6251640427,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.255295,114.16005,5.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6252786439,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.374838,114.263038,3.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6451848996,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.262633,114.150939,4.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6452340517,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.397463,114.212067,3.0,2026,7.0,HUMAN_OBSERVATION,iNaturalist
+5076936872,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.229666,114.199063,,2025,2.0,HUMAN_OBSERVATION,iNaturalist
+5088217334,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.239145,113.87558,104.0,2025,2.0,HUMAN_OBSERVATION,iNaturalist
+5104388618,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.260717,114.245378,4.0,2025,3.0,HUMAN_OBSERVATION,iNaturalist
+5140152086,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.263783,114.254442,47.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140160847,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.37445,114.265267,3.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140164241,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.460525,114.3278,923.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140243108,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.262948,114.255446,47.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140258537,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.356508,114.173701,240.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140584350,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.43057,114.18418,13.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5153966316,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.43021,114.183397,289.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5168263019,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.424122,114.181555,135.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5840449573,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.430733,114.184295,4.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5843993252,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.362819,114.184421,2.0,2025,10.0,HUMAN_OBSERVATION,iNaturalist
+5889760352,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.379745,114.071342,25.0,2025,10.0,HUMAN_OBSERVATION,iNaturalist
+5897219581,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.344442,114.059123,4.0,2025,11.0,HUMAN_OBSERVATION,iNaturalist
+5897769058,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.344465,114.059128,1.0,2025,11.0,HUMAN_OBSERVATION,iNaturalist
+5909038839,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.221813,114.243338,191.0,2025,11.0,HUMAN_OBSERVATION,iNaturalist
+5936374477,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.206959,114.039153,199.0,2025,12.0,HUMAN_OBSERVATION,iNaturalist
+6147287844,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.219603,114.243776,3.0,2025,12.0,HUMAN_OBSERVATION,iNaturalist
+4522713508,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.35578,114.165882,,2024,2.0,HUMAN_OBSERVATION,iNaturalist
+4606626529,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.207004,114.037908,15.0,2024,3.0,HUMAN_OBSERVATION,iNaturalist
+5007795223,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.510189,114.177561,,2024,3.0,HUMAN_OBSERVATION,iNaturalist
+5008285518,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.342972,114.216236,15.0,2024,3.0,HUMAN_OBSERVATION,iNaturalist
+4853055299,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.361238,114.176658,59.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4855373974,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.475302,114.220007,207.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+5076714248,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.27462,114.151406,12.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+5076718259,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.263719,114.254374,5.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+5076759246,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.374688,114.264903,70.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+5216515427,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.278907,114.138534,,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4872406101,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.255121,114.183022,500.0,2024,5.0,HUMAN_OBSERVATION,iNaturalist
+4872599140,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.255418,114.182012,500.0,2024,5.0,HUMAN_OBSERVATION,iNaturalist
+4901272125,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.432511,114.185936,7.0,2024,5.0,HUMAN_OBSERVATION,iNaturalist
+5076781429,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.254259,114.181274,582.0,2024,5.0,HUMAN_OBSERVATION,iNaturalist
+5076786427,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.254259,114.181274,582.0,2024,5.0,HUMAN_OBSERVATION,iNaturalist
+5076818445,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.254259,114.181274,582.0,2024,5.0,HUMAN_OBSERVATION,iNaturalist
+4904040249,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.207124,114.134762,61.0,2024,6.0,HUMAN_OBSERVATION,iNaturalist
+4910822835,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.206873,114.144828,8.0,2024,6.0,HUMAN_OBSERVATION,iNaturalist
+6133246050,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.374683,114.263087,9.0,2024,6.0,HUMAN_OBSERVATION,iNaturalist
+4909276856,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.255472,114.160186,4.0,2024,7.0,HUMAN_OBSERVATION,iNaturalist
+5036810640,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.253813,113.93803,610.0,2024,9.0,HUMAN_OBSERVATION,iNaturalist
+4954368464,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.26127,114.003539,22.0,2024,10.0,HUMAN_OBSERVATION,iNaturalist
+4954431796,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.407208,114.277932,67.0,2024,10.0,HUMAN_OBSERVATION,iNaturalist
+4974274282,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.291578,114.043739,23.0,2024,10.0,HUMAN_OBSERVATION,iNaturalist
+4976197858,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.299367,114.274378,5.0,2024,10.0,HUMAN_OBSERVATION,iNaturalist
+4976278154,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.37493,114.263047,4.0,2024,10.0,HUMAN_OBSERVATION,iNaturalist
+4994264275,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.252236,114.253835,4.0,2024,11.0,HUMAN_OBSERVATION,iNaturalist
+5006750112,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.253487,114.148985,2.0,2024,11.0,HUMAN_OBSERVATION,iNaturalist
+5076786018,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.429372,114.184604,,2024,11.0,HUMAN_OBSERVATION,iNaturalist
+5006876589,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.42366,114.131748,,2024,12.0,HUMAN_OBSERVATION,iNaturalist
+5007658191,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.45278,114.325786,,2024,12.0,HUMAN_OBSERVATION,iNaturalist
+5062900165,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.459179,114.326381,,2024,12.0,HUMAN_OBSERVATION,iNaturalist
+5188135446,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.426687,114.132117,,2024,12.0,HUMAN_OBSERVATION,iNaturalist
+4405021484,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.302967,114.243607,,2023,1.0,HUMAN_OBSERVATION,iNaturalist
+4102989653,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.383682,114.224247,85.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4103007473,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.345946,114.154775,8.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4103354385,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.477326,114.219251,122.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4507586841,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.278985,114.138665,4.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4507760825,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.279014,114.138837,5.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4103038470,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.251909,114.253697,,2023,5.0,HUMAN_OBSERVATION,iNaturalist
+4103369525,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.251186,114.251563,,2023,5.0,HUMAN_OBSERVATION,iNaturalist
+4103462527,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.263978,114.254237,,2023,5.0,HUMAN_OBSERVATION,iNaturalist
+4404997514,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.346009,114.230826,7.0,2023,5.0,HUMAN_OBSERVATION,iNaturalist
+4405223536,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.34591,114.230671,14.0,2023,5.0,HUMAN_OBSERVATION,iNaturalist
+4413748188,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.425738,114.181208,10.0,2023,9.0,HUMAN_OBSERVATION,iNaturalist
+4417148534,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.425747,114.181209,15.0,2023,9.0,HUMAN_OBSERVATION,iNaturalist
+4442350980,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.430335,114.18381,235.0,2023,9.0,HUMAN_OBSERVATION,iNaturalist
+4442509957,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.379889,114.071402,3.0,2023,9.0,HUMAN_OBSERVATION,iNaturalist
+4442645959,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.430575,114.18412,13.0,2023,9.0,HUMAN_OBSERVATION,iNaturalist
+5076750065,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.430447,114.183897,3.0,2023,9.0,HUMAN_OBSERVATION,iNaturalist
+5076752031,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.43043,114.183953,12.0,2023,9.0,HUMAN_OBSERVATION,iNaturalist
+4424450606,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.22,114.243705,3.0,2023,10.0,HUMAN_OBSERVATION,iNaturalist
+4442389098,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.165208,114.258361,,2023,10.0,HUMAN_OBSERVATION,iNaturalist
+4442546068,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.164836,114.257353,,2023,10.0,HUMAN_OBSERVATION,iNaturalist
+4442420730,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.47673,114.219514,12.0,2023,11.0,HUMAN_OBSERVATION,iNaturalist
+4846927042,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.200407,114.143475,3.0,2023,12.0,HUMAN_OBSERVATION,iNaturalist
+4405120433,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.477928,114.182727,9.0,2022,4.0,HUMAN_OBSERVATION,iNaturalist
+4405236362,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.459289,114.326531,4.0,2022,4.0,HUMAN_OBSERVATION,iNaturalist
+4405273417,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.477478,114.182463,19.0,2022,4.0,HUMAN_OBSERVATION,iNaturalist
+3772676945,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.230927,114.198769,13.0,2022,5.0,HUMAN_OBSERVATION,iNaturalist
+3773492507,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.231265,114.198662,4.0,2022,5.0,HUMAN_OBSERVATION,iNaturalist
+3802490731,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.205682,114.037587,8.0,2022,5.0,HUMAN_OBSERVATION,iNaturalist
+4405114427,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.231256,114.198726,8.0,2022,5.0,HUMAN_OBSERVATION,iNaturalist
+5076723650,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.231181,114.198736,7.0,2022,5.0,HUMAN_OBSERVATION,iNaturalist
+4442402484,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.19177,114.127577,1.0,2022,7.0,HUMAN_OBSERVATION,iNaturalist
+3915475898,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.208423,114.141993,2.0,2022,9.0,HUMAN_OBSERVATION,iNaturalist
+4404987477,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.252653,114.254016,,2022,10.0,HUMAN_OBSERVATION,iNaturalist
+4442348552,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.344402,114.059086,23.0,2022,10.0,HUMAN_OBSERVATION,iNaturalist
+4442616527,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.273768,113.990944,2.0,2022,10.0,HUMAN_OBSERVATION,iNaturalist
+4405173462,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.431875,114.184953,,2022,11.0,HUMAN_OBSERVATION,iNaturalist
+4442645398,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.422745,114.202605,13.0,2021,1.0,HUMAN_OBSERVATION,iNaturalist
+5076769507,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.390633,114.109056,122.0,2021,4.0,HUMAN_OBSERVATION,iNaturalist
+3112576896,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.263758,114.254487,4.0,2021,5.0,HUMAN_OBSERVATION,iNaturalist
+3112652876,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.374425,114.265153,110.0,2021,5.0,HUMAN_OBSERVATION,iNaturalist
+3320938437,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.256871,114.178705,5.0,2021,5.0,HUMAN_OBSERVATION,iNaturalist
+3321153479,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.351552,114.200412,746.0,2021,5.0,HUMAN_OBSERVATION,iNaturalist
+3384760864,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.22107,113.866692,6.0,2021,9.0,HUMAN_OBSERVATION,iNaturalist
+3456492489,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.255188,114.16046,22.0,2021,9.0,HUMAN_OBSERVATION,iNaturalist
+3391364061,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.253557,114.148941,,2021,10.0,HUMAN_OBSERVATION,iNaturalist
+3456615355,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.27792,113.893905,865.0,2021,10.0,HUMAN_OBSERVATION,iNaturalist
+3416138542,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.218557,114.244723,,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+4442402339,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.222784,114.007606,14.0,2020,1.0,HUMAN_OBSERVATION,iNaturalist
+2611170645,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.397758,114.212071,30.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+2611303250,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.278895,114.138735,,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+4442591352,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.476991,114.225948,6.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+3456815131,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.47936,114.182271,201.0,2020,5.0,HUMAN_OBSERVATION,iNaturalist
+2868272763,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.252863,114.213736,176.0,2020,9.0,HUMAN_OBSERVATION,iNaturalist
+3314178367,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.355693,114.164881,,2020,9.0,HUMAN_OBSERVATION,iNaturalist
+3320944393,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.393623,114.23202,,2020,9.0,HUMAN_OBSERVATION,iNaturalist
+2963843844,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.353996,114.19796,,2020,10.0,HUMAN_OBSERVATION,iNaturalist
+2981074610,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.20697,114.039108,4.0,2020,10.0,HUMAN_OBSERVATION,iNaturalist
+3321183398,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.426372,114.131481,204.0,2020,10.0,HUMAN_OBSERVATION,iNaturalist
+3320854397,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.254363,114.184476,7.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3320890402,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.253662,114.185365,400.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3320924390,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.254393,114.184424,5.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3321119401,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.253277,114.184841,8.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3321147386,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.252776,114.183921,105.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3005179665,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.261808,114.257126,3.0,2020,12.0,HUMAN_OBSERVATION,iNaturalist
+4442361353,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.267375,113.991396,,2019,2.0,HUMAN_OBSERVATION,iNaturalist
+4442377328,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.358863,114.1996,10.0,2019,4.0,HUMAN_OBSERVATION,iNaturalist
+2456533660,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.272756,114.232548,19.0,2019,11.0,HUMAN_OBSERVATION,iNaturalist
+4442362351,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.214722,113.908767,5.0,2019,11.0,HUMAN_OBSERVATION,iNaturalist
+1841272737,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.263665,114.254637,538.0,2018,4.0,HUMAN_OBSERVATION,iNaturalist
+3067758382,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.416433,114.207758,,2018,5.0,HUMAN_OBSERVATION,iNaturalist
+1920811744,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.27913,114.138688,,2018,10.0,HUMAN_OBSERVATION,iNaturalist
+3455232368,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.254166,114.181373,9.0,2018,11.0,HUMAN_OBSERVATION,iNaturalist
+3456228448,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.27388,113.990738,,2018,11.0,HUMAN_OBSERVATION,iNaturalist
+4442581318,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.273072,114.189873,9.0,2018,11.0,HUMAN_OBSERVATION,iNaturalist
+1950026423,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.241827,114.223555,165.0,2018,12.0,HUMAN_OBSERVATION,iNaturalist
+1950028255,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.241955,114.223358,165.0,2018,12.0,HUMAN_OBSERVATION,iNaturalist
+3320857312,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.242133,114.223388,6.0,2018,12.0,HUMAN_OBSERVATION,iNaturalist
+3320901305,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.243376,113.975349,,2017,7.0,HUMAN_OBSERVATION,iNaturalist
+3321108306,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.243376,113.975349,,2017,7.0,HUMAN_OBSERVATION,iNaturalist
+3455331420,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.243376,113.975349,,2017,7.0,HUMAN_OBSERVATION,iNaturalist
+4405155306,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.243376,113.975349,,2017,7.0,HUMAN_OBSERVATION,iNaturalist
+1836693840,Bauhinia championii,bauhinia_glauca,Phanera championii Benth.,22.263029,114.25513,274.0,2016,10.0,HUMAN_OBSERVATION,iNaturalist
+1030939523,Byttneria aspera,byttneria_aspera,"Byttneria aspera Colebr., 1824",22.391577,114.139452,,1933,,PRESERVED_SPECIMEN,IBK
+1030939537,Byttneria aspera,byttneria_aspera,"Byttneria aspera Colebr., 1824",22.391577,114.139452,,1930,,PRESERVED_SPECIMEN,IBK
+1030939477,Byttneria aspera,byttneria_aspera,"Byttneria aspera Colebr., 1824",22.391577,114.139452,,1929,,PRESERVED_SPECIMEN,IBK
+1030939549,Byttneria aspera,byttneria_aspera,"Byttneria aspera Colebr., 1824",22.391577,114.139452,,1929,,PRESERVED_SPECIMEN,IBK
+6130046250,Paederia foetida,paederia_foetida,Paederia foetida L.,22.30405,114.245712,,2026,1.0,HUMAN_OBSERVATION,iNaturalist
+6251865384,Paederia foetida,paederia_foetida,Paederia foetida L.,22.506028,114.243333,1.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6252641002,Paederia foetida,paederia_foetida,Paederia foetida L.,22.28372,114.144671,197.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6253059914,Paederia foetida,paederia_foetida,Paederia foetida L.,22.305009,114.25421,26.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6253284634,Paederia foetida,paederia_foetida,Paederia foetida L.,22.304623,114.254108,5.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6273336117,Paederia foetida,paederia_foetida,Paederia foetida L.,22.33711,114.25908,207.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6320428112,Paederia foetida,paederia_foetida,Paederia foetida L.,22.376938,114.302199,54.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6320478750,Paederia foetida,paederia_foetida,Paederia foetida L.,22.376797,114.302075,6.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6320713436,Paederia foetida,paederia_foetida,Paederia foetida L.,22.376875,114.302134,5.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6251628065,Paederia foetida,paederia_foetida,Paederia foetida L.,22.29115,113.947914,16.0,2026,5.0,HUMAN_OBSERVATION,iNaturalist
+6333838986,Paederia foetida,paederia_foetida,Paederia foetida L.,22.422888,114.074728,8.0,2026,5.0,HUMAN_OBSERVATION,iNaturalist
+6352824116,Paederia foetida,paederia_foetida,Paederia foetida L.,22.41305,113.982111,5.0,2026,5.0,HUMAN_OBSERVATION,iNaturalist
+6400485524,Paederia foetida,paederia_foetida,Paederia foetida L.,22.504381,114.175893,,2026,6.0,HUMAN_OBSERVATION,iNaturalist
+5063670866,Paederia foetida,paederia_foetida,Paederia foetida L.,22.392417,114.207328,5.0,2025,2.0,HUMAN_OBSERVATION,iNaturalist
+5133690783,Paederia foetida,paederia_foetida,Paederia foetida L.,22.406792,113.987281,41.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140259350,Paederia foetida,paederia_foetida,Paederia foetida L.,22.460355,114.328017,915.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140483123,Paederia foetida,paederia_foetida,Paederia foetida L.,22.372268,114.18241,,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5153109140,Paederia foetida,paederia_foetida,Paederia foetida L.,22.373368,113.996731,4.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5154256634,Paederia foetida,paederia_foetida,Paederia foetida L.,22.37349,114.000185,47.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5154274955,Paederia foetida,paederia_foetida,Paederia foetida L.,22.507807,114.176569,316.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5187855665,Paederia foetida,paederia_foetida,Paederia foetida L.,22.390997,114.206488,10.0,2025,5.0,HUMAN_OBSERVATION,iNaturalist
+5199197603,Paederia foetida,paederia_foetida,Paederia foetida L.,22.290293,114.146084,6.0,2025,6.0,HUMAN_OBSERVATION,iNaturalist
+5206090654,Paederia foetida,paederia_foetida,Paederia foetida L.,22.291834,113.942459,3.0,2025,6.0,HUMAN_OBSERVATION,iNaturalist
+5238226240,Paederia foetida,paederia_foetida,Paederia foetida L.,22.273208,113.991535,3.0,2025,7.0,HUMAN_OBSERVATION,iNaturalist
+5897641906,Paederia foetida,paederia_foetida,Paederia foetida L.,22.281447,114.14095,22.0,2025,8.0,HUMAN_OBSERVATION,iNaturalist
+5827560064,Paederia foetida,paederia_foetida,Paederia foetida L.,22.412964,114.067839,204.0,2025,9.0,HUMAN_OBSERVATION,iNaturalist
+5827792180,Paederia foetida,paederia_foetida,Paederia foetida L.,22.376583,114.302589,,2025,9.0,HUMAN_OBSERVATION,iNaturalist
+5828737586,Paederia foetida,paederia_foetida,Paederia foetida L.,22.404038,113.955852,109.0,2025,9.0,HUMAN_OBSERVATION,iNaturalist
+5828817462,Paederia foetida,paederia_foetida,Paederia foetida L.,22.465375,114.181092,12.0,2025,9.0,HUMAN_OBSERVATION,iNaturalist
+5830425964,Paederia foetida,paederia_foetida,Paederia foetida L.,22.287901,113.92146,204.0,2025,9.0,HUMAN_OBSERVATION,iNaturalist
+5830672093,Paederia foetida,paederia_foetida,Paederia foetida L.,22.29798,114.26438,7.0,2025,9.0,HUMAN_OBSERVATION,iNaturalist
+5830795594,Paederia foetida,paederia_foetida,Paederia foetida L.,22.295988,114.267167,8.0,2025,9.0,HUMAN_OBSERVATION,iNaturalist
+5830985286,Paederia foetida,paederia_foetida,Paederia foetida L.,22.36189,114.126398,639.0,2025,9.0,HUMAN_OBSERVATION,iNaturalist
+5837981158,Paederia foetida,paederia_foetida,Paederia foetida L.,22.46648,114.236497,3.0,2025,9.0,HUMAN_OBSERVATION,iNaturalist
+5938219334,Paederia foetida,paederia_foetida,Paederia foetida L.,22.307639,114.297744,183.0,2025,9.0,HUMAN_OBSERVATION,iNaturalist
+5839929381,Paederia foetida,paederia_foetida,Paederia foetida L.,22.476892,114.233588,28.0,2025,10.0,HUMAN_OBSERVATION,iNaturalist
+5840053003,Paederia foetida,paederia_foetida,Paederia foetida L.,22.404911,113.959564,109.0,2025,10.0,HUMAN_OBSERVATION,iNaturalist
+5840515236,Paederia foetida,paederia_foetida,Paederia foetida L.,22.263111,114.135065,,2025,10.0,HUMAN_OBSERVATION,iNaturalist
+5889251511,Paederia foetida,paederia_foetida,Paederia foetida L.,22.51471,114.131908,,2025,10.0,HUMAN_OBSERVATION,iNaturalist
+5889534458,Paederia foetida,paederia_foetida,Paederia foetida L.,22.437137,114.006708,,2025,10.0,HUMAN_OBSERVATION,iNaturalist
+5889982252,Paederia foetida,paederia_foetida,Paederia foetida L.,22.383928,113.976731,14.0,2025,10.0,HUMAN_OBSERVATION,iNaturalist
+5889676727,Paederia foetida,paederia_foetida,Paederia foetida L.,22.376762,114.302305,5.0,2025,11.0,HUMAN_OBSERVATION,iNaturalist
+5889998997,Paederia foetida,paederia_foetida,Paederia foetida L.,22.376842,114.302185,9.0,2025,11.0,HUMAN_OBSERVATION,iNaturalist
+5890376362,Paederia foetida,paederia_foetida,Paederia foetida L.,22.220597,114.117133,4.0,2025,11.0,HUMAN_OBSERVATION,iNaturalist
+5892368297,Paederia foetida,paederia_foetida,Paederia foetida L.,22.376863,114.302153,4.0,2025,11.0,HUMAN_OBSERVATION,iNaturalist
+5892775611,Paederia foetida,paederia_foetida,Paederia foetida L.,22.376884,114.302123,4.0,2025,11.0,HUMAN_OBSERVATION,iNaturalist
+6321081855,Paederia foetida,paederia_foetida,Paederia foetida L.,22.376897,114.302125,8.0,2025,11.0,HUMAN_OBSERVATION,iNaturalist
+4852283994,Paederia foetida,paederia_foetida,Paederia foetida L.,22.471285,114.04171,500.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4852569841,Paederia foetida,paederia_foetida,Paederia foetida L.,22.421354,114.031668,,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4853207057,Paederia foetida,paederia_foetida,Paederia foetida L.,22.504606,114.176385,78.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4875238356,Paederia foetida,paederia_foetida,Paederia foetida L.,22.348699,114.104921,15.0,2024,6.0,HUMAN_OBSERVATION,iNaturalist
+4892119771,Paederia foetida,paederia_foetida,Paederia foetida L.,22.447959,114.136663,500.0,2024,6.0,HUMAN_OBSERVATION,iNaturalist
+4921668437,Paederia foetida,paederia_foetida,Paederia foetida L.,22.208038,114.142708,4.0,2024,6.0,HUMAN_OBSERVATION,iNaturalist
+4921848758,Paederia foetida,paederia_foetida,Paederia foetida L.,22.395674,114.195444,12.0,2024,6.0,HUMAN_OBSERVATION,iNaturalist
+4946253429,Paederia foetida,paederia_foetida,Paederia foetida L.,22.423081,114.241477,15.0,2024,9.0,HUMAN_OBSERVATION,iNaturalist
+4946318407,Paederia foetida,paederia_foetida,Paederia foetida L.,22.291028,113.91948,4.0,2024,9.0,HUMAN_OBSERVATION,iNaturalist
+4950305216,Paederia foetida,paederia_foetida,Paederia foetida L.,22.37494,114.264062,42.0,2024,9.0,HUMAN_OBSERVATION,iNaturalist
+4952500664,Paederia foetida,paederia_foetida,Paederia foetida L.,22.219032,114.027669,15.0,2024,9.0,HUMAN_OBSERVATION,iNaturalist
+4954315877,Paederia foetida,paederia_foetida,Paederia foetida L.,22.289267,114.200831,,2024,9.0,HUMAN_OBSERVATION,iNaturalist
+5007588266,Paederia foetida,paederia_foetida,Paederia foetida L.,22.50399,114.174251,458.0,2024,9.0,HUMAN_OBSERVATION,iNaturalist
+5134349759,Paederia foetida,paederia_foetida,Paederia foetida L.,22.362647,114.375205,5.0,2024,9.0,HUMAN_OBSERVATION,iNaturalist
+5134391757,Paederia foetida,paederia_foetida,Paederia foetida L.,22.30313,114.268053,5.0,2024,9.0,HUMAN_OBSERVATION,iNaturalist
+4952246781,Paederia foetida,paederia_foetida,Paederia foetida L.,22.483017,114.117928,38.0,2024,10.0,HUMAN_OBSERVATION,iNaturalist
+4954292610,Paederia foetida,paederia_foetida,Paederia foetida L.,22.404262,113.96803,5.0,2024,10.0,HUMAN_OBSERVATION,iNaturalist
+4954419759,Paederia foetida,paederia_foetida,Paederia foetida L.,22.501425,114.114019,,2024,10.0,HUMAN_OBSERVATION,iNaturalist
+4976200756,Paederia foetida,paederia_foetida,Paederia foetida L.,22.525312,114.212403,2.0,2024,10.0,HUMAN_OBSERVATION,iNaturalist
+4976558829,Paederia foetida,paederia_foetida,Paederia foetida L.,22.398765,114.272878,,2024,10.0,HUMAN_OBSERVATION,iNaturalist
+5062852051,Paederia foetida,paederia_foetida,Paederia foetida L.,22.3819,114.016114,19.0,2024,10.0,HUMAN_OBSERVATION,iNaturalist
+4987768655,Paederia foetida,paederia_foetida,Paederia foetida L.,22.506276,114.11348,8.0,2024,11.0,HUMAN_OBSERVATION,iNaturalist
+4102817639,Paederia foetida,paederia_foetida,Paederia foetida L.,22.363699,114.046397,4.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4103464554,Paederia foetida,paederia_foetida,Paederia foetida L.,22.365804,114.047796,390.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4111671160,Paederia foetida,paederia_foetida,Paederia foetida L.,22.471682,114.041538,600.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4102908108,Paederia foetida,paederia_foetida,Paederia foetida L.,22.431608,114.082747,10.0,2023,5.0,HUMAN_OBSERVATION,iNaturalist
+4126922049,Paederia foetida,paederia_foetida,Paederia foetida L.,22.432244,113.9889,3.0,2023,5.0,HUMAN_OBSERVATION,iNaturalist
+4404999432,Paederia foetida,paederia_foetida,Paederia foetida L.,22.495444,114.058236,4.0,2023,5.0,HUMAN_OBSERVATION,iNaturalist
+4405132932,Paederia foetida,paederia_foetida,Paederia foetida L.,22.453805,114.156571,11.0,2023,8.0,HUMAN_OBSERVATION,iNaturalist
+4413678356,Paederia foetida,paederia_foetida,Paederia foetida L.,22.381045,114.142701,3.0,2023,9.0,HUMAN_OBSERVATION,iNaturalist
+4413823271,Paederia foetida,paederia_foetida,Paederia foetida L.,22.374945,114.264633,3.0,2023,9.0,HUMAN_OBSERVATION,iNaturalist
+4413839390,Paederia foetida,paederia_foetida,Paederia foetida L.,22.430166,114.083539,40.0,2023,9.0,HUMAN_OBSERVATION,iNaturalist
+4414139444,Paederia foetida,paederia_foetida,Paederia foetida L.,22.433518,114.119189,9.0,2023,9.0,HUMAN_OBSERVATION,iNaturalist
+4414185613,Paederia foetida,paederia_foetida,Paederia foetida L.,22.274165,114.143576,,2023,9.0,HUMAN_OBSERVATION,iNaturalist
+4414287510,Paederia foetida,paederia_foetida,Paederia foetida L.,22.256099,113.905319,624.0,2023,9.0,HUMAN_OBSERVATION,iNaturalist
+4414378653,Paederia foetida,paederia_foetida,Paederia foetida L.,22.447853,114.038176,10.0,2023,9.0,HUMAN_OBSERVATION,iNaturalist
+4416984780,Paederia foetida,paederia_foetida,Paederia foetida L.,22.374747,114.265102,4.0,2023,9.0,HUMAN_OBSERVATION,iNaturalist
+4416999306,Paederia foetida,paederia_foetida,Paederia foetida L.,22.290787,113.978713,4.0,2023,9.0,HUMAN_OBSERVATION,iNaturalist
+4417028735,Paederia foetida,paederia_foetida,Paederia foetida L.,22.283242,114.211762,4.0,2023,9.0,HUMAN_OBSERVATION,iNaturalist
+4417033612,Paederia foetida,paederia_foetida,Paederia foetida L.,22.374945,114.264703,4.0,2023,9.0,HUMAN_OBSERVATION,iNaturalist
+4417106777,Paederia foetida,paederia_foetida,Paederia foetida L.,22.378443,114.144034,13.0,2023,9.0,HUMAN_OBSERVATION,iNaturalist
+4420908636,Paederia foetida,paederia_foetida,Paederia foetida L.,22.377972,114.142564,5.0,2023,9.0,HUMAN_OBSERVATION,iNaturalist
+4420990209,Paederia foetida,paederia_foetida,Paederia foetida L.,22.374257,114.263983,10.0,2023,9.0,HUMAN_OBSERVATION,iNaturalist
+4421185344,Paederia foetida,paederia_foetida,Paederia foetida L.,22.37483,114.264188,5.0,2023,9.0,HUMAN_OBSERVATION,iNaturalist
+4854955105,Paederia foetida,paederia_foetida,Paederia foetida L.,22.429308,114.180825,5.0,2023,9.0,HUMAN_OBSERVATION,iNaturalist
+5062655195,Paederia foetida,paederia_foetida,Paederia foetida L.,22.374089,114.265054,204.0,2023,9.0,HUMAN_OBSERVATION,iNaturalist
+4421051529,Paederia foetida,paederia_foetida,Paederia foetida L.,22.374671,114.263739,204.0,2023,10.0,HUMAN_OBSERVATION,iNaturalist
+4421243330,Paederia foetida,paederia_foetida,Paederia foetida L.,22.38464,114.14383,,2023,10.0,HUMAN_OBSERVATION,iNaturalist
+4424391894,Paederia foetida,paederia_foetida,Paederia foetida L.,22.384616,114.143778,15.0,2023,10.0,HUMAN_OBSERVATION,iNaturalist
+3773174704,Paederia foetida,paederia_foetida,Paederia foetida L.,22.471954,114.021059,8.0,2022,5.0,HUMAN_OBSERVATION,iNaturalist
+3802458318,Paederia foetida,paederia_foetida,Paederia foetida L.,22.204086,114.031446,19.0,2022,5.0,HUMAN_OBSERVATION,iNaturalist
+3859961939,Paederia foetida,paederia_foetida,Paederia foetida L.,22.421869,114.226598,214.0,2022,6.0,HUMAN_OBSERVATION,iNaturalist
+3902803769,Paederia foetida,paederia_foetida,Paederia foetida L.,22.40011,114.321588,4.0,2022,9.0,HUMAN_OBSERVATION,iNaturalist
+3903300104,Paederia foetida,paederia_foetida,Paederia foetida L.,22.166409,113.912888,4.0,2022,9.0,HUMAN_OBSERVATION,iNaturalist
+3915458861,Paederia foetida,paederia_foetida,Paederia foetida L.,22.2505,113.940605,,2022,9.0,HUMAN_OBSERVATION,iNaturalist
+3915621319,Paederia foetida,paederia_foetida,Paederia foetida L.,22.430641,114.238112,,2022,9.0,HUMAN_OBSERVATION,iNaturalist
+3963310358,Paederia foetida,paederia_foetida,Paederia foetida L.,22.324541,114.192214,4.0,2022,9.0,HUMAN_OBSERVATION,iNaturalist
+3999126820,Paederia foetida,paederia_foetida,Paederia foetida L.,22.28493,114.014674,,2022,9.0,HUMAN_OBSERVATION,da86174a-a605-43a4-a5e8-53d484152cd3
+5216371370,Paederia foetida,paederia_foetida,Paederia foetida L.,22.464047,114.20456,,2022,9.0,HUMAN_OBSERVATION,iNaturalist
+3923250471,Paederia foetida,paederia_foetida,Paederia foetida L.,22.472446,114.020504,336.0,2022,10.0,HUMAN_OBSERVATION,iNaturalist
+3925363321,Paederia foetida,paederia_foetida,Paederia foetida L.,22.468019,114.016589,,2022,10.0,HUMAN_OBSERVATION,iNaturalist
+3985620062,Paederia foetida,paederia_foetida,Paederia foetida L.,22.426985,113.946209,2.0,2022,10.0,HUMAN_OBSERVATION,iNaturalist
+4009879745,Paederia foetida,paederia_foetida,Paederia foetida L.,22.502571,114.098697,4.0,2022,12.0,HUMAN_OBSERVATION,iNaturalist
+3109183485,Paederia foetida,paederia_foetida,Paederia foetida L.,22.467136,114.179491,206.0,2021,3.0,HUMAN_OBSERVATION,iNaturalist
+3109076466,Paederia foetida,paederia_foetida,Paederia foetida L.,22.447955,114.040834,65.0,2021,4.0,HUMAN_OBSERVATION,iNaturalist
+3112288825,Paederia foetida,paederia_foetida,Paederia foetida L.,22.221073,113.91471,4.0,2021,5.0,HUMAN_OBSERVATION,iNaturalist
+3112511311,Paederia foetida,paederia_foetida,Paederia foetida L.,22.417773,114.03357,8.0,2021,5.0,HUMAN_OBSERVATION,iNaturalist
+3112780829,Paederia foetida,paederia_foetida,Paederia foetida L.,22.491479,114.044213,500.0,2021,5.0,HUMAN_OBSERVATION,iNaturalist
+3902258634,Paederia foetida,paederia_foetida,Paederia foetida L.,22.489624,114.234885,204.0,2021,7.0,HUMAN_OBSERVATION,iNaturalist
+3355737399,Paederia foetida,paederia_foetida,Paederia foetida L.,22.277843,114.118322,,2021,8.0,HUMAN_OBSERVATION,iNaturalist
+3355299587,Paederia foetida,paederia_foetida,Paederia foetida L.,22.475328,114.220158,,2021,9.0,HUMAN_OBSERVATION,iNaturalist
+3355772924,Paederia foetida,paederia_foetida,Paederia foetida L.,22.396226,114.047924,2.0,2021,9.0,HUMAN_OBSERVATION,iNaturalist
+3384021501,Paederia foetida,paederia_foetida,Paederia foetida L.,22.524004,114.215418,2.0,2021,9.0,HUMAN_OBSERVATION,iNaturalist
+3384124379,Paederia foetida,paederia_foetida,Paederia foetida L.,22.46261,114.00519,61.0,2021,9.0,HUMAN_OBSERVATION,iNaturalist
+3384175473,Paederia foetida,paederia_foetida,Paederia foetida L.,22.411025,114.331092,,2021,9.0,HUMAN_OBSERVATION,iNaturalist
+3384326144,Paederia foetida,paederia_foetida,Paederia foetida L.,22.221578,114.115593,8.0,2021,9.0,HUMAN_OBSERVATION,iNaturalist
+3384544565,Paederia foetida,paederia_foetida,Paederia foetida L.,22.525117,114.111166,371.0,2021,9.0,HUMAN_OBSERVATION,iNaturalist
+3384832570,Paederia foetida,paederia_foetida,Paederia foetida L.,22.421995,114.350738,41.0,2021,9.0,HUMAN_OBSERVATION,iNaturalist
+3399200804,Paederia foetida,paederia_foetida,Paederia foetida L.,22.419615,114.279042,,2021,9.0,HUMAN_OBSERVATION,iNaturalist
+3954705013,Paederia foetida,paederia_foetida,Paederia foetida L.,22.220516,114.21211,,2021,9.0,HUMAN_OBSERVATION,da86174a-a605-43a4-a5e8-53d484152cd3
+3399304437,Paederia foetida,paederia_foetida,Paederia foetida L.,22.473727,114.039466,334.0,2021,10.0,HUMAN_OBSERVATION,iNaturalist
+3455806566,Paederia foetida,paederia_foetida,Paederia foetida L.,22.450929,114.024622,33.0,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+3456044078,Paederia foetida,paederia_foetida,Paederia foetida L.,22.4015,114.19867,64.0,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+3456422150,Paederia foetida,paederia_foetida,Paederia foetida L.,22.400485,114.19814,22.0,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+3456564154,Paederia foetida,paederia_foetida,Paederia foetida L.,22.399947,114.197792,5.0,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+3456601085,Paederia foetida,paederia_foetida,Paederia foetida L.,22.40081,114.197248,5.0,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+3456701618,Paederia foetida,paederia_foetida,Paederia foetida L.,22.307322,113.979958,3.0,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+3456704104,Paederia foetida,paederia_foetida,Paederia foetida L.,22.400737,114.197655,21.0,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+3456900413,Paederia foetida,paederia_foetida,Paederia foetida L.,22.451688,114.023548,8.0,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+3465940567,Paederia foetida,paederia_foetida,Paederia foetida L.,22.451119,114.023603,37.0,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+3465968828,Paederia foetida,paederia_foetida,Paederia foetida L.,22.45173,114.023789,65.0,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+3466046767,Paederia foetida,paederia_foetida,Paederia foetida L.,22.399947,114.197792,5.0,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+3466219871,Paederia foetida,paederia_foetida,Paederia foetida L.,22.399947,114.197792,5.0,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+3963307413,Paederia foetida,paederia_foetida,Paederia foetida L.,22.392318,114.188793,8.0,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+6185293937,Paederia foetida,paederia_foetida,Paederia foetida L.,22.399947,114.197792,5.0,2021,11.0,HUMAN_OBSERVATION,iNaturalist
+2611310424,Paederia foetida,paederia_foetida,Paederia foetida L.,22.422709,114.236389,,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+3958172424,Paederia foetida,paederia_foetida,Paederia foetida L.,22.320916,114.223614,,2020,5.0,HUMAN_OBSERVATION,da86174a-a605-43a4-a5e8-53d484152cd3
+2898336449,Paederia foetida,paederia_foetida,Paederia foetida L.,22.409435,114.115274,3.0,2020,8.0,HUMAN_OBSERVATION,iNaturalist
+2988340625,Paederia foetida,paederia_foetida,Paederia foetida L.,22.226488,114.113472,15.0,2020,8.0,HUMAN_OBSERVATION,iNaturalist
+2864705902,Paederia foetida,paederia_foetida,Paederia foetida L.,22.414057,114.069335,43.0,2020,9.0,HUMAN_OBSERVATION,iNaturalist
+2864853409,Paederia foetida,paederia_foetida,Paederia foetida L.,22.309933,114.233782,4.0,2020,9.0,HUMAN_OBSERVATION,iNaturalist
+2868182914,Paederia foetida,paederia_foetida,Paederia foetida L.,22.245137,114.175373,1.0,2020,9.0,HUMAN_OBSERVATION,iNaturalist
+2868300054,Paederia foetida,paederia_foetida,Paederia foetida L.,22.524515,114.217561,9.0,2020,9.0,HUMAN_OBSERVATION,iNaturalist
+2873741938,Paederia foetida,paederia_foetida,Paederia foetida L.,22.391189,113.92329,,2020,9.0,HUMAN_OBSERVATION,iNaturalist
+2873947138,Paederia foetida,paederia_foetida,Paederia foetida L.,22.471024,114.234962,,2020,9.0,HUMAN_OBSERVATION,iNaturalist
+2873965828,Paederia foetida,paederia_foetida,Paederia foetida L.,22.485009,114.039314,10.0,2020,9.0,HUMAN_OBSERVATION,iNaturalist
+2883091984,Paederia foetida,paederia_foetida,Paederia foetida L.,22.413167,114.209938,10.0,2020,9.0,HUMAN_OBSERVATION,iNaturalist
+2988360643,Paederia foetida,paederia_foetida,Paederia foetida L.,22.224927,114.112907,699.0,2020,9.0,HUMAN_OBSERVATION,iNaturalist
+3302283952,Paederia foetida,paederia_foetida,Paederia foetida L.,22.373401,114.265262,200.0,2020,9.0,HUMAN_OBSERVATION,iNaturalist
+3957745038,Paederia foetida,paederia_foetida,Paederia foetida L.,22.224098,114.111209,10.0,2020,9.0,HUMAN_OBSERVATION,da86174a-a605-43a4-a5e8-53d484152cd3
+2883115938,Paederia foetida,paederia_foetida,Paederia foetida L.,22.405686,114.073323,263.0,2020,10.0,HUMAN_OBSERVATION,iNaturalist
+2883209359,Paederia foetida,paederia_foetida,Paederia foetida L.,22.426372,114.131481,204.0,2020,10.0,HUMAN_OBSERVATION,iNaturalist
+2963769637,Paederia foetida,paederia_foetida,Paederia foetida L.,22.269813,113.990903,9.0,2020,10.0,HUMAN_OBSERVATION,iNaturalist
+2963805699,Paederia foetida,paederia_foetida,Paederia foetida L.,22.266359,113.994786,535.0,2020,10.0,HUMAN_OBSERVATION,iNaturalist
+2963819801,Paederia foetida,paederia_foetida,Paederia foetida L.,22.304517,114.268862,12.0,2020,10.0,HUMAN_OBSERVATION,iNaturalist
+3385187461,Paederia foetida,paederia_foetida,Paederia foetida L.,22.491917,114.044485,,2020,10.0,HUMAN_OBSERVATION,iNaturalist
+2981051897,Paederia foetida,paederia_foetida,Paederia foetida L.,22.516911,114.173195,,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+2988552381,Paederia foetida,paederia_foetida,Paederia foetida L.,22.399538,114.197992,14.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+2999196571,Paederia foetida,paederia_foetida,Paederia foetida L.,22.393856,114.191292,58.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3005084535,Paederia foetida,paederia_foetida,Paederia foetida L.,22.454496,114.17176,6.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3108981435,Paederia foetida,paederia_foetida,Paederia foetida L.,22.400138,114.197903,9.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3109047403,Paederia foetida,paederia_foetida,Paederia foetida L.,22.400138,114.197903,9.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3109198422,Paederia foetida,paederia_foetida,Paederia foetida L.,22.45138,114.023408,42.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3399112534,Paederia foetida,paederia_foetida,Paederia foetida L.,22.454401,114.170963,45.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+3954516022,Paederia foetida,paederia_foetida,Paederia foetida L.,22.512913,114.158569,,2020,11.0,HUMAN_OBSERVATION,da86174a-a605-43a4-a5e8-53d484152cd3
+3961334349,Paederia foetida,paederia_foetida,Paederia foetida L.,22.393008,114.186897,65.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+6252408877,Paederia foetida,paederia_foetida,Paederia foetida L.,22.451711,114.023609,47.0,2020,11.0,HUMAN_OBSERVATION,iNaturalist
+2005279430,Paederia foetida,paederia_foetida,Paederia foetida L.,22.280948,114.138281,11.0,2019,2.0,HUMAN_OBSERVATION,iNaturalist
+2005313601,Paederia foetida,paederia_foetida,Paederia foetida L.,22.444869,114.03776,7.0,2019,2.0,HUMAN_OBSERVATION,iNaturalist
+2238892934,Paederia foetida,paederia_foetida,Paederia foetida L.,22.447999,114.0408,10.0,2019,4.0,HUMAN_OBSERVATION,iNaturalist
+2238991341,Paederia foetida,paederia_foetida,Paederia foetida L.,22.44482,114.139817,5.0,2019,4.0,HUMAN_OBSERVATION,iNaturalist
+2251874373,Paederia foetida,paederia_foetida,Paederia foetida L.,22.477131,114.064032,22.0,2019,5.0,HUMAN_OBSERVATION,iNaturalist
+2573914380,Paederia foetida,paederia_foetida,Paederia foetida L.,22.27984,113.933465,2.0,2019,5.0,HUMAN_OBSERVATION,iNaturalist
+3399177412,Paederia foetida,paederia_foetida,Paederia foetida L.,22.331482,114.182807,11.0,2019,6.0,HUMAN_OBSERVATION,iNaturalist
+2557640970,Paederia foetida,paederia_foetida,Paederia foetida L.,22.309818,114.233613,5.0,2019,7.0,HUMAN_OBSERVATION,iNaturalist
+2429246790,Paederia foetida,paederia_foetida,Paederia foetida L.,22.2741,114.139672,10.0,2019,9.0,HUMAN_OBSERVATION,iNaturalist
+2573971155,Paederia foetida,paederia_foetida,Paederia foetida L.,22.391392,114.206336,8.0,2019,9.0,HUMAN_OBSERVATION,iNaturalist
+3398654416,Paederia foetida,paederia_foetida,Paederia foetida L.,22.45894,113.993951,85.0,2019,9.0,HUMAN_OBSERVATION,iNaturalist
+3398698439,Paederia foetida,paederia_foetida,Paederia foetida L.,22.520943,114.207848,,2019,9.0,HUMAN_OBSERVATION,iNaturalist
+2429384547,Paederia foetida,paederia_foetida,Paederia foetida L.,22.531792,114.229139,,2019,10.0,HUMAN_OBSERVATION,iNaturalist
+2456541083,Paederia foetida,paederia_foetida,Paederia foetida L.,22.451354,114.023193,52.0,2019,11.0,HUMAN_OBSERVATION,iNaturalist
+2456544971,Paederia foetida,paederia_foetida,Paederia foetida L.,22.283278,114.148063,1.0,2019,11.0,HUMAN_OBSERVATION,iNaturalist
+2456546038,Paederia foetida,paederia_foetida,Paederia foetida L.,22.283163,114.148062,1.0,2019,11.0,HUMAN_OBSERVATION,iNaturalist
+2456548694,Paederia foetida,paederia_foetida,Paederia foetida L.,22.283276,114.148075,1.0,2019,11.0,HUMAN_OBSERVATION,iNaturalist
+3399180428,Paederia foetida,paederia_foetida,Paederia foetida L.,22.451156,114.025057,78.0,2019,11.0,HUMAN_OBSERVATION,iNaturalist
+1949979071,Paederia foetida,paederia_foetida,Paederia foetida L.,22.445219,114.137214,,2018,5.0,HUMAN_OBSERVATION,iNaturalist
+3963215303,Paederia foetida,paederia_foetida,Paederia foetida L.,22.446487,114.067375,,2018,5.0,HUMAN_OBSERVATION,iNaturalist
+1990611703,Paederia foetida,paederia_foetida,Paederia foetida L.,22.243376,113.975349,,2018,6.0,HUMAN_OBSERVATION,iNaturalist
+1990611733,Paederia foetida,paederia_foetida,Paederia foetida L.,22.243376,113.975349,,2018,6.0,HUMAN_OBSERVATION,iNaturalist
+1990611741,Paederia foetida,paederia_foetida,Paederia foetida L.,22.243376,113.975349,,2018,6.0,HUMAN_OBSERVATION,iNaturalist
+1990611758,Paederia foetida,paederia_foetida,Paederia foetida L.,22.243376,113.975349,,2018,6.0,HUMAN_OBSERVATION,iNaturalist
+1990611773,Paederia foetida,paederia_foetida,Paederia foetida L.,22.243376,113.975349,,2018,6.0,HUMAN_OBSERVATION,iNaturalist
+1990611774,Paederia foetida,paederia_foetida,Paederia foetida L.,22.243376,113.975349,,2018,6.0,HUMAN_OBSERVATION,iNaturalist
+1990611785,Paederia foetida,paederia_foetida,Paederia foetida L.,22.243376,113.975349,,2018,6.0,HUMAN_OBSERVATION,iNaturalist
+1993721175,Paederia foetida,paederia_foetida,Paederia foetida L.,22.243376,113.975349,,2018,6.0,HUMAN_OBSERVATION,iNaturalist
+1993721191,Paederia foetida,paederia_foetida,Paederia foetida L.,22.243376,113.975349,,2018,6.0,HUMAN_OBSERVATION,iNaturalist
+1993721197,Paederia foetida,paederia_foetida,Paederia foetida L.,22.243376,113.975349,,2018,6.0,HUMAN_OBSERVATION,iNaturalist
+2005279189,Paederia foetida,paederia_foetida,Paederia foetida L.,22.243376,113.975349,,2018,6.0,HUMAN_OBSERVATION,iNaturalist
+1945421449,Paederia foetida,paederia_foetida,Paederia foetida L.,22.428562,114.083984,,2018,9.0,HUMAN_OBSERVATION,iNaturalist
+1931492078,Paederia foetida,paederia_foetida,Paederia foetida L.,22.408942,113.980745,10.0,2018,10.0,HUMAN_OBSERVATION,iNaturalist
+1946311243,Paederia foetida,paederia_foetida,Paederia foetida L.,22.28251,114.143697,,2018,11.0,HUMAN_OBSERVATION,iNaturalist
+3399180387,Paederia foetida,paederia_foetida,Paederia foetida L.,22.283177,114.143968,,2018,11.0,HUMAN_OBSERVATION,iNaturalist
+1945476953,Paederia foetida,paederia_foetida,Paederia foetida L.,22.243376,113.975349,,2017,7.0,HUMAN_OBSERVATION,iNaturalist
+1945476302,Paederia foetida,paederia_foetida,Paederia foetida L.,22.409652,113.963675,120.0,2017,10.0,HUMAN_OBSERVATION,iNaturalist
+2603322772,Paederia foetida,paederia_foetida,Paederia foetida L.,22.500546,114.359399,735.0,2015,6.0,HUMAN_OBSERVATION,iNaturalist
+1144278589,Paederia foetida,paederia_foetida,Paederia foetida L.,22.480996,114.033644,223.0,2015,9.0,HUMAN_OBSERVATION,iNaturalist
+6179268626,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.52545,114.26387,3.0,2026,1.0,HUMAN_OBSERVATION,iNaturalist
+6179337307,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.525408,114.263938,4.0,2026,1.0,HUMAN_OBSERVATION,iNaturalist
+6400513282,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.52542,114.263825,4.0,2026,1.0,HUMAN_OBSERVATION,iNaturalist
+6178772611,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.280481,114.133133,5.0,2026,2.0,HUMAN_OBSERVATION,iNaturalist
+6178820596,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.277754,114.136767,4.0,2026,2.0,HUMAN_OBSERVATION,iNaturalist
+6179225573,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.228892,113.848856,15.0,2026,2.0,HUMAN_OBSERVATION,iNaturalist
+6171296391,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.517567,114.142753,21.0,2026,3.0,HUMAN_OBSERVATION,iNaturalist
+6178306735,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.259898,114.006101,,2026,3.0,HUMAN_OBSERVATION,iNaturalist
+6179364102,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.376149,114.301418,68.0,2026,3.0,HUMAN_OBSERVATION,iNaturalist
+6179434081,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.529844,114.262735,8.0,2026,3.0,HUMAN_OBSERVATION,iNaturalist
+6185005260,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.392744,114.329654,,2026,3.0,HUMAN_OBSERVATION,iNaturalist
+6235697654,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.281335,113.921325,,2026,3.0,HUMAN_OBSERVATION,iNaturalist
+6353076801,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.282953,114.211036,,2026,3.0,HUMAN_OBSERVATION,iNaturalist
+6236133861,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.25699,114.251556,203.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+6252283320,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.430811,114.184312,11.0,2026,4.0,HUMAN_OBSERVATION,iNaturalist
+5076968185,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.241245,113.87645,4.0,2025,2.0,HUMAN_OBSERVATION,iNaturalist
+6178839724,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.261259,114.166346,848.0,2025,2.0,HUMAN_OBSERVATION,iNaturalist
+6178968627,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.293384,113.935059,504.0,2025,2.0,HUMAN_OBSERVATION,iNaturalist
+5087456744,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.292728,114.007867,5.0,2025,3.0,HUMAN_OBSERVATION,iNaturalist
+5087493819,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.389311,114.319802,,2025,3.0,HUMAN_OBSERVATION,iNaturalist
+5087549665,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.389311,114.319802,9.0,2025,3.0,HUMAN_OBSERVATION,iNaturalist
+5087874018,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.421886,114.282283,,2025,3.0,HUMAN_OBSERVATION,iNaturalist
+5087889634,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.43667,114.372367,10.0,2025,3.0,HUMAN_OBSERVATION,iNaturalist
+5088056385,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.4953,114.170717,4.0,2025,3.0,HUMAN_OBSERVATION,iNaturalist
+5108526520,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.464045,114.13641,1.0,2025,3.0,HUMAN_OBSERVATION,iNaturalist
+5108549423,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.429437,114.181183,14.0,2025,3.0,HUMAN_OBSERVATION,iNaturalist
+5166968568,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.280612,114.214135,988.0,2025,3.0,HUMAN_OBSERVATION,iNaturalist
+6178595941,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.254238,114.25142,11.0,2025,3.0,HUMAN_OBSERVATION,iNaturalist
+6179241709,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.294019,113.935186,6.0,2025,3.0,HUMAN_OBSERVATION,iNaturalist
+5134353147,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.382838,114.1475,3.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140269924,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.379785,114.177607,6.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5140789122,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.268696,114.143006,,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5153674246,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.428246,114.181329,209.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5154259135,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.384489,114.201169,8.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+6178553401,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.413255,114.233514,,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+6178937994,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.348447,114.152088,3.0,2025,4.0,HUMAN_OBSERVATION,iNaturalist
+5153214409,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.41638,113.997796,,2025,5.0,HUMAN_OBSERVATION,iNaturalist
+5281791695,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.336908,114.223846,,2025,7.0,HUMAN_OBSERVATION,iNaturalist
+6178791083,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.288498,113.936421,3.0,2025,7.0,HUMAN_OBSERVATION,iNaturalist
+6178907379,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.291511,113.932829,32.0,2025,7.0,HUMAN_OBSERVATION,iNaturalist
+6178936079,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.293432,113.941671,34.0,2025,7.0,HUMAN_OBSERVATION,iNaturalist
+6179117202,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.291468,113.932702,31.0,2025,7.0,HUMAN_OBSERVATION,iNaturalist
+6179232570,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.271605,113.991491,4.0,2025,7.0,HUMAN_OBSERVATION,iNaturalist
+6179425559,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.290563,113.948135,94.0,2025,7.0,HUMAN_OBSERVATION,iNaturalist
+6178374238,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.376078,114.30207,4.0,2025,11.0,HUMAN_OBSERVATION,iNaturalist
+6178399713,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.377897,114.302704,204.0,2025,11.0,HUMAN_OBSERVATION,iNaturalist
+6178838978,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.293822,114.244233,4.0,2025,12.0,HUMAN_OBSERVATION,iNaturalist
+4950200005,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.51205,114.211258,4.0,2024,2.0,HUMAN_OBSERVATION,iNaturalist
+4597144714,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.267778,113.874167,,2024,3.0,HUMAN_OBSERVATION,iNaturalist
+4600107746,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.326308,114.020609,204.0,2024,3.0,HUMAN_OBSERVATION,iNaturalist
+4852038299,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.521287,114.257547,6.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4852537015,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.352666,114.138141,,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4852551607,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.317362,114.18316,3.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4950461981,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.393015,114.025572,3.0,2024,4.0,HUMAN_OBSERVATION,iNaturalist
+4868009864,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.24976,114.15478,648.0,2024,5.0,HUMAN_OBSERVATION,iNaturalist
+4921618510,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.431764,114.184686,3.0,2024,5.0,HUMAN_OBSERVATION,iNaturalist
+4921748477,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.526912,114.219848,111.0,2024,5.0,HUMAN_OBSERVATION,iNaturalist
+4950545765,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.430061,114.185245,369.0,2024,5.0,HUMAN_OBSERVATION,iNaturalist
+4901365279,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.276088,114.131032,9.0,2024,6.0,HUMAN_OBSERVATION,iNaturalist
+4901965655,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.267211,114.17607,,2024,6.0,HUMAN_OBSERVATION,iNaturalist
+4921542948,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.382918,114.199503,137.0,2024,6.0,HUMAN_OBSERVATION,iNaturalist
+4921729164,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.20803,114.142731,4.0,2024,6.0,HUMAN_OBSERVATION,iNaturalist
+4054872915,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.294128,113.935858,16.0,2023,3.0,HUMAN_OBSERVATION,iNaturalist
+4076272944,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.226073,114.117723,226.0,2023,3.0,HUMAN_OBSERVATION,iNaturalist
+4091364577,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.20832,114.136141,4.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4102773445,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.274506,113.945163,,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4102802375,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.422198,114.238585,244.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4102815192,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.296266,113.96836,8.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4103361774,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.286384,114.204297,,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4512200653,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.237011,114.121393,4.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4512211617,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.258725,113.865478,4.0,2023,4.0,HUMAN_OBSERVATION,iNaturalist
+4102889196,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.278692,114.136156,10.0,2023,5.0,HUMAN_OBSERVATION,iNaturalist
+4413405033,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.279196,114.163441,,2023,7.0,HUMAN_OBSERVATION,iNaturalist
+4420867440,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.386562,114.146217,10.0,2023,9.0,HUMAN_OBSERVATION,iNaturalist
+4420927776,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.431342,114.180595,5.0,2023,9.0,HUMAN_OBSERVATION,iNaturalist
+3742976790,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.490375,114.186913,4.0,2022,3.0,HUMAN_OBSERVATION,iNaturalist
+3743315830,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.294735,114.022614,,2022,3.0,HUMAN_OBSERVATION,iNaturalist
+3747216723,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.352619,114.138024,,2022,3.0,HUMAN_OBSERVATION,iNaturalist
+3747279667,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.351411,114.139621,,2022,3.0,HUMAN_OBSERVATION,iNaturalist
+3902624124,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.244578,113.874817,,2022,3.0,HUMAN_OBSERVATION,iNaturalist
+3902651897,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.468508,114.180763,,2022,3.0,HUMAN_OBSERVATION,iNaturalist
+3902049934,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.294773,114.022568,5.0,2022,4.0,HUMAN_OBSERVATION,iNaturalist
+3902101956,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.319821,114.287082,6.0,2022,4.0,HUMAN_OBSERVATION,iNaturalist
+3902161224,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.20869,113.864896,2.0,2022,5.0,HUMAN_OBSERVATION,iNaturalist
+3902184152,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.39385,114.233567,3.0,2022,5.0,HUMAN_OBSERVATION,iNaturalist
+3058785696,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.204875,113.866822,,2021,2.0,HUMAN_OBSERVATION,iNaturalist
+3058800124,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.27335,113.947025,2.0,2021,2.0,HUMAN_OBSERVATION,iNaturalist
+3058932860,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.353407,114.138971,48.0,2021,2.0,HUMAN_OBSERVATION,iNaturalist
+3058947680,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.294759,114.02113,5.0,2021,3.0,HUMAN_OBSERVATION,iNaturalist
+3061674781,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.260367,113.860813,9.0,2021,3.0,HUMAN_OBSERVATION,iNaturalist
+3923407375,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.248471,114.214007,19.0,2021,3.0,HUMAN_OBSERVATION,iNaturalist
+4950049089,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.42493,114.206995,5.0,2021,6.0,HUMAN_OBSERVATION,iNaturalist
+4949945244,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.274729,113.934874,1000.0,2021,9.0,HUMAN_OBSERVATION,iNaturalist
+4950008817,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.2259,114.117148,5.0,2021,10.0,HUMAN_OBSERVATION,iNaturalist
+3058734463,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.414938,114.104195,9.0,2020,2.0,HUMAN_OBSERVATION,iNaturalist
+3058944413,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.291372,114.241603,41.0,2020,2.0,HUMAN_OBSERVATION,iNaturalist
+2579376417,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.485918,114.164667,17.0,2020,3.0,HUMAN_OBSERVATION,iNaturalist
+2579380422,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.491352,114.18367,2.0,2020,3.0,HUMAN_OBSERVATION,iNaturalist
+2596076059,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.350963,114.13783,698.0,2020,3.0,HUMAN_OBSERVATION,iNaturalist
+2883058356,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.388566,114.128656,122.0,2020,3.0,HUMAN_OBSERVATION,iNaturalist
+3044742463,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.464122,114.135727,10.0,2020,3.0,HUMAN_OBSERVATION,iNaturalist
+3058744433,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.353353,114.15254,24.0,2020,3.0,HUMAN_OBSERVATION,iNaturalist
+3058822435,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.514292,114.230134,82.0,2020,3.0,HUMAN_OBSERVATION,iNaturalist
+3067901766,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.424263,114.204437,10.0,2020,3.0,HUMAN_OBSERVATION,iNaturalist
+3070263864,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.385345,114.150427,27.0,2020,3.0,HUMAN_OBSERVATION,iNaturalist
+4908270074,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.26876,114.21638,204.0,2020,3.0,HUMAN_OBSERVATION,iNaturalist
+4950157913,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.268254,113.878702,108.0,2020,3.0,HUMAN_OBSERVATION,iNaturalist
+2611138815,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.242326,113.946367,2.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+3314305347,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.211366,113.845166,3.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+4949929827,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.424027,114.293983,19.0,2020,4.0,HUMAN_OBSERVATION,iNaturalist
+3070724426,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.263499,113.868322,604.0,2019,2.0,HUMAN_OBSERVATION,iNaturalist
+2236870242,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.197234,114.136171,8.0,2019,4.0,HUMAN_OBSERVATION,iNaturalist
+4950047372,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.368538,114.197058,10.0,2019,4.0,HUMAN_OBSERVATION,iNaturalist
+4950180632,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.4503,114.2235,500.0,2019,4.0,HUMAN_OBSERVATION,iNaturalist
+3067996380,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.41993,114.204308,,2018,4.0,HUMAN_OBSERVATION,iNaturalist
+4950276589,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.422996,114.240778,,2018,4.0,HUMAN_OBSERVATION,iNaturalist
+4949894012,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.39265,113.924583,100.0,2018,5.0,HUMAN_OBSERVATION,iNaturalist
+3058683327,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.243376,113.975349,,2017,7.0,HUMAN_OBSERVATION,iNaturalist
+4949856672,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.243376,113.975349,,2017,7.0,HUMAN_OBSERVATION,iNaturalist
+4949983606,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.243376,113.975349,,2017,7.0,HUMAN_OBSERVATION,iNaturalist
+4949986454,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.243376,113.975349,,2017,7.0,HUMAN_OBSERVATION,iNaturalist
+4950247489,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.243376,113.975349,,2017,7.0,HUMAN_OBSERVATION,iNaturalist
+2825624848,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.287261,113.936128,,2014,2.0,PRESERVED_SPECIMEN,TAIF
+3312504390,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.240556,114.222778,,1928,4.0,PRESERVED_SPECIMEN,RBGE
+3312504394,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.265278,114.1375,,1898,3.0,PRESERVED_SPECIMEN,RBGE
+3312504398,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.403889,114.143889,,1898,3.0,PRESERVED_SPECIMEN,RBGE
+1988319438,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.2679,114.1291,,1874,5.0,PRESERVED_SPECIMEN,NHMUK
+1988319287,Dalbergia benthamii,paederia_foetida,Dalbergia benthamii Prain,22.268723,114.185614,,1873,3.0,PRESERVED_SPECIMEN,NHMUK

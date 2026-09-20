@@ -1,0 +1,364 @@
+{
+ "certification_allocation": {
+  "rates": [
+   0.18,
+   0.3
+  ],
+  "replicates": 6,
+  "n_trials": 12,
+  "holdout_site": "tai_po_kau",
+  "threshold": 0.75,
+  "true_accuracy": 0.9345,
+  "true_verdict": "PASS",
+  "arms": {
+   "none": [
+    {
+     "fraction_certified": 0.0,
+     "p_correct_decision": 0.4167,
+     "mean_reported_accuracy": 0.7711,
+     "sd_reported_accuracy": 0.0572
+    },
+    {
+     "fraction_certified": 0.25,
+     "p_correct_decision": 0.4167,
+     "mean_reported_accuracy": 0.7711,
+     "sd_reported_accuracy": 0.0572
+    },
+    {
+     "fraction_certified": 0.5,
+     "p_correct_decision": 0.4167,
+     "mean_reported_accuracy": 0.7711,
+     "sd_reported_accuracy": 0.0572
+    },
+    {
+     "fraction_certified": 0.75,
+     "p_correct_decision": 0.4167,
+     "mean_reported_accuracy": 0.7711,
+     "sd_reported_accuracy": 0.0572
+    },
+    {
+     "fraction_certified": 1.0,
+     "p_correct_decision": 0.4167,
+     "mean_reported_accuracy": 0.7711,
+     "sd_reported_accuracy": 0.0572
+    }
+   ],
+   "train_only": [
+    {
+     "fraction_certified": 0.0,
+     "p_correct_decision": 0.4167,
+     "mean_reported_accuracy": 0.7711,
+     "sd_reported_accuracy": 0.0572
+    },
+    {
+     "fraction_certified": 0.25,
+     "p_correct_decision": 0.5,
+     "mean_reported_accuracy": 0.7734,
+     "sd_reported_accuracy": 0.0575
+    },
+    {
+     "fraction_certified": 0.5,
+     "p_correct_decision": 0.5,
+     "mean_reported_accuracy": 0.7737,
+     "sd_reported_accuracy": 0.0574
+    },
+    {
+     "fraction_certified": 0.75,
+     "p_correct_decision": 0.4167,
+     "mean_reported_accuracy": 0.7744,
+     "sd_reported_accuracy": 0.0598
+    },
+    {
+     "fraction_certified": 1.0,
+     "p_correct_decision": 0.5,
+     "mean_reported_accuracy": 0.7759,
+     "sd_reported_accuracy": 0.0588
+    }
+   ],
+   "val_only": [
+    {
+     "fraction_certified": 0.0,
+     "p_correct_decision": 0.4167,
+     "mean_reported_accuracy": 0.7711,
+     "sd_reported_accuracy": 0.0572
+    },
+    {
+     "fraction_certified": 0.25,
+     "p_correct_decision": 0.8333,
+     "mean_reported_accuracy": 0.8039,
+     "sd_reported_accuracy": 0.0478
+    },
+    {
+     "fraction_certified": 0.5,
+     "p_correct_decision": 1.0,
+     "mean_reported_accuracy": 0.8494,
+     "sd_reported_accuracy": 0.0282
+    },
+    {
+     "fraction_certified": 0.75,
+     "p_correct_decision": 1.0,
+     "mean_reported_accuracy": 0.8786,
+     "sd_reported_accuracy": 0.0263
+    },
+    {
+     "fraction_certified": 1.0,
+     "p_correct_decision": 1.0,
+     "mean_reported_accuracy": 0.9262,
+     "sd_reported_accuracy": 0.004
+    }
+   ],
+   "both": [
+    {
+     "fraction_certified": 0.0,
+     "p_correct_decision": 0.4167,
+     "mean_reported_accuracy": 0.7711,
+     "sd_reported_accuracy": 0.0572
+    },
+    {
+     "fraction_certified": 0.25,
+     "p_correct_decision": 0.8333,
+     "mean_reported_accuracy": 0.8066,
+     "sd_reported_accuracy": 0.0481
+    },
+    {
+     "fraction_certified": 0.5,
+     "p_correct_decision": 1.0,
+     "mean_reported_accuracy": 0.8529,
+     "sd_reported_accuracy": 0.0286
+    },
+    {
+     "fraction_certified": 0.75,
+     "p_correct_decision": 1.0,
+     "mean_reported_accuracy": 0.884,
+     "sd_reported_accuracy": 0.0283
+    },
+    {
+     "fraction_certified": 1.0,
+     "p_correct_decision": 1.0,
+     "mean_reported_accuracy": 0.9345,
+     "sd_reported_accuracy": 0.0
+    }
+   ]
+  },
+  "min_validation_fraction_for_correct_decision": 0.5,
+  "n_validation_specimens": 514,
+  "interpretation": "The go/no-go verdict is computed on the hold-out, so it depends on the VALIDATION labels being right and barely at all on the training labels. Certifying the training set alone cannot repair the decision, because the number the decision is read from is never touched."
+ },
+ "disagreement_targeting": {
+  "rate": 0.18,
+  "n_specimens": 2526,
+  "n_corrupted": 103,
+  "base_rate": 0.0408,
+  "curve": [
+   {
+    "budget_fraction": 0.1,
+    "n_sequenced": 253,
+    "errors_found": 24,
+    "errors_total": 103,
+    "recall": 0.233,
+    "precision": 0.0949,
+    "enrichment_vs_random": 2.33
+   },
+   {
+    "budget_fraction": 0.2,
+    "n_sequenced": 505,
+    "errors_found": 57,
+    "errors_total": 103,
+    "recall": 0.5534,
+    "precision": 0.1129,
+    "enrichment_vs_random": 2.77
+   },
+   {
+    "budget_fraction": 0.3,
+    "n_sequenced": 758,
+    "errors_found": 92,
+    "errors_total": 103,
+    "recall": 0.8932,
+    "precision": 0.1214,
+    "enrichment_vs_random": 2.98
+   },
+   {
+    "budget_fraction": 0.5,
+    "n_sequenced": 1263,
+    "errors_found": 99,
+    "errors_total": 103,
+    "recall": 0.9612,
+    "precision": 0.0784,
+    "enrichment_vs_random": 1.92
+   }
+  ],
+  "interpretation": "Ranking specimens by model-label disagreement concentrates the genuine label errors into the top of the list, so a partial sequencing budget recovers far more than its share of them. Random sampling recovers exactly its share, by construction."
+ },
+ "reference_gap_plan": {
+  "n_taxa_uncertifiable": 1,
+  "items": [
+   {
+    "taxon": "Mikania cordata",
+    "current": {
+     "rbcL": 1,
+     "matK": 0,
+     "ITS2": 1,
+     "trnH-psbA": 0
+    },
+    "usable_loci": [],
+    "has_usable_core_locus": false,
+    "plan": [
+     {
+      "locus": "rbcL",
+      "sequences_needed": 1
+     },
+     {
+      "locus": "matK",
+      "sequences_needed": 2
+     }
+    ],
+    "sequences_needed": 3,
+    "vouchers_needed": 2,
+    "cost_hkd": 510,
+    "hk_occurrence_records": 1,
+    "priority": "low \u2014 not an operational HK discrimination problem"
+   }
+  ],
+  "total_cost_hkd": 510,
+  "high_priority_cost_hkd": 0,
+  "cost_per_sequence_hkd": 140,
+  "note": "Costs are consumables only, from the MODELLED figures in \u00a713.9, and assume the vouchers are collected on field visits already being made. They exclude collection time and lab access, both of which are already in the \u00a77.3 envelope."
+ },
+ "hk_occurrence_counts": {
+  "Mikania micrantha": 499,
+  "Paederia foetida": 213,
+  "Bauhinia championii": 148,
+  "Dalbergia benthamii": 128,
+  "Phanera glauca": 115,
+  "Byttneria aspera": 4,
+  "Mikania cordata": 1
+ },
+ "prior": {
+  "0.01": {
+   "C": 0.01,
+   "uniform": {
+    "mean": 0.8248,
+    "sd": 0.0585,
+    "per_site": [
+     0.7407,
+     0.85,
+     0.8111,
+     0.9185,
+     0.8037
+    ]
+   },
+   "prior": {
+    "mean": 0.823,
+    "sd": 0.0566,
+    "per_site": [
+     0.763,
+     0.8593,
+     0.7759,
+     0.9148,
+     0.8019
+    ]
+   },
+   "random_permuted_mean": {
+    "mean": 0.8254,
+    "sd": 0.0569,
+    "per_site": [
+     0.752,
+     0.8514,
+     0.8039,
+     0.9202,
+     0.7995
+    ]
+   },
+   "n_random_permutations": 12,
+   "delta_vs_uniform_pp": -0.185,
+   "delta_vs_random_pp": -0.244,
+   "se_vs_random_pp": 0.695,
+   "beat_n_of_random": "4/12",
+   "supported": false
+  },
+  "0.05": {
+   "C": 0.05,
+   "uniform": {
+    "mean": 0.8296,
+    "sd": 0.0496,
+    "per_site": [
+     0.7444,
+     0.85,
+     0.8148,
+     0.8944,
+     0.8444
+    ]
+   },
+   "prior": {
+    "mean": 0.82,
+    "sd": 0.0526,
+    "per_site": [
+     0.7222,
+     0.8519,
+     0.8074,
+     0.8611,
+     0.8574
+    ]
+   },
+   "random_permuted_mean": {
+    "mean": 0.8214,
+    "sd": 0.0475,
+    "per_site": [
+     0.7349,
+     0.8497,
+     0.8082,
+     0.8687,
+     0.8457
+    ]
+   },
+   "n_random_permutations": 12,
+   "delta_vs_uniform_pp": -0.963,
+   "delta_vs_random_pp": -0.142,
+   "se_vs_random_pp": 0.418,
+   "beat_n_of_random": "4/12",
+   "supported": false
+  },
+  "0.5": {
+   "C": 0.5,
+   "uniform": {
+    "mean": 0.8,
+    "sd": 0.0605,
+    "per_site": [
+     0.6907,
+     0.8648,
+     0.7981,
+     0.8,
+     0.8463
+    ]
+   },
+   "prior": {
+    "mean": 0.7985,
+    "sd": 0.0623,
+    "per_site": [
+     0.687,
+     0.8648,
+     0.8093,
+     0.7852,
+     0.8463
+    ]
+   },
+   "random_permuted_mean": {
+    "mean": 0.7987,
+    "sd": 0.0611,
+    "per_site": [
+     0.6892,
+     0.863,
+     0.7935,
+     0.7988,
+     0.8491
+    ]
+   },
+   "n_random_permutations": 12,
+   "delta_vs_uniform_pp": -0.148,
+   "delta_vs_random_pp": -0.019,
+   "se_vs_random_pp": 0.473,
+   "beat_n_of_random": "5/12",
+   "supported": false
+  }
+ }
+}

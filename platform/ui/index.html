@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MIKANIA-HSI — Invasive Vine Mapping Platform</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='11' fill='%23ff4d6d'/></svg>">
+</head>
+<body>
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="mark"><span class="dot"></span> MIKANIA-HSI</span>
+      <span class="sub">Species-level invasive vine mapping<br>AFCD Phase&nbsp;0 reference pipeline</span>
+    </div>
+
+    <nav id="nav">
+      <button data-view="overview"    aria-current="true"><span class="idx">01</span> Overview</button>
+      <button data-view="evidence"><span class="idx">02</span> Sensor evidence</button>
+      <button data-view="survey"><span class="idx">03</span> Survey viewer</button>
+      <button data-view="spectra"><span class="idx">04</span> Spectral lab</button>
+      <button data-view="validation"><span class="idx">05</span> Validation</button>
+      <button data-view="workplan"><span class="idx">06</span> Work plan</button>
+      <button data-view="efficacy"><span class="idx">07</span> Efficacy loop</button>
+      <button data-view="economics"><span class="idx">08</span> Economics</button>
+
+      <div class="nav-sep">Molecular layer <span>v2.0</span></div>
+      <button data-view="genomics"><span class="idx">09</span> Genomic desk study</button>
+      <button data-view="barcode"><span class="idx">10</span> Barcode certification</button>
+      <button data-view="labelrisk"><span class="idx">11</span> Label-error risk</button>
+      <button data-view="asset"><span class="idx">12</span> Reference database</button>
+
+      <div class="nav-sep">Audit</div>
+      <button data-view="provenance"><span class="idx">13</span> Data provenance</button>
+    </nav>
+
+    <div class="sidebar-foot">
+      Every figure traces to a pipeline stage.<br>
+      Scene data is <strong>simulated</strong>; leaf spectra, occurrences, the
+      benchmark cube and every <strong>barcode sequence</strong> are
+      <strong>real open data</strong>.
+    </div>
+  </aside>
+
+  <main id="main">
+    <div class="loading pulse">Loading pipeline bundle…</div>
+  </main>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

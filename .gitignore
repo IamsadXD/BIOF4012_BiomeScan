@@ -1,0 +1,36 @@
+# Local assistant settings
+.claude/
+CLAUDE.md
+
+# Operating system metadata
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# Python bytecode, environments, and tooling caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+build/
+dist/
+.ipynb_checkpoints/
+
+# Local secrets and editor temporary files
+.env
+.env.*
+!.env.example
+!.env.sample
+*.swp
+*.swo
+*~

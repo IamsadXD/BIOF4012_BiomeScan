@@ -1,0 +1,55 @@
+{
+  "contrast_scale": 1.0,
+  "scenes": [
+    {
+      "site": "tai_lam",
+      "name": "Tai Lam Country Park",
+      "role": "train",
+      "season": "autumn_flower",
+      "npz": "data/processed/scenes/tai_lam.npz",
+      "mikania_pct": 13.118181818181817,
+      "occluded_pct": 18.011363636363637,
+      "shadow_pct": 10.0
+    },
+    {
+      "site": "shing_mun",
+      "name": "Shing Mun Country Park",
+      "role": "train",
+      "season": "autumn_flower",
+      "npz": "data/processed/scenes/shing_mun.npz",
+      "mikania_pct": 9.018181818181818,
+      "occluded_pct": 18.016528925619834,
+      "shadow_pct": 10.0
+    },
+    {
+      "site": "lam_tsuen",
+      "name": "Lam Tsuen Valley",
+      "role": "train",
+      "season": "dry_winter",
+      "npz": "data/processed/scenes/lam_tsuen.npz",
+      "mikania_pct": 17.21818181818182,
+      "occluded_pct": 18.00865800865801,
+      "shadow_pct": 10.0
+    },
+    {
+      "site": "tai_po_kau",
+      "name": "Tai Po Kau Nature Reserve",
+      "role": "holdout",
+      "season": "autumn_flower",
+      "npz": "data/processed/scenes/tai_po_kau.npz",
+      "mikania_pct": 7.379545454545454,
+      "occluded_pct": 18.005050505050505,
+      "shadow_pct": 10.0
+    },
+    {
+      "site": "sai_kung_w",
+      "name": "Sai Kung West Country Park",
+      "role": "holdout",
+      "season": "wet_summer",
+      "npz": "data/processed/scenes/sai_kung_w.npz",
+      "mikania_pct": 11.479545454545455,
+      "occluded_pct": 18.003246753246753,
+      "shadow_pct": 10.0
+    }
+  ]
+}

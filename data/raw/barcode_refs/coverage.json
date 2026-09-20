@@ -1,0 +1,150 @@
+{
+ "retrieved_utc": "2026-09-15T08:21:08+00:00",
+ "sources": [
+  "NCBI Entrez nuccore",
+  "BOLD Systems public API"
+ ],
+ "loci": [
+  {
+   "key": "rbcL",
+   "role": "core",
+   "genome": "plastid",
+   "discrimination_rank": 1
+  },
+  {
+   "key": "matK",
+   "role": "core",
+   "genome": "plastid",
+   "discrimination_rank": 3
+  },
+  {
+   "key": "ITS2",
+   "role": "supplementary",
+   "genome": "nuclear_ribosomal",
+   "discrimination_rank": 4
+  },
+  {
+   "key": "trnH-psbA",
+   "role": "supplementary",
+   "genome": "plastid",
+   "discrimination_rank": 2
+  }
+ ],
+ "accepted_taxa": [
+  "Bauhinia championii",
+  "Byttneria aspera",
+  "Dalbergia benthamii",
+  "Mikania cordata",
+  "Mikania micrantha",
+  "Paederia foetida",
+  "Phanera glauca"
+ ],
+ "synonyms_merged": {
+  "Bauhinia glauca": "Phanera glauca"
+ },
+ "matrix": {
+  "Bauhinia championii": {
+   "rbcL": 3,
+   "matK": 10,
+   "ITS2": 10,
+   "trnH-psbA": 3
+  },
+  "Byttneria aspera": {
+   "rbcL": 2,
+   "matK": 2,
+   "ITS2": 6,
+   "trnH-psbA": 0
+  },
+  "Dalbergia benthamii": {
+   "rbcL": 4,
+   "matK": 4,
+   "ITS2": 14,
+   "trnH-psbA": 1
+  },
+  "Mikania cordata": {
+   "rbcL": 1,
+   "matK": 0,
+   "ITS2": 1,
+   "trnH-psbA": 0
+  },
+  "Mikania micrantha": {
+   "rbcL": 11,
+   "matK": 9,
+   "ITS2": 28,
+   "trnH-psbA": 4
+  },
+  "Paederia foetida": {
+   "rbcL": 31,
+   "matK": 8,
+   "ITS2": 8,
+   "trnH-psbA": 16
+  },
+  "Phanera glauca": {
+   "rbcL": 1,
+   "matK": 4,
+   "ITS2": 4,
+   "trnH-psbA": 0
+  }
+ },
+ "totals_by_locus": {
+  "rbcL": 53,
+  "matK": 37,
+  "ITS2": 71,
+  "trnH-psbA": 24
+ },
+ "total_sequences": 185,
+ "min_reference_seqs_per_species": 2,
+ "empty_cells": [
+  {
+   "taxon": "Byttneria aspera",
+   "locus": "trnH-psbA"
+  },
+  {
+   "taxon": "Mikania cordata",
+   "locus": "matK"
+  },
+  {
+   "taxon": "Mikania cordata",
+   "locus": "trnH-psbA"
+  },
+  {
+   "taxon": "Phanera glauca",
+   "locus": "trnH-psbA"
+  }
+ ],
+ "thin_cells": [
+  {
+   "taxon": "Dalbergia benthamii",
+   "locus": "trnH-psbA",
+   "n": 1
+  },
+  {
+   "taxon": "Mikania cordata",
+   "locus": "rbcL",
+   "n": 1
+  },
+  {
+   "taxon": "Mikania cordata",
+   "locus": "ITS2",
+   "n": 1
+  },
+  {
+   "taxon": "Phanera glauca",
+   "locus": "rbcL",
+   "n": 1
+  }
+ ],
+ "taxa_below_two_locus_requirement": [
+  "Mikania cordata"
+ ],
+ "taxa_without_usable_core_locus": [
+  "Mikania cordata"
+ ],
+ "predicted_sparse_confirmed": [
+  {
+   "taxon": "Byttneria aspera",
+   "locus": "trnH-psbA"
+  }
+ ],
+ "appendix_b9_verdict": "NOT SUPPORTED \u2014 1 taxon/taxa lack the reference depth to certify a voucher from public data alone"
+}
