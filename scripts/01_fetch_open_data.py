@@ -66,7 +66,7 @@ import requests
 
 from mikania.config import PATHS, load_config
 
-UA = {"User-Agent": "MIKANIA-HSI/1.0 (AFCD Phase 0 feasibility pipeline; research use)"}
+UA = {"User-Agent": "Biomescan/1.0 (AFCD Phase 0 feasibility pipeline; research use)"}
 PROVENANCE: List[Dict[str, Any]] = []
 
 

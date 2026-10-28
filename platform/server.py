@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-MIKANIA-HSI platform — local web server.
+Biomescan platform — local web server.
 
 Standard-library only, deliberately. The platform's job is to present pipeline
 outputs to a non-technical evaluator (an AFCD officer, a grant panel, an
@@ -33,7 +33,7 @@ ROOT = os.path.dirname(HERE)
 UI = os.path.join(HERE, "ui")
 sys.path.insert(0, ROOT)
 
-PORT = int(os.environ.get("MIKANIA_PORT", "8790"))
+PORT = int(os.environ.get("BIOMESCAN_PORT", os.environ.get("MIKANIA_PORT", "8790")))
 
 MIME = {
     ".html": "text/html; charset=utf-8",
@@ -152,5 +152,5 @@ if __name__ == "__main__":
     if not os.path.exists(bundle):
         print("!! platform/ui/data/bundle.json is missing.")
         print("   Run the pipeline first:  python scripts/15_export_platform.py")
-    print(f"MIKANIA-HSI platform  ->  http://127.0.0.1:{PORT}", flush=True)
+    print(f"Biomescan platform  ->  http://127.0.0.1:{PORT}", flush=True)
     ThreadingHTTPServer(("127.0.0.1", PORT), Handler).serve_forever()

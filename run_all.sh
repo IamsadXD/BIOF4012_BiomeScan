@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # =============================================================================
-# MIKANIA-HSI — run the whole pipeline, stage 00 to 15.
+# Biomescan — run the whole pipeline, stage 00 to 15.
 #
 #   ./run_all.sh              full run (downloads ~85 MB of open data once)
 #   ./run_all.sh --fast       skip the contrast sweep (stage 05), the slow one

@@ -69,7 +69,7 @@ import requests
 from mikania.barcode import SeqRecord, clean_sequence, read_fasta, write_fasta
 from mikania.config import PATHS, load_config
 
-UA = {"User-Agent": "MIKANIA-HSI/2.0 (AFCD Phase 0 feasibility pipeline; research use)"}
+UA = {"User-Agent": "Biomescan/2.0 (AFCD Phase 0 feasibility pipeline; research use)"}
 REF_DIR = os.path.join(PATHS.raw, "barcode_refs")
 
 plt.rcParams.update({

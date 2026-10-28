@@ -1,4 +1,4 @@
-# MIKANIA-HSI — runtime dependencies
+# Biomescan — runtime dependencies
 #
 # Install into an isolated venv (Python >= 3.11; verified on CPython 3.14.3):
 #     python3 -m venv .venv

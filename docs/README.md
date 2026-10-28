@@ -1,4 +1,8 @@
-# MIKANIA-HSI — molecular layer documentation (proposal v2.0)
+# Biomescan — molecular layer documentation (proposal v2.0)
+
+For the wider invasive species platform and planned services, start with the
+[project README](../README.md) and [platform scope](platform-scope.md). These
+documents describe the implemented Mikania demonstrator.
 
 The v1.0 spectral pipeline is documented in [`../README.md`](../README.md). These
 documents cover the **molecular / bioinformatics layer** added by proposal v2.0:

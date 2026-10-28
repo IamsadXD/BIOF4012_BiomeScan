@@ -1,5 +1,5 @@
 /* =========================================================================
-   MIKANIA-HSI platform — application
+   Biomescan platform — application
 
    Design rule: this file RENDERS, it does not COMPUTE. Every scientific number
    shown here was produced and validated by the Python pipeline and arrives via
@@ -90,12 +90,16 @@ VIEWS.overview = () => {
 
   const wrap = el('div');
   wrap.appendChild(el('div', { class: 'page-head' },
-    el('div', { class: 'kicker' }, 'AFCD Phase 0 — reference implementation'),
-    el('h1', {}, 'Species-level Mikania mapping by UAV hyperspectral imaging'),
+    el('div', { class: 'kicker' }, 'Biomescan — Mikania reference demonstrator'),
+    el('h1', {}, 'Invasive species mapping and surveying'),
     el('p', { class: 'lede' },
-      'End-to-end pipeline for the AFCD proposal: spectral library, Tier-2 scene simulation, ' +
+      'Biomescan develops surveys for invasive plants, animals and harmful insects, using ' +
+      'target-specific sensing and field verification. This demonstrator covers Mikania: ' +
+      'spectral library, Tier-2 scene simulation, ' +
       'site-disjoint validation, severity-ranked prioritisation, and post-treatment efficacy ' +
-      'verification. Scene imagery is simulated; the leaf spectra, the Hong Kong occurrence ' +
+      'verification. Aedes breeding-habitat mapping and further species are planned; this demo ' +
+      'does not detect mosquitoes or implement animal surveys. Scene imagery is simulated; ' +
+      'the leaf spectra, the Hong Kong occurrence ' +
       'records and the benchmark hyperspectral cube are real open data.')));
 
   wrap.appendChild(el('div', { class: 'grid g4' },

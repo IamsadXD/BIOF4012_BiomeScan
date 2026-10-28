@@ -1,282 +1,170 @@
-# MIKANIA-HSI
+# Biomescan
 
-**Species-level invasive vine mapping by UAV hyperspectral imaging — reference implementation of the AFCD proposal.**
+**Invasive species mapping and surveying, supported by hyperspectral sensing,
+verified reference libraries, and GIS.**
 
-A complete, runnable pipeline for the business case in
-[`../AFCD_Mikania_Hyperspectral_Proposal.md`](../AFCD_Mikania_Hyperspectral_Proposal.md):
-detect *Mikania micrantha* in Hong Kong country parks, tell it apart from the
-native climbers the Government's own guidance warns against clearing by mistake,
-rank the infestations by severity, and measure whether treatment worked.
+Biomescan develops surveys that help land managers locate invasive species,
+prioritise inspections and control work, and assess changes after treatment.
+The platform’s scope includes invasive plants, animals, and harmful insects,
+with sensing and field verification selected for each target. Mikania is the
+first reference demonstrator, within a broader surveying platform.
 
-Fifteen pipeline stages across two tracks — spectral (v1.0) and molecular
-(v2.0) — a Python package, a GIS deliverable set, a versioned reference
-database, and a browser platform. Real open data where real data exists;
-simulated scenes where the survey has not been flown yet — and the boundary
-between the two marked everywhere it matters.
+The updated platform concept combines sensor hardware, classification models,
+and validated, geographically linked reference libraries. Drones carry the
+sensors; shared calibration, survey operations, GIS delivery, and data management
+support each service. The initial focus is Hong Kong, with further markets and
+species subject to local validation.
 
-The molecular layer implements proposal v2.0: the genomic basis of separability
-(§3.3), DNA-barcode certification of the training labels (§3.4), and the
-reference database that §7.1 identifies as the company's actual asset. Its
-documentation is in [`docs/`](docs/) — start with
-[`docs/09_findings_vs_proposal.md`](docs/09_findings_vs_proposal.md), which is
-where the implementation contradicts the document it implements.
+> **Current status:** this repository contains a runnable Mikania research
+> demonstrator. Its five survey scenes and treatment outcomes are simulated.
+> Aedes breeding-habitat mapping and additional plant, animal, and insect surveys
+> are planned workstreams, not implemented or field-validated capabilities.
 
----
+## Survey scope
+
+| Workstream | Survey question and intended outputs | Method and current status |
+|---|---|---|
+| Invasive plants: Mikania first | Where are infestations, how severe are they, and where should crews work? Species maps, abundance estimates, ranked work units, and repeat-survey change layers. | VNIR hyperspectral imaging, reference spectra, and voucher/DNA verification. Implemented as the reference demonstrator with simulated survey scenes; real canopy separability remains to be validated. |
+| Harmful insects: Aedes habitat first | Where is visible standing water that warrants inspection for breeding risk? Planned habitat polygons, inspection priorities, and persistence/change layers. | Planned SWIR water measurements with ground checks and an RGB comparison. Targets breeding habitat associated with 白紋伊蚊 (*Aedes albopictus*); does not detect or count mosquitoes, larvae, or eggs. |
+| Further invasive plants and animals | Which species, occurrences, or habitat indicators can be surveyed reliably at a useful cost? | Roadmap. Each target needs a suitable sensing or field method, reference data, and independent validation. The Mikania model does not establish animal or other insect detection. |
+
+The concept deck identifies an owned FS62 SWIR sensor (900–1700 nm) for the
+Aedes habitat workstream and a required FS60-class VNIR sensor (400–1000 nm)
+for airborne Mikania work. The repository models a generic VNIR sensor; it does
+not demonstrate operation of either physical instrument. One sensor or spectral
+library cannot be assumed to identify every invasive species.
+
+## Who the service is for
+
+- Government departments and conservation managers: survey planning, species
+  confirmation, prioritisation, and monitoring of control work.
+- Environmental groups, ecology consultancies, and land managers: repeatable
+  baseline maps and evidence for site management.
+- Contractors and property managers: planned standing-water habitat surveys to
+  guide inspections and clearance.
+- Farmers and farm managers: target-specific weed or pest survey pilots where
+  field size, inspection costs, and survey value justify the service.
+
+AFCD is an intended stakeholder for the Mikania workstream; contractors and
+FEHD are intended stakeholders for the Aedes habitat workstream. These are
+target users and buyers, not claims of contracts, endorsement, or validated demand.
+
+## Deliverables and business model
+
+The current demonstrator produces classified and abundance rasters, severity
+maps, prioritised treatment units, and simulated post-treatment change layers.
+Outputs include GeoTIFF, GeoJSON, CSV, JSON reports, and a local browser viewer.
+A versioned reference database links the molecular and spectral workstreams.
+
+The broader service model combines baseline surveys, repeat monitoring,
+target-specific verification, and licensing of validated reference data or
+platform tools. The Aedes workstream would add habitat maps and ranked
+inspection lists. Pricing, coverage, and financial figures in the concept deck
+are modelling assumptions pending field and customer validation. Figures shown
+in the current economics viewer apply to the Mikania demonstrator.
+
+Biomescan’s proposed long-term asset is the curated link between specimens or
+ground observations, spectra, location, season, and repeat-survey history.
+Surveys support decisions by field teams; a habitat risk layer does not confirm
+mosquito presence. Treatment and spraying drones are outside the current scope.
 
 ## Quick start
 
+Run from the repository root:
+
 ```bash
-cd mikania
-python3 -m venv .venv && .venv/bin/python -m pip install -r requirements.txt
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
 ./run_all.sh
-.venv/bin/python platform/server.py     # → http://127.0.0.1:8790
+.venv/bin/python platform/server.py
 ```
 
-First run downloads ~85 MB of open data (GBIF records, EcoSIS leaf spectra, one
-EO-1 Hyperion scene, 185 barcode reference sequences from NCBI) and takes roughly
-25 minutes end to end. `./run_all.sh --fast` skips the contrast sweep, which is
-most of that; `--no-molecular` runs the v1.0 spectral track alone.
+Open <http://127.0.0.1:8790>. To view the checked-in demonstration outputs,
+install the dependencies and start the server; regenerating all stages is optional.
 
----
+The full pipeline downloads open data on its first run. Useful options:
 
-## What it actually establishes
-
-Nine findings, all reproducible from the code. The first five are spectral; the
-last four come from the molecular track and three of them **contradict the
-proposal**.
-
-**1. The hyperspectral advantage is real but seasonal.**
-During the autumn bloom, every sensor tier — including a 3-band RGB camera —
-separates Mikania from native climbers essentially perfectly. That is not a flaw
-in the model: it *reproduces* the published finding that RGB deep learning works
-on blooming outbreak points, and it validates the simulation. The commercial case
-lives entirely in the foliage-only case:
-
-| Sensor (foliage only) | Mikania vs native | False positives |
-|---|---|---|
-| RGB camera | 53.1% | 13.5% |
-| 5-band multispectral | 62.0% | 14.5% |
-| **VNIR hyperspectral** | **68.7%** | **7.9%** |
-
-Each tier was given the best feature set it can physically compute (the 5-band
-sensor gets all 25 pairwise ratios and normalised differences of its bands), and
-all three ran through the same classifier under the same site-disjoint validation.
-
-**2. Spatial leakage is enormous, and it is not an artefact of our simulation.**
-On the Botswana EO-1 Hyperion scene — real satellite hyperspectral imagery this
-project did not generate — random pixel splitting reports **93.7%** where
-spatially blocked validation reports **58.9%**. A **+34.8 pp** inflation. This is
-the number most published hyperspectral results quote, and proposal §5.1(6) is
-right to insist on the alternative.
-
-**3. Three catchments are not enough to clear the kill criterion.**
-Leave-one-site-out gives Mikania-vs-native 80.4%, which passes the §7.3 threshold
-of 75% — but the 95% confidence interval, bootstrapped over *sites* rather than
-pixels, runs 50.8%–98.0%. The point estimate passes; the lower bound does not.
-That is the quantitative argument for the multi-site Phase 1.
-
-**4. Seasonal drift is measurable and material.**
-A classifier trained mostly on flowering-season sites drops to 49% on the
-dry-season site and 63% on the wet-season hold-out. This is §5.4 risk 6 showing
-up empirically, and it supports the proposal's own mitigation: two acquisition
-seasons, two classifiers.
-
-**5. The proposal's §5.3 coverage table does not reconcile with itself.**
-Two arithmetic problems, surfaced by stage 06 rather than quietly patched:
-- the table gives a raw rate of "~46 ha/hr" from "36 m × 6 m/s", but 36 × 6 = **77.8 ha/hr**;
-- it states an effective rate of 25–30 ha/hr *and* 80–120 ha per 6-hour field day,
-  which implies 13–20 ha/hr. The two rows disagree by roughly 2×.
-
-Neither error changes the strategic conclusion (the three-tier funnel is
-mandatory), but a technical evaluator who multiplies 36 by 6 will find it.
-
-**6. Risk 9 has its sign backwards, and the real harm is worse.**
-The proposal says label error "inflates apparent accuracy while degrading real
-performance". Measured: it *depresses* the apparent figure — 0.702 apparent
-against 0.919 true, a −21.7 pp gap — under both site-disjoint and random-split
-validation. Inflation would require the model's errors to correlate with the
-*validation set's* label errors, which a site-disjoint split makes impossible.
-
-The consequence is worse than the one described: a programme with uncertified
-labels reads its own §7.3 go/no-go test as a **failure** while the classifier
-clears it. HK$1.4M spent to reach a wrong **stop** decision.
-
-**7. Appendix B.9 is false, on the exact taxon that matters.**
-Public barcode coverage is *not* adequate. Across 185 real NCBI sequences,
-*Mikania cordata* — the native congener §3.4 names as the hard case — cannot be
-certified at all: one rbcL, one ITS2, no matK, no trnH-psbA. And rbcL cannot
-separate it from *M. micrantha* anyway; their barcode regions are identical.
-
-**8. §3.3(a) is not implementable as written.**
-"Weight and interrogate the regions the biology predicts" cannot be done as a
-weight: `StandardScaler` restores unit variance per band and annihilates it, and
-tree ensembles are invariant to monotone rescaling. Reimplemented as band
-*selection*, the prior scores −0.54 pp against random subsets of the same size.
-
-**9. But the desk study earns its keep, twice.**
-Spearman ρ = +0.43 between predicted operational value and measured effect size;
-the top-ranked prediction is the strongest measured effect (red-edge position,
-d = +1.01). And a constraint derived from genomics *before any measurement* held
-up: two of eight predictions reverse the **sign** of their effect between the
-flowering and foliage seasons, exactly as constraint A2 predicted.
-
----
-
-## The honest scope of these numbers
-
-Accuracy figures come from **simulated** scenes at a species contrast that was
-chosen, not measured. They characterise the *pipeline*, not Hong Kong.
-
-Proposal Appendix B.5 states the central unknown plainly: whether Mikania is
-genuinely separable from *Bauhinia glauca* and *Byttneria aspera* in real canopy
-conditions is unproven. So rather than assert a number, stage 05 **sweeps** that
-unknown and reports accuracy as a curve, with two controls:
-
-- **at contrast 0** the species are made spectrally identical and accuracy
-  collapses to 50.9% — chance, as it must. If it did not, something would be
-  leaking and every other figure would be void.
-- **the required contrast** to reach the 75% kill criterion is ≈ **0.42** on the
-  nominal scale.
-
-That converts the deliverable from "the pipeline achieves X%" into something
-AFCD can act on: *here is how much real spectral separability Phase 0's field
-spectroradiometer campaign has to demonstrate before aerial capital is committed.*
-
-When those field spectra exist, drop them in `data/raw/field_spectra/*.csv` and
-the modelled species block is replaced automatically — the code path already exists.
-
----
-
-## Pipeline stages
-
-**Spectral track (v1.0)**
-
-| # | Script | What it does | Proposal § |
-|---|---|---|---|
-| 00 | `00_genomic_desk_study.py` | Ranked, falsifiable spectral predictions from published genomics. No data, no capital, no counterparty | §3.3, §10.0 |
-| 01 | `01_fetch_open_data.py` | GBIF occurrences, EcoSIS leaf spectra, Hyperion benchmark; writes a provenance manifest | §5.1 |
-| 02 | `02_build_spectral_library.py` | Endmember library from real measured leaves; separability audit; sensor ablation | §5.1(1), §4.1 |
-| 03 | `03_simulate_scenes.py` | Five Tier-2 acquisitions with terrain, BRDF, pushbroom artefacts, sub-canopy occlusion | §7.3 |
-| 04 | `04_train_validate.py` | PLS-DA / RF / SVM under leave-one-**site**-out; leakage demo; kill-criterion check | §5.1(6), §7.3 |
-| 05 | `05_contrast_sweep.py` | Accuracy vs true species separability, with the contrast-0 control | Appendix B.5 |
-| 06 | `06_map_and_prioritise.py` | Classify, FCLS unmix, severity score, ranked treatment units, GeoTIFF/GeoJSON export | §3.1, §5.3 |
-| 07 | `07_efficacy_reflight.py` | Treatment, re-flight, change detection, per-method re-emergence rates | §3.1(3) |
-| 08 | `08_benchmark_real_hsi.py` | The same machinery on real EO-1 Hyperion imagery | control |
-
-**Molecular track (v2.0)**
-
-| # | Script | What it does | Proposal § |
-|---|---|---|---|
-| 10 | `10_test_genomic_predictions.py` | Falsifies each §3.3 prediction against the library, in two seasons | §3.2, §3.3(c) |
-| 11 | `11_fetch_barcode_references.py` | 185 real sequences from NCBI/BOLD; measures reference coverage | §4.2, B.9 |
-| 12 | `12_barcode_verify_vouchers.py` | The §3.4 pipeline against a real answer key; barcode gaps; concordance | §3.4 |
-| 13 | `13_label_error_propagation.py` | What wrong labels do; what certification is worth | §9 Risk 9 |
-| 14 | `14_reference_database.py` | Builds, versions, checksums and values the asset | §3.1(4), §7.1, §8.4 |
-| 15 | `15_export_platform.py` | Assembles the browser bundle | — |
-
-## Package layout
-
-```
-mikania/
-├── config/default.yaml       every constant, with provenance comments
-├── mikania/
-│   ├── config.py             loading, validation, derived constants
-│   ├── io_hsi.py             ENVI / GeoTIFF / npz, georeferencing
-│   ├── preprocess.py         Savitzky-Golay derivatives, SNV, continuum removal
-│   ├── features.py           red-edge position, indices, sensor-tier ablation
-│   ├── spectral_library.py   endmembers, species operators, sampling
-│   ├── simulate.py           Tier-2 scene generation
-│   ├── unmixing.py           FCLS abundance, conditioning diagnostics
-│   ├── classify.py           PLS-DA/RF/SVM, leave-one-site-out, bootstrap CIs
-│   ├── severity.py           five-factor scoring, treatment units, GeoJSON
-│   ├── change.py             efficacy, detection floors, per-method rates
-│   └── economics.py          coverage model, funnel, pricing, §5.3 consistency check
-├── config/genomic_priors.yaml published findings -> traits -> signed predictions
-├── docs/                     molecular-layer documentation (10 files)
-├── scripts/                  the fifteen stages
-├── platform/                 stdlib server + no-build dark UI
-└── outputs/                  reports (JSON), figures (PNG), deliverables (GIS)
+```bash
+./run_all.sh --fast          # skip the contrast sweep
+./run_all.sh --no-fetch      # reuse cached data
+./run_all.sh --no-molecular  # run the spectral track without the molecular stages
 ```
 
-`config/default.yaml` is the single source of truth. Every number in it is
-either taken from the proposal, taken from cited literature, or flagged as an
-explicit modelling assumption. No magic constants are buried in code.
+Use `BIOMESCAN_PORT` to change the server port. `MIKANIA_PORT` remains supported
+for existing setups. The Python package is still named `mikania` so existing
+imports, scripts, and saved models continue to work.
 
----
+## What is implemented
 
-## The platform
+The Mikania demonstrator contains two connected tracks:
 
-`python platform/server.py` → <http://127.0.0.1:8790>
+| Stages | Work |
+|---|---|
+| 00 | Genomic desk study and falsifiable spectral predictions |
+| 01–02 | Open-data retrieval, spectral library, and sensor/separability comparisons |
+| 03–05 | Simulated survey scenes, site-disjoint model validation, and contrast sensitivity |
+| 06–07 | Mapping, abundance, severity, work planning, and simulated efficacy re-flights |
+| 08 | Independent pipeline benchmark on real Botswana Hyperion imagery |
+| 10–14 | Genomic prediction checks, public barcode references, voucher-verification experiments, label-error analysis, and reference database |
+| 16 | Experiments testing remedies for limitations identified by the molecular track |
+| 15, run last | Export of the browser platform bundle |
 
-Thirteen views. Spectral: overview, sensor evidence, survey viewer (click any
-pixel to read its spectrum), spectral lab, validation, work plan, efficacy loop,
-and an economics calculator that recomputes coverage live. Molecular: the genomic
-desk study with its evidence chains and falsification verdicts, barcode
-certification with the real coverage matrix and voucher certificates,
-label-error risk, and the reference database with its release checksum and
-licence manifest. Plus a data-provenance page separating what is real from what
-is simulated.
+The browser presents survey layers, spectra, validation results, work plans,
+efficacy, economics, molecular evidence, and provenance. It displays existing
+pipeline outputs; its only live scientific calculation is the server’s coverage
+economics endpoint.
 
-Standard library only, no build step, no CDN — it has to open on an evaluator's
-laptop with no network. The UI **renders**; it never **computes**. Every
-scientific number arrives from the pipeline via `data/bundle.json`, and the one
-live recomputation (coverage economics) is delegated to the server, which calls
-the same `mikania.economics` functions the pipeline uses. Two implementations of
-a metric is one too many.
+```text
+repository root/
+├── README.md
+├── config/           Mikania demonstration settings and genomic priors
+├── mikania/          existing Python implementation
+├── scripts/          spectral and molecular pipeline stages
+├── platform/         local server, viewer, and checked-in demonstration bundle
+├── data/             source data, reference library, and simulated scenes
+├── outputs/          reports, figures, models, and GIS deliverables
+└── docs/             scope, implementation, findings, and provenance
+```
 
----
+## Evidence and validation limits
 
-## Data provenance
+Real inputs include Hong Kong occurrence records from GBIF, measured tropical
+leaf spectra from EcoSIS, the Botswana Hyperion benchmark, and public barcode
+reference sequences. The Hong Kong survey scenes, species spectral contrasts,
+infestation geometry, treatment outcomes, and re-flights are modelled. The
+barcode experiments also use simulated read degradation and synthetic voucher
+groupings of real sequences.
 
-**Real, downloaded, cited** — manifest at `data/raw/PROVENANCE.json`:
+Accuracy figures from simulated scenes describe the demonstrator under its
+assumptions. They are not field accuracy claims for Hong Kong, evidence of Aedes
+habitat detection, or results for other species. The Botswana benchmark tests
+the analysis machinery on real imagery; it does not validate Mikania detection.
 
-- **1,107 GBIF occurrence records** inside Hong Kong: 557 *Mikania micrantha*
-  plus five native/confusable climbers. Drives Tier-1 site screening and the
-  per-site ecological context layer.
-  *Trap worth knowing:* querying GBIF for "Bauhinia glauca" returns **zero** HK
-  records — the accepted name is *Phanera glauca*. A pipeline that silently took
-  the empty result would have trained a Mikania classifier with nothing to be
-  confused by, and reported a beautiful, meaningless accuracy.
-- **242 leaf reflectance spectra** (EcoSIS, 350–2500 nm ASD, tropical broadleaf).
-  These are the physical base of the endmember library, and their principal modes
-  of variation supply the within-class scatter — so the synthetic covariance
-  resembles real vegetation rather than white noise.
-- **Botswana EO-1 Hyperion scene**, 145 bands, 14 vegetation classes.
-- **185 barcode reference sequences** (NCBI GenBank, optionally BOLD) across 7
-  accepted taxa and 4 loci — rbcL, matK, ITS2, trnH-psbA. The coverage gaps and
-  barcode gaps computed from them are real, and so is the finding that seven
-  public records disagree with their own species.
-  *Second taxonomy trap, worse than the GBIF one:* querying GenBank for both
-  "Bauhinia glauca" and "Phanera glauca" returns records under both names, many
-  of them the same records. Treated as two species they generate "interspecific"
-  pairs at ~zero distance, which erases the barcode gap for every locus — a
-  conclusion about DNA barcoding drawn from a nomenclatural artefact. Handled by
-  grouping on accepted name.
+The original work also identified seasonal sensitivity, spatial leakage,
+reference-sequence gaps, and limitations in genomic band priors. Those findings
+remain available in the [detailed reference results](docs/mikania-reference-pipeline.md)
+and [findings against the original proposal](docs/09_findings_vs_proposal.md).
 
-**Simulated:** all five catchment scenes and their ground truth, infestation
-geometry, treatment outcomes and re-flights. Species spectral differences are
-modelled from the mechanism table in §3.2 on top of the real measured leaf base.
+Each new workstream must establish its own ground truth, compare appropriate
+cheaper methods, and validate on independent sites and seasons before service
+performance is claimed. For Mikania this requires real canopy spectra, verified
+labels, and access to suitable VNIR hardware. For Aedes habitat it requires
+water/confuser measurements, ground checks, and a SWIR-versus-RGB benchmark.
 
-**Simulated in the molecular track:** Sanger read degradation applied to real
-held-out GenBank sequences; the pairing of four loci into one "voucher" (a real
-voucher's loci come from one plant, these come from independent accessions of
-the same species); and the visual field calls. Every identification outcome is
-real, because the sequences and their identities are.
+## Documentation and next steps
 
----
+- [Platform scope and development gates](docs/platform-scope.md): alignment with
+  the updated Biomescan pitch and the boundary between implemented and planned work.
+- [Mikania reference findings and provenance](docs/mikania-reference-pipeline.md):
+  the detailed results previously in this README.
+- [Documentation index](docs/README.md): implementation, field/library workflow,
+  barcode procedures, database design, and limitations.
+- [Phase 0 runbook](docs/07_phase0_runbook.md): the existing Mikania validation plan.
+- [Data provenance manifest](data/raw/PROVENANCE.json) and
+  [open-data register](docs/06_open_data_register.md): sources and reuse conditions.
 
-## Notes and caveats
-
-- **Validation is leave-one-site-out, always.** `random_split_leakage_demo()`
-  exists only to quantify the inflation and is marked `reportable: False`.
-- **Sub-canopy Mikania is excluded from both imagery and ground truth**
-  (§5.2, last row). It is physically unobservable from nadir; scoring against it
-  would manufacture a false penalty and hide the real limitation. The occluded
-  fraction (18%) is reported instead, and accuracy is scoped to canopy level.
-- **Treatment assignment is confounded by design** — the expensive method goes to
-  the worst units, as a real programme would allocate. Raw per-method comparison
-  therefore penalises it; the severity-stratified breakdown is in the JSON, and
-  the confound is stated in the report rather than corrected away.
-- **Measured re-emergence rates sit below the true rates** because small patches
-  fall under the detection floor. That gap is reported, not hidden.
-- Verified on CPython 3.14.3, macOS. Exact resolved versions in `requirements.lock.txt`.
+The next development steps are to test the Aedes water/confusion set against
+RGB, collect seasonal Mikania ground spectra and verified vouchers, secure VNIR
+access, and validate paid pilot demand before expanding operations. Further
+species should enter through the same evidence gates, with methods selected for
+their biology and survey setting.

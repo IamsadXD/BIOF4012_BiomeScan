@@ -1,6 +1,10 @@
 """
-MIKANIA-HSI
+Biomescan
 ===========
+
+Biomescan develops invasive species mapping and surveying. This package is the
+Mikania reference demonstrator; additional species and Aedes habitat surveying
+are planned and are not implemented by renaming this package.
 
 Reference implementation of the UAV hyperspectral pipeline described in
 ``AFCD_Mikania_Hyperspectral_Proposal.md`` — species-level mapping of the

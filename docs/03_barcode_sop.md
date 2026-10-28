@@ -1,6 +1,6 @@
 # SOP — DNA barcode certification of reference vouchers
 
-**Scope.** Every voucher entering the MIKANIA-HSI spectral reference database.
+**Scope.** Every voucher entering the Biomescan spectral reference database.
 **Authority.** Proposal §3.4; thresholds in `config/default.yaml` §13.
 **Version.** Tied to `molecular.release` config and the pipeline version recorded
 on each certificate.

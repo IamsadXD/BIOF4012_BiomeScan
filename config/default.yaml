@@ -1,5 +1,5 @@
 # =============================================================================
-# MIKANIA-HSI — master configuration
+# Biomescan — master configuration
 # =============================================================================
 # Every number in this file is either (a) taken from the AFCD proposal, (b) taken
 # from published literature with the citation inline, or (c) an explicit modelling
@@ -9,8 +9,8 @@
 # =============================================================================
 
 project:
-  name: MIKANIA-HSI
-  subtitle: "Species-level invasive vine mapping — AFCD Phase 0 reference pipeline"
+  name: Biomescan
+  subtitle: "Invasive species mapping and surveying — Mikania reference demonstrator"
   # Phase 0 in the proposal (§7.3) = spectral library + single-catchment demo.
   phase: 0
   random_seed: 20260806          # one seed for the whole pipeline; reproducibility
