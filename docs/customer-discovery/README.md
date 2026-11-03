@@ -12,8 +12,8 @@ Prepared 3 November 2026. This folder contains the BiomeScan adaptations of the 
 
 - [Company outreach folders](../../company%20outreach/README.md): one tailored
   text invitation per prospect, grouped into six weeks, with contact routes in
-  each weekly index. Sender wording uses BSc(Bioinformatics) and the full Faculty
-  of Medicine name; no meeting times are proposed.
+  each weekly index. Sender wording uses BSc(Bioinformatics) and the School of
+  Biomedical Sciences name; no meeting times are proposed.
 - [Six-week outreach plan](outreach_plan.md): five distinct businesses or farm operators each week, 30 in total, including eight farms.
 - [Company and farm directory](company_directory.md): public routes, roles to request, qualification questions and source dates.
 - [Problem-first emails](problem_first_emails.md): construction, pest control, ecology, property, government and farming versions, plus follow-ups.

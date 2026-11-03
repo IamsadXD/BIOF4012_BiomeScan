@@ -1,8 +1,8 @@
-Subject: HKU Faculty of Medicine student interview on outdoor water inspections at managed properties
+Subject: HKU School of Biomedical Sciences student interview on outdoor water inspections at managed properties
 
 Dear Kai Shing Property Operations team,
 
-I am [Full name], a BSc(Bioinformatics) student at The University of Hong Kong’s Faculty of Medicine. As part of a course project, our team is studying how managed properties organize standing-water and mosquito-prevention inspections, including follow-up with maintenance and pest-control contractors.
+I am [Full name], a BSc(Bioinformatics) student in the School of Biomedical Sciences at The University of Hong Kong. As part of a course project, our team is studying how managed properties organize standing-water and mosquito-prevention inspections, including follow-up with maintenance and pest-control contractors.
 
 We would like to understand how one property organizes these checks and how decisions about follow-up work are made.
 
@@ -15,5 +15,5 @@ Please let me know if someone would be willing to take part, or direct me to the
 Kind regards,
 [Full name]
 BSc(Bioinformatics) student
-Faculty of Medicine, The University of Hong Kong
+School of Biomedical Sciences, The University of Hong Kong
 [Email]

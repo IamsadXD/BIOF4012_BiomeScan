@@ -1,6 +1,6 @@
 # Company outreach
 
-Thirty unsent invitations organized into six weeks of five contacts, including eight farm operators. The messages use the approved BSc(Bioinformatics) and full Faculty of Medicine wording, with no suggested time slots. They ask about the current problem and workflow without introducing BiomeScan's solution.
+Thirty unsent invitations organized into six weeks of five contacts, including eight farm operators. The messages use the approved BSc(Bioinformatics) and full School of Biomedical Sciences wording, with no suggested time slots. They ask about the current problem and workflow without introducing BiomeScan's solution.
 
 ## Copy and paste
 

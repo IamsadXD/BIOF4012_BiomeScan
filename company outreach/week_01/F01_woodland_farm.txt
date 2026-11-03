@@ -1,8 +1,8 @@
-Subject: HKU Faculty of Medicine student interview about farm weed checks and management
+Subject: HKU School of Biomedical Sciences student interview about farm weed checks and management
 
 Dear Woodland Farm Management team,
 
-I am [Full name], a BSc(Bioinformatics) student at The University of Hong Kong’s Faculty of Medicine. As part of a course project, our team is studying how Hong Kong farms check for weeds or unwanted plants and follow up management work.
+I am [Full name], a BSc(Bioinformatics) student in the School of Biomedical Sciences at The University of Hong Kong. As part of a course project, our team is studying how Hong Kong farms check for weeds or unwanted plants and follow up management work.
 
 We would particularly like to understand how field checks are organized and which findings need further attention.
 
@@ -15,5 +15,5 @@ Please let me know if you would be willing to take part, or direct me to the per
 Kind regards,
 [Full name]
 BSc(Bioinformatics) student
-Faculty of Medicine, The University of Hong Kong
+School of Biomedical Sciences, The University of Hong Kong
 [Email]
