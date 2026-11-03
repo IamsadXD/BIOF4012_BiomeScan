@@ -159,6 +159,9 @@ water/confuser measurements, ground checks, and a SWIR-versus-RGB benchmark.
 
 ## Documentation and next steps
 
+- [Customer discovery materials](docs/customer-discovery/README.md): BiomeScan
+  interview questions, participant information and consent draft, interviewer
+  guidelines, problem-first emails, and six weeks of company and farm outreach.
 - [Platform scope and development gates](docs/platform-scope.md): alignment with
   the updated Biomescan pitch and the boundary between implemented and planned work.
 - [Mikania reference findings and provenance](docs/mikania-reference-pipeline.md):

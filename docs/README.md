@@ -4,6 +4,11 @@ For the wider invasive species platform and planned services, start with the
 [project README](../README.md) and [platform scope](platform-scope.md). These
 documents describe the implemented Mikania demonstrator.
 
+For the business-discovery work, see the [customer discovery materials](customer-discovery/README.md):
+three adapted Word documents, their editable text, problem-first emails, and a
+six-week contact plan covering 30 business and farm prospects. The consent
+adaptation remains an investigator-review draft with unresolved policy fields.
+
 The v1.0 spectral pipeline is documented in [`../README.md`](../README.md). These
 documents cover the **molecular / bioinformatics layer** added by proposal v2.0:
 the genomic desk study (§3.3), DNA-barcode certification of the label set (§3.4),
