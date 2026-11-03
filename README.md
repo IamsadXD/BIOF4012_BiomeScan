@@ -159,6 +159,8 @@ water/confuser measurements, ground checks, and a SWIR-versus-RGB benchmark.
 
 ## Documentation and next steps
 
+- [Company outreach](company%20outreach/README.md): 30 tailored copy-and-paste
+  invitations organized into six weekly folders, including farm operators.
 - [Customer discovery materials](docs/customer-discovery/README.md): BiomeScan
   interview questions, participant information and consent draft, interviewer
   guidelines, problem-first emails, and six weeks of company and farm outreach.
