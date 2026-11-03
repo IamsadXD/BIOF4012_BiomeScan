@@ -109,6 +109,12 @@ The Mikania demonstrator contains two connected tracks:
 | 16 | Experiments testing remedies for limitations identified by the molecular track |
 | 15, run last | Export of the browser platform bundle |
 
+The product workspace adds persistent species-profile switching, a map explorer,
+a searchable visual reference library, a survey portfolio, a browser-local field
+shortlist with CSV exports, and a monitoring view. Planned species profiles are
+clearly separated from the Mikania reference results. For a presentation route
+and data boundaries, see the [product demo walkthrough](docs/product-demo.md).
+
 The browser presents survey layers, spectra, validation results, work plans,
 efficacy, economics, molecular evidence, and provenance. It displays existing
 pipeline outputs; its only live scientific calculation is the server’s coverage

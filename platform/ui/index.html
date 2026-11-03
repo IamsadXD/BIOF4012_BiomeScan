@@ -3,52 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Biomescan — Invasive Species Mapping &amp; Surveying</title>
+<meta name="theme-color" content="#173f35">
+<meta name="description" content="Biomescan — an interactive workspace for invasive species surveys, geospatial evidence and reference libraries.">
+<title>Biomescan — Biodiversity intelligence</title>
 <link rel="stylesheet" href="styles.css">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='11' fill='%23ff4d6d'/></svg>">
+<link rel="stylesheet" href="product.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='9' fill='%23173f35'/><path d='M9 23C6 11 17 6 25 7c0 13-7 18-16 16Zm1-1L22 10' fill='%23c9df91' stroke='%23173f35' stroke-width='1.5'/></svg>">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <div class="app">
-
-  <aside class="sidebar">
-    <div class="brand">
-      <span class="mark"><span class="dot"></span> Biomescan</span>
-      <span class="sub">Invasive species mapping &amp; surveying<br>Mikania reference demonstrator</span>
-    </div>
-
-    <nav id="nav">
-      <button data-view="overview"    aria-current="true"><span class="idx">01</span> Overview</button>
-      <button data-view="evidence"><span class="idx">02</span> Sensor evidence</button>
-      <button data-view="survey"><span class="idx">03</span> Survey viewer</button>
-      <button data-view="spectra"><span class="idx">04</span> Spectral lab</button>
-      <button data-view="validation"><span class="idx">05</span> Validation</button>
-      <button data-view="workplan"><span class="idx">06</span> Work plan</button>
-      <button data-view="efficacy"><span class="idx">07</span> Efficacy loop</button>
-      <button data-view="economics"><span class="idx">08</span> Economics</button>
-
-      <div class="nav-sep">Molecular layer <span>v2.0</span></div>
-      <button data-view="genomics"><span class="idx">09</span> Genomic desk study</button>
-      <button data-view="barcode"><span class="idx">10</span> Barcode certification</button>
-      <button data-view="labelrisk"><span class="idx">11</span> Label-error risk</button>
-      <button data-view="asset"><span class="idx">12</span> Reference database</button>
-
-      <div class="nav-sep">Audit</div>
-      <button data-view="provenance"><span class="idx">13</span> Data provenance</button>
-    </nav>
-
-    <div class="sidebar-foot">
-      Every figure traces to a pipeline stage.<br>
-      Scene data is <strong>simulated</strong>; leaf spectra, occurrences, the
-      benchmark cube and every <strong>barcode sequence</strong> are
-      <strong>real open data</strong>.
-    </div>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#dashboard" aria-label="Biomescan home"><span class="brand-icon" aria-hidden="true">✳</span><span>biomescan<span class="brand-caption">BIODIVERSITY INTELLIGENCE</span></span></a>
+    <div class="workspace-label">YOUR WORKSPACE</div>
+    <div class="workspace"><span class="workspace-avatar">HK</span><div>Hong Kong<span>Research & conservation</span></div><span class="workspace-dot"></span></div>
+    <nav id="nav" aria-label="Main navigation"></nav>
+    <div class="sidebar-bottom"><div class="demo-note"><span class="status-dot"></span> Product demonstrator<p>Explore the workflow, from survey to evidence.</p><button class="text-button" id="about-demo">About the data <span>↗</span></button></div><div class="workspace-user"><span class="user-avatar">BS</span><div>Biomescan team<span>Demo workspace</span></div><span class="badge muted">v2.0</span></div></div>
   </aside>
-
-  <main id="main">
-    <div class="loading pulse">Loading pipeline bundle…</div>
-  </main>
+  <div class="app-content">
+    <header class="topbar"><div class="breadcrumb"><button class="icon-button mobile-menu" aria-label="Toggle navigation" aria-expanded="false">☰</button><span>Workspace</span><span class="crumb-divider">/</span><strong id="page-label">Overview</strong></div><div class="topbar-right"><span class="local-status"><span class="status-dot"></span> Local workspace</span><span class="top-divider"></span><span class="user-avatar small">BS</span></div></header>
+    <div class="contextbar"><div><span class="context-label">ACTIVE SPECIES PROFILE</span><div class="profile-select-wrap"><span id="profile-symbol" aria-hidden="true">❧</span><select id="species-select" aria-label="Active species profile"></select></div></div><span id="profile-status" class="badge real">Reference demo</span><button class="text-button profile-link" id="profile-link">View species profile ↗</button></div>
+    <main id="main" tabindex="-1"><div class="loading">Opening your workspace…</div></main>
+    <footer class="app-footer"><span>Biomescan · Making biodiversity visible.</span><span>Hong Kong / Demonstration workspace</span></footer>
+  </div>
 </div>
-
+<div id="toast" role="status" aria-live="polite"></div>
 <script src="app.js"></script>
+<script src="product.js"></script>
 </body>
 </html>

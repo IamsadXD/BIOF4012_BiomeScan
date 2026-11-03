@@ -822,11 +822,26 @@ VIEWS.economics = () => {
   ];
   const state = Object.fromEntries(sliders.map(([k, , , , , v]) => [k, v]));
 
+  const liveStatus = el('p', { class: 'hint coverage-status', role: 'status' });
+  let latestCoverageRequest = 0;
   async function refresh() {
+    const request = ++latestCoverageRequest;
     const qs = new URLSearchParams({ ...state, area_ha: 3000 }).toString();
     let d;
-    try { d = await (await fetch('/api/coverage?' + qs)).json(); }
-    catch { d = { coverage: ec.coverage, programme: {}, funnel: ec.funnel }; }
+    try {
+      const response = await fetch('/api/coverage?' + qs);
+      if (!response.ok) throw new Error('Live economics unavailable');
+      d = await response.json();
+      if (request !== latestCoverageRequest) return;
+      liveStatus.textContent = 'Live model · updated from the platform geometry below.';
+    } catch {
+      if (request !== latestCoverageRequest) return;
+      d = { coverage: ec.coverage, programme: {}, funnel: ec.funnel };
+      liveStatus.textContent = 'Showing bundled baseline economics. Live updates require the Python dependencies listed in the README; programme days are unavailable in this mode.';
+      ctrl.querySelectorAll('input[type=range]').forEach(input => { input.disabled = true; });
+      ctrl.querySelectorAll('output').forEach((output, i) => { output.textContent = String(sliders[i][5]); });
+      ctrl.querySelectorAll('input[type=range]').forEach((input, i) => { input.value = sliders[i][5]; });
+    }
     const cov = d.coverage || {}, pr = d.programme || {};
     out.replaceChildren(
       kpi('Raw rate', num(cov.raw_ha_per_hr, 1), 'ha/hr — swath × speed'),
@@ -863,7 +878,7 @@ VIEWS.economics = () => {
       return el('div', { class: 'slider-row' },
         el('label', {}, lab),
         el('input', {
-          type: 'range', min, max, step, value: val,
+          type: 'range', min, max, step, value: val, 'aria-label': lab,
           oninput: e => { state[k] = parseFloat(e.target.value); outEl.textContent = e.target.value; refresh(); }
         }),
         outEl);
@@ -873,6 +888,7 @@ VIEWS.economics = () => {
       'the browser never reimplements a metric.'));
 
   wrap.appendChild(out);
+  wrap.appendChild(liveStatus);
   wrap.appendChild(el('div', { class: 'spacer' }));
   wrap.appendChild(el('div', { class: 'grid g2' }, ctrl, funnelBox));
 
@@ -1623,40 +1639,3 @@ VIEWS.asset = () => {
     el('strong', {}, 'Scope. '), rd.scope));
   return wrap;
 };
-
-/* ================================ shell ================================ */
-function render() {
-  const main = $('#main');
-  main.replaceChildren((VIEWS[S.view] || VIEWS.overview)());
-  document.querySelectorAll('#nav button').forEach(btn =>
-    btn.setAttribute('aria-current', String(btn.dataset.view === S.view)));
-  main.scrollTop = 0;
-  window.scrollTo(0, 0);
-}
-
-document.getElementById('nav').addEventListener('click', e => {
-  const btn = e.target.closest('button');
-  if (!btn) return;
-  S.view = btn.dataset.view;
-  render();
-});
-
-(async function boot() {
-  try {
-    const r = await fetch('data/bundle.json');
-    if (!r.ok) throw new Error('bundle.json not found (HTTP ' + r.status + ')');
-    S.bundle = await r.json();
-    render();
-  } catch (err) {
-    $('#main').replaceChildren(el('div', { class: 'loading' },
-      el('h1', {}, 'Pipeline bundle not found'),
-      el('p', {}, String(err.message)),
-      el('p', { class: 'hint' }, 'Run the pipeline first:'),
-      el('pre', { class: 'mono', style: 'color:var(--accent)' },
-        'python scripts/01_fetch_open_data.py\npython scripts/02_build_spectral_library.py\n' +
-        'python scripts/03_simulate_scenes.py\npython scripts/04_train_validate.py\n' +
-        'python scripts/05_contrast_sweep.py\npython scripts/06_map_and_prioritise.py\n' +
-        'python scripts/07_efficacy_reflight.py\npython scripts/08_benchmark_real_hsi.py\n' +
-        'python scripts/15_export_platform.py')));
-  }
-})();
