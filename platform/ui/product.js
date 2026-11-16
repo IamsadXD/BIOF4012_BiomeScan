@@ -23,6 +23,7 @@ const ICONS = {
  pin:'<path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 0 1 14 0Z"/><circle cx="12" cy="10" r="2"/>',
  search:'<circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/>',
  check:'<path d="m5 12 4 4L19 6"/>',
+ reset:'<circle cx="12" cy="12" r="7"/><path d="M12 2v4m0 12v4M2 12h4m12 0h4"/>',
  book:'<path d="M12 5C8 2 4 3 2 4v16c3-2 7-1 10 1 3-2 7-3 10-1V4c-2-1-6-2-10 1Zm0 0v16"/>'
 };
 function icon(name, cls='') { const n=el('span',{class:'icon '+cls,'aria-hidden':'true'}); n.innerHTML=`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">${ICONS[name]||ICONS.leaf}</svg>`;return n; }
@@ -73,7 +74,7 @@ function openSite(key) {P.selectedSite=key;S.site=key;go('maps');}
 function territoryMap(compact=false) {
  const ref=isReference(), map=el('div',{class:'territory-map'+(compact?' compact':'')});
  const svg=svgEl('svg',{viewBox:'0 0 800 420',role:'group','aria-label':'Schematic Hong Kong survey overview. Site markers use geographic coordinates; coastline is illustrative.'});
- svg.innerHTML=`<defs><pattern id="mapGrid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#cadbd7" stroke-width=".5"/></pattern><pattern id="landPattern" width="22" height="22" patternUnits="userSpaceOnUse"><path d="m0 12 7-4 5 2 10-6" fill="none" stroke="#c9d4bb" stroke-width=".65"/></pattern></defs><rect width="800" height="420" fill="#e6eeeb"/><rect width="800" height="420" fill="url(#mapGrid)"/><g id="map-content"><g fill="#f1f0e4" stroke="#c8d3c4" stroke-width="1.3"><path d="M40 0H800V138l-26 1-17 24-21-9-10 18-19-11-13 35-17-12-17 26-15-11-21 28-13-18-25 5-18-22-26 15-19-7-15 18-28-1-18 21-22-9-12 19-25-10-13 17-29-13-18 7-16-13-19 8-14-17-25 7-12-21-29-4-5-16-28 5-11-19-28-1-15-23-31-2-9-27-20-1-4-28-22-10Z"/><path d="m264 254 29-16 26 9 15-10 22 20 37 5 25 21-11 28-31 12-16-12-30 8-18-17-25-6-11-18Z"/><path d="m450 280 22-15 29 3 11 18 31-7 17 21-24 21-37 3-17-12-32 2-12-15Z"/><path d="m627 181 14-22 15 7 6 22-14 17-17-7Z"/><path d="m660 230 16-18 17 9-2 17-18 6Z"/></g><path d="M40 0H800V138l-26 1-17 24-21-9-10 18-19-11-13 35-17-12-17 26-15-11-21 28-13-18-25 5-18-22-26 15-19-7-15 18-28-1-18 21-22-9-12 19-25-10-13 17-29-13-18 7-16-13-19 8-14-17-25 7-12-21-29-4-5-16-28 5-11-19-28-1-15-23-31-2-9-27-20-1-4-28-22-10Z" fill="url(#landPattern)"/><g fill="none" stroke="#d7c9a8" stroke-width="2" opacity=".8"><path d="M150 24q60 46 98 81t105 44 154 20 193-91"/><path d="M319 25q-25 35 18 72t76 51l-14 66"/><path d="M490 20q-45 55-27 98t78 77"/></g><g class="map-text" fill="#829185" font-family="sans-serif" font-size="12" letter-spacing="2"><text x="267" y="45">NEW TERRITORIES</text><text x="355" y="216">KOWLOON</text><text x="456" y="300" font-size="10">HONG KONG ISLAND</text><text x="283" y="284" font-size="10">LANTAU</text><text x="606" y="315" fill="#9cadab" font-size="11">PORT SHELTER</text></g></g>`;
+ svg.innerHTML=`<defs><pattern id="mapGrid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#cadbd7" stroke-width=".5"/></pattern><pattern id="landPattern" width="22" height="22" patternUnits="userSpaceOnUse"><path d="m0 12 7-4 5 2 10-6" fill="none" stroke="#c9d4bb" stroke-width=".65"/></pattern></defs><rect width="800" height="420" fill="#e6eeeb"/><rect width="800" height="420" fill="url(#mapGrid)"/><g id="map-content"><g fill="#f1f0e4" stroke="#c8d3c4" stroke-width="1.3"><path d="M40 0H800V138l-26 1-17 24-21-9-10 18-19-11-13 35-17-12-17 26-15-11-21 28-13-18-25 5-18-22-26 15-19-7-15 18-28-1-18 21-22-9-12 19-25-10-13 17-29-13-18 7-16-13-19 8-14-17-25 7-12-21-29-4-5-16-28 5-11-19-28-1-15-23-31-2-9-27-20-1-4-28-22-10Z"/><path d="m264 254 29-16 26 9 15-10 22 20 37 5 25 21-11 28-31 12-16-12-30 8-18-17-25-6-11-18Z"/><path d="m450 280 22-15 29 3 11 18 31-7 17 21-24 21-37 3-17-12-32 2-12-15Z"/><path d="m627 181 14-22 15 7 6 22-14 17-17-7Z"/><path d="m660 230 16-18 17 9-2 17-18 6Z"/></g><path d="M40 0H800V138l-26 1-17 24-21-9-10 18-19-11-13 35-17-12-17 26-15-11-21 28-13-18-25 5-18-22-26 15-19-7-15 18-28-1-18 21-22-9-12 19-25-10-13 17-29-13-18 7-16-13-19 8-14-17-25 7-12-21-29-4-5-16-28 5-11-19-28-1-15-23-31-2-9-27-20-1-4-28-22-10Z" fill="url(#landPattern)"/><g fill="none" stroke="#d7c9a8" stroke-width="2" opacity=".8"><path d="M150 24q60 46 98 81t105 44 154 20 193-91"/><path d="M319 25q-25 35 18 72t76 51l-14 66"/><path d="M490 20q-45 55-27 98t78 77"/></g><g class="map-text" fill="#829185" font-family="sans-serif" font-size="12" letter-spacing="2"><text x="267" y="45">NEW TERRITORIES</text><text x="420" y="264">KOWLOON</text><text x="456" y="300" font-size="10">HONG KONG ISLAND</text><text x="283" y="284" font-size="10">LANTAU</text><text x="606" y="315" fill="#9cadab" font-size="11">PORT SHELTER</text></g></g>`;
  const content=svg.querySelector('#map-content');
  // Fixed geographic extent: 113.87–114.42 E, 22.20–22.55 N.
  const xy=(lat,lon)=>[(lon-113.87)/.55*800,(22.55-lat)/.35*420];
@@ -83,7 +84,7 @@ function territoryMap(compact=false) {
  }
  if(ref) S.bundle.sites.forEach((s,i)=>{
   const [x,y]=xy(...s.centroid); const g=svgEl('g',{class:'site-marker',role:'button',tabindex:'0','aria-label':'Select '+s.name,transform:`translate(${x},${y})`});
-  g.innerHTML=`<circle r="21" fill="#4e8267" opacity=".10"/><circle r="12" fill="${s.key===P.selectedSite?'#194f3e':'#f8faf3'}" stroke="#356950" stroke-width="1.5"/><text text-anchor="middle" y="4" fill="${s.key===P.selectedSite?'#fff':'#356950'}" font-size="10" font-weight="600">${i+1}</text><text x="${i===1?-13:17}" y="${i===1?30:4}" fill="#385548" font-size="11" font-family="sans-serif">${s.name.replace(' Country Park','').replace(' Nature Reserve','').replace(' Valley','')}</text>`;
+  g.innerHTML=`<circle r="21" fill="#4e8267" opacity=".10"/><circle r="12" fill="${s.key===P.selectedSite?'#194f3e':'#f8faf3'}" stroke="#356950" stroke-width="1.5"/><text text-anchor="middle" y="4" fill="${s.key===P.selectedSite?'#fff':'#356950'}" font-size="10" font-weight="600">${i+1}</text><text x="${i===1?-17:17}" y="4" text-anchor="${i===1?'end':'start'}" fill="#385548" font-size="11" font-family="sans-serif">${s.name.replace(' Country Park','').replace(' Nature Reserve','').replace(' Valley','')}</text>`;
   const select=()=>{if(compact) openSite(s.key);else{P.selectedSite=s.key;S.site=s.key;render();}};
   g.addEventListener('click',select);g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select();}});content.appendChild(g);
  });
@@ -93,7 +94,7 @@ function territoryMap(compact=false) {
  map.appendChild(el('div',{class:'map-key'},el('span',{class:'status-dot'}),ref?(P.mapMode==='occurrences'?'GBIF Mikania occurrences':'Simulated survey sites'):'Planned survey region'));
  map.appendChild(el('span',{class:'map-disclaimer'},'Illustrative geography · not for navigation'));
  if(!compact){
-  const controls=el('div',{class:'map-zoom'},button('+',()=>{P.zoom=Math.min(3,P.zoom+.25);applyTransform();},'icon-button'),button('−',()=>{P.zoom=Math.max(1,P.zoom-.25);if(P.zoom===1)P.pan=[0,0];applyTransform();},'icon-button'),button('⌖',()=>{P.zoom=1;P.pan=[0,0];applyTransform();},'icon-button'));
+  const controls=el('div',{class:'map-zoom'},button('+',()=>{P.zoom=Math.min(3,P.zoom+.25);applyTransform();},'icon-button'),button('−',()=>{P.zoom=Math.max(1,P.zoom-.25);if(P.zoom===1)P.pan=[0,0];applyTransform();},'icon-button'),button(icon('reset'),()=>{P.zoom=1;P.pan=[0,0];applyTransform();},'icon-button'));
   controls.children[0].setAttribute('aria-label','Zoom in');controls.children[1].setAttribute('aria-label','Zoom out');controls.children[2].setAttribute('aria-label','Reset map');map.appendChild(controls);
   let drag=null;
   svg.addEventListener('pointerdown',e=>{if(e.target.closest('.site-marker'))return;drag=[e.clientX,e.clientY,...P.pan];svg.setPointerCapture(e.pointerId);});
@@ -189,7 +190,7 @@ PRODUCT.workplan=()=>{
  const siteFilter=el('select',{'aria-label':'Filter work units by site',onchange:e=>{P.plannerSite=e.target.value;draw();}},el('option',{value:'all'},'All survey sites'),...S.bundle.sites.map(s=>el('option',{value:s.key,selected:P.plannerSite===s.key},s.name)));
  const bandFilter=el('select',{'aria-label':'Filter by priority',onchange:e=>{P.plannerBand=e.target.value;draw();}},el('option',{value:'all'},'All priorities'),...S.bundle.severity_bands.map(b=>el('option',{value:b.label,selected:P.plannerBand===b.label},b.label)));
  w.appendChild(el('div',{class:'planner-toolbar'},el('label',{class:'search-box'},icon('search'),search),siteFilter,bandFilter));
- w.appendChild(el('section',{class:'panel'},el('div',{class:'shortlist-bar'},el('label',{},el('input',{type:'checkbox',checked:P.plannerOnly,onchange:e=>{P.plannerOnly=e.target.checked;draw();}}),'Show shortlist only'),resultCount),el('div',{class:'table-wrap'},el('table',{class:'planner-table'},el('thead',{},el('tr',{},...['Select','Rank','Work unit / site','Area (ha)','Priority','Severity','Suggested action',''].map(t=>el('th',{},t)))),tbody)),el('div',{class:'shortlist-footer'},el('div',{},shortCount,el('small',{},'Saved in this browser · demonstration planning only')),shortButton)));
+ w.appendChild(el('section',{class:'panel'},el('div',{class:'shortlist-bar'},el('label',{},el('input',{type:'checkbox',checked:P.plannerOnly,onchange:e=>{P.plannerOnly=e.target.checked;draw();}}),'Show shortlist only'),resultCount),el('div',{class:'table-wrap'},el('table',{class:'planner-table'},el('thead',{},el('tr',{},...['Select','Rank','Work unit / site','Area (ha)','Priority','Severity','Suggested action','Map link'].map(t=>el('th',{scope:'col'},t)))),tbody)),el('div',{class:'shortlist-footer'},el('div',{},shortCount,el('small',{},'Saved in this browser · demonstration planning only')),shortButton)));
  w.appendChild(el('div',{class:'callout info'},'Priorities use the pipeline’s severity × area ranking. Shortlisting is a local planning aid; it does not assign crews or schedule field work. Survey scenes and actions are simulated.'));
  draw();return w;
 };
@@ -219,8 +220,16 @@ PRODUCT.research=()=>{
 
 /* Persistent context, routing and startup */
 function setSpecies(id){P.species=PROFILES.some(p=>p.id===id)?id:'mikania';try{localStorage.setItem('biomescan-species',P.species);}catch{}render();}
+/* Keyboard focus survives same-view re-renders; a new view moves focus to its heading. */
+const focusKey=n=>n&&n.matches&&n.matches('button,a,select,input,[tabindex]')?n.tagName+'|'+(n.getAttribute('aria-label')||n.textContent||'').trim():null;
+function restoreFocus(main,key,viewChanged){
+ if(viewChanged){if(render.shown>1){const h=main.querySelector('h1')||main;if(h!==main)h.setAttribute('tabindex','-1');h.focus({preventScroll:true});}return;}
+ if(!key)return;const match=[...main.querySelectorAll('button,a,select,input,[tabindex]')].find(n=>focusKey(n)===key);if(match)match.focus({preventScroll:true});
+}
 function render(){
  const main=$('#main');if(!S.bundle)return; const p=profile();
+ const viewChanged=render.lastView!==S.view;render.lastView=S.view;render.shown=(render.shown||0)+(viewChanged?1:0);
+ const prevFocus=main.contains(document.activeElement)?focusKey(document.activeElement):null;
  $('#species-select').value=p.id;$('#profile-symbol').textContent=p.symbol;$('#profile-status').textContent=p.state;$('#profile-status').className='badge '+(isReference()?'real':'info');
  const navKey=NAV.some(([key])=>key===S.view)?S.view:['survey'].includes(S.view)?'maps':'research';
  $('#page-label').textContent=NAV.find(([key])=>key===navKey)?.[2]||'Overview';
@@ -228,20 +237,28 @@ function render(){
  try{
  if(!isReference()&&!PRODUCT[S.view]) main.replaceChildren(heading('PROGRAMME PREVIEW',p.name,'An evidence-led approach to a new survey workstream.'),roadmapEmpty());
  else if(PRODUCT[S.view])main.replaceChildren(PRODUCT[S.view]());
- else main.replaceChildren(el('div',{class:'legacy-back'},button('← Back to '+(S.view==='survey'?'map explorer':'evidence room'),()=>go(S.view==='survey'?'maps':'research'),'text-button')),VIEWS[S.view]());
+ else main.replaceChildren(el('div',{class:'legacy-back'},button('← Back to '+(S.view==='survey'?'map explorer':'evidence room'),()=>go(S.view==='survey'?'maps':'research'),'text-button')),el('div',{class:'research-content'},VIEWS[S.view]()));
  }catch(error){console.error(error);main.replaceChildren(el('div',{class:'panel error-state'},el('h1',{},'This view could not be opened.'),el('p',{},'Try reopening the workspace. Your pipeline outputs are unchanged.'),button('Return to overview',()=>go('dashboard'))));}
- $('#sidebar').classList.remove('mobile-open');$('.mobile-menu').setAttribute('aria-expanded','false');
- document.title='Biomescan · '+$('#page-label').textContent;window.scrollTo(0,0);
+ setMenu(false);
+ document.title='Biomescan · '+$('#page-label').textContent;if(viewChanged)window.scrollTo(0,0);
+ restoreFocus(main,prevFocus,viewChanged);
+}
+function setMenu(open,returnFocus=false){
+ const toggle=$('.mobile-menu');$('#sidebar').classList.toggle('mobile-open',open);toggle.setAttribute('aria-expanded',String(open));
+ if(open)($('#nav button[aria-current=page]')||$('#nav button'))?.focus();else if(returnFocus)toggle.focus();
 }
 $('#nav').replaceChildren(el('div',{class:'nav-label'},'EXPLORE'),...NAV.map(([key,ico,label],i)=>el('button',{'data-view':key,onclick:()=>go(key)},icon(ico),el('span',{},label),i===2?el('span',{class:'nav-count'},'3'):null)));
 $('#species-select').replaceChildren(...PROFILES.map(p=>el('option',{value:p.id},p.name)));
 $('#species-select').addEventListener('change',e=>setSpecies(e.target.value));
 $('#profile-link').addEventListener('click',()=>go('profiles'));
 $('#about-demo').addEventListener('click',()=>{if(isReference()){P.research='provenance';go('research');}else go('profiles');});
-$('.mobile-menu').addEventListener('click',()=>{const open=$('#sidebar').classList.toggle('mobile-open');$('.mobile-menu').setAttribute('aria-expanded',String(open));});
-window.addEventListener('hashchange',()=>{const key=location.hash.slice(1);if(key==='main')return;S.view=PRODUCT[key]||VIEWS[key]?key:'dashboard';render();});
+$('.mobile-menu').addEventListener('click',()=>setMenu(!$('#sidebar').classList.contains('mobile-open')));
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&$('#sidebar').classList.contains('mobile-open'))setMenu(false,true);});
+document.addEventListener('click',e=>{if($('#sidebar').classList.contains('mobile-open')&&!e.target.closest('#sidebar,.mobile-menu'))setMenu(false);});
+const routeFromHash=()=>{const key=location.hash.slice(1);S.view=PRODUCT[key]||VIEWS[key]?key:'dashboard';if(key&&key!==S.view)history.replaceState(null,'','#'+S.view);};
+window.addEventListener('hashchange',()=>{if(location.hash==='#main')return;routeFromHash();render();});
 (async()=>{try{
  const r=await fetch('data/bundle.json');if(!r.ok)throw Error('The demonstration bundle could not be loaded (HTTP '+r.status+').');S.bundle=await r.json();
  try{const saved=localStorage.getItem('biomescan-species');if(PROFILES.some(p=>p.id===saved))P.species=saved;}catch{}
- const key=location.hash.slice(1);S.view=PRODUCT[key]||VIEWS[key]?key:'dashboard';render();
+ if(location.hash!=='#main')routeFromHash();render();
  }catch(error){$('#main').replaceChildren(el('section',{class:'panel error-state'},el('h1',{},'The workspace needs its demonstration data.'),el('p',{},error.message),el('p',{},'Start the platform from the repository. If the bundle is missing, regenerate it with the platform export stage.'),button('Try again',()=>location.reload())));}})();

@@ -8,8 +8,13 @@
   --line-soft:#edf0e8;
   --fg:#25372e;
   --fg-1:#617064;
-  --fg-2:#738174;
-  --fg-3:#7d887d;
+  --fg-2:#5f6d60;
+  --fg-3:#66725f;
+  --muted:#5f6d60;
+  --mikania-text:#c22c48;
+  --focus:#4a7a3c;
+  --fs-label:11px;
+  --fs-meta:12px;
   --accent:#346b4b;
   --accent-dim:#28583c;
   --warn:#9b692b;
@@ -39,8 +44,16 @@ button {
 }
 
 button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible,[role=button]:focus-visible {
-  outline:3px solid #90af69;
-  outline-offset:4px
+  outline:3px solid var(--focus);
+  outline-offset:3px
+}
+
+.sidebar :focus-visible,.hero :focus-visible {
+  outline-color:#d1e2a6
+}
+
+h1:focus,main:focus {
+  outline:none
 }
 
 button {
@@ -3172,4 +3185,520 @@ input[type=range]:disabled {
     font-size:10px
   }
 
+}
+
+/* =========================================================================
+   Refinement pass — readable type floor, WCAG AA text contrast and one visual
+   language for the product and Evidence-room views. Appended last on purpose:
+   it supersedes the per-breakpoint shrinkage above (which took some captions
+   to 6–8px on phones). Secondary text uses --muted (>= 4.5:1 on every light
+   surface); no text is smaller than 10.5px at any width.
+   ========================================================================= */
+html {
+  -webkit-text-size-adjust:100%;
+  text-size-adjust:100%
+}
+
+/* Shell: sidebar, top bar and context bar */
+.workspace-label,.nav-label {
+  font-size:10.5px;
+  letter-spacing:1.4px;
+  color:#a9c8b3
+}
+
+.workspace div span,.workspace-user div span,.demo-note p {
+  font-size:11px;
+  color:#a9c8b3
+}
+
+.workspace div span {
+  font-size:10.5px;
+  white-space:nowrap
+}
+
+.demo-note,.demo-note .text-button {
+  font-size:12px
+}
+
+.nav-count,.workspace-user .badge {
+  font-size:10.5px;
+  color:#c4d8c9
+}
+
+nav button[aria-current=page] .nav-count {
+  color:#24422e
+}
+
+.profile-select-wrap select {
+  padding-top:6px;
+  padding-bottom:6px
+}
+
+.text-button {
+  min-height:24px
+}
+
+nav button {
+  font-size:12px
+}
+
+.user-avatar.small {
+  font-size:10px
+}
+
+.breadcrumb {
+  font-size:12px;
+  color:var(--muted)
+}
+
+.crumb-divider {
+  color:#8a957f
+}
+
+.local-status {
+  font-size:11px;
+  color:var(--muted)
+}
+
+.context-label,.eyebrow,.page-head .kicker {
+  font-size:var(--fs-label);
+  letter-spacing:1.3px;
+  color:#5d6b55
+}
+
+.contextbar>.badge {
+  font-size:11px
+}
+
+.profile-link {
+  font-size:12px!important
+}
+
+.app-footer {
+  font-size:11px;
+  color:var(--muted)
+}
+
+/* Buttons, badges and status labels */
+.button,.product-heading>.button,.hero-actions .button,.specimen-info .button,.shortlist-footer .button {
+  font-size:12.5px
+}
+
+.text-button,.panel-head .text-button,.evidence-footnote .text-button,.planner-table .text-button,.inspector-copy>.text-button {
+  font-size:12px
+}
+
+.button:disabled,.button:disabled:hover {
+  opacity:.5;
+  transform:none;
+  cursor:not-allowed
+}
+
+.badge,.panel-head .badge,.profile-card-top .badge,.site-row .badge,.specimen-info .badge,.monitoring-toolbar .badge {
+  font-size:11px
+}
+
+.badge.real,.badge.pass {
+  color:#3f6a45
+}
+
+.badge.info {
+  color:#456f7c
+}
+
+.badge.muted {
+  color:#646f5b
+}
+
+/* Simulation labels stay at least as prominent as before: larger and bolder. */
+.badge.sim,.badge.warn {
+  color:#7b5d22;
+  font-weight:600
+}
+
+.band-Monitor {
+  color:#4f6f86
+}
+
+.band-Schedule {
+  color:#7b5d22
+}
+
+.band-Priority {
+  color:#99562f
+}
+
+.band-Urgent {
+  color:#a5465a
+}
+
+.hint {
+  color:var(--muted)
+}
+
+/* Overview */
+.hero-kicker {
+  font-size:11px;
+  letter-spacing:1.3px
+}
+
+.hero p {
+  font-size:13px;
+  color:#c9d9c4;
+  max-width:420px
+}
+
+.hero-specimen {
+  font-size:11px;
+  color:#b8cdbd
+}
+
+.metric-top,.metric-note {
+  font-size:12px;
+  color:var(--muted)
+}
+
+.panel-head p {
+  font-size:12px;
+  color:var(--muted)
+}
+
+.product-heading p {
+  font-size:13px
+}
+
+.specimen-number {
+  font-size:10.5px;
+  color:#66725f
+}
+
+.specimen-info>p,.profile-facts,.library-preview>p,.reference-stack span,.site-row small {
+  font-size:12px
+}
+
+.profile-facts dt,.reference-stack span,.site-row small,.site-monogram,.specimen-info>p {
+  color:var(--muted)
+}
+
+.site-row strong {
+  font-size:13px
+}
+
+.site-monogram {
+  font-size:11px
+}
+
+.evidence-footnote {
+  font-size:12.5px;
+  color:#4f5e50
+}
+
+/* Territory map and scene layers */
+.map-region {
+  font-size:11px;
+  color:#566a5e
+}
+
+.map-key {
+  font-size:11.5px;
+  color:#4f6b5b
+}
+
+/* Caveat, not decoration: legible and clear of the key on narrow maps. */
+.map-disclaimer {
+  font-size:11px;
+  color:#4f6b5b;
+  background:#ffffffe0;
+  padding:3px 8px;
+  border-radius:4px;
+  bottom:17px;
+  right:19px;
+  max-width:46%;
+  text-align:right;
+  line-height:1.35
+}
+
+.map-text text {
+  fill:#566a5e
+}
+
+.site-tab,.scene-controls .seg button,.seg button {
+  font-size:12px
+}
+
+.site-tab,.seg button {
+  color:#5b6b52
+}
+
+.map-source-note,.site-large-stat small,.download-links strong,.site-detail>.hint,.scene-legend {
+  font-size:12px
+}
+
+.map-source-note,.site-large-stat small {
+  color:var(--muted)
+}
+
+.download-links a,.legend .item {
+  font-size:12px
+}
+
+.scene-label {
+  font-size:10.5px;
+  font-weight:600
+}
+
+/* Profiles, library and surveys */
+.profile-card-bottom,.reference-card p,.results-count,.survey-facts,.inspector-copy>.hint,.library-stats {
+  font-size:12px;
+  color:var(--muted)
+}
+
+.reference-card-footer,.next-step strong {
+  font-size:11px
+}
+
+.reference-card-footer,.programme-step>span {
+  color:var(--muted)
+}
+
+.library-toolbar>select,.planner-toolbar select {
+  font-size:13px
+}
+
+/* Work planner */
+.planner-table th {
+  font-size:11px
+}
+
+.planner-table th:last-child {
+  font-size:0
+}
+
+.planner-table td {
+  font-size:12.5px
+}
+
+.planner-table td strong {
+  font-size:13px
+}
+
+.planner-table td small,.shortlist-footer small {
+  font-size:11.5px;
+  color:var(--muted)
+}
+
+.planner-table .planner-rank {
+  font-size:12px;
+  color:#66725f
+}
+
+.shortlist-bar label {
+  font-size:12.5px;
+  color:#3d5a34
+}
+
+.shortlist-footer {
+  font-size:12px;
+  color:#4f6b45
+}
+
+input[type=checkbox] {
+  width:18px;
+  height:18px
+}
+
+/* Change & monitoring */
+.monitoring-toolbar label,.research-toolbar label {
+  font-size:12.5px;
+  color:#5d6b55
+}
+
+.monitoring-caption,.method-stat span,.method-card p {
+  font-size:12px;
+  color:var(--muted)
+}
+
+.monitoring-caveat {
+  font-size:12.5px
+}
+
+/* Evidence room: retire the leftover dark-theme fills from styles.css so the
+   original research views read as part of the same light product. */
+.research-content .lede {
+  font-size:13.5px
+}
+
+.research-content h2 {
+  font-size:17px;
+  margin:0 0 12px
+}
+
+.research-content>div>.grid {
+  margin-bottom:28px
+}
+
+thead th,.matrix th,.kpi .label {
+  color:#5d6b55
+}
+
+thead th {
+  font-size:11px
+}
+
+.research-content .slider-row label {
+  font-size:12px
+}
+
+.axis text,.chart text {
+  fill:#66725f
+}
+
+.tier-multispectral {
+  color:#9a6830
+}
+
+.release-id,.tier-row .granted {
+  color:#2f6a47
+}
+
+.tier-row .withheld {
+  color:#a33a4e
+}
+
+.sha,.chain-arrow,.cert .vid,.cert .loci {
+  color:var(--muted)
+}
+
+.cell-ok {
+  background:#e3efe0;
+  color:#2f6a47
+}
+
+.cell-thin {
+  background:#f6ecd6;
+  color:#8a5a12
+}
+
+.cell-none {
+  background:#f8e3e6;
+  color:#a33a4e
+}
+
+.chain-step .tier,.verdict {
+  font-size:10.5px;
+  font-weight:600
+}
+
+.tier-published_genomic,.verdict.SUPPORTED {
+  background:#e3efe0;
+  color:#2f6a47
+}
+
+.tier-published_physiological,.tier-published_transcriptomic {
+  background:#e6ecf6;
+  color:#3f5d86
+}
+
+.tier-inferred_trait,.verdict.NOT_SUPPORTED {
+  background:#f6ecd6;
+  color:#8a5a12
+}
+
+.tier-inferred_optical,.verdict.REFUTED {
+  background:#f8e3e6;
+  color:#a33a4e
+}
+
+.verdict.UNDERPOWERED {
+  background:#eceef1;
+  color:#5c6575
+}
+
+.cert {
+  background:#f7f9f2;
+  border-color:#e0e7d4
+}
+
+.cert.certified {
+  border-left-color:#2f7d57
+}
+
+.cert.quarantined {
+  border-left-color:#c08a3e
+}
+
+.cert .why {
+  color:#8a5a12
+}
+
+.swatch-label {
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  font-weight:600;
+  color:var(--fg)
+}
+
+.swatch-label .sw {
+  width:10px;
+  height:10px;
+  border-radius:2.5px;
+  flex:0 0 auto
+}
+
+@media(max-width:1250px) {
+  /* Narrower rail: let the workspace caption wrap; drop the cosmetic version tag. */
+  .workspace div span {
+    white-space:normal
+  }
+
+  .workspace-user .badge {
+    display:none
+  }
+}
+
+@media(max-width:820px) {
+  /* Tablet: a slightly wider rail keeps the larger nav labels on one line. */
+  .sidebar {
+    width:222px;
+    flex-basis:222px
+  }
+}
+
+@media(max-width:640px) {
+  .sidebar {
+    width:246px;
+    flex-basis:246px
+  }
+
+  /* Dim the page behind the open navigation drawer. */
+  .app-content>:not(.topbar) {
+    transition:opacity .2s
+  }
+
+  .sidebar.mobile-open~.app-content>:not(.topbar) {
+    opacity:.35
+  }
+
+  .tier-row {
+    grid-template-columns:1fr;
+    gap:4px
+  }
+
+  .monitoring-toolbar,.map-toolbar {
+    flex-wrap:wrap;
+    align-items:flex-start
+  }
+
+  .map-key,.map-disclaimer {
+    bottom:10px
+  }
+
+  .map-key {
+    left:10px
+  }
+
+  .map-disclaimer {
+    right:10px
+  }
 }

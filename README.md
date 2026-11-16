@@ -159,11 +159,14 @@ water/confuser measurements, ground checks, and a SWIR-versus-RGB benchmark.
 
 ## Documentation and next steps
 
+- [Pitch](docs/pitch/biomescan_pitch.md): positioning, spoken script, 12-slide outline, and gated ask ([refinement log](docs/pitch/refinement_log.md)).
 - [Company outreach](company%20outreach/README.md): 30 tailored copy-and-paste
   invitations organized into six weekly folders, including farm operators.
 - [Customer discovery materials](docs/customer-discovery/README.md): BiomeScan
   interview questions, participant information and consent draft, interviewer
   guidelines, problem-first emails, and six weeks of company and farm outreach.
+- [Market sizing](docs/customer-discovery/market_sizing.md): assumption-labelled
+  TAM, SAM and SOM estimates with sources and constraints.
 - [Platform scope and development gates](docs/platform-scope.md): alignment with
   the updated Biomescan pitch and the boundary between implemented and planned work.
 - [Mikania reference findings and provenance](docs/mikania-reference-pipeline.md):

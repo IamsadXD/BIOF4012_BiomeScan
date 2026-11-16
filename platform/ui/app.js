@@ -500,7 +500,7 @@ VIEWS.spectra = () => {
         el('thead', {}, el('tr', {}, el('th', {}, 'Endmember'), el('th', {}, 'Provenance'), el('th', {}, 'Status'))),
         el('tbody', {}, ...Object.entries(lib.provenance || {}).map(([k, v]) =>
           el('tr', {},
-            el('td', {}, el('span', { style: `color:${colorFor(k)};font-weight:600` }, k.replace(/_/g, ' '))),
+            el('td', {}, el('span', { class: 'swatch-label' }, el('span', { class: 'sw', style: `background:${colorFor(k)}` }), k.replace(/_/g, ' '))),
             el('td', { class: 'hint' }, v),
             el('td', {}, el('span', { class: 'badge ' + (v.startsWith('measured (') ? 'real' : 'sim') },
               v.startsWith('measured (') ? 'measured' : v.startsWith('measured base') ? 'hybrid' : 'modelled'))))))),
@@ -789,7 +789,7 @@ VIEWS.efficacy = () => {
             el('td', { class: 'num' }, s.n_significant),
             el('td', { class: 'num' }, s.n_reemerged),
             el('td', { class: 'num', style: 'color:var(--accent)' }, num(s.cleared_ha, 3)),
-            el('td', { class: 'num', style: 'color:var(--mikania)' }, num(s.emerged_ha, 3)),
+            el('td', { class: 'num', style: 'color:var(--mikania-text, var(--mikania))' }, num(s.emerged_ha, 3)),
             el('td', { class: 'num' }, hkd(s.treatment_cost_hkd)))))))));
   }
 

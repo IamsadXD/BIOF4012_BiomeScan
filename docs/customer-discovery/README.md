@@ -18,6 +18,7 @@ Prepared 3 November 2026. This folder contains the BiomeScan adaptations of the 
 - [Company and farm directory](company_directory.md): public routes, roles to request, qualification questions and source dates.
 - [Problem-first emails](problem_first_emails.md): construction, pest control, ecology, property, government and farming versions, plus follow-ups.
 - [Market assessment](market_assessment.md): evidence of existing work and the demand assumptions still to test.
+- [Market sizing](market_sizing.md): bottom-up TAM, SAM and SOM estimates built from official counts and labelled assumptions.
 
 The directory includes farm trading names, not a verified incorporation register. If the course requires incorporated companies rather than business operators, confirm its counting rule before using farms toward the quota. Government, conservation and NGO contacts are listed separately and do not inflate the 30-business schedule. Multiple teams within one organization are not independent organization counts or necessarily independent budgets.
 
